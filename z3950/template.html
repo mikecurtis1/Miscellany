@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>z39.50 Client</title>
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" >
+</head>
+<body>
+<h1>FORM</h1>
+<form action="index.php" method="get">
+<textarea name="search"><?php echo htmlspecialchars($i->search); ?></textarea>
+<div><input type="submit" value="submit" /> <span class="newsearch"><a href="<?php echo $p->new_url; ?>">new search</a></span></div>
+<input type="hidden" name="start" value="1" />
+<input type="hidden" name="view" value="z3950" />
+<input type="hidden" name="oclc_symbol" value="VYQ" />
+</form>
+<?php if(isset($recs)){ ?>
+<h1>NAVIGATION</h1>
+<div>RPN: <?php echo $rpn; ?></div>
+<div>Showing <?php echo $p->start; ?> to <?php echo $p->end; ?> of <?php echo $p->hits; ?> results.</div>
+<div class="nav">
+<span> &#171; <a href="<?php echo $p->start_url; ?>">start</a></span>
+<span> &#8249; <a href="<?php echo $p->previous_url; ?>">previous</a></span> | 
+<span><a href="<?php echo $p->next_url; ?>">next</a></span> &#8250; 
+<span><a href="<?php echo $p->last_url; ?>">last</a></span> &#187;
+</div>
+<?php } ?>
+<!-- begin records -->
+<?php 
+if(isset($recs)){
+  echo "<h1>RECORDS</h1>\n";
+  echo "<pre>\n";
+  foreach($recs as $i => $r){
+    echo "\n<hr />\n";
+    echo "<div>&#35;{$i}</div>\n";
+    echo htmlspecialchars($r);
+  }
+  echo "</pre>\n";
+}
+?>
+<!-- end records -->
+<hr />
+<!-- begin object dump -->
+<?php 
+echo "<h1>OBJECTS</h1>\n";
+echo "<pre>\n";
+echo var_dump($z);
+echo var_dump($p);
+echo "</pre>\n";
+?>
+<!-- end object dump -->
+</body>
+</html>

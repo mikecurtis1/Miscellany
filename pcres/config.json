@@ -1,0 +1,13 @@
+{
+"timeshift":0,
+"seats":3,
+"default_time_block_mins":60,
+"length_of_day_blocks":26,
+"day_begin_time":" 15:30:00",
+"extend_end_time":" 00:00:00",
+"extension_max":10,
+"extension_request_window_mins":1,
+"reservation_gap_blocks":1,
+"reservations_daily_total_time_min":2000
+}
+

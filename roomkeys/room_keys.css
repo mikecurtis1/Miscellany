@@ -1,0 +1,19 @@
+div.room{
+  font-size:65%;
+  font-family:sans-serif;
+  font-weight:bold;
+  color:#fff;
+  margin:1em;
+  padding:1em;
+  width:120px;
+  height:80px;
+  float:left;
+}
+
+div.available{
+  background-color:#383;
+}
+
+div.unavailable{
+  background-color:#a33;
+}

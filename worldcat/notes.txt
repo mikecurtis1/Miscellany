@@ -1,0 +1,17 @@
+select count(*) as count, NormalizedISBN,substr(LoanTitle,1,50) from transactions where NormalizedISBN != '' group by NormalizedISBN order by count desc limit 50
+
+select id, RequestType, ProcessType, TransactionStatus, NormalizedISBN, substr(LoanTitle,1,20) as title from transactions where NormalizedISBN = '9780439023528'
+
+select count(*) as count, NormalizedISBN, substr(LoanTitle,1,50) from transactions where LoanTitle != '' group by LoanTitle order by count desc limit 50
+
+select count(*) as count, titleword from titlewords group by titleword order by count desc limit 50
+
+select count(*) as count, titleword from titlewords where source = 'ILLiadLT' and status = 'Cancelled by ILL Staff' group by titleword order by count desc limit 50
+
+select count(*) as count, titleword from titlewords where status = 'Cancelled by ILL Staff' group by titleword order by count desc limit 25
+
+----------------------
+
+SELECT ProcessType, NormalizedISBN, NormalizedTitle, NormalizedYear, count(NormalizedISBN) as count FROM transactions WHERE ProcessType = 'Borrowing' AND NormalizedYear < 2008 GROUP BY NormalizedISBN ORDER BY count DESC LIMIT 20
+
+

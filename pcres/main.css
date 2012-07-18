@@ -1,0 +1,47 @@
+body {
+	margin-top: 2em;
+	margin-right: 25%;
+	margin-left: 25%;
+	margin-bottom: 2em;
+	color:#222;
+	font-weight:bold;
+	background:#ddb;
+	font-family:monospace;
+}
+
+.big{
+	font-size:2em;
+}
+
+.errors{
+	font-family:monospace;
+	font-size:200%;
+	color:#f00;
+	font-weight:bold;
+}
+
+.schedule_row{
+clear:both;
+background:#fff;
+margin:0;
+border-bottom:3px solid #666;
+padding:0;
+}
+
+.schedule_row a{
+text-decoration: none;
+}
+
+div.schedule_link{
+//padding:0.25em;
+width: 275px;
+padding-left:1em;
+}
+
+.schedule_row span{
+//padding:0.25em;
+}
+
+.inline{
+float: left;
+}
