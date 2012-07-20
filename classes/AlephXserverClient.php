@@ -62,6 +62,7 @@ class AlephXserverClient{
         $this->g['no_entries'] = $no_entries[1];
       }
     }
+    //TODO: replace absolute path
     $location = 'http://localhost/curtis/aleph/index.php?'.http_build_query($this->g,'','&');
     header('Location: '.$location);
   }

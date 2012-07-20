@@ -19,6 +19,7 @@
 <h1>NAVIGATION</h1>
 <div>CCL: <?php echo $i->getValue('query'); ?></div>
 <div>Showing <?php echo $p->start; ?> to <?php echo $p->end; ?> of <?php echo $p->hits; ?> results.</div>
+<div>Sort by: <a href="<?php echo $i->getSortURL('author'); ?>">author</a>, <a href="<?php echo $i->getSortURL('title'); ?>">title</a></div>
 <div class="nav">
 <span> &#171; <a href="<?php echo $p->start_url; ?>">start</a></span>
 <span> &#8249; <a href="<?php echo $p->previous_url; ?>">previous</a></span> | 
