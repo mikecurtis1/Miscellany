@@ -3,7 +3,7 @@
 require_once(dirname(__FILE__).'/../ConfigPrivate.php');
 $cfg = new ConfigPrivate();
 
-require_once('marcxml2php.php');
+require_once(dirname(__FILE__).'/../classes/MarcXml2Php.php');
 
 #$marc = new MarcXml2Php('marc');
 #$xml = file_get_contents('http://www.loc.gov/standards/marcxml/xml/collection.xml'); // namespace problem?

@@ -1,6 +1,6 @@
 <?php 
 
-require_once('MySql.php');
+require_once(dirname(__FILE__).'/../classes/MySql.php');
 
 class IdsMySql extends MySql {
 

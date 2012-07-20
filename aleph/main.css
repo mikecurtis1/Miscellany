@@ -1,0 +1,9 @@
+body{
+  margin:4em;
+  color:#444;
+}
+
+textarea{
+  height:175px;
+  width:700px;
+}

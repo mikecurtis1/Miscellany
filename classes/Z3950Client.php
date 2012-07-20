@@ -4,7 +4,7 @@
  * http://www.loc.gov/z3950/agency/defns/bib1.html
  */
  
-class zClient{
+class Z3950Client{
 
 	public function __construct($cfg){
 		$this->host = $cfg['host'];

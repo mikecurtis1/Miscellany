@@ -52,7 +52,7 @@ class Pagination{
     $g['start'] = $this->last;
     $this->last_url = htmlspecialchars('index.php?'.http_build_query($g,'','&'));
     $g['start'] = 1;
-    $g['search'] = '';
+    $g['query'] = '';
     $this->new_url = htmlspecialchars('index.php?'.http_build_query($g,'','&'));
   }
 }
