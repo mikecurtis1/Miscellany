@@ -3,6 +3,7 @@
 class Input{
 
   public function __construct($g){
+    $this->g = $g;
     $this->query = '';
     $this->start = 1;
     $this->sort = '';
