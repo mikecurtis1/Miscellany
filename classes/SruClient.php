@@ -80,8 +80,8 @@ class SruClient {
 	  return $url;
 	}
 	
-	private function _setResponseValues($xml){
-	  preg_match("/\<numberOfRecords\>(.*?)\<\/numberOfRecords\>/", $xml, $numberOfRecords);
+  private function _setResponseValues($xml){
+    preg_match("/\<numberOfRecords\>(.*?)\<\/numberOfRecords\>/", $xml, $numberOfRecords);
     preg_match("/\<nextRecordPosition\>(.*?)\<\/nextRecordPosition\>/", $xml, $nextRecordPosition);
     preg_match("/\<diagnostics\>(.*?)\<\/diagnostics\>/", $xml, $diagnostics);
     if(isset($numberOfRecords[1])){
@@ -93,7 +93,7 @@ class SruClient {
     if(isset($diagnostics[1])){
       $this->response['diagnostics'] = $diagnostics[1];
     }
-	}
+  }
 }
 	
 ?>
