@@ -1,41 +1,25 @@
 <?php 
 
-class Input{
+require_once('Utilities.php');
 
-  public function __construct($g){
-    $this->g = $g;
+class Input extends Utilities{
+
+  public function __construct($g=array()){
     $this->query = '';
     $this->start = 1;
     $this->sort = '';
-    if(isset($g['query'])){
-      $this->query = trim($g['query']);
-    }
-    if(isset($g['start'])){
-      $this->start = $g['start'];
-    }
-    if(isset($g['sort'])){
-      $this->sort = $g['sort'];
+    foreach($g as $i => $v){
+      $this->$i = trim($v);
     }
   }
   
-  public function getValue($v=NULL){
-    if(isset($this->$v)){
-      return $this->$v;
-    }
-  }
-  
-  public function getSortURL($sort=''){
-    $url = '';
-    if($sort === 'author'){
-      $this->g['sort'] = 'author';
-      $url = htmlspecialchars('index.php?'.http_build_query($this->g,'','&'));
-    }
-    if($sort === 'title'){
-      $this->g['sort'] = 'title';
-      $url = htmlspecialchars('index.php?'.http_build_query($this->g,'','&'));
+  public function getSortKey($keys=array()){
+    $value = '';
+    if(isset($keys[$this->sort])){
+      $value = $keys[$this->sort];
     }
     
-    return $url;
+    return $value;
   }
 }
 

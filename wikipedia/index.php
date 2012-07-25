@@ -5,11 +5,10 @@ require_once(dirname(__FILE__).'/../classes/Config.php');
 require_once(dirname(__FILE__).'/../classes/Input.php');
 require_once(dirname(__FILE__).'/../classes/Pagination.php');
 require_once(dirname(__FILE__).'/../classes/SruClient.php');
-require_once(dirname(__FILE__).'/../private.php');
-$cfg_path = dirname(__FILE__).'/worldcat_sru.yaml';
+$cfg_path = dirname(__FILE__).'/wikipedia_sru.yaml';
 // create config instance and set client arguments
 $cfg = new Config($cfg_path);
-$baseurl = 'http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&frbrGrouping=on&wskey=' . $private['wskey'] .'&';
+$baseurl = $cfg->getValue('baseurl');
 $max = $cfg->getValue('maximumRecords');
 $packing = $cfg->getValue('recordPacking');
 $schema = $cfg->getValue('recordSchema');

@@ -1,0 +1,11 @@
+---
+limit: 10
+private:
+- wskey
+maximumRecords: "10"
+recordPacking: xml
+recordSchema: marcxml
+sortKeys:
+  author: Author
+  title: Title
+...

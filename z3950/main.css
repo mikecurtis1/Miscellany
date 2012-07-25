@@ -6,4 +6,9 @@ body{
 textarea{
   height:175px;
   width:700px;
+  background-color:#dff;
+  color:#744;
+  padding:0.75em;
+  font-size:1.75em;
+  font-weight:bold;
 }

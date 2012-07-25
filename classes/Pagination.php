@@ -1,6 +1,8 @@
 <?php 
 
-class Pagination{
+require_once('Utilities.php');
+
+class Pagination extends Utilities{
 
   public function __construct($limit=10){
     $this->hits = 0;
@@ -18,7 +20,7 @@ class Pagination{
     $this->last_url = '';
   }
   
-  public function setValues($hits,$start){
+  public function setValues($hits=0,$start=1){
     $this->hits = $hits;
     $this->start = $start;
     $this->end = ($this->start + $this->limit) - 1;
@@ -42,18 +44,19 @@ class Pagination{
     }
   }
   
-  public function setURLs($g){
+  public function setURLs($g=array()){
+    $urlbase = $this->setThisURLBase();
     $g['start'] = 1;
-    $this->start_url = htmlspecialchars('index.php?'.http_build_query($g,'','&'));
+    $this->start_url = $urlbase.'?'.http_build_query($g,'','&');
     $g['start'] = $this->previous;
-    $this->previous_url = htmlspecialchars('index.php?'.http_build_query($g,'','&'));
+    $this->previous_url = $urlbase.'?'.http_build_query($g,'','&');
     $g['start'] = $this->next;
-    $this->next_url = htmlspecialchars('index.php?'.http_build_query($g,'','&'));
+    $this->next_url = $urlbase.'?'.http_build_query($g,'','&');
     $g['start'] = $this->last;
-    $this->last_url = htmlspecialchars('index.php?'.http_build_query($g,'','&'));
+    $this->last_url = $urlbase.'?'.http_build_query($g,'','&');
     $g['start'] = 1;
     $g['query'] = '';
-    $this->new_url = htmlspecialchars('index.php?'.http_build_query($g,'','&'));
+    $this->new_url = $urlbase.'?'.http_build_query($g,'','&');
   }
 }
 

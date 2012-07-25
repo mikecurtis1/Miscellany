@@ -80,10 +80,11 @@ class SruClient {
 	  return $url;
 	}
 	
+	//HACK: regex XML parsing with .*? to avoid namespace issues
   private function _setResponseValues($xml){
-    preg_match("/\<numberOfRecords\>(.*?)\<\/numberOfRecords\>/", $xml, $numberOfRecords);
-    preg_match("/\<nextRecordPosition\>(.*?)\<\/nextRecordPosition\>/", $xml, $nextRecordPosition);
-    preg_match("/\<diagnostics\>(.*?)\<\/diagnostics\>/", $xml, $diagnostics);
+    preg_match("/\<.*?numberOfRecords\>(.*?)\<\/.*?numberOfRecords\>/", $xml, $numberOfRecords);
+    preg_match("/\<.*?nextRecordPosition\>(.*?)\<\/.*?nextRecordPosition\>/", $xml, $nextRecordPosition);
+    preg_match("/\<.*?diagnostics\>(.*?)\<\/.*?diagnostics\>/", $xml, $diagnostics);
     if(isset($numberOfRecords[1])){
       $this->response['numberOfRecords'] = $numberOfRecords[1];
     }

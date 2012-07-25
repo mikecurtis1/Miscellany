@@ -2,10 +2,10 @@
 
 class AlephXserverClient{
 
-  public function __construct($cfg,$g){
-    $this->host = $cfg['host'];
-    $this->port = $cfg['port'];
-    $this->base = $cfg['base'];
+  public function __construct($host='',$port='',$base='',$g=array()){
+    $this->host = $host;
+    $this->port = $port;
+    $this->base = $base;
     $this->g = $g;
     $this->ccl = '';
     $this->set_number = '';

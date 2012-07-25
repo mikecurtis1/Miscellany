@@ -1,0 +1,10 @@
+---
+limit: 10
+baseurl: http://opencontent.indexdata.com/wikipedia?
+maximumRecords: "10"
+recordPacking: xml
+recordSchema: dc
+sortKeys:
+  author: Author
+  title: Title
+...

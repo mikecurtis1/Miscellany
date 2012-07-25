@@ -6,15 +6,15 @@
  
 class Z3950Client{
 
-	public function __construct($cfg){
-		$this->host = $cfg['host'];
-		$this->port = $cfg['port'];
-		$this->database = $cfg['database'];
-		$this->username = $cfg['username'];
-		$this->password = $cfg['password'];
-		$this->syntax = $cfg['syntax'];
-		$this->search_type = $cfg['search_type'];
-		$this->rec_type = $cfg['rec_type'];
+	public function __construct($host,$port,$database,$username,$password,$syntax,$search_type,$rec_type){
+		$this->host = $host;
+		$this->port = $port;
+		$this->database = $database;
+		$this->username = $username;
+		$this->password = $password;
+		$this->syntax = $syntax;
+		$this->search_type = $search_type;
+		$this->rec_type = $rec_type;
 		$this->z_connection = $this->_zConnect();
 	}
   

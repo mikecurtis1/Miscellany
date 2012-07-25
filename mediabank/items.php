@@ -10,10 +10,10 @@
  
 class Items{
 
-	public function __construct($cfg){
-		$this->host = $cfg->mb_host;
-		$this->user = $cfg->mb_user;
-		$this->password = $cfg->mb_password;
+	public function __construct($mb_host='',$mb_user='',$mb_password=''){
+		$this->host = $mb_host;
+		$this->user = $mb_user;
+		$this->password = $mb_password;
 		$this->query = '';
 		$this->items = array();
 		$this->display = '';
