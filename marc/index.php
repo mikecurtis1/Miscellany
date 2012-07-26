@@ -1,22 +1,36 @@
+<?php header('Content-Type: text/html; charset=utf-8'); ?>
+<pre>
 <?php 
 
-require_once(dirname(__FILE__).'/../private.php');
+#$xml = utf8_encode(file_get_contents('marcxml/ebsco.xml'));
+#$xml = utf8_encode(file_get_contents('marcxml/worldcat_content.xml'));
+#$xml = utf8_encode(file_get_contents('marcxml/loc.xml'));
+#$xml = utf8_encode(file_get_contents('marcxml/aleph_opacrecord.xml'));
+#$xml = utf8_encode(file_get_contents('marcxml/iii_opacrecord.xml'));
+#$xml = utf8_encode(file_get_contents('marcxml/loc_collection.xml')); // use namespace 'marc' argument in constructor when creating object
+#$xml = utf8_encode(file_get_contents('marcxml/aleph_present.xml'));
+$xml = utf8_encode(file_get_contents('marcxml/worldcat_search.xml'));
 
 require_once(dirname(__FILE__).'/../classes/MarcXml2Php.php');
-
-#$marc = new MarcXml2Php('marc');
-#$xml = file_get_contents('http://www.loc.gov/standards/marcxml/xml/collection.xml'); // namespace problem?
-
-$marc = new MarcXml2Php();
-#$xml = file_get_contents('');
-#$xml = file_get_contents('http://www.loc.gov/standards/marcxml/Sandburg/sandburg.xml');
-// http://ups.sunyconnect.suny.edu:4360/X?op=find&base=UPS01PUB&request=love
-#$xml = file_get_contents('http://ups.sunyconnect.suny.edu:4360/X?op=present&set_no=001216&set_entry=000000001-000000003&format=marc');
-$xml = file_get_contents('http://worldcat.org/webservices/catalog/search/sru?query=srw.kw+any+%22love%22&version=1.1&operation=searchRetrieve&recordSchema=info%3Asrw%2Fschema%2F1%2Fmarcxml&maximumRecords=10&startRecord=1&recordPacking=xml&servicelevel=full&sortKeys=relevance&resultSetTTL=300&recordXPath=&wskey='.$private['wskey']);
+$marc = new MarcXml2Php(NULL);
 $array = $marc->parse($xml);
 
-echo '<pre>';
-print_r($array);
-echo '</pre>';
+foreach($array as $i => $rec){
+  echo $marc->getFieldValue($i,'LEADER')."\n";
+  echo $marc->getFieldValue($i,'001')."\n";
+  echo $marc->getFieldValue($i,'100')."\n";
+  echo $marc->getFieldValue($i,'245')."\n";
+  $isbn = $marc->getFieldValues($i,'020');
+  $topics = $marc->getFieldValues($i,'650');
+  $urls = $marc->getFieldValues($i,'856','u');
+  $price = $marc->getFieldValues($i,'938','a,c');
+  print_r($isbn);
+  print_r($topics);
+  print_r($urls);
+  print_r($price);
+  #print_r($rec);
+  echo "<hr />\n";
+}
 
 ?>
+</pre>

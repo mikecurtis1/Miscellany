@@ -1,0 +1,394 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<present>
+<record>
+<record_header>
+<set_entry>000000001</set_entry>
+</record_header>
+<doc_number>000092438</doc_number>
+<metadata>
+<oai_marc>
+<fixfield id="FMT">BK</fixfield>
+<fixfield id="LDR">^^^^^cam^^2200301Ia^4500</fixfield>
+<fixfield id="001">UPS01-000092438</fixfield>
+<fixfield id="005">20120619120210.0</fixfield>
+<fixfield id="008">020812s2001^^^^coua^^^^^^^^^^000^0^eng^d</fixfield>
+<varfield id="020" i1=" " i2=" ">
+<subfield label="a">1930429142 (pbk.) :</subfield>
+<subfield label="c">$6.00</subfield>
+</varfield>
+<varfield id="020" i1=" " i2=" ">
+<subfield label="a">9781930429147 (pbk.)</subfield>
+</varfield>
+<varfield id="035" i1=" " i2=" ">
+<subfield label="a">(OCoLC)50390357</subfield>
+</varfield>
+<varfield id="040" i1=" " i2=" ">
+<subfield label="a">DAJ</subfield>
+<subfield label="c">DAJ</subfield>
+<subfield label="d">OCLCQ</subfield>
+<subfield label="d">BAKER</subfield>
+<subfield label="d">OCL</subfield>
+<subfield label="d">OCLCG</subfield>
+<subfield label="d">BDX</subfield>
+<subfield label="d">VYQ</subfield>
+</varfield>
+<varfield id="049" i1=" " i2=" ">
+<subfield label="a">[FRC GCH] VYQV</subfield>
+</varfield>
+<varfield id="050" i1="1" i2="4">
+<subfield label="a">HQ769</subfield>
+<subfield label="b">.F39 2001</subfield>
+</varfield>
+<varfield id="096" i1=" " i2=" ">
+<subfield label="a">WS 105.5 F2</subfield>
+<subfield label="b">F282L 2001</subfield>
+</varfield>
+<varfield id="100" i1="1" i2=" ">
+<subfield label="a">Fay, Jim.</subfield>
+</varfield>
+<varfield id="245" i1="1" i2="4">
+<subfield label="a">The love and logicisms /</subfield>
+<subfield label="c">by Jim Fay and Charles Fay.</subfield>
+</varfield>
+<varfield id="260" i1=" " i2=" ">
+<subfield label="a">Golden, CO :</subfield>
+<subfield label="b">Love and Logic Press,</subfield>
+<subfield label="c">c2001.</subfield>
+</varfield>
+<varfield id="300" i1=" " i2=" ">
+<subfield label="a">1 v. (unpaged) :</subfield>
+<subfield label="b">ill. ;</subfield>
+<subfield label="c">12 x 15 cm.</subfield>
+</varfield>
+<varfield id="520" i1=" " i2=" ">
+<subfield label="a">&quot;A collection of the 100 most brilliant things ever said about raising kids&quot;--P. [4] of cover.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Child Rearing.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Parenting.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Parent and child.</subfield>
+</varfield>
+<varfield id="700" i1="1" i2=" ">
+<subfield label="a">Fay, Charles,</subfield>
+<subfield label="d">1964-</subfield>
+</varfield>
+<varfield id="962" i1=" " i2=" ">
+<subfield label="a">Consumer Health</subfield>
+</varfield>
+<varfield id="994" i1=" " i2=" ">
+<subfield label="a">C0</subfield>
+<subfield label="b">VYQ</subfield>
+</varfield>
+<varfield id="CAT" i1=" " i2=" ">
+<subfield label="a">OCLCxfer</subfield>
+<subfield label="b">00</subfield>
+<subfield label="c">20120619</subfield>
+<subfield label="l">UPS01</subfield>
+<subfield label="h">1157</subfield>
+</varfield>
+<varfield id="CAT" i1=" " i2=" ">
+<subfield label="a">YOHANAN</subfield>
+<subfield label="b">50</subfield>
+<subfield label="c">20120619</subfield>
+<subfield label="l">UPS01</subfield>
+<subfield label="h">1202</subfield>
+</varfield>
+<varfield id="938" i1=" " i2=" ">
+<subfield label="a">Baker &amp; Taylor</subfield>
+<subfield label="b">BKTY</subfield>
+<subfield label="c">6.00</subfield>
+<subfield label="d">10.95</subfield>
+<subfield label="i">1930429142</subfield>
+<subfield label="n">0004142166</subfield>
+<subfield label="s">active</subfield>
+</varfield>
+<varfield id="938" i1=" " i2=" ">
+<subfield label="a">Brodart</subfield>
+<subfield label="b">BROD</subfield>
+<subfield label="n">01014668</subfield>
+<subfield label="c">$6.00</subfield>
+</varfield>
+</oai_marc>
+</metadata>
+</record>
+<record>
+<record_header>
+<set_entry>000000002</set_entry>
+</record_header>
+<doc_number>000092437</doc_number>
+<metadata>
+<oai_marc>
+<fixfield id="FMT">BK</fixfield>
+<fixfield id="LDR">^^^^^cam^^2200337Ia^4500</fixfield>
+<fixfield id="001">UPS01-000092437</fixfield>
+<fixfield id="005">20120619115320.0</fixfield>
+<fixfield id="008">080815s2005^^^^cou^^^^^^^^^^^001^0^eng^^</fixfield>
+<varfield id="010" i1=" " i2=" ">
+<subfield label="z">2004029658</subfield>
+</varfield>
+<varfield id="020" i1=" " i2=" ">
+<subfield label="a">1930429754 (alk. paper)</subfield>
+</varfield>
+<varfield id="020" i1=" " i2=" ">
+<subfield label="a">9781930429758 (alk. paper)</subfield>
+</varfield>
+<varfield id="035" i1=" " i2=" ">
+<subfield label="a">(OCoLC)243866229</subfield>
+</varfield>
+<varfield id="040" i1=" " i2=" ">
+<subfield label="a">KKS</subfield>
+<subfield label="c">KKS</subfield>
+<subfield label="d">KKS</subfield>
+<subfield label="d">YDXCP</subfield>
+<subfield label="d">CNCBE</subfield>
+<subfield label="d">VYQ</subfield>
+</varfield>
+<varfield id="043" i1=" " i2=" ">
+<subfield label="a">n-us---</subfield>
+</varfield>
+<varfield id="049" i1=" " i2=" ">
+<subfield label="a">[FRC GCH] VYQV</subfield>
+</varfield>
+<varfield id="050" i1="0" i2="0">
+<subfield label="a">LB3012.2</subfield>
+<subfield label="b">.F38 2005b</subfield>
+</varfield>
+<varfield id="096" i1=" " i2=" ">
+<subfield label="a">LB 3012.2</subfield>
+<subfield label="b">F282s 2005</subfield>
+</varfield>
+<varfield id="100" i1="1" i2=" ">
+<subfield label="a">Fay, Jim.</subfield>
+</varfield>
+<varfield id="245" i1="1" i2="0">
+<subfield label="a">Schoolwide discipline plan without the loopholes :</subfield>
+<subfield label="b">&quot;yeah, but-- a salamander is not a fish!&quot; /</subfield>
+<subfield label="c">Jim Fay.</subfield>
+</varfield>
+<varfield id="260" i1=" " i2=" ">
+<subfield label="a">Golden, CO :</subfield>
+<subfield label="b">Love and Logic Press,</subfield>
+<subfield label="c">c2005.</subfield>
+</varfield>
+<varfield id="300" i1=" " i2=" ">
+<subfield label="a">xi, 108 p. ;</subfield>
+<subfield label="c">23 cm.</subfield>
+</varfield>
+<varfield id="500" i1=" " i2=" ">
+<subfield label="a">Previously published with title: &quot;A salamander is not a fish!&quot; : a positive schoolwide discipline plan without the loopholes.</subfield>
+</varfield>
+<varfield id="500" i1=" " i2=" ">
+<subfield label="a">Includes index.</subfield>
+</varfield>
+<varfield id="505" i1="0" i2=" ">
+<subfield label="a">&quot;A salamander is not a fish!&quot; -- Trapped in my own invalid beliefs -- Some chronically true facts about chronically disruptive students -- Two approaches to school discipline -- Same is not always fair or equal -- A school discovers a better kind of discipline plan -- Sample school discipline plan : expectations and rules for student conduct -- Helping parents understand a love and logic discipline plan -- Nine essential skills for a classroom teacher -- How to guide a teacher toward creating a love and logic classroom -- Steps for creating a love and logic school -- When students feed off of each other -- Remedy for tardy students.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">School discipline</subfield>
+<subfield label="z">United States.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">School children</subfield>
+<subfield label="x">Discipline.</subfield>
+<subfield label="z">United States</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Classroom management</subfield>
+<subfield label="z">United States.</subfield>
+</varfield>
+<varfield id="740" i1="3" i2=" ">
+<subfield label="a">&quot;A salamander is not a fish!&quot; : a positive schoolwide discipline plan without the loopholes.</subfield>
+</varfield>
+<varfield id="962" i1=" " i2=" ">
+<subfield label="a">Consumer Health</subfield>
+</varfield>
+<varfield id="994" i1=" " i2=" ">
+<subfield label="a">C0</subfield>
+<subfield label="b">VYQ</subfield>
+</varfield>
+<varfield id="CAT" i1=" " i2=" ">
+<subfield label="a">OCLCxfer</subfield>
+<subfield label="b">00</subfield>
+<subfield label="c">20120619</subfield>
+<subfield label="l">UPS01</subfield>
+<subfield label="h">1147</subfield>
+</varfield>
+<varfield id="CAT" i1=" " i2=" ">
+<subfield label="a">YOHANAN</subfield>
+<subfield label="b">50</subfield>
+<subfield label="c">20120619</subfield>
+<subfield label="l">UPS01</subfield>
+<subfield label="h">1153</subfield>
+</varfield>
+<varfield id="938" i1=" " i2=" ">
+<subfield label="a">YBP Library Services</subfield>
+<subfield label="b">YANK</subfield>
+<subfield label="n">3754795</subfield>
+</varfield>
+</oai_marc>
+</metadata>
+</record>
+<record>
+<record_header>
+<set_entry>000000003</set_entry>
+</record_header>
+<doc_number>000092436</doc_number>
+<metadata>
+<oai_marc>
+<fixfield id="FMT">BK</fixfield>
+<fixfield id="LDR">^^^^^cam^^22004214a^4500</fixfield>
+<fixfield id="001">UPS01-000092436</fixfield>
+<fixfield id="005">20120619113544.0</fixfield>
+<fixfield id="008">000804s2000^^^^cou^^^^^^^^^^^001^0^eng^^</fixfield>
+<varfield id="010" i1=" " i2=" ">
+<subfield label="a">00010736</subfield>
+</varfield>
+<varfield id="019" i1=" " i2=" ">
+<subfield label="a">123042387</subfield>
+<subfield label="a">698376136</subfield>
+</varfield>
+<varfield id="020" i1=" " i2=" ">
+<subfield label="a">1930429045</subfield>
+</varfield>
+<varfield id="020" i1=" " i2=" ">
+<subfield label="a">9781930429048</subfield>
+</varfield>
+<varfield id="035" i1=" " i2=" ">
+<subfield label="a">(OCoLC)44769061</subfield>
+</varfield>
+<varfield id="040" i1=" " i2=" ">
+<subfield label="a">DLC</subfield>
+<subfield label="c">DLC</subfield>
+<subfield label="d">BAKER</subfield>
+<subfield label="d">BTCTA</subfield>
+<subfield label="d">IG#</subfield>
+<subfield label="d">FHP</subfield>
+<subfield label="d">BDX</subfield>
+<subfield label="d">VYQ</subfield>
+</varfield>
+<varfield id="042" i1=" " i2=" ">
+<subfield label="a">pcc</subfield>
+</varfield>
+<varfield id="049" i1=" " i2=" ">
+<subfield label="a">[FRC GCH] VYQV</subfield>
+</varfield>
+<varfield id="050" i1="0" i2="0">
+<subfield label="a">HQ755.85</subfield>
+<subfield label="b">.F43 2000</subfield>
+</varfield>
+<varfield id="096" i1=" " i2=" ">
+<subfield label="a">WS 105.5 F2</subfield>
+<subfield label="b">F2825L 2000</subfield>
+</varfield>
+<varfield id="100" i1="1" i2=" ">
+<subfield label="a">Fay, Jim.</subfield>
+</varfield>
+<varfield id="245" i1="1" i2="0">
+<subfield label="a">Love and logic magic when kids leave you speechless /</subfield>
+<subfield label="c">Jim Fay &amp; Charles Fay.</subfield>
+</varfield>
+<varfield id="250" i1=" " i2=" ">
+<subfield label="a">1st ed.</subfield>
+</varfield>
+<varfield id="260" i1=" " i2=" ">
+<subfield label="a">Golden, Colo. :</subfield>
+<subfield label="b">Love and Logic Press,</subfield>
+<subfield label="c">c2000.</subfield>
+</varfield>
+<varfield id="300" i1=" " i2=" ">
+<subfield label="a">xxvii, 233 p. ;</subfield>
+<subfield label="c">23 cm.</subfield>
+</varfield>
+<varfield id="500" i1=" " i2=" ">
+<subfield label="a">Includes index.</subfield>
+</varfield>
+<varfield id="520" i1=" " i2=" ">
+<subfield label="a">Provides advice for parents when responding to difficult questions or demands from their children, including examples of responses designed to neutralize manipulation and arguing.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Parent and child.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Parenting.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Manipulative behavior in children.</subfield>
+</varfield>
+<varfield id="650" i1=" " i2="2">
+<subfield label="a">Communication in families.</subfield>
+</varfield>
+<varfield id="700" i1="1" i2=" ">
+<subfield label="a">Fay, Charles,</subfield>
+<subfield label="d">1964-</subfield>
+</varfield>
+<varfield id="962" i1=" " i2=" ">
+<subfield label="a">Consumer Health</subfield>
+</varfield>
+<varfield id="994" i1=" " i2=" ">
+<subfield label="a">C0</subfield>
+<subfield label="b">VYQ</subfield>
+</varfield>
+<varfield id="CAT" i1=" " i2=" ">
+<subfield label="a">OCLCxfer</subfield>
+<subfield label="b">00</subfield>
+<subfield label="c">20120619</subfield>
+<subfield label="l">UPS01</subfield>
+<subfield label="h">1130</subfield>
+</varfield>
+<varfield id="CAT" i1=" " i2=" ">
+<subfield label="a">YOHANAN</subfield>
+<subfield label="b">50</subfield>
+<subfield label="c">20120619</subfield>
+<subfield label="l">UPS01</subfield>
+<subfield label="h">1132</subfield>
+</varfield>
+<varfield id="CAT" i1=" " i2=" ">
+<subfield label="a">YOHANAN</subfield>
+<subfield label="b">50</subfield>
+<subfield label="c">20120619</subfield>
+<subfield label="l">UPS01</subfield>
+<subfield label="h">1135</subfield>
+</varfield>
+<varfield id="029" i1="1" i2=" ">
+<subfield label="a">AU@</subfield>
+<subfield label="b">000021710021</subfield>
+</varfield>
+<varfield id="029" i1="1" i2=" ">
+<subfield label="a">IG#</subfield>
+<subfield label="b">9781930429048</subfield>
+</varfield>
+<varfield id="938" i1=" " i2=" ">
+<subfield label="a">Baker &amp; Taylor</subfield>
+<subfield label="b">BKTY</subfield>
+<subfield label="c">16.95</subfield>
+<subfield label="d">12.71</subfield>
+<subfield label="i">1930429045</subfield>
+<subfield label="n">0003585389</subfield>
+<subfield label="s">active</subfield>
+</varfield>
+<varfield id="938" i1=" " i2=" ">
+<subfield label="a">Baker and Taylor</subfield>
+<subfield label="b">BTCP</subfield>
+<subfield label="n">00010736</subfield>
+</varfield>
+<varfield id="938" i1=" " i2=" ">
+<subfield label="a">Ingram</subfield>
+<subfield label="b">INGR</subfield>
+<subfield label="n">9781930429048</subfield>
+</varfield>
+<varfield id="938" i1=" " i2=" ">
+<subfield label="a">Brodart</subfield>
+<subfield label="b">BROD</subfield>
+<subfield label="n">56535767</subfield>
+<subfield label="c">$16.95</subfield>
+</varfield>
+</oai_marc>
+</metadata>
+</record>
+<session-id>I96K627BP717CVHTVR5X6QXMNQX6DSU5D37Q58X9319SCLNFUR</session-id>
+</present>
+ 

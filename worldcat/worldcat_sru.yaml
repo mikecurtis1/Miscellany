@@ -6,6 +6,9 @@ maximumRecords: "10"
 recordPacking: xml
 recordSchema: marcxml
 sortKeys:
+  relevance: Relevance
   author: Author
   title: Title
+  date: "Date,,0"
+  rating: "Score,,0"
 ...

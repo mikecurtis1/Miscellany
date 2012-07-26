@@ -5,7 +5,7 @@
 
 class MarcXml2Php {
 
-  function __construct($ns=NULL) {
+  public function __construct($ns=NULL) {
     // set namespace prefix
     if($ns != NULL){
       $this->ns = $ns.':';
@@ -17,13 +17,13 @@ class MarcXml2Php {
     $this->c = 0;
     $this->xml_parser = xml_parser_create();
     xml_set_object($this->xml_parser,$this);
-    xml_set_element_handler($this->xml_parser, "startHandler", "endHandler");
-    xml_set_character_data_handler($this->xml_parser, "dataHandler");
+    xml_set_element_handler($this->xml_parser, "_startHandler", "_endHandler");
+    xml_set_character_data_handler($this->xml_parser, "_dataHandler");
     xml_parser_set_option($this->xml_parser, XML_OPTION_CASE_FOLDING, false);
     xml_parser_set_option($this->xml_parser, XML_OPTION_TARGET_ENCODING, "UTF-8");
   }
 
-  function parse($xml){
+  public function parse($xml){
     if(!xml_parse($this->xml_parser, $xml)) {
       $this->metadata[] = "Error in XML source file on line " . xml_get_current_line_number($this->xml_parser);
     }
@@ -32,7 +32,7 @@ class MarcXml2Php {
     return $this->metadata;
   }
 
-  function startHandler($parser, $name, $attrs){
+  private function _startHandler($parser, $name, $attrs){
     $this->temp_data = "";
     switch($name) {
     case $this->ns.'fixfield':
@@ -55,7 +55,7 @@ class MarcXml2Php {
         $this->i2 = "_";
       }
       // this array push initially adds the tag to the metadata array this must happen prior to any steps that add data to the metadata array at the varfield/datafield level or subfield level
-      $this->metadata[$this->n]["MARC".$this->tag_id][] = array();
+      $this->metadata[$this->n]['MARC'.$this->tag_id][] = array();
       break; 
     case $this->ns.'datafield':
       $this->tag_id = $attrs['tag'];
@@ -68,7 +68,7 @@ class MarcXml2Php {
         $this->i2 = "_";
       }
       // add marc tag array to metadata array at the varfield/datafield level or subfield level
-      $this->metadata[$this->n]["MARC".$this->tag_id][] = array();
+      $this->metadata[$this->n]['MARC'.$this->tag_id][] = array();
       break;
     // OAI MARC and MARCXML both use the XML element name 'subfield' but they use 'label' and 'code' alternately in the subfield attribute
     case $this->ns.'subfield':
@@ -83,44 +83,44 @@ class MarcXml2Php {
     }
   }
 
-  function dataHandler($parser, $data) {
+  private function _dataHandler($parser, $data) {
     $data = trim($data,"\n,\r,\0");
     $this->temp_data .= $data;
   }
 
-  function endHandler($parser, $name) {
+  private function _endHandler($parser, $name) {
     switch($name) {
     // add fixfield/controlfield/leader these don't have subfields so simply push to the metadata array
     case $this->ns.'fixfield':
     case $this->ns.'controlfield':
     case $this->ns.'leader':
-      $this->metadata[$this->n]["MARC".$this->tag_id][] = $this->temp_data;
+      $this->metadata[$this->n]['MARC'.$this->tag_id][] = $this->temp_data;
       $this->temp_data = "";
       break;
     // use 'c' counter to push data at the varfield/datafield level
     case $this->ns.'varfield':
     case $this->ns.'datafield':
-      if (isset($this->metadata[$this->n]["MARC".$this->tag_id])) {
-        $this->c = count($this->metadata[$this->n]["MARC".$this->tag_id])-1;
+      if (isset($this->metadata[$this->n]['MARC'.$this->tag_id])) {
+        $this->c = count($this->metadata[$this->n]['MARC'.$this->tag_id])-1;
       }
       // the 'full' element is built by concatenation with white space at the close of the varfield/datafield
-      $this->metadata[$this->n]["MARC".$this->tag_id][$this->c]['full'] = trim($this->metadata[$this->n]["MARC".$this->tag_id][$this->c]['full']);
+      $this->metadata[$this->n]['MARC'.$this->tag_id][$this->c]['full'] = trim($this->metadata[$this->n]['MARC'.$this->tag_id][$this->c]['full']);
       break;
     // add subfields
     case $this->ns.'subfield':
       if ($this->temp_data != "") {
-        if (isset($this->metadata[$this->n]["MARC".$this->tag_id])) {
-          $this->c = count($this->metadata[$this->n]["MARC".$this->tag_id])-1;
+        if (isset($this->metadata[$this->n]['MARC'.$this->tag_id])) {
+          $this->c = count($this->metadata[$this->n]['MARC'.$this->tag_id])-1;
         }
         // the following line adds the MARC indicators attrs array to the metadata array. 
-        $this->metadata[$this->n]["MARC".$this->tag_id][$this->c]['attrs'] = array("i1"=>$this->i1,"i2"=>$this->i2);
+        $this->metadata[$this->n]['MARC'.$this->tag_id][$this->c]['attrs'] = array("i1"=>$this->i1,"i2"=>$this->i2);
         // add subfield data
-        $this->metadata[$this->n]["MARC".$this->tag_id][$this->c]['subfields'][$this->label][] = trim($this->temp_data);
+        $this->metadata[$this->n]['MARC'.$this->tag_id][$this->c]['subfields'][$this->label][] = trim($this->temp_data);
         // concatenate subfield data into 'full' element in metadata array
-        if (isset($this->metadata[$this->n]["MARC".$this->tag_id][$this->c]['full'])) {
-          $this->metadata[$this->n]["MARC".$this->tag_id][$this->c]['full'] .= $this->temp_data." ";
+        if (isset($this->metadata[$this->n]['MARC'.$this->tag_id][$this->c]['full'])) {
+          $this->metadata[$this->n]['MARC'.$this->tag_id][$this->c]['full'] .= $this->temp_data." ";
         } else {
-          $this->metadata[$this->n]["MARC".$this->tag_id][$this->c]['full'] = $this->temp_data." ";
+          $this->metadata[$this->n]['MARC'.$this->tag_id][$this->c]['full'] = $this->temp_data." ";
         }
         // tag is closed, all processing finished, reset the temp_data variable
         $this->temp_data = "";
@@ -134,6 +134,53 @@ class MarcXml2Php {
       // end of all processing for the MARC record autoincrement the metadata array counter
       $this->n++;
       break;
+    }
+  }
+  
+  public function getFieldValue($n=0,$field=NULL,$subfields=NULL){
+    $temp = $this->getFieldValues($n,$field,$subfields);
+    if(isset($temp[0])){
+      return $temp[0];
+    } else {
+      return FALSE;
+    }
+  }
+  
+  public function getFieldValues($n=0,$field=NULL,$subfields=NULL){
+    $data = array();
+    $f = 'MARC'.$field;
+    if(isset($this->metadata[$n][$f][0]['subfields']) && is_array($this->metadata[$n][$f][0]['subfields'])){ 
+      // varfields
+      if($subfields !== NULL){
+        $s = explode(',',$subfields);
+        foreach($this->metadata[$n][$f] as $varfield){
+          $temp = '';
+          foreach($s as $subfield){
+            if(isset($varfield['subfields'][$subfield][0])){
+              $temp .= $varfield['subfields'][$subfield][0].' ';
+            }
+          }
+          $data[] = trim($temp);
+        }
+      } else {
+        foreach($this->metadata[$n][$f] as $varfield){
+          if(isset($varfield['full'])){
+            $data[] = trim($varfield['full']);
+          }
+        }
+      }
+    } else { 
+      // fixfields
+      if(isset($this->metadata[$n][$f]) && is_array($this->metadata[$n][$f])){
+        foreach($this->metadata[$n][$f] as $fixfield){
+          $data[] = trim($fixfield);
+        }
+      }
+    }
+    if(!empty($data)){
+      return $data;
+    } else {
+      return;
     }
   }
 }

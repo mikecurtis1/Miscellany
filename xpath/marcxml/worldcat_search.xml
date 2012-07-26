@@ -1,0 +1,1586 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/webservices/catalog/xsl/searchRetrieveResponse.xsl"?>
+
+<searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/" xmlns:oclcterms="http://purl.org/oclc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:diag="http://www.loc.gov/zing/srw/diagnostic/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<version>1.1</version>
+<numberOfRecords>1409867</numberOfRecords>
+<records>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000 a 4500</leader>
+    <controlfield tag="001">232977521</controlfield>
+    <controlfield tag="008">100224s2009    nyu           000 0 eng d</controlfield>
+    <datafield ind1=" " ind2=" " tag="010">
+      <subfield code="a">  2010277229</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">BTCTA</subfield>
+      <subfield code="c">BTCTA</subfield>
+      <subfield code="d">DLC</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">UPZ</subfield>
+      <subfield code="d">OCP</subfield>
+      <subfield code="d">ILC</subfield>
+      <subfield code="d">TXA</subfield>
+      <subfield code="d">CPL</subfield>
+      <subfield code="d">ZAD</subfield>
+      <subfield code="d">LMR</subfield>
+      <subfield code="d">VP@</subfield>
+      <subfield code="d">OTP</subfield>
+      <subfield code="d">CQU</subfield>
+      <subfield code="d">TXBXL</subfield>
+      <subfield code="d">NSB</subfield>
+      <subfield code="d">BDX</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">652661827</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780061728976</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0061728977</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000043862259</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">12851063</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">12905928</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UNITY</subfield>
+      <subfield code="b">126761310</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKBRK</subfield>
+      <subfield code="b">0061917435</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKLBE</subfield>
+      <subfield code="b">0061917435</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">LBRUT</subfield>
+      <subfield code="b">0061917435</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKWFT</subfield>
+      <subfield code="b">0061917435</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKNWH</subfield>
+      <subfield code="b">0061917435</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKISL</subfield>
+      <subfield code="b">0061917435</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKDON</subfield>
+      <subfield code="b">0061917435</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="042">
+      <subfield code="a">lccopycat</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">HQ801</subfield>
+      <subfield code="b">.H35249 2009</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="4" tag="082">
+      <subfield code="a">306.7</subfield>
+      <subfield code="2">22</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Harvey, Steve,</subfield>
+      <subfield code="d">1956-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Act like a lady, think like a man :</subfield>
+      <subfield code="b">what men really think about love, relationships, intimacy, and commitment /</subfield>
+      <subfield code="c">Steve Harvey with Denene Millner.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+      <subfield code="a">1st ed.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Amistad,</subfield>
+      <subfield code="c">c2009.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">viii, 232 p. ;</subfield>
+      <subfield code="c">22 cm.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">From the host of the popular Steve Harvey Morning Show comes a guide for all women that takes them inside the heads of men and shows how men think about love, sex, and commitment. Steve Harvey can't count the number of impressive women he has met over the years, women who can run a business, keep a household with three kids in tiptop shape, and chair a church group all at the same time. So when it comes to relationships, why can't these women figure out what makes men tick?  According to the author, it is because they are asking other women for advice when they should be going directly to the source. In this relationship guide he lets women inside the male mindset, introduces concepts such as the ninety-day rule, and reveals the five questions women should ask a potential partner to determine how serious he is. This book helps women to understand how men think when it comes to relationships, intimacy, and love.</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="505">
+      <subfield code="a">Everything You Need to Know About Men and Relationships is Right Here. The mind-set of a man ; What drives men ; Our love isn't like your love ; The three things every man needs: support, loyalty, and the cookie ; "We need to talk", and other words that make men run for cover -- Why Men do What They Do. First things first: he wants to sleep with you ; Sports fish vs. keepers: how men distinguish between the marrying types and the playthings ; Mama's boys ; Why men cheat -- The Playbook: How to Win the Game. Men respect standards, get some ; The five questions every woman should ask before she gets in too deep ; The ninety-day rule: getting the respect you deserve ; If he's meeting the kids after you decide he's "the One," it's too late ; Strong, independent, and lonely, women ; How to get the ring ; Quick answers to the questions you've always wanted to ask.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Man-woman relationships.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Men</subfield>
+      <subfield code="x">Psychology.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Mate selection.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Millner, Denene.</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Publisher description</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/enhancements/fy1006/2010277229-d.html</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Contributor biographical information</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/enhancements/fy1006/2010277229-b.html</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">BK0007849875</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">24.95</subfield>
+      <subfield code="d">18.71</subfield>
+      <subfield code="i">0061728977</subfield>
+      <subfield code="n">0007849875</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">2930816</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Brodart</subfield>
+      <subfield code="b">BROD</subfield>
+      <subfield code="n">09128158</subfield>
+      <subfield code="c">$23.99</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000Ia 4500</leader>
+    <controlfield tag="001">15041519</controlfield>
+    <controlfield tag="008">870107s1986    onca   j      000 1 eng d</controlfield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">OKS</subfield>
+      <subfield code="c">OKS</subfield>
+      <subfield code="d">WAU</subfield>
+      <subfield code="d">TCA</subfield>
+      <subfield code="d">OCL</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">NZAYP</subfield>
+      <subfield code="d">OCLCG</subfield>
+      <subfield code="d">H4N</subfield>
+      <subfield code="d">COF</subfield>
+      <subfield code="d">AU@</subfield>
+      <subfield code="d">CKL</subfield>
+      <subfield code="d">EHH</subfield>
+      <subfield code="d">HIR</subfield>
+      <subfield code="d">BDX</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">34271348</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0920668364</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780920668368</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0920668372</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780920668375</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">YDXCP</subfield>
+      <subfield code="b">1083535</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">4226799</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000004880607</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000043402099</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="050">
+      <subfield code="a">PZ7.M927</subfield>
+      <subfield code="b">Lo 1986</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="4" tag="082">
+      <subfield code="a">jC813/.54</subfield>
+      <subfield code="2">19</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Munsch, Robert N.,</subfield>
+      <subfield code="d">1945-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Love you forever /</subfield>
+      <subfield code="c">written by Robert Munsch ; illustrated by Sheila McGraw.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">Scarborough, Ont. :</subfield>
+      <subfield code="b">Firefly Books,</subfield>
+      <subfield code="c">c1986.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">[28] p. :</subfield>
+      <subfield code="b">col. ill. ;</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">A boy grows into adulthood with the support of his mother's love.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="650">
+      <subfield code="a">Parent and child</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Parent and child</subfield>
+      <subfield code="v">Juvenile fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Picture books for children.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Children's stories.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">McGraw, Sheila,</subfield>
+      <subfield code="e">ill.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">14.95</subfield>
+      <subfield code="d">14.95</subfield>
+      <subfield code="i">0920668364</subfield>
+      <subfield code="n">0001129513</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">1083535</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">5.95</subfield>
+      <subfield code="d">4.46</subfield>
+      <subfield code="i">0920668372</subfield>
+      <subfield code="n">0001129514</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Brodart</subfield>
+      <subfield code="b">BROD</subfield>
+      <subfield code="n">37323598</subfield>
+      <subfield code="c">$14.95</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000 a 4500</leader>
+    <controlfield tag="001">17385275</controlfield>
+    <controlfield tag="008">880105s1988    nyu    j      000 1 eng  </controlfield>
+    <datafield ind1=" " ind2=" " tag="010">
+      <subfield code="a">   87040484 </subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">DLC</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">BTCTA</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">OCLCG</subfield>
+      <subfield code="d">XY4</subfield>
+      <subfield code="d">CBC</subfield>
+      <subfield code="d">UZV</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">TNF</subfield>
+      <subfield code="d">BDX</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">18721256</subfield>
+      <subfield code="a">19334880</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0394561619</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780394561615</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0394571088 (lim. ed.)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780394571089 (lim. ed.)</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">YDXCP</subfield>
+      <subfield code="b">341243</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">5004875</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000005686732</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">ZWZ</subfield>
+      <subfield code="b">046093249</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="041">
+      <subfield code="a">eng</subfield>
+      <subfield code="h">spa</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+      <subfield code="a">s-ck---</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">PQ8180.17.A73</subfield>
+      <subfield code="b">A813 1988</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="082">
+      <subfield code="a">863</subfield>
+      <subfield code="2">19</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Garci´a Ma´rquez, Gabriel,</subfield>
+      <subfield code="d">1928-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="240">
+      <subfield code="a">Amor en los tiempos del co´lera.</subfield>
+      <subfield code="l">English</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Love in the time of cholera /</subfield>
+      <subfield code="c">Gabriel Garci´a Ma´rquez ; translated from the Spanish by Edith Grossman.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+      <subfield code="a">1st American ed.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Alfred A. Knopf,</subfield>
+      <subfield code="c">1988.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">348 p. ;</subfield>
+      <subfield code="c">25 cm.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Translation of: El amor en los tiempos del co´lera.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">Set on the Caribbean coast of South America, this love story brings together Fermina Daza, her distinguished husband, and a man who has secretly loved her for more than fifty years.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="651">
+      <subfield code="a">Colombia</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Courtship</subfield>
+      <subfield code="z">Colombia</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="650">
+      <subfield code="a">Movie novels.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="650">
+      <subfield code="a">Courtship</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="650">
+      <subfield code="a">Spanish fiction</subfield>
+      <subfield code="y">20th century</subfield>
+      <subfield code="v">Translations into English.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="650">
+      <subfield code="a">Colombian fiction</subfield>
+      <subfield code="y">20th century.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="655">
+      <subfield code="a">Film novelizations.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="655">
+      <subfield code="a">Love stories.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Love stories.</subfield>
+      <subfield code="2">gsafd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Love stories.</subfield>
+      <subfield code="2">gsafd</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Grossman, Edith,</subfield>
+      <subfield code="d">1936-</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="776">
+      <subfield code="i">Online version:</subfield>
+      <subfield code="a">Garci´a Ma´rquez, Gabriel, 1928-</subfield>
+      <subfield code="s">Amor en los tiempos del co´lera. English.</subfield>
+      <subfield code="t">Love in the time of cholera.</subfield>
+      <subfield code="b">1st American ed.</subfield>
+      <subfield code="d">New York : Alfred A. Knopf, 1988</subfield>
+      <subfield code="w">(OCoLC)571208115</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="1" tag="856">
+      <subfield code="3">Sample text</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/enhancements/fy0703/87040484-s.html</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Contributor biographical information</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/bios/random056/87040484.html</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Publisher description</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/description/random045/87040484.html</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">341243</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">25.95</subfield>
+      <subfield code="d">19.46</subfield>
+      <subfield code="i">0394561619</subfield>
+      <subfield code="n">0001275390</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">150.00</subfield>
+      <subfield code="d">135.00</subfield>
+      <subfield code="i">0394571088</subfield>
+      <subfield code="n">0007478919</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">BK0007478919</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Brodart</subfield>
+      <subfield code="b">BROD</subfield>
+      <subfield code="n">57506582</subfield>
+      <subfield code="c">$25.95</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000 a 4500</leader>
+    <controlfield tag="001">52039575</controlfield>
+    <controlfield tag="008">030507s2003    nyu           000 1 eng  </controlfield>
+    <datafield ind1=" " ind2=" " tag="010">
+      <subfield code="a">  2003052737</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">DLC</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">NLC</subfield>
+      <subfield code="d">OCL</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">BTCTA</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">OTP</subfield>
+      <subfield code="d">UZV</subfield>
+      <subfield code="d">BNO</subfield>
+      <subfield code="d">O2H</subfield>
+      <subfield code="d">TUU</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">BDX</subfield>
+      <subfield code="d">MNE</subfield>
+      <subfield code="d">UMR</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="016">
+      <subfield code="a">20039020908</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">52269898</subfield>
+      <subfield code="a">55676384</subfield>
+      <subfield code="a">492578233</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0375409440 (alk. paper)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780375409448 (alk. paper)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0676976182</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780676976182</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NLC</subfield>
+      <subfield code="b">20039020908</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NLGGC</subfield>
+      <subfield code="b">256316910</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">7705066</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000024658723</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000026329879</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">ZWZ</subfield>
+      <subfield code="b">075936755</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">GEBAY</subfield>
+      <subfield code="b">7273212</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+      <subfield code="a">n-us---</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">PS3563.O8749</subfield>
+      <subfield code="b">L68 2003</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="2" tag="055">
+      <subfield code="a">PS3563*</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="082">
+      <subfield code="a">813/.54</subfield>
+      <subfield code="2">21</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="4" tag="082">
+      <subfield code="a">FIC</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Morrison, Toni.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Love /</subfield>
+      <subfield code="c">Toni Morrison.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+      <subfield code="a">1st ed.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Knopf :</subfield>
+      <subfield code="b">Distributed by Random House,</subfield>
+      <subfield code="c">c2003.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">201 p. ;</subfield>
+      <subfield code="c">25 cm.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">The epitome of a group of women's ideals about love, fatherhood, and friendship, wealthy hotel owner Bill Cosey finds his life compromised by his troubled past and his feelings about a spellbinding woman named Celestial.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">African American women</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Seaside resorts</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Hotelkeepers</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Rich people</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Death</subfield>
+      <subfield code="v">Fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Psychological fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="655">
+      <subfield code="a">Psychological fiction.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Love stories.</subfield>
+      <subfield code="2">gsafd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Love stories.</subfield>
+      <subfield code="2">gsafd</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="1" tag="856">
+      <subfield code="3">Sample text</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/samples/random045/2003052737.html</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Contributor biographical information</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/bios/random055/2003052737.html</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Publisher description</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/description/random0414/2003052737.html</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">23.95</subfield>
+      <subfield code="d">17.96</subfield>
+      <subfield code="i">0375409440</subfield>
+      <subfield code="n">0004178546</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">2003052737</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Brodart</subfield>
+      <subfield code="b">BROD</subfield>
+      <subfield code="n">00515426</subfield>
+      <subfield code="c">$23.95</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">8129189</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a22000004a 4500</leader>
+    <controlfield tag="001">58431841</controlfield>
+    <controlfield tag="008">050208s2005    nyua          000 0deng  </controlfield>
+    <datafield ind1=" " ind2=" " tag="010">
+      <subfield code="a">  2005040010</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">ILC</subfield>
+      <subfield code="d">WIQ</subfield>
+      <subfield code="d">C#P</subfield>
+      <subfield code="d">BUR</subfield>
+      <subfield code="d">VP@</subfield>
+      <subfield code="d">RMC</subfield>
+      <subfield code="d">YBM</subfield>
+      <subfield code="d">LMR</subfield>
+      <subfield code="d">PGC</subfield>
+      <subfield code="d">BTCTA</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">SMP</subfield>
+      <subfield code="d">CNNWL</subfield>
+      <subfield code="d">IG#</subfield>
+      <subfield code="d">CQU</subfield>
+      <subfield code="d">TEX</subfield>
+      <subfield code="d">KAAUA</subfield>
+      <subfield code="d">VRC</subfield>
+      <subfield code="d">BDX</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">769265256</subfield>
+      <subfield code="a">775074340</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0060817089</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780060817084</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">YDXCP</subfield>
+      <subfield code="b">2205510</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">9209901</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000040060521</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">IG#</subfield>
+      <subfield code="b">9780060817084</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="042">
+      <subfield code="a">pcc</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+      <subfield code="a">n-us-fl</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">SF429.L3</subfield>
+      <subfield code="b">G76 2005</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="082">
+      <subfield code="a">636.752/7/092</subfield>
+      <subfield code="2">22</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="4" tag="082">
+      <subfield code="a">B</subfield>
+      <subfield code="2">22</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Grogan, John,</subfield>
+      <subfield code="d">1957-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Marley &amp; me :</subfield>
+      <subfield code="b">life and love with the world's worst dog /</subfield>
+      <subfield code="c">John Grogan.</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="246">
+      <subfield code="a">Marley and me</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+      <subfield code="a">1st ed.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Morrow,</subfield>
+      <subfield code="c">c2005.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">xi, 291 p. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">22 cm.</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="505">
+      <subfield code="a">And puppy makes three -- Running with the blue bloods -- Homeward bound -- Mr. Wiggles -- The test strip -- Matters of the heart -- Master and beast -- A battle of wills -- The stuff males are made of -- The luck of the Irish -- The things he ate -- Welcome to the indigent ward -- A scream in the night -- An early arrival -- A postpartum ultimatum -- The audition -- In the land of Bocahontas -- Alfresco dining -- Lightning strikes -- Dog beach -- A northbound plane -- In the land of pencils -- Poultry on parade -- The potty room -- Beating the odds -- Borrowed time -- The big meadow -- Beneath the cherry trees -- The bad dog club.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">The story of a family in the making and the wondrously neurotic dog who taught them what really matters in life. Is it possible for humans to discover the key to happiness through a bigger-than-life, bad-boy dog? Just ask the Grogans.--From publisher description.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Labrador retriever</subfield>
+      <subfield code="z">Florida</subfield>
+      <subfield code="v">Biography.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+      <subfield code="a">Grogan, John,</subfield>
+      <subfield code="d">1957-</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Contributor biographical information</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/enhancements/fy0911/2005040010-b.html</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="856">
+      <subfield code="3">Publisher description</subfield>
+      <subfield code="u">http://catdir.loc.gov/catdir/enhancements/fy0911/2005040010-d.html</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">2005040010</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">2205510</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Ingram</subfield>
+      <subfield code="b">INGR</subfield>
+      <subfield code="n">9780060817084</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">21.95</subfield>
+      <subfield code="d">16.46</subfield>
+      <subfield code="i">0060817089</subfield>
+      <subfield code="n">0006300419</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Brodart</subfield>
+      <subfield code="b">BROD</subfield>
+      <subfield code="n">03285235</subfield>
+      <subfield code="c">$21.95</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000pam a2200000Ma 4500</leader>
+    <controlfield tag="001">137301610</controlfield>
+    <controlfield tag="008">950601r19951993flu           000 0aeng d</controlfield>
+    <controlfield tag="009">5410</controlfield>
+    <datafield ind1=" " ind2=" " tag="010">
+      <subfield code="a">   95020792 </subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">JRV</subfield>
+      <subfield code="c">JRV</subfield>
+      <subfield code="d">BAKER</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">1558743669 (pbk)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9781558743663 (pbk)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+      <subfield code="a">n-us-ca</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">HV883.C2</subfield>
+      <subfield code="b">P45 1995</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="082">
+      <subfield code="a">362.7/6/092</subfield>
+      <subfield code="a">B</subfield>
+      <subfield code="2">20</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Pelzer, David J.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="2" tag="245">
+      <subfield code="a">A Child called "it" :</subfield>
+      <subfield code="b">a foster child's search for the love of a family. /</subfield>
+      <subfield code="c">Dave Pelzer.</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="246">
+      <subfield code="a">One child's courage to survive.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">Deerfield Beach, Fla. :</subfield>
+      <subfield code="b">Health Communications,</subfield>
+      <subfield code="c">c1995.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">xi, 184 p. ;</subfield>
+      <subfield code="c">19 cm.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+      <subfield code="a">Pelzer, David J.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Abused children</subfield>
+      <subfield code="z">California</subfield>
+      <subfield code="z">Daly City</subfield>
+      <subfield code="x">Biography.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Children of alcoholics</subfield>
+      <subfield code="z">California</subfield>
+      <subfield code="z">Daly City</subfield>
+      <subfield code="x">Biography.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Abusive mothers</subfield>
+      <subfield code="z">California</subfield>
+      <subfield code="z">Daly City</subfield>
+      <subfield code="x">Family relationships.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Family violence</subfield>
+      <subfield code="z">California</subfield>
+      <subfield code="z">Daly City.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Foster home care</subfield>
+      <subfield code="z">California.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">11.95</subfield>
+      <subfield code="d">8.96</subfield>
+      <subfield code="i">1558743669</subfield>
+      <subfield code="n">0002696333</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000Ia 4500</leader>
+    <controlfield tag="001">45301854</controlfield>
+    <controlfield tag="008">001108t20001999nyua     b    001 0 eng d</controlfield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">ORX</subfield>
+      <subfield code="c">ORX</subfield>
+      <subfield code="d">CUM</subfield>
+      <subfield code="d">LVB</subfield>
+      <subfield code="d">NGU</subfield>
+      <subfield code="d">NLGGC</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">BTCTA</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">DRB</subfield>
+      <subfield code="d">ITJCU</subfield>
+      <subfield code="d">AUW</subfield>
+      <subfield code="d">MOF</subfield>
+      <subfield code="d">CCE</subfield>
+      <subfield code="d">BDX</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0684866005</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780684866000</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NLGGC</subfield>
+      <subfield code="b">240161270</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">YDXCP</subfield>
+      <subfield code="b">1680021</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">6748781</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UNITY</subfield>
+      <subfield code="b">047321962</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKLBE</subfield>
+      <subfield code="b">0684866005</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKWIG</subfield>
+      <subfield code="b">0684866005</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">HF5823</subfield>
+      <subfield code="b">.K363</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="4" tag="082">
+      <subfield code="a">658.8/34</subfield>
+      <subfield code="2">21</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">05.31</subfield>
+      <subfield code="2">bcl</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Kilbourne, Jean.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="240">
+      <subfield code="a">Deadly persuasion</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Can't buy my love :</subfield>
+      <subfield code="b">how advertising changes the way we think and feel /</subfield>
+      <subfield code="c">Jean Kilbourne.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+      <subfield code="a">1st Touchstone ed.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Simon &amp; Schuster,</subfield>
+      <subfield code="c">2000, c1999.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">366 p. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">"A Touchstone book."</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Previously published as: Deadly persuasion.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="504">
+      <subfield code="a">Includes bibliographical references (p. 333-349) and index.</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="505">
+      <subfield code="a">Introduction : "A girl of many parts" : the making of an activist -- "Buy this 24-year-old and get all his friends absolutely free" : we are the product -- "In your face--all over the place!" : advertising is our environment -- "Bath tissue is like marriage" : the corruption of relationships -- "Can an engine pump the valves in your heart?" : crazy for cars -- "Please, please, you're driving me wild" : falling in love with food -- "The more you subtract, the more you add" : cutting girls down to size --"Forget the rules! enjoy the wine" : alcohol and rebellion -- "What you're looking for" : rage and rebellion in cigarette advertising -- "The dream begins as soon as you open the door" : advertising an addictive mind-set -- "In life there are many loves, but only one grande passion" : addiction as a relationship -- "You talkin' to me?" : advertising and disconnection -- "Two ways a woman can get hurt" : advertising and violence -- "Relax, and enjoy the revolution" : redefining rebellion.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">Discusses the advertising establishment, revealing what advertisers know about human nature and how they exploit it to make a profit.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Women in advertising.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Women consumers.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="6" tag="650">
+      <subfield code="a">Femmes dans la publicite´.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="6" tag="650">
+      <subfield code="a">Consommatrices.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="6" tag="650">
+      <subfield code="a">Publicite´.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="7" tag="650">
+      <subfield code="a">Reclame.</subfield>
+      <subfield code="2">gtt</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="7" tag="650">
+      <subfield code="a">Vrouwen.</subfield>
+      <subfield code="2">gtt</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="7" tag="650">
+      <subfield code="a">Psychologische aspecten.</subfield>
+      <subfield code="2">gtt</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="776">
+      <subfield code="i">Online version:</subfield>
+      <subfield code="a">Kilbourne, Jean.</subfield>
+      <subfield code="s">Deadly persuasion.</subfield>
+      <subfield code="t">Can't buy my love.</subfield>
+      <subfield code="b">1st Touchstone ed.</subfield>
+      <subfield code="d">New York : Simon &amp; Schuster, 2000, c1999</subfield>
+      <subfield code="w">(OCoLC)654837133</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">bl 00014965</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">1680021</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">16.00</subfield>
+      <subfield code="d">12.00</subfield>
+      <subfield code="i">0684866005</subfield>
+      <subfield code="n">0003496582</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Brodart</subfield>
+      <subfield code="b">BROD</subfield>
+      <subfield code="n">55507085</subfield>
+      <subfield code="c">$17.00</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000 a 4500</leader>
+    <controlfield tag="001">32894225</controlfield>
+    <controlfield tag="008">950714s1995    vauaf         000 0ceng  </controlfield>
+    <datafield ind1=" " ind2=" " tag="010">
+      <subfield code="a">   95035382 </subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">OCL</subfield>
+      <subfield code="d">BTCTA</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">HALAN</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0964712407 (paperback)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780964712409 (paperback)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+      <subfield code="a">e-pl---</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">DS135.P62</subfield>
+      <subfield code="b">H74 1995</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="082">
+      <subfield code="a">940.53/18/094384</subfield>
+      <subfield code="2">20</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Korenblit, Michael.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Until we meet again :</subfield>
+      <subfield code="b">a true story of love and survival in the Holocaust /</subfield>
+      <subfield code="c">Michael Korenblit and Kathleen Janger.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">Alexandria, Va. :</subfield>
+      <subfield code="b">Charles River Press,</subfield>
+      <subfield code="c">c1995.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">xvi, 310 p., [8] p. of plates :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Originally published: Until we meet again : a true story of love and war, separation and reunion. G.P. Putnam's Sons, 1983.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Includes index.</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="505">
+      <subfield code="g">1.</subfield>
+      <subfield code="t">Decisions and departures</subfield>
+      <subfield code="g">1 --</subfield>
+      <subfield code="g">2.</subfield>
+      <subfield code="t">The hiding place</subfield>
+      <subfield code="g">23 --</subfield>
+      <subfield code="g">3.</subfield>
+      <subfield code="t">The circle tightens</subfield>
+      <subfield code="g">45 --</subfield>
+      <subfield code="g">4.</subfield>
+      <subfield code="t">Friendship and its limits</subfield>
+      <subfield code="g">61 --</subfield>
+      <subfield code="g">5.</subfield>
+      <subfield code="t">"The neighborhood"</subfield>
+      <subfield code="g">81 --</subfield>
+      <subfield code="g">6.</subfield>
+      <subfield code="t">Best-laid plans</subfield>
+      <subfield code="g">99 --</subfield>
+      <subfield code="g">7.</subfield>
+      <subfield code="t">Separation</subfield>
+      <subfield code="g">115 --</subfield>
+      <subfield code="g">8.</subfield>
+      <subfield code="t">Caprice and choice</subfield>
+      <subfield code="g">139 --</subfield>
+      <subfield code="g">9.</subfield>
+      <subfield code="t">Loss</subfield>
+      <subfield code="g">161 --</subfield>
+      <subfield code="g">10.</subfield>
+      <subfield code="t">Deportation and a promise</subfield>
+      <subfield code="g">187 --</subfield>
+      <subfield code="g">11.</subfield>
+      <subfield code="t">Konzentrationslager (KL)</subfield>
+      <subfield code="g">211 --</subfield>
+      <subfield code="g">12.</subfield>
+      <subfield code="t">Crucial moments</subfield>
+      <subfield code="g">231 --</subfield>
+      <subfield code="g">13.</subfield>
+      <subfield code="t">"The power to refuse our consent"</subfield>
+      <subfield code="g">255 --</subfield>
+      <subfield code="g">14.</subfield>
+      <subfield code="t">Liberation</subfield>
+      <subfield code="g">275 --</subfield>
+      <subfield code="g">15.</subfield>
+      <subfield code="t">Reunion</subfield>
+      <subfield code="g">287.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Holocaust, Jewish (1939-1945)</subfield>
+      <subfield code="z">Poland</subfield>
+      <subfield code="z">Hrubieszo´w</subfield>
+      <subfield code="v">Biography.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Jews</subfield>
+      <subfield code="x">Persecutions</subfield>
+      <subfield code="z">Poland</subfield>
+      <subfield code="z">Hrubieszo´w.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+      <subfield code="a">Korenblit, Meyer.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+      <subfield code="a">Korenblit, Manya.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+      <subfield code="a">Nagelsztajn, Chaim.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Hrubieszo´w (Poland)</subfield>
+      <subfield code="x">Ethnic relations.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Janger, Kathleen.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Korenblit, Michael.</subfield>
+      <subfield code="t">Until we meet again : a true story of love and war, separation and reunion.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">95035382</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">1157324</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000Ia 4500</leader>
+    <controlfield tag="001">226964509</controlfield>
+    <controlfield tag="008">080502s2008    cou      b    000 0 eng d</controlfield>
+    <datafield ind1=" " ind2=" " tag="010">
+      <subfield code="a">  2008922739</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">JPL</subfield>
+      <subfield code="c">JPL</subfield>
+      <subfield code="d">JPL</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">BTCTA</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">VLB</subfield>
+      <subfield code="d">ABG</subfield>
+      <subfield code="d">CQU</subfield>
+      <subfield code="d">VP@</subfield>
+      <subfield code="d">ORX</subfield>
+      <subfield code="d">SGB</subfield>
+      <subfield code="d">CO3</subfield>
+      <subfield code="d">JP3</subfield>
+      <subfield code="d">CVN</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">LMR</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">430835889</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9781434768513 :</subfield>
+      <subfield code="c">$13.99</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">1434768511</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="050">
+      <subfield code="a">BV4501.3</subfield>
+      <subfield code="b">.C434 2008</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="4" tag="082">
+      <subfield code="a">248.4</subfield>
+      <subfield code="2">22</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Chan, Francis,</subfield>
+      <subfield code="d">1967-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Crazy love :</subfield>
+      <subfield code="b">overwhelmed by a relentless God /</subfield>
+      <subfield code="c">Francis Chan ; with Danae Yankoski.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+      <subfield code="a">1st ed.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">Colorado Springs, Colo. :</subfield>
+      <subfield code="b">David C. Cook,</subfield>
+      <subfield code="c">2008.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">205 p. ;</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="504">
+      <subfield code="a">Includes bibliographical references (p. 177-178).</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="505">
+      <subfield code="a">Stop praying -- You might not finish this chapter -- Crazy love -- Profile of the lukewarm -- Serving leftovers to a holy God -- When you're in love -- Your best life-- later -- Profile of the obsessed -- Who really lives that way? -- The crux of the matter -- A conversation with Francis Chan.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">Explains how many practicing Christians lead lives concerned with security and material comfort, and advocates for a Christianity that is based on radical obedience to the words of scripture and a commitment to help others who are in need.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Christian life.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Yankoski, Danae.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">13.99</subfield>
+      <subfield code="d">10.49</subfield>
+      <subfield code="i">1434768511</subfield>
+      <subfield code="n">0007577335</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">BK0007577335</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">3434941</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">12913909</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000045654695</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+<record>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<recordData>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000Ma 4500</leader>
+    <controlfield tag="001">43806221</controlfield>
+    <controlfield tag="008">000329s2000    enka   j      000 0 eng d</controlfield>
+    <controlfield tag="009">6127</controlfield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">EQO</subfield>
+      <subfield code="c">EQO</subfield>
+      <subfield code="d">UKM</subfield>
+      <subfield code="d">OCL</subfield>
+      <subfield code="d">BAKER</subfield>
+      <subfield code="d">VP@</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">YDXCP</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="015">
+      <subfield code="a">GBA0-30873</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">59567933</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0194229785</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780194229784</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">NZ1</subfield>
+      <subfield code="b">5592019</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000021472719</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UNITY</subfield>
+      <subfield code="b">046873627</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">EUSCL</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKHCC</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKESR</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">LBHIL</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKISL</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKLBL</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">REABC</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKBHC</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKTDV</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">GLOCC</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKHCL</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKCST</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">UKBLS</subfield>
+      <subfield code="b">0194229785</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="050">
+      <subfield code="a">PZ2.31.W56</subfield>
+      <subfield code="b">D35 2000</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="4" tag="082">
+      <subfield code="a">428.6</subfield>
+      <subfield code="2">20</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Dainty, Peter.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="4" tag="245">
+      <subfield code="a">The love of a king /</subfield>
+      <subfield code="c">Peter Dainty.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+      <subfield code="a">2nd ed.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">Oxford :</subfield>
+      <subfield code="b">Oxford University Press,</subfield>
+      <subfield code="c">2000.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">56 p. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">20 cm.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="490">
+      <subfield code="a">Oxford bookworms library. Stage 2, True stories</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+      <subfield code="a">Windsor, Edward,</subfield>
+      <subfield code="c">Duke of,</subfield>
+      <subfield code="d">1894-1972.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Readers.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+      <subfield code="a">Windsor, Edward,</subfield>
+      <subfield code="c">Duke of,</subfield>
+      <subfield code="d">1894-1972</subfield>
+      <subfield code="v">Juvenile literature.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="4" tag="600">
+      <subfield code="a">Windsor, Wallis Warfield,</subfield>
+      <subfield code="c">Duchess of,</subfield>
+      <subfield code="d">1896-1986.</subfield>
+      <subfield code="v">Juvenile literature.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="830">
+      <subfield code="a">Oxford bookworms library.</subfield>
+      <subfield code="n">Stage 2,</subfield>
+      <subfield code="p">True stories.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">100383899</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker &amp; Taylor</subfield>
+      <subfield code="b">BKTY</subfield>
+      <subfield code="c">6.50</subfield>
+      <subfield code="d">6.50</subfield>
+      <subfield code="i">0194229785</subfield>
+      <subfield code="n">0006105675</subfield>
+      <subfield code="s">active</subfield>
+    </datafield>
+  </record>
+</recordData>
+</record>
+</records>
+<nextRecordPosition>11</nextRecordPosition>
+<resultSetIdleTime>300</resultSetIdleTime>
+<echoedSearchRetrieveRequest xmlns:srw="http://www.loc.gov/zing/srw/">
+<version>1.1</version>
+<query>srw.kw any "love"</query>
+<maximumRecords>10</maximumRecords>
+<recordSchema>info:srw/schema/1/marcxml</recordSchema>
+<recordPacking>xml</recordPacking>
+<startRecord>1</startRecord>
+<sortKeys>relevance</sortKeys>
+<wskey>2qjfMpiF9wZqTS3PR4BhvTRWmpz3K4P0W0d47tRfdgDVbfpOwQi99oSWVmSS88sfh4N3PQMO10GkXVSf</wskey>
+<servicelevel>full</servicelevel>
+</echoedSearchRetrieveRequest>
+</searchRetrieveResponse>

@@ -1,0 +1,198 @@
+<opacRecord>
+  <bibliographicRecord>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>04882cgm a2200637Ia 450M</leader>
+  <controlfield tag="001">55881775</controlfield>
+  <controlfield tag="003">OCoLC</controlfield>
+  <controlfield tag="005">20090717104910.0</controlfield>
+  <controlfield tag="007">vd cvaizq</controlfield>
+  <controlfield tag="008">040709p20041996cau162 e          vleng d</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">0788853392</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">9780788853395</subfield>
+  </datafield>
+  <datafield tag="024" ind1="1" ind2=" ">
+    <subfield code="a">786936239065</subfield>
+  </datafield>
+  <datafield tag="024" ind1="8" ind2=" ">
+    <subfield code="a">B0001WTWCO</subfield>
+  </datafield>
+  <datafield tag="028" ind1="4" ind2="2">
+    <subfield code="a">35002</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">.b12617362</subfield>
+    <subfield code="b">md   </subfield>
+    <subfield code="c">-</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)55881775</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">TEFMT</subfield>
+    <subfield code="c">TEFMT</subfield>
+    <subfield code="d">RCS</subfield>
+    <subfield code="d">LEO</subfield>
+    <subfield code="d">XFF</subfield>
+    <subfield code="d">OCLCQ</subfield>
+    <subfield code="d">OCL</subfield>
+    <subfield code="d">RCS</subfield>
+    <subfield code="d">BTCTA</subfield>
+    <subfield code="d">OCLCQ</subfield>
+    <subfield code="d">TXI</subfield>
+    <subfield code="d">SMP</subfield>
+    <subfield code="d">UtOrBLW</subfield>
+  </datafield>
+  <datafield tag="041" ind1="1" ind2=" ">
+    <subfield code="a">eng</subfield>
+    <subfield code="b">spa</subfield>
+    <subfield code="b">fre</subfield>
+    <subfield code="h">eng</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">e-it---</subfield>
+    <subfield code="a">e-uk---</subfield>
+    <subfield code="a">f-ua---</subfield>
+  </datafield>
+  <datafield tag="049" ind1=" " ind2=" ">
+    <subfield code="a">XNCA</subfield>
+    <subfield code="c">1</subfield>
+  </datafield>
+  <datafield tag="050" ind1=" " ind2="4">
+    <subfield code="a">PN1997</subfield>
+    <subfield code="b">.E6431 2004</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2="0">
+    <subfield code="a">813.54</subfield>
+    <subfield code="b">Eng</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="4">
+    <subfield code="a">The English patient</subfield>
+    <subfield code="h">[videorecording] /</subfield>
+    <subfield code="c">Miramax Films presents a Saul Zaentz production ; an Anthony Minghella film ; screenplay by Anthony Minghella ; produced by Saul Zaentz ; directed by Anthony Minghella.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Burbank, CA :</subfield>
+    <subfield code="b">Miramax Home Entertainment :</subfield>
+    <subfield code="b">Distributed by Buena Vista Home Entertainment,</subfield>
+    <subfield code="c">[2004?], c1996.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">2 videodiscs (162 min.) :</subfield>
+    <subfield code="b">sd., col. ;</subfield>
+    <subfield code="c">4 3/4 in.</subfield>
+  </datafield>
+  <datafield tag="440" ind1=" " ind2="0">
+    <subfield code="a">Miramax collector&apos;s series.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Based on the novel by Michael Ondaatje.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Originally produced as a motion picture in 1996.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Disc One: Special Features: Feature Commentary with director Anthony Minghella; Feature Commentary with director and screenwriter Anthony Minghella, producer Saul Zaentz, and English Patient author Michael Ondaatje.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Disc Two: Bonus Material: About Michael Ondaatje (22 min.); From Novel to Screenplay: Interviews with Cast and Crew (8 min.); The Formidable Saul Zaentz (2 min.); A Historical Look at the Real Count Almasy (9 min.); Filmmaker Conversations (79 min.); The Work of Stuart Craig: Production Designer (4 min.); The Eyes of Phil Bray: Still Photographer (3 min.); Master Class with Anthony Minghella: Deleted Scenes (20 min.); Black and White to Colour: The Making of The English Patient (53 min.); Reviews of The English Patient [text feature]; Sneak Peeks [previews] (9 min.)</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Opening credits -- Last requests -- Questions and answers -- Minefield -- Hana stays behind -- Story of Candaules -- New houseguest -- Dangerous Bach -- Writings on the wall -- Newfound feelings -- Katherine remains -- Sandstorm -- Reading lessons -- Unexpected visitor -- Illicit liaisons -- Plan of surprise -- Gift for Kip -- Clearing out -- Torture room -- Drunken spectacle -- Volume of light -- Defusing the bomb -- It&apos;s raining -- Disastrous celebration -- Caravaggio&apos;s departure -- Death flight -- In need of help -- Train trip -- Reflections -- Fatal injection -- End credits.</subfield>
+  </datafield>
+  <datafield tag="508" ind1=" " ind2=" ">
+    <subfield code="a">Director of photography, John Seale ; film editor, Walter Murch ; original music composed by Gabriel Yared ; costume designer, Ann Roth ; production designer, Stuart Craig.</subfield>
+  </datafield>
+  <datafield tag="538" ind1=" " ind2=" ">
+    <subfield code="a">DVD; Region 1, NTSC; DTS 5.1 Digital surround sound, Dolby Digital surround sound; widescreen presentation, aspect ratio 1.85:1.</subfield>
+  </datafield>
+  <datafield tag="546" ind1=" " ind2=" ">
+    <subfield code="a">In English with optional subtitles in Spanish and French; closed-captioned.</subfield>
+  </datafield>
+  <datafield tag="511" ind1="0" ind2=" ">
+    <subfield code="a">Ralph Fiennes (Alma´sy), Juliette Binoche (Hana), Willem Dafoe (Caravaggio), Kristin Scott Thomas (Katharine Clifton), Naveen Andrews (Kip), Colin Firth (Geoffrey Clifton), Julian Wadham (Madox), Ju¨rgen Prochnow (Major Muller), Kevin Whately (Hardy), Clive Merrison (Fenelon-Barnes), Nino Castelnuovo (D&apos;Agostino), Hichem Rostom (Fouad), Peter Ru¨hring (Bermann)</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">At the end of World War II, a mysterious, horribly burned man who claims not to remember his name, known only as the &quot;English patient,&quot; lies near death in an Italian villa.  He is cared for by a quietly desperate young nurse, Hana, herself a victim of the war.  With her at the villa are Kip, a young Sikh bomb-disposal expert, and a shadowy thief with bandaged hands named Caravaggio.  The key to the burned man&apos;s past may lie in his commonplace book, a volume of Herodotus, and its intimations of the sacred whirlwind of a great, mysterious, passionate, and tragically doomed love, which trapped two unsuspecting people, forever.</subfield>
+  </datafield>
+  <datafield tag="521" ind1="8" ind2=" ">
+    <subfield code="a">MPAA rating: rated R.</subfield>
+  </datafield>
+  <datafield tag="600" ind1="1" ind2="0">
+    <subfield code="a">Ondaatje, Michael,</subfield>
+    <subfield code="d">1943-</subfield>
+    <subfield code="v">Film adaptations.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">World War, 1939-1945</subfield>
+    <subfield code="v">Drama.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Man-woman relationships</subfield>
+    <subfield code="v">Drama.</subfield>
+  </datafield>
+  <datafield tag="690" ind1=" " ind2=" ">
+    <subfield code="a">ENGLISH VIDEO</subfield>
+    <subfield code="x">NAZARETH VIDEO COLLECTION.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Zaentz, Saul.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Minghella, Anthony.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Fiennes, Ralph.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Binoche, Juliette,</subfield>
+    <subfield code="d">1964-</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Dafoe, Willem.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Scott-Thomas, Kristin,</subfield>
+    <subfield code="d">1960-</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Andrews, Naveen,</subfield>
+    <subfield code="d">1969-</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Firth, Colin,</subfield>
+    <subfield code="d">1960-</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Wadham, Julian,</subfield>
+    <subfield code="d">1958-</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Prochnow, Ju¨rgen.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Whately, Kevin.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Ondaatje, Michael,</subfield>
+    <subfield code="d">1943-</subfield>
+    <subfield code="t">English patient.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Miramax Films.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Miramax Home Entertainment (Firm)</subfield>
+  </datafield>
+</record>
+  </bibliographicRecord>
+<holdings>
+ <holding>
+  <localLocation>Media/DVD</localLocation>
+  <callNumber>813.54 Eng </callNumber>
+  <publicNote> CHECK SHELVES</publicNote>
+ </holding>
+</holdings>
+</opacRecord>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cgm a2200000Ia 4500</leader>
+    <controlfield tag="001">55881775</controlfield>
+    <controlfield tag="007">vd cvaizq</controlfield>
+    <controlfield tag="008">040709s2004    cau162 e          vleng d</controlfield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">TEFMT</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="c">TEFMT</subfield>
+      <subfield code="d">RCS</subfield>
+      <subfield code="d">LEO</subfield>
+      <subfield code="d">XFF</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">OCL</subfield>
+      <subfield code="d">RCS</subfield>
+      <subfield code="d">BTCTA</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">TXI</subfield>
+      <subfield code="d">SMP</subfield>
+      <subfield code="d">LRU</subfield>
+      <subfield code="d">YDXCP</subfield>
+      <subfield code="d">BGTON</subfield>
+      <subfield code="d">TEF</subfield>
+      <subfield code="d">GK8</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">OCLCA</subfield>
+      <subfield code="d">TEFMT</subfield>
+      <subfield code="d">OCLCA</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">BDX</subfield>
+      <subfield code="d">LML</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="019">
+      <subfield code="a">650514230</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">0788853392</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="020">
+      <subfield code="a">9780788853395</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="024">
+      <subfield code="a">786936239065</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="024">
+      <subfield code="a">031398138136</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="2" tag="028">
+      <subfield code="a">35002</subfield>
+      <subfield code="b">Miramax Home Entertainment</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="037">
+      <subfield code="a">AV00020431</subfield>
+      <subfield code="b">BWI</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="041">
+      <subfield code="a">eng</subfield>
+      <subfield code="j">spa</subfield>
+      <subfield code="j">fre</subfield>
+      <subfield code="h">eng</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+      <subfield code="a">e-it---</subfield>
+      <subfield code="a">e-uk---</subfield>
+      <subfield code="a">f-ua---</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="046">
+      <subfield code="k">1996</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="050">
+      <subfield code="a">PN1997</subfield>
+      <subfield code="b">.E6431 2004</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="4" tag="082">
+      <subfield code="a">791.43/72</subfield>
+      <subfield code="2">22</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="130">
+      <subfield code="a">English patient (Motion picture)</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="4" tag="245">
+      <subfield code="a">The English patient</subfield>
+      <subfield code="h">[videorecording] /</subfield>
+      <subfield code="c">Miramax Films presents a Saul Zaentz production ; an Anthony Minghella film ; screenplay by Anthony Minghella ; produced by Saul Zaentz ; directed by Anthony Minghella.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="a">Burbank, CA :</subfield>
+      <subfield code="b">Miramax Home Entertainment :</subfield>
+      <subfield code="b">Distributed by Buena Vista Home Entertainment,</subfield>
+      <subfield code="c">[2004?]</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="a">2 videodiscs (162 min.) :</subfield>
+      <subfield code="b">sd., col. ;</subfield>
+      <subfield code="c">4 3/4 in.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="490">
+      <subfield code="a">Miramax collector's series</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="538">
+      <subfield code="a">DVD; Region 1, NTSC; DTS 5.1 Digital surround sound, Dolby Digital surround sound; widescreen presentation, aspect ratio 1.85:1.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="546">
+      <subfield code="a">In English with optional subtitles in Spanish and French; closed-captioned.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Based on the novel by Michael Ondaatje.</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="511">
+      <subfield code="a">Ralph Fiennes (Alma´sy), Juliette Binoche (Hana), Willem Dafoe (Caravaggio), Kristin Scott Thomas (Katharine Clifton), Naveen Andrews (Kip), Colin Firth (Geoffrey Clifton), Julian Wadham (Madox), Ju¨rgen Prochnow (Major Muller), Kevin Whately (Hardy), Clive Merrison (Fenelon-Barnes), Nino Castelnuovo (D'Agostino), Hichem Rostom (Fouad), Peter Ru¨hring (Bermann).</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="508">
+      <subfield code="a">Director of photography, John Seale ; film editor, Walter Murch ; original music composed by Gabriel Yared ; costume designer, Ann Roth ; production designer, Stuart Craig.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Originally produced as a motion picture in 1996.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">At the end of World War II, a mysterious, horribly burned man who claims not to remember his name, known only as the "English patient," lies near death in an Italian villa. He is cared for by a quietly desperate young nurse, Hana, herself a victim of the war. With her at the villa are Kip, a young Sikh bomb-disposal expert, and a shadowy thief with bandaged hands named Caravaggio. The key to the burned man's past may lie in his commonplace book, a volume of Herodotus, and its intimations of the sacred whirlwind of a great, mysterious, passionate, and tragically doomed love, which trapped two unsuspecting people, forever.</subfield>
+    </datafield>
+    <datafield ind1="8" ind2=" " tag="521">
+      <subfield code="a">MPAA rating: rated R, for sexuality, some violence and language.</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="505">
+      <subfield code="a">Opening credits -- Last requests -- Questions and answers -- Minefield -- Hana stays behind -- Story of Candaules -- New houseguest -- Dangerous Bach -- Writings on the wall -- Newfound feelings -- Katherine remains -- Sandstorm -- Reading lessons -- Unexpected visitor -- Illicit liaisons -- Plan of surprise -- Gift for Kip -- Clearing out -- Torture room -- Drunken spectacle -- Volume of light -- Defusing the bomb -- It's raining -- Disastrous celebration -- Caravaggio's departure -- Death flight -- In need of help -- Train trip -- Reflections -- Fatal injection -- End credits.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Disc one: Special features: feature commentary with director Anthony Minghella; feature commentary with director and screenwriter Anthony Minghella, producer Saul Zaentz, and English Patient author Michael Ondaatje.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+      <subfield code="a">Disc two: Bonus material: About Michael Ondaatje (22 min.); From novel to screenplay: interviews with cast and crew (8 min.); The formidable Saul Zaentz (2 min.); A historical look at the real Count Almasy (9 min.); Filmmaker conversations (79 min.); The work of Stuart Craig: production designer (4 min.); The eyes of Phil Bray: still photographer (3 min.); Master class with Anthony Minghella: deleted scenes (20 min.); Black and white to colour: the making of The English Patient (53 min.); Reviews of The English Patient [text feature]; sneak peeks [previews] (9 min.).</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="586">
+      <subfield code="a">Winner, 1997 Academy Awards for Best Picture (Saul Zaentz); Best Director (Anthony Minghella); Best Actress in a Supporting Role (Juliette Binoche); Best Cinematography (John Seale); Best Film Editing (Walter Murch); Best Music, Original Dramatic Score (Gabriel Yared); Best Sound (Walter Murch, Mark Berger, David Parker, Christopher Newman); Best Art Direction-Set Decoration (Stuart Craig, Stephanie McMillan); Best Costume Design (Ann Roth).</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">World War, 1939-1945</subfield>
+      <subfield code="z">Italy</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Man-woman relationships</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Ordnance disposal units</subfield>
+      <subfield code="z">Great Britain</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Geographers</subfield>
+      <subfield code="z">Great Britain</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Thieves</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Spies</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Nurses</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Love</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="651">
+      <subfield code="a">Jilf al Kabir Plateau (Egypt)</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="651">
+      <subfield code="a">Florence (Italy)</subfield>
+      <subfield code="x">History</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Guerra Mundial II, 1939-1945</subfield>
+      <subfield code="z">Italia</subfield>
+      <subfield code="v">Teatro.</subfield>
+      <subfield code="2">bidex</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Enfermeras</subfield>
+      <subfield code="v">Teatro.</subfield>
+      <subfield code="2">bidex</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Amor</subfield>
+      <subfield code="v">Teatro.</subfield>
+      <subfield code="2">bidex</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="8" tag="650">
+      <subfield code="a">World War, 1939-1945</subfield>
+      <subfield code="z">Italy</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="8" tag="650">
+      <subfield code="a">Nurses</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="8" tag="650">
+      <subfield code="a">Love</subfield>
+      <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="655">
+      <subfield code="a">DVD-Video discs.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Love stories.</subfield>
+      <subfield code="2">gsafd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Feature films.</subfield>
+      <subfield code="2">gsafd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Feature films.</subfield>
+      <subfield code="2">lcgft</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Film adaptations.</subfield>
+      <subfield code="2">lcgft</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Video recordings for the hearing impaired.</subfield>
+      <subfield code="2">lcgft</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">War films.</subfield>
+      <subfield code="2">lcgft</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Historical films.</subfield>
+      <subfield code="2">lcgft</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Zaentz, Saul.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Minghella, Anthony.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Fiennes, Ralph.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Binoche, Juliette,</subfield>
+      <subfield code="d">1964-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Dafoe, Willem.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Scott-Thomas, Kristin,</subfield>
+      <subfield code="d">1960-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Andrews, Naveen,</subfield>
+      <subfield code="d">1969-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Firth, Colin,</subfield>
+      <subfield code="d">1960-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Wadham, Julian,</subfield>
+      <subfield code="d">1958-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Prochnow, Ju¨rgen.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Whately, Kevin.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Merrison, Clive.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Castelnuovo, Nino,</subfield>
+      <subfield code="d">1936 or 7-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Yared, Gabriel.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Seale, John,</subfield>
+      <subfield code="d">1942-</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+      <subfield code="a">Ondaatje, Michael,</subfield>
+      <subfield code="d">1943-</subfield>
+      <subfield code="t">English patient.</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="710">
+      <subfield code="a">Miramax Films.</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="710">
+      <subfield code="a">Miramax Home Entertainment (Firm)</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="710">
+      <subfield code="a">Buena Vista Home Entertainment (Firm)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="830">
+      <subfield code="a">Miramax collector's series.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Baker and Taylor</subfield>
+      <subfield code="b">BTCP</subfield>
+      <subfield code="n">be2004103116</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">YBP Library Services</subfield>
+      <subfield code="b">YANK</subfield>
+      <subfield code="n">3123929</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="938">
+      <subfield code="a">Brodart</subfield>
+      <subfield code="b">BROD</subfield>
+      <subfield code="n">04307658</subfield>
+      <subfield code="c">$19.99</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="029">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000049003828</subfield>
+    </datafield>
+  </record>

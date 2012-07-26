@@ -42,9 +42,8 @@ abstract class Utilities {
     return $urlbase;
   }
   
-  public function setURL($key='',$value=''){
+  public function setURL($key='',$value='', $array=array()){
     $url = '';
-    $array = (array) $this;
     if($key !== '' && $value !== ''){
       $array[$key] = $value;
     }
