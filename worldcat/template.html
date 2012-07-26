@@ -47,11 +47,29 @@ echo "</pre>\n";
 <hr />
 <!-- begin records -->
 <?php 
-if(isset($xml) && $xml !== ''){
+#if(isset($xml) && $xml !== ''){
+if(!empty($results)){
   echo "<h1>RECORDS</h1>\n";
-  echo "<pre>\n";
-  echo htmlspecialchars($xml);
-  echo "</pre>\n";
+  foreach($results as $i => $rec){
+    echo "<div class=\"item\">\n";
+    echo '<div class="title">'.$marc->getFieldValue($i,'245','a,b,n,p')."</div>\n";
+    echo '<div class="description">'.$marc->getFieldValue($i,'520')."</div>\n";
+    echo '<div>'.$marc->getFieldValue($i,'LEADER')."</div>\n";
+    echo '<div><a href="http://search.idsproject.org/index.php?view=ids_holdings&oclc_symbol=VYQ&number_type=oclc&search_scope=consortia&number='.$marc->getFieldValue($i,'001').'" target="_blank">'.$marc->getFieldValue($i,'001')."</a></div>\n";
+    echo '<div>'.$marc->getFieldValue($i,'100')."</div>\n";
+    echo '<div>'.$marc->getFieldValue($i,'245')."</div>\n";
+    $isbn = $marc->getFieldValues($i,'020');
+    $topics = $marc->getFieldValues($i,'650');
+    $urls = $marc->getFieldValues($i,'856','u');
+    $price = $marc->getFieldValues($i,'938','a,c');
+    echo "<pre>\n";
+    print_r($isbn);
+    print_r($topics);
+    print_r($urls);
+    print_r($price);
+    echo "</pre>\n";
+    echo "</div>\n";
+  }
 }
 ?>
 <!-- end records -->

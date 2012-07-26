@@ -12,3 +12,15 @@ textarea{
   font-size:1.75em;
   font-weight:bold;
 }
+
+div.item{
+  margin:2em;
+  border-bottom: 1px solid #666;
+}
+
+div.title{
+  color:#447;
+  padding:0.75em 0.75em 0.75em 0;
+  font-size:1.75em;
+  font-weight:bold;
+}
