@@ -50,7 +50,7 @@ class Model{
 	}
 	
 	private function _buildSQL(){
-		/** RVM000, VMn000
+		/** modificamacchina = RVM000, VMn000 
 		 * S=available, #=reserved, N=unavailable
 		 * AND "MEDIA"."DISPO" = \'S\' 
 		 */
@@ -72,6 +72,7 @@ class Model{
 			'.$where_clause.' 
 			ORDER BY UPPER("TITOLI"."TITOLO")
 			';
+		
 		return;
 	}
 	
