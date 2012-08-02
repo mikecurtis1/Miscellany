@@ -21,6 +21,7 @@ class Model{
 		$this->data = array();
 	}
 	
+	//TODO: break up into small methods: build sql, process sql response, etc.
 	public function requestData($first,$skip,$search,$modificamacchina){
 	
 		$db = ibase_connect($this->host, $this->user, $this->password);
