@@ -49,11 +49,12 @@ class Model{
 		return $data;
 	}
 	
+	/**
+	 * modificamacchina = RVM000, VMn000 
+	 * S=available, #=reserved, N=unavailable
+	 * AND "MEDIA"."DISPO" = \'S\' 
+	 */
 	private function _buildSQL(){
-		/** modificamacchina = RVM000, VMn000 
-		  * S=available, #=reserved, N=unavailable
-		  * AND "MEDIA"."DISPO" = \'S\' 
-		  */
 		$where_clauses = array();
 		if($this->modificamacchina != ''){
 			$temp = explode(',',$this->modificamacchina);
