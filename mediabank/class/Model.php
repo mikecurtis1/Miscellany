@@ -17,52 +17,66 @@ class Model{
 		$this->host = $host;
 		$this->user = $username;
 		$this->password = $password;
-		$this->query = '';
-		$this->data = array();
+		$this->search = '';
+		$this->modificamacchina = '';
+		$this->first = 1;
+		$this->skip = 0;
+		$this->sql = '';
 	}
 	
-	//TODO: break up into small methods: build sql, process sql response, etc.
 	public function requestData($first,$skip,$search,$modificamacchina){
-	
+		$this->search = $search;
+		$this->modificamacchina = $modificamacchina;
+		$this->first = $first;
+		$this->skip = $skip;
 		$db = ibase_connect($this->host, $this->user, $this->password);
 		if(!$db){
 			//HACK: need better error handling
-			$data = 'Error connecting to the Database Server';
-			return $data;
+			$error = 'Error connecting to the Database Server';
+			return $error;
 		}
-
-		/* RVM000, VMn000
-		   S=available, #=reserved, N=unavailable
-		   AND "MEDIA"."DISPO" = \'S\' 
-		   */
+		$this->_buildSQL();
+		$result = ibase_query($db,$this->sql);
+		if(!$result){
+			//HACK: need better error handling
+			$error = 'Error executing query';
+			return $error;
+		}
+		$data = $this->_setItems($result);
+		ibase_free_result($result);
+		ibase_close($db);
 		
+		return $data;
+	}
+	
+	private function _buildSQL(){
+		/** RVM000, VMn000
+		 * S=available, #=reserved, N=unavailable
+		 * AND "MEDIA"."DISPO" = \'S\' 
+		 */
 		$where_clauses = array();
-		if($modificamacchina != ''){
-			$temp = explode(',',$modificamacchina);
+		if($this->modificamacchina != ''){
+			$temp = explode(',',$this->modificamacchina);
 			$where_clauses[] ='("MEDIA"."MODIFICAMACCHINA" = \''.implode('\' OR "MEDIA"."MODIFICAMACCHINA" = \'',$temp).'\')';
 		}
-		if($search != ''){
-			$where_clauses[] = "(UPPER(\"TITOLI\".\"TITOLO\") LIKE UPPER('%".$search."%') OR UPPER(SUBSTRING(\"TITOLI\".\"DESCRIZ\" FROM 1 FOR 16000)) LIKE UPPER('%".$search."%')) ";
+		if($this->search != ''){
+			$where_clauses[] = "(UPPER(\"TITOLI\".\"TITOLO\") LIKE UPPER('%".$this->search."%') OR UPPER(SUBSTRING(\"TITOLI\".\"DESCRIZ\" FROM 1 FOR 16000)) LIKE UPPER('%".$this->search."%')) ";
 		}
 		if(count($where_clauses)>0){
 			$where_clause = 'WHERE '.implode(' AND ',$where_clauses);
 		}
-		
-		$this->query = '
-			SELECT FIRST '.$first.' SKIP '.$skip.' * 
+		$this->sql = '
+			SELECT FIRST '.$this->first.' SKIP '.$this->skip.' * 
 			FROM "MEDIA" 
 			LEFT JOIN "TITOLI" ON "MEDIA"."IDTITOLO" = "TITOLI"."IDTITOLO"
 			'.$where_clause.' 
 			ORDER BY UPPER("TITOLI"."TITOLO")
 			';
-
-		$result = ibase_query($db,$this->query);
-		if(!$result){
-			//HACK: need better error handling
-			$data = 'Error executing query';
-			return $data;
-		}
-
+		return;
+	}
+	
+	private function _setItems($result=NULL){
+		$temp = array();
 		while($row = ibase_fetch_row($result, IBASE_TEXT)){
 			$this->item = new Item();
 			$this->item->id = trim($row[0]);
@@ -74,13 +88,10 @@ class Model{
 				$this->item->barcode = 'ID:'.$item['id'];
 			}
 			$this->item->available = trim($row[5]);
-			$this->data[] = $this->item;
+			$temp[] = $this->item;
 		}
-
-		ibase_free_result($result);
-		ibase_close($db);
 		
-		return $this->data;
+		return $temp;
 	}
 }
 ?>
