@@ -32,16 +32,12 @@ class Model
 		$this->skip = $skip;
 		$db = ibase_connect($this->host, $this->user, $this->password);
 		if (!$db) {
-			//HACK: need better error handling
-			$error = 'Error connecting to the Database Server';
-			return $error;
+			throw new Exception('Error connecting to the Database Server');
 		}
 		$this->_buildSQL();
 		$result = ibase_query($db,$this->sql);
 		if (!$result) {
-			//HACK: need better error handling
-			$error = 'Error executing query';
-			return $error;
+			throw new Exception('Error executing query');
 		}
 		$data = $this->_setItems($result);
 		ibase_free_result($result);

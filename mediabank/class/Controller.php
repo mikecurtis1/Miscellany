@@ -47,7 +47,12 @@ class Controller
 	}
 	
 	public function httpResponse(){
-		$data = $this->model->requestData($this->first,$this->skip,$this->search,$this->modificamacchina);
+		try {
+			$data = $this->model->requestData($this->first,$this->skip,$this->search,$this->modificamacchina);
+		} catch (Exception $e) {
+			//TODO: need a method to capture and handle errors instead of echo
+			echo "EXCEPTION: Message: ".$e->getMessage().". File: ".$e->getFile().". Line: ".$e->getLine()."\n";
+		}
 		$items = $this->view->markupItems($data);
 		$this->view->setNavURLs($this->search,$this->modificamacchina,$this->back,$this->next);
 		include_once('template.html');
