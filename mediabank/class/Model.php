@@ -51,9 +51,9 @@ class Model{
 	
 	private function _buildSQL(){
 		/** modificamacchina = RVM000, VMn000 
-		 * S=available, #=reserved, N=unavailable
-		 * AND "MEDIA"."DISPO" = \'S\' 
-		 */
+		  * S=available, #=reserved, N=unavailable
+		  * AND "MEDIA"."DISPO" = \'S\' 
+		  */
 		$where_clauses = array();
 		if($this->modificamacchina != ''){
 			$temp = explode(',',$this->modificamacchina);
@@ -70,8 +70,7 @@ class Model{
 			FROM "MEDIA" 
 			LEFT JOIN "TITOLI" ON "MEDIA"."IDTITOLO" = "TITOLI"."IDTITOLO"
 			'.$where_clause.' 
-			ORDER BY UPPER("TITOLI"."TITOLO")
-			';
+			ORDER BY UPPER("TITOLI"."TITOLO")';
 		
 		return;
 	}
