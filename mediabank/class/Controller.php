@@ -11,7 +11,8 @@
 include_once('Model.php');
 include_once('View.php');
 
-class Controller{
+class Controller
+{
 	
 	public function __construct($host,$username,$password){
 		$this->model = new Model($host,$username,$password);
@@ -24,13 +25,13 @@ class Controller{
 	}
 	
 	public function httpRequest($get){
-		if(isset($get['modificamacchina'])){
+		if (isset($get['modificamacchina'])) {
 			$this->modificamacchina = $get['modificamacchina'];
 		}
-		if(isset($get['search'])){
+		if (isset($get['search'])) {
 			$this->search = $get['search'];
 		}
-		if(isset($get['skip'])){
+		if (isset($get['skip'])) {
 			$this->skip = $get['skip'];
 			$this->back = $this->skip - $this->first;
 			$this->next = $this->skip + $this->first;
@@ -38,7 +39,7 @@ class Controller{
 			$this->back = $this->skip;
 			$this->next = $this->first;
 		}
-		if($this->back < 0){
+		if ($this->back < 0) {
 			$this->back = 0;
 		}
 
@@ -55,11 +56,12 @@ class Controller{
 	}
 	
 	public function htmlEcho($name){
-		if(isset($this->$name)){
+		if (isset($this->$name)) {
 			echo htmlspecialchars($this->$name);
-		} elseif(isset($this->view->$name)){
+		} elseif(isset($this->view->$name)) {
 			echo htmlspecialchars($this->view->$name);
 		} else {
+			
 			return FALSE;
 		}
 	}

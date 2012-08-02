@@ -9,9 +9,9 @@ $image = $path.$file;
 $mime_type = 'image/jpeg';
 
 // dynamically set image
-if(isset($_GET['file'])){
+if (isset($_GET['file'])) {
   $file = $_GET['file'];
-  if(file_exists($path.$file)){
+  if (file_exists($path.$file)) {
     $image = $path.$file;
     //TODO: mime function not available
     #$mime_type = mime_content_type($image);

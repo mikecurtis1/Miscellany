@@ -1,6 +1,7 @@
 <?php 
 
-class Item {
+class Item 
+{
 	
 	public $id;
 	public $title;

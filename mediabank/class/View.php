@@ -4,7 +4,8 @@
  * A view requests from the model the information that it needs to generate an output representation.
  */
  
-class View {
+class View 
+{
 	
 	public function __construct(){
 		$this->items = array();
@@ -16,7 +17,7 @@ class View {
 	}
 
 	public function markupItems($data){
-		foreach($data as $item){
+		foreach ($data as $item) {
 			$this->items[] = $this->_markupItem($item)."\n";
 		}
 		
@@ -35,7 +36,7 @@ class View {
 
 	private function _markupItem($item){
 		$markup = '';
-		if($item->available == 'S'){
+		if ($item->available == 'S') {
 			$available = '<div class="available">available</div>';
 		} else {
 			$available = '<div class="checkedout">checked out</div>';

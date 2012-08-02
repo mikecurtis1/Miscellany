@@ -11,7 +11,8 @@
  
 include_once('Item.php');
  
-class Model{
+class Model
+{
 	
 	public function __construct($host,$username,$password){
 		$this->host = $host;
@@ -30,14 +31,14 @@ class Model{
 		$this->first = $first;
 		$this->skip = $skip;
 		$db = ibase_connect($this->host, $this->user, $this->password);
-		if(!$db){
+		if (!$db) {
 			//HACK: need better error handling
 			$error = 'Error connecting to the Database Server';
 			return $error;
 		}
 		$this->_buildSQL();
 		$result = ibase_query($db,$this->sql);
-		if(!$result){
+		if (!$result) {
 			//HACK: need better error handling
 			$error = 'Error executing query';
 			return $error;
@@ -56,14 +57,14 @@ class Model{
 	 */
 	private function _buildSQL(){
 		$where_clauses = array();
-		if($this->modificamacchina != ''){
+		if ($this->modificamacchina != '') {
 			$temp = explode(',',$this->modificamacchina);
 			$where_clauses[] ='("MEDIA"."MODIFICAMACCHINA" = \''.implode('\' OR "MEDIA"."MODIFICAMACCHINA" = \'',$temp).'\')';
 		}
-		if($this->search != ''){
+		if ($this->search != '') {
 			$where_clauses[] = "(UPPER(\"TITOLI\".\"TITOLO\") LIKE UPPER('%".$this->search."%') OR UPPER(SUBSTRING(\"TITOLI\".\"DESCRIZ\" FROM 1 FOR 16000)) LIKE UPPER('%".$this->search."%')) ";
 		}
-		if(count($where_clauses)>0){
+		if (count($where_clauses)>0) {
 			$where_clause = 'WHERE '.implode(' AND ',$where_clauses);
 		}
 		$this->sql = '
@@ -78,14 +79,14 @@ class Model{
 	
 	private function _setItems($result=NULL){
 		$temp = array();
-		while($row = ibase_fetch_row($result, IBASE_TEXT)){
+		while ($row = ibase_fetch_row($result, IBASE_TEXT)) {
 			$this->item = new Item();
 			$this->item->id = trim($row[0]);
 			$this->item->title = trim($row[34]);
 			$this->item->description = trim(str_replace("\r\n", ' ', $row[50]));
 			$this->item->img = trim($row[52]);
 			$this->item->barcode = trim($row[22]);
-			if($this->item->barcode == ''){
+			if ($this->item->barcode == '') {
 				$this->item->barcode = 'ID:'.$item['id'];
 			}
 			$this->item->available = trim($row[5]);
