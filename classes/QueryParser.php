@@ -83,7 +83,7 @@ class QueryParser
   private function _setTokens($string){
     $temp = explode($this->op_token_delimiter,$string);
     foreach ( $temp as $i => $v ) {
-      $this->tokens[] = $elemObj = new QueryToken(NULL,NULL,$v,FALSE);
+      $this->tokens[] = new QueryToken(NULL,NULL,$v,FALSE);
     }
     
     return;
