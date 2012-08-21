@@ -167,12 +167,12 @@ class QueryParser
   }
   
   private function _getElementIndex($string){
-    list($index, $text) = $this->_splitOnIndexOp($string);
+    list($index,$text) = $this->_splitOnIndexOp($string);
     return $index;
   }
   
   private function _getElementText($string){
-    list($index, $text) = $this->_splitOnIndexOp($string);
+    list($index,$text) = $this->_splitOnIndexOp($string);
     return $text;
   }
   
@@ -192,7 +192,7 @@ class QueryParser
   
   private function _isQuotedPhrase($string=''){
     $quoted = FALSE;
-    if( ( substr($string,0,1) === $this->op_phrase_quote ) && ( substr($string,-1) === $this->op_phrase_quote ) ){
+    if ( ( substr($string,0,1) === $this->op_phrase_quote ) && ( substr($string,-1) === $this->op_phrase_quote ) ) {
       $quoted = TRUE;
     }
     
