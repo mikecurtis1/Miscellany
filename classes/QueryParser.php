@@ -36,26 +36,14 @@ class QueryParser
   }
   
   public function parseQuery(){
-    $cache = $this->_checkCache($this->query);
-    if ( $cache === FALSE ) {
-      $converted = $this->_convertSpacesInQuotedPhrases($this->query);
-      $this->_setSearchElements($converted);
-      $this->_parseSearchElements();
-      $this->_cleanElementsIndex();
-      $this->_cleanElementsText();
-    } else {
-      $this->elements = $cache;
-    }
+    //TODO: add a cache function. store serialized elements array, cache id by md5 hash of query
+    $converted = $this->_convertSpacesInQuotedPhrases($this->query);
+    $this->_setSearchElements($converted);
+    $this->_parseSearchElements();
+    $this->_cleanElementsIndex();
+    $this->_cleanElementsText();
     
     return $this->elements;
-  }
-  
-  private function _checkCache($query){
-    //TODO: some function that checks cache by query, return unserialized elements object
-    $unserialized_object = FALSE;
-    // $unserialized_object = $this->_getUnserializedObjectFromCache(md5($query));
-    
-    return $unserialized_object;
   }
   
   private function _isEscaped($i=0,$array=array()){
