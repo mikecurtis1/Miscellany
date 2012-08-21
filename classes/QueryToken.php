@@ -1,5 +1,5 @@
 <?php 
-class QueryElement
+class QueryToken
 {
   public $prefix;
   public $index;

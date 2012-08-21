@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 require_once(dirname(__FILE__).'/../classes/QueryParser.php');
 $q = new QueryParser();
-$elements = $q->parseQuery($_GET['q']);
+$tokens = $q->parseQuery($_GET['q']);
 ?>
 <?php header('Content-Type: text/html; charset=utf-8'); ?>
 <html>
@@ -16,9 +16,9 @@ $elements = $q->parseQuery($_GET['q']);
 </form>
 <hr />
 <pre>
-ELEMENTS: 
+TOKENS: 
 
-<?php print_r($elements); ?>
+<?php print_r($tokens); ?>
 </pre>
 <hr />
 <pre>
