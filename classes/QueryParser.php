@@ -37,8 +37,8 @@ class QueryParser
   
   public function parseQuery(){
     //TODO: add a cache function. store serialized elements array, cache id by md5 hash of query
-    $converted = $this->_convertSpacesInQuotedPhrases($this->query);
-    $this->_setSearchElements($converted);
+    $tokenized = $this->_tokenizeQuotedPhrases($this->query);
+    $this->_setSearchElements($tokenized);
     $this->_parseSearchElements();
     $this->_cleanElementsIndex();
     $this->_cleanElementsText();
@@ -68,7 +68,7 @@ class QueryParser
     return $escaped;
   }
   
-  private function _convertSpacesInQuotedPhrases($string){
+  private function _tokenizeQuotedPhrases($string){
     $array = str_split($string);
     $quoted = FALSE;
     foreach ( $array as $i => $char ) {
