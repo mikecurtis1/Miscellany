@@ -106,9 +106,9 @@ class QueryParser
     return;
   }
   
-  private function _updateSearchElement($i=0,$operator=NULL,$index=NULL,$text=NULL,$phrase=FALSE){
+  private function _updateSearchElement($i=0,$prefix=NULL,$index=NULL,$text=NULL,$phrase=FALSE){
     if ( isset($this->elements{$i}) ) {
-      $this->elements{$i}->operator = $operator;
+      $this->elements{$i}->prefix = $prefix;
       $this->elements{$i}->index = $index;
       $this->elements{$i}->text = $text;
       $this->elements{$i}->phrase = $phrase;
@@ -119,8 +119,8 @@ class QueryParser
   
   private function _parseSearchElements(){
     foreach ( $this->elements as $i => $e ) {
-      list($op,$index,$text,$phrase) = $this->_parseSearchElement($e);
-      $this->_updateSearchElement($i,$op,$index,$text,$phrase);
+      list($prefix,$index,$text,$phrase) = $this->_parseSearchElement($e);
+      $this->_updateSearchElement($i,$prefix,$index,$text,$phrase);
     }
     
     return $this->elements;
@@ -128,21 +128,21 @@ class QueryParser
   
   private function _parseSearchElement($e){
     $string = $e->text;
-    $op = $this->_getElementOperator($string);
+    $prefix = $this->_getElementPrefix($string);
     $index = $this->_getElementIndex($string);
     $text = $this->_getElementText($string);
     $phrase = $this->_getElementPhrase($text);
     
-    return array($op,$index,$text,$phrase);
+    return array($prefix,$index,$text,$phrase);
   }
   
-  private function _getElementOperator($string){
-    $op = substr($string,0,1);
-    if ( $this->_isOperator($op) === FALSE ) {
-      $op = NULL;
+  private function _getElementPrefix($string){
+    $prefix = substr($string,0,1);
+    if ( $this->_isPrefixOperator($prefix) === FALSE ) {
+      $prefix = NULL;
     }
     
-    return $op;
+    return $prefix;
   }
   
   private function _getElementIndex($string){
@@ -160,15 +160,15 @@ class QueryParser
     return $phrase;
   }
   
-  private function _isOperator($string=''){
-    $operator = FALSE;
-    foreach ( $this->op_prefix as $i => $op ) {
-      if ( $string === $op ) {
-        $operator = TRUE;
+  private function _isPrefixOperator($string=''){
+    $prefix = FALSE;
+    foreach ( $this->op_prefix as $i => $p ) {
+      if ( $string === $p ) {
+        $prefix = TRUE;
       }
     }
     
-    return $operator;
+    return $prefix;
   }
   
   private function _isQuotedPhrase($string=''){
@@ -200,7 +200,7 @@ class QueryParser
       $index = $e->index;
       $index = $this->_removePrefixOperators($index);
       $index = $this->_removeEscapeChars($index);
-      $this->_updateSearchElement($i,$e->operator,$index,$e->text,$e->phrase);
+      $this->_updateSearchElement($i,$e->prefix,$index,$e->text,$e->phrase);
     }
     
     return;
@@ -213,7 +213,7 @@ class QueryParser
       $text = $this->_removePhraseSeparatorTokens($text);
       $text = $this->_removePhraseQuotes($text);
       $text = $this->_removeEscapeChars($text);
-      $this->_updateSearchElement($i,$e->operator,$e->index,$text,$e->phrase);
+      $this->_updateSearchElement($i,$e->prefix,$e->index,$text,$e->phrase);
     }
     
     return;
@@ -226,7 +226,7 @@ class QueryParser
   }
   
   private function _removePrefixOperators($string=''){
-    if ( $this->_isOperator(substr($string,0,1)) === TRUE ) {
+    if ( $this->_isPrefixOperator(substr($string,0,1)) === TRUE ) {
       return substr($string,1);
     } else {
       return $string;
