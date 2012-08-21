@@ -11,7 +11,6 @@ class QueryParser
   private $op_element_delimiter;
   private $op_phrase_separator; 
   private $phrase_separator_token;
-  private $default_index;
   public $query;
   public $elements;
 
@@ -23,7 +22,6 @@ class QueryParser
     $this->op_element_delimiter = ' ';
     $this->op_phrase_separator = ' ';
     $this->phrase_separator_token = chr(31); // chr(31) non-print ascii "unit separator" will never be user input
-    $this->default_index = 'kw';
     $this->query = '';
     $this->elements = array();
   }
@@ -170,7 +168,7 @@ class QueryParser
   }
   
   private function _splitOnIndexOp($string=''){
-    $index = $this->default_index;
+    $index = '';
     $text = $string;
     $array = str_split($string);
     foreach ( $array as $i => $char ) {
