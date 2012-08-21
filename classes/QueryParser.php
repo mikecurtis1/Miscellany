@@ -15,7 +15,7 @@ class QueryParser
   public $query;
   public $elements;
 
-  public function __construct($query=''){
+  public function __construct(){
     $this->op_escape = '\\';
     $this->op_prefix = array('+','-','|');
     $this->op_index_separator = ':';
@@ -24,19 +24,13 @@ class QueryParser
     $this->op_phrase_separator = ' ';
     $this->phrase_separator_token = chr(31); // chr(31) non-print ascii "unit separator" will never be user input
     $this->default_index = 'kw';
-    $this->query = $this->_normalizeWhiteSpace($query);
+    $this->query = '';
     $this->elements = array();
   }
   
-  private function _normalizeWhiteSpace($string=''){
-    $string = preg_replace('/\s{2,}/', ' ', $string);
-    $string = trim($string);
-    
-    return $string;
-  }
-  
-  public function parseQuery(){
+  public function parseQuery($query=''){
     //TODO: add a cache function. store serialized elements array, cache id by md5 hash of query
+    $this->query = $this->_normalizeWhiteSpace($query);
     $tokenized = $this->_tokenizeQuotedPhrases($this->query);
     $this->_setSearchElements($tokenized);
     $this->_parseSearchElements();
@@ -44,6 +38,13 @@ class QueryParser
     $this->_cleanElementsText();
     
     return $this->elements;
+  }
+  
+  private function _normalizeWhiteSpace($string=''){
+    $string = preg_replace('/\s{2,}/', ' ', $string);
+    $string = trim($string);
+    
+    return $string;
   }
   
   private function _isEscaped($i=0,$array=array()){

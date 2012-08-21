@@ -1,8 +1,8 @@
 <?php 
 error_reporting(E_ALL);
 require_once(dirname(__FILE__).'/../classes/QueryParser.php');
-$q = new QueryParser($_GET['q']);
-$elements = $q->parseQuery();
+$q = new QueryParser();
+$elements = $q->parseQuery($_GET['q']);
 ?>
 <?php header('Content-Type: text/html; charset=utf-8'); ?>
 <html>
