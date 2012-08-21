@@ -5,10 +5,8 @@ include_once('QueryElement.php');
 class QueryParser 
 {
   private $op_escape;
+  private $op_prefix;
   private $op_index_separator;
-  private $op_optional;
-  private $op_excluded;
-  private $op_required;
   private $op_phrase_quote;
   private $op_element_delimiter;
   private $op_phrase_separator; 
@@ -19,23 +17,20 @@ class QueryParser
 
   public function __construct($query=''){
     $this->op_escape = '\\';
+    $this->op_prefix = array('+','-','|');
     $this->op_index_separator = ':';
-    $this->op_optional = '|';
-    $this->op_excluded = '-';
-    $this->op_required = '+';
     $this->op_phrase_quote = '"';
     $this->op_element_delimiter = ' ';
     $this->op_phrase_separator = ' ';
-    $this->phrase_separator_token = chr(31); // chr(31) unit separator, non-print ascii, will never be user input ; custom token <:SPACE:> ; quick and dirty... and error prone '_'
+    $this->phrase_separator_token = chr(31); // chr(31) non-print ascii "unit separator" will never be user input
     $this->default_index = 'kw';
     $this->query = $this->_normalizeWhiteSpace($query);
     $this->elements = array();
   }
   
   private function _normalizeWhiteSpace($string=''){
+    $string = preg_replace('/\s{2,}/', ' ', $string);
     $string = trim($string);
-    $string = str_replace("\r\n", ' ', $string);
-    $string = str_replace('  ', ' ', $string);
     
     return $string;
   }
@@ -105,15 +100,14 @@ class QueryParser
   private function _setSearchElements($string){
     $temp = explode($this->op_element_delimiter,$string);
     foreach ( $temp as $i => $v ) {
-      $this->elements[] = $elemObj = new QueryElement(NULL,NULL,NULL,$v,FALSE);
+      $this->elements[] = $elemObj = new QueryElement(NULL,NULL,$v,FALSE);
     }
     
     return;
   }
   
-  private function _updateSearchElement($i=0,$boole=NULL,$operator=NULL,$index=NULL,$text=NULL,$phrase=FALSE){
+  private function _updateSearchElement($i=0,$operator=NULL,$index=NULL,$text=NULL,$phrase=FALSE){
     if ( isset($this->elements{$i}) ) {
-      $this->elements{$i}->boole = $boole;
       $this->elements{$i}->operator = $operator;
       $this->elements{$i}->index = $index;
       $this->elements{$i}->text = $text;
@@ -125,8 +119,8 @@ class QueryParser
   
   private function _parseSearchElements(){
     foreach ( $this->elements as $i => $e ) {
-      list($op,$boole,$index,$text,$phrase) = $this->_parseSearchElement($e);
-      $this->_updateSearchElement($i,$boole,$op,$index,$text,$phrase);
+      list($op,$index,$text,$phrase) = $this->_parseSearchElement($e);
+      $this->_updateSearchElement($i,$op,$index,$text,$phrase);
     }
     
     return $this->elements;
@@ -135,12 +129,11 @@ class QueryParser
   private function _parseSearchElement($e){
     $string = $e->text;
     $op = $this->_getElementOperator($string);
-    $boole = $this->_getElementBoole($op);
     $index = $this->_getElementIndex($string);
     $text = $this->_getElementText($string);
     $phrase = $this->_getElementPhrase($text);
     
-    return array($op,$boole,$index,$text,$phrase);
+    return array($op,$index,$text,$phrase);
   }
   
   private function _getElementOperator($string){
@@ -150,20 +143,6 @@ class QueryParser
     }
     
     return $op;
-  }
-  
-  private function _getElementBoole($op){
-    if ( $op === $this->op_optional ) {
-      $boole = 'optional';
-    } elseif ( $op === $this->op_excluded ) {
-      $boole = 'excluded';
-    } elseif ( $op === $this->op_required ) {
-      $boole = 'required';
-    } else {
-      $boole = 'included';
-    }
-    
-    return $boole;
   }
   
   private function _getElementIndex($string){
@@ -183,8 +162,10 @@ class QueryParser
   
   private function _isOperator($string=''){
     $operator = FALSE;
-    if ( ( $string === $this->op_optional ) || ( $string === $this->op_excluded ) || ( $string === $this->op_required ) ) {
-      $operator = TRUE;
+    foreach ( $this->op_prefix as $i => $op ) {
+      if ( $string === $op ) {
+        $operator = TRUE;
+      }
     }
     
     return $operator;
@@ -217,9 +198,9 @@ class QueryParser
   private function _cleanElementsIndex(){
     foreach ( $this->elements as $i => $e ) {
       $index = $e->index;
-      $index = $this->_removeBooleanOperators($index);
+      $index = $this->_removePrefixOperators($index);
       $index = $this->_removeEscapeChars($index);
-      $this->_updateSearchElement($i,$e->boole,$e->operator,$index,$e->text,$e->phrase);
+      $this->_updateSearchElement($i,$e->operator,$index,$e->text,$e->phrase);
     }
     
     return;
@@ -228,10 +209,11 @@ class QueryParser
   private function _cleanElementsText(){
     foreach ( $this->elements as $i => $e ) {
       $text = $e->text;
+      $text = $this->_removePrefixOperators($text);
       $text = $this->_removePhraseSeparatorTokens($text);
       $text = $this->_removePhraseQuotes($text);
       $text = $this->_removeEscapeChars($text);
-      $this->_updateSearchElement($i,$e->boole,$e->operator,$e->index,$text,$e->phrase);
+      $this->_updateSearchElement($i,$e->operator,$e->index,$text,$e->phrase);
     }
     
     return;
@@ -243,7 +225,7 @@ class QueryParser
     return $string;
   }
   
-  private function _removeBooleanOperators($string=''){
+  private function _removePrefixOperators($string=''){
     if ( $this->_isOperator(substr($string,0,1)) === TRUE ) {
       return substr($string,1);
     } else {
@@ -253,10 +235,10 @@ class QueryParser
   
   private function _removePhraseQuotes($string=''){
     if ( $this->_isQuotedPhrase($string) === TRUE ) {
-      return substr($string,1,-1);
-    } else {
-      return $string;
+      $string = substr($string,1,-1);
     }
+    
+    return trim($string);
   }
   
   private function _removeEscapeChars($string=''){
