@@ -11,7 +11,6 @@ class QueryParser
   private $op_element_delimiter;
   private $op_phrase_separator; 
   private $phrase_separator_token;
-  public $query;
   public $elements;
 
   public function __construct(){
@@ -22,14 +21,13 @@ class QueryParser
     $this->op_element_delimiter = ' ';
     $this->op_phrase_separator = ' ';
     $this->phrase_separator_token = chr(31); // chr(31) non-print ascii "unit separator" will never be user input
-    $this->query = '';
     $this->elements = array();
   }
   
   public function parseQuery($query=''){
     //TODO: add a cache function. store serialized elements array, cache id by md5 hash of query
-    $this->query = $this->_normalizeWhiteSpace($query);
-    $tokenized = $this->_tokenizeQuotedPhrases($this->query);
+    $normalized = $this->_normalizeWhiteSpace($query);
+    $tokenized = $this->_tokenizeQuotedPhrases($normalized);
     $this->_setSearchElements($tokenized);
     $this->_parseSearchElements();
     $this->_cleanElementsIndex();
