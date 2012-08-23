@@ -10,7 +10,7 @@ class QueryParser
   private $op_phrase_quote;
   private $op_token_delimiter;
   private $token_delimiter_replacement;
-  public $tokens;
+  private $tokens;
 
   public function __construct(){
     $this->op_escape = '\\';
