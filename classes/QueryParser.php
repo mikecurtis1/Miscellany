@@ -43,6 +43,15 @@ class QueryParser
   
   private function _isEscaped($i=0,$array=array()){
     $escaped = FALSE;
+    $c = $this->_countEscapeChars($i,$array);
+    if ( $c % 2 !== 0 ) {
+      $escaped = TRUE;
+    }
+    
+    return $escaped;
+  }
+  
+  private function _countEscapeChars($i=0,$array=array()){
     $pi = $i-1;
     $prev = NULL;
     $c = 0;
@@ -56,11 +65,8 @@ class QueryParser
       $pi--;
       $c++;
     }
-    if ( $c % 2 !== 0 ) {
-      $escaped = TRUE;
-    }
     
-    return $escaped;
+    return $c;
   }
   
   private function _tokenizeQuotedPhrases($string){
