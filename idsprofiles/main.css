@@ -1,0 +1,65 @@
+body{
+	margin:2em;
+	color:#443;
+	font-family:sans-serif;
+	background-color:#cdc;
+}
+
+div.showhide{
+	margin:1em;
+}
+
+form label{
+	width:80px;
+	float:left;
+	overflow:hidden;
+}
+
+input[type="text"]{
+	width:600px;
+	padding: 0.15em;
+	font-family:monospace;
+}
+
+input[type="submit"]{
+	font-size:150%;
+	color:#565;
+	margin:1em 0.3em 0.3em 0.3em;
+}
+
+form div.profiles{
+	margin:0.8em;
+}
+
+form div.filters{
+	margin:0.8em;
+}
+
+form div.values{
+	margin:0.8em;
+}
+
+div.profile{
+	margin:1em;
+	border: 1px #ccc solid;
+	background-color:#fff;
+}
+
+div.profile div.row{
+	margin:0.5em;
+}
+
+div.profile div.row div.label{
+	width:200px;
+	background-color:#ddb;
+	float:left;
+	overflow:hidden;
+}
+
+div.hits{
+	margin:1em;
+	background-color:#fff;
+	padding:0.8em;
+	/*width:100px;*/
+	overflow:hidden;
+}

@@ -9,8 +9,8 @@ class AlephXserverClient{
     $this->g = $g;
     $this->ccl = '';
     $this->set_number = '';
-    $this->no_records = 0; // number of actual matches, may be greater than no of entries
-    $this->no_entries = 0; // number of entries added to results set, may be smaller than number of matched records
+    $this->no_records = 0; //NOTE: number of actual matches, may be greater than no of entries
+    $this->no_entries = 0; //NOTE: number of entries added to results set, may be smaller than number of matched records
     $this->session_id = '';
     if(isset($g['query'])){
       $this->ccl = $g['query'];
