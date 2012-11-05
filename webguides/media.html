@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Media</title>
+<link rel="stylesheet" type="text/css" href="template.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="webguides.css" media="screen" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+<script type="text/javascript" src="FeedEk.js"></script><!-- NOTE: http://www.bloggermint.com/2012/01/easiest-way-to-embed-rssatom-feed-on-any-web-page/ -->
+</head> 
+<body>
+
+<h1>Media</h1>
+<!--
+<div class="annotation">
+	<h2>Erik Satie, Gnossienne #3</h2>
+	<embed class="audio" type="audio/mpeg" src="http://server3.pianosociety.com/protected/satie-gnossienne3-hensley.mp3" />
+</div>
+-->
+<div class="annotation">
+	<h2>Bach, Invention #1 BWV 772</h2>
+	<video class="audio" controls="controls">
+		<source type="audio/ogg" src="http://upload.wikimedia.org/wikipedia/commons/5/53/01_-_Invention_%C3%A0_2_voix_BWV_772_en_do_majeur.ogg" />
+	</video> 
+</div>
+
+<div class="annotation">
+	<h2>Bach, Invention #1 BWV 772</h2>
+	<iframe class="pdf" src="http://docs.google.com/viewer?url=http%3A%2F%2Fwww.mutopiaproject.org%2Fftp%2FBachJS%2FBWV772%2Fbach-invention-01%2Fbach-invention-01-a4.pdf&embedded=true" width="600" height="780" style="border: none;"></iframe>
+</div>
+<!--
+<div class="annotation">
+	<h2>Bach, Invention #1 BWV 772</h2>
+	<iframe class="pdf" src="http://docs.google.com/viewer?embedded=true&url=http%3A%2F%2Fjavanese.imslp.info%2Ffiles%2Fimglnks%2Fusimg%2F1%2F11%2FIMSLP00747-BWV0772.pdf" width="600" height="780" style="border: none;"></iframe>
+</div>
+-->
+<div class="annotation">
+	<h2>Heitor Villa-Lobos, Cirandas #15 Que Lindos Olhos!</h2>
+	<embed class="audio" type="audio/mpeg" autoplay="false" src="http://www.pianosociety.com/protected/villa-lobos-cirandas-15-alianello.mp3" />
+</div>
+
+<div class="annotation">
+	<h2>Heitor Villa-Lobos, Bachianas Brasileiras #9</h2>
+	<iframe class="youtube" src="http://www.youtube.com/embed/j6DKl2Q8XS8?rel=0" allowfullscreen="allowfullscreen"></iframe>
+</div>
+
+<div class="annotation">
+	<h2><a href="http://en.wikipedia.org/wiki/Heitor_Villa-Lobos">Heitor Villa-Lobos</a></h2>
+	<div>This is a great page to start learning about Villa-Lobos. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<iframe id="iframe_id" class="webpage" src="http://en.wikipedia.org/wiki/Heitor_Villa-Lobos" allowfullscreen="allowfullscreen"></iframe>
+</div>
+
+<div class="annotation">
+	<h2>Browsing Public Domain Books / New Releases</h2>
+	<script type="text/javascript">
+	//NOTE: http://www.bloggermint.com/2012/01/easiest-way-to-embed-rssatom-feed-on-any-web-page/
+	$(document).ready(function(){
+	   $('#feedek').FeedEk({
+	   FeedUrl : 'http://www.feedbooks.com/books/recent.atom',
+	   MaxCount : 5,
+	   ShowDesc : true,
+	   ShowPubDate: true
+	  });
+	});
+	</script>
+	<div class="feed" id="feedek"></div>
+</div>
+
+<div class="annotation">
+	<h2><a href="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg">Hubble Space Telescope Slews from North to South</a></h2>
+	<!--<video class="video" controls="controls">
+		<source type="video/mp4" src="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg" />
+	</video>-->
+	<embed class="video" type="application/x-mplayer2" autoplay="false" src="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg"></embed>
+	<!--<img src="spinner.gif" alt="spinner icon" /> -->
+	<!--
+	<object id="MediaPlayer" width="420" height="315" classid="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95" standby="Loading..." type="application/x-oleobject">
+	<param name="FileName" value="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg">
+	<param name="ShowControls" value="true">
+	<param name="ShowStatusBar" value="true">
+	<param name="ShowDisplay" value="true">
+	<param name="autostart" value="false">
+	<embed type="application/x-mplayer2" src="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg" name="MediaPlayer" width="192" height="290" ShowControls="1" ShowStatusBar="1" ShowDisplay="1" autostart="0"></embed>
+	</object>
+	-->
+
+</div>
+
+</body>
+
+</html>
