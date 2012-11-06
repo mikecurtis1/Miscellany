@@ -22,10 +22,11 @@ div.annotation .title {
 	font-size: 1.5em;
 }
 div.annotation .description {
-	font-size: 1em;
+	font-size: 0.8em;
 	text-align:justify;
-	line-height:1.5;
+	line-height:1.25;
 	font-family: "Georgia", serif;
+	color: #666;
 }
 
 /* pdf */
@@ -68,8 +69,8 @@ div.images {
 	background-color: #fff;
 }
 div.images div.image {
-	width: 250px;
-	height: 250px;
+	width: 30%; /* 250 px */
+	height: 250px; /* 250 px */
 	float: left;
 	overflow: hidden;
 	border: 1px #ccc solid;
@@ -94,8 +95,8 @@ div.images div.image div.description {
 	font-family: "Georgia", serif;
 }
 div.images img{
-	width: 200px;
-	height: 140px;
+	width: 180px; /* 200 */
+	height: 180px; /* 140 */
 	border: 0;
 }
 
@@ -152,4 +153,33 @@ div.feed div.ItemContent {
 	margin: 1em;
 	color: #aaa;
 	font-size: 78%;
+}
+
+/* free text */
+div.text{
+	border: 2em solid #eec;
+	margin: 2em;
+	padding: 0 2em 2em 2em;
+	font-size: 1em;
+	background-color: #fff;
+	text-align:justify;
+	line-height:1.5;
+	font-family: "Georgia", serif;
+	color: #333;
+}
+div.text h3{
+	font-weight: normal;
+}
+div.text p{
+	margin-left: 1em;
+	text-indent: 2em;
+}
+div.text p:first-line{
+	font-weight: normal;
+}
+div.text ul, div.text ol{
+	
+}
+div.text il{
+	
 }

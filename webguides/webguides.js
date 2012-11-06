@@ -51,6 +51,9 @@ var appendHtml = function(val) {
 			} else if ( css == 'pdf' ) {
 				html = '<img src="pdf_icon.gif" class="icon" /><div class="title"><a href="'+url+'">'+title+'</a></div><div class="description">'+description+'</div>';
 				$('*[wgid="id'+id+'"]').append(html + '<div class="debug">' + 'ID:' + wgid + ', CSS:' + css + '</div>');
+			} else if ( css == 'text' && url == 0) {
+				//TODO: use wiki markup or something like that in spreadsheet description, then translate allowed tags: h3, p, ul/ol, li, bold, em
+				$('*[wgid="id'+id+'"]').append(description + '<div class="debug">' + 'ID:' + wgid + ', CSS:' + css + '</div>');
 			} else {
 				html = '<div class="title"><a href="'+url+'">'+title+'</a></div><div class="description">'+description+'</div>';
 				$('*[wgid="id'+id+'"]').append(html + '<div class="debug">' + 'ID:' + wgid + ', CSS:' + css + '</div>');
