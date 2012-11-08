@@ -28,6 +28,7 @@ var appendHtml = function(val) {
 	var mime = val.gsx$mime.$t;
 	var url = val.gsx$url.$t;
 	var description = val.gsx$description.$t;
+	var authorship = val.gsx$authorship.$t;
 	var html = '';
 	//$('div#webguides *.id' + id).each(
 	// $('input[value="Hot Fuzz"]').next()
@@ -54,6 +55,19 @@ var appendHtml = function(val) {
 			} else if ( css == 'text' && url == 0) {
 				//TODO: use wiki markup or something like that in spreadsheet description, then translate allowed tags: h3, p, ul/ol, li, bold, em
 				$('*[wgid="id'+id+'"]').append(description + '<div class="debug">' + 'ID:' + wgid + ', CSS:' + css + '</div>');
+			} else if ( description.substring(0,3) == 'YQL' && mime == 'text/javascript' ) {
+				var sourceUrl = description.substring(4);
+				$.ajax({
+					url : url, 
+					type : 'jsonp', 
+					dataType: 'jsonp', 
+					success : function(data) {
+						var text = data.query.results['result'];
+						$('*[wgid="id'+id+'"]').append('<h3 class="title">' + title + '</h3><div class="snippet">' + text + '</div>');
+						$('*[wgid="id'+id+'"] a').removeAttr('href');
+						$('*[wgid="id'+id+'"]').append('<div class="source_url">Source: <a href="' + sourceUrl + '">'+authorship+'</a></div>');
+					}
+				});
 			} else {
 				html = '<div class="title"><a href="'+url+'">'+title+'</a></div><div class="description">'+description+'</div>';
 				$('*[wgid="id'+id+'"]').append(html + '<div class="debug">' + 'ID:' + wgid + ', CSS:' + css + '</div>');

@@ -202,3 +202,27 @@ div.webpage div {
 	margin: 1em 4em 1em 4em;
 	padding: 0 2em 0 2em;
 }
+
+/*  YQL */
+div.yql {
+	margin: 1em 2em 1em 2em;
+	padding: 2em;
+	border-top: 2px #cca solid;
+	border-bottom: 4px #cca solid;
+	background-color: #eec;
+}
+div.yql h3.title {
+	font-weight: normal;
+	font-size: 1.2em;
+	margin:0;
+}
+div.yql div.snippet {
+	font-family: "Georgia", serif;
+}
+div.yql div.source_url {
+	font-size: 0.8em;
+	margin-left: 1em;
+}
+div.yql div.source_url a {
+	color: #23c;
+}
