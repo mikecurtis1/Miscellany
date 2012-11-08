@@ -183,3 +183,12 @@ div.text ul, div.text ol{
 div.text il{
 	
 }
+
+/* web pages */
+div.webpage {
+	border-top: 4px solid #aaa;
+}
+div.webpage iframe {
+margin: 0 -2em 0 -2em;
+padding: 0 -2em 0 -2em;
+}
