@@ -69,7 +69,7 @@ div.images {
 	background-color: #fff;
 }
 div.images div.image {
-	width: 30%; /* 250 px */
+	width: 250px; /* 250 px */
 	height: 250px; /* 250 px */
 	float: left;
 	overflow: hidden;
