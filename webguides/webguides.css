@@ -187,8 +187,10 @@ div.text il{
 /* web pages */
 div.webpage {
 	border-top: 4px solid #aaa;
+	border-bottom: 4px solid #aaa;
+	margin: 0 -4em 0 -4em;
+	padding: 0 -4em 0 -4em;
 }
 div.webpage iframe {
-margin: 0 -2em 0 -2em;
-padding: 0 -2em 0 -2em;
+	width: 100%;
 }
