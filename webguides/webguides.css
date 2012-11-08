@@ -192,7 +192,7 @@ div.webpage {
 }
 div.webpage iframe {
 	width: 100%;
-	height: 50%;
+	height: 400px;
 }
 div.webpage h2 {
 	margin: 0 4em 0 4em;
@@ -200,5 +200,5 @@ div.webpage h2 {
 }
 div.webpage div {
 	margin: 1em 4em 1em 4em;
-	padding: 0 4em 0 4em;
+	padding: 0 2em 0 2em;
 }
