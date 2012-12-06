@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="/webservices/catalog/xsl/searchRetrieveResponse.xsl"?>
+ï»¿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/" xmlns:oclcterms="http://purl.org/oclc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:diag="http://www.loc.gov/zing/srw/diagnostic/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <version>1.1</version>
@@ -386,16 +385,16 @@
       <subfield code="2">19</subfield>
     </datafield>
     <datafield ind1="1" ind2=" " tag="100">
-      <subfield code="a">Garci´a Ma´rquez, Gabriel,</subfield>
+      <subfield code="a">Garciï¿½a Maï¿½rquez, Gabriel,</subfield>
       <subfield code="d">1928-</subfield>
     </datafield>
     <datafield ind1="1" ind2="0" tag="240">
-      <subfield code="a">Amor en los tiempos del co´lera.</subfield>
+      <subfield code="a">Amor en los tiempos del coï¿½lera.</subfield>
       <subfield code="l">English</subfield>
     </datafield>
     <datafield ind1="1" ind2="0" tag="245">
       <subfield code="a">Love in the time of cholera /</subfield>
-      <subfield code="c">Gabriel Garci´a Ma´rquez ; translated from the Spanish by Edith Grossman.</subfield>
+      <subfield code="c">Gabriel Garciï¿½a Maï¿½rquez ; translated from the Spanish by Edith Grossman.</subfield>
     </datafield>
     <datafield ind1=" " ind2=" " tag="250">
       <subfield code="a">1st American ed.</subfield>
@@ -410,7 +409,7 @@
       <subfield code="c">25 cm.</subfield>
     </datafield>
     <datafield ind1=" " ind2=" " tag="500">
-      <subfield code="a">Translation of: El amor en los tiempos del co´lera.</subfield>
+      <subfield code="a">Translation of: El amor en los tiempos del coï¿½lera.</subfield>
     </datafield>
     <datafield ind1=" " ind2=" " tag="520">
       <subfield code="a">Set on the Caribbean coast of South America, this love story brings together Fermina Daza, her distinguished husband, and a man who has secretly loved her for more than fifty years.</subfield>
@@ -460,8 +459,8 @@
     </datafield>
     <datafield ind1="0" ind2="8" tag="776">
       <subfield code="i">Online version:</subfield>
-      <subfield code="a">Garci´a Ma´rquez, Gabriel, 1928-</subfield>
-      <subfield code="s">Amor en los tiempos del co´lera. English.</subfield>
+      <subfield code="a">Garciï¿½a Maï¿½rquez, Gabriel, 1928-</subfield>
+      <subfield code="s">Amor en los tiempos del coï¿½lera. English.</subfield>
       <subfield code="t">Love in the time of cholera.</subfield>
       <subfield code="b">1st American ed.</subfield>
       <subfield code="d">New York : Alfred A. Knopf, 1988</subfield>
@@ -1078,13 +1077,13 @@
       <subfield code="a">Women consumers.</subfield>
     </datafield>
     <datafield ind1=" " ind2="6" tag="650">
-      <subfield code="a">Femmes dans la publicite´.</subfield>
+      <subfield code="a">Femmes dans la publiciteï¿½.</subfield>
     </datafield>
     <datafield ind1=" " ind2="6" tag="650">
       <subfield code="a">Consommatrices.</subfield>
     </datafield>
     <datafield ind1=" " ind2="6" tag="650">
-      <subfield code="a">Publicite´.</subfield>
+      <subfield code="a">Publiciteï¿½.</subfield>
     </datafield>
     <datafield ind1="1" ind2="7" tag="650">
       <subfield code="a">Reclame.</subfield>
@@ -1245,14 +1244,14 @@
     <datafield ind1=" " ind2="0" tag="650">
       <subfield code="a">Holocaust, Jewish (1939-1945)</subfield>
       <subfield code="z">Poland</subfield>
-      <subfield code="z">Hrubieszo´w</subfield>
+      <subfield code="z">Hrubieszoï¿½w</subfield>
       <subfield code="v">Biography.</subfield>
     </datafield>
     <datafield ind1=" " ind2="0" tag="650">
       <subfield code="a">Jews</subfield>
       <subfield code="x">Persecutions</subfield>
       <subfield code="z">Poland</subfield>
-      <subfield code="z">Hrubieszo´w.</subfield>
+      <subfield code="z">Hrubieszoï¿½w.</subfield>
     </datafield>
     <datafield ind1="1" ind2="0" tag="600">
       <subfield code="a">Korenblit, Meyer.</subfield>
@@ -1264,7 +1263,7 @@
       <subfield code="a">Nagelsztajn, Chaim.</subfield>
     </datafield>
     <datafield ind1=" " ind2="0" tag="650">
-      <subfield code="a">Hrubieszo´w (Poland)</subfield>
+      <subfield code="a">Hrubieszoï¿½w (Poland)</subfield>
       <subfield code="x">Ethnic relations.</subfield>
     </datafield>
     <datafield ind1="1" ind2=" " tag="700">

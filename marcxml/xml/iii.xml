@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <opacRecord>
   <bibliographicRecord>
 <record xmlns="http://www.loc.gov/MARC21/slim">
@@ -112,7 +113,7 @@
     <subfield code="a">In English with optional subtitles in Spanish and French; closed-captioned.</subfield>
   </datafield>
   <datafield tag="511" ind1="0" ind2=" ">
-    <subfield code="a">Ralph Fiennes (Alma´sy), Juliette Binoche (Hana), Willem Dafoe (Caravaggio), Kristin Scott Thomas (Katharine Clifton), Naveen Andrews (Kip), Colin Firth (Geoffrey Clifton), Julian Wadham (Madox), Ju¨rgen Prochnow (Major Muller), Kevin Whately (Hardy), Clive Merrison (Fenelon-Barnes), Nino Castelnuovo (D&apos;Agostino), Hichem Rostom (Fouad), Peter Ru¨hring (Bermann)</subfield>
+    <subfield code="a">Ralph Fiennes (AlmaÂ´sy), Juliette Binoche (Hana), Willem Dafoe (Caravaggio), Kristin Scott Thomas (Katharine Clifton), Naveen Andrews (Kip), Colin Firth (Geoffrey Clifton), Julian Wadham (Madox), JuÂ¨rgen Prochnow (Major Muller), Kevin Whately (Hardy), Clive Merrison (Fenelon-Barnes), Nino Castelnuovo (D&apos;Agostino), Hichem Rostom (Fouad), Peter RuÂ¨hring (Bermann)</subfield>
   </datafield>
   <datafield tag="520" ind1=" " ind2=" ">
     <subfield code="a">At the end of World War II, a mysterious, horribly burned man who claims not to remember his name, known only as the &quot;English patient,&quot; lies near death in an Italian villa.  He is cared for by a quietly desperate young nurse, Hana, herself a victim of the war.  With her at the villa are Kip, a young Sikh bomb-disposal expert, and a shadowy thief with bandaged hands named Caravaggio.  The key to the burned man&apos;s past may lie in his commonplace book, a volume of Herodotus, and its intimations of the sacred whirlwind of a great, mysterious, passionate, and tragically doomed love, which trapped two unsuspecting people, forever.</subfield>
@@ -170,7 +171,7 @@
     <subfield code="d">1958-</subfield>
   </datafield>
   <datafield tag="700" ind1="1" ind2=" ">
-    <subfield code="a">Prochnow, Ju¨rgen.</subfield>
+    <subfield code="a">Prochnow, JuÂ¨rgen.</subfield>
   </datafield>
   <datafield tag="700" ind1="1" ind2=" ">
     <subfield code="a">Whately, Kevin.</subfield>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ï»¿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <record xmlns="http://www.loc.gov/MARC21/slim">
     <leader>00000cgm a2200000Ia 4500</leader>
     <controlfield tag="001">55881775</controlfield>
@@ -108,7 +108,7 @@
       <subfield code="a">Based on the novel by Michael Ondaatje.</subfield>
     </datafield>
     <datafield ind1="0" ind2=" " tag="511">
-      <subfield code="a">Ralph Fiennes (Alma´sy), Juliette Binoche (Hana), Willem Dafoe (Caravaggio), Kristin Scott Thomas (Katharine Clifton), Naveen Andrews (Kip), Colin Firth (Geoffrey Clifton), Julian Wadham (Madox), Ju¨rgen Prochnow (Major Muller), Kevin Whately (Hardy), Clive Merrison (Fenelon-Barnes), Nino Castelnuovo (D'Agostino), Hichem Rostom (Fouad), Peter Ru¨hring (Bermann).</subfield>
+      <subfield code="a">Ralph Fiennes (AlmaÂ´sy), Juliette Binoche (Hana), Willem Dafoe (Caravaggio), Kristin Scott Thomas (Katharine Clifton), Naveen Andrews (Kip), Colin Firth (Geoffrey Clifton), Julian Wadham (Madox), JuÂ¨rgen Prochnow (Major Muller), Kevin Whately (Hardy), Clive Merrison (Fenelon-Barnes), Nino Castelnuovo (D'Agostino), Hichem Rostom (Fouad), Peter RuÂ¨hring (Bermann).</subfield>
     </datafield>
     <datafield ind1=" " ind2=" " tag="508">
       <subfield code="a">Director of photography, John Seale ; film editor, Walter Murch ; original music composed by Gabriel Yared ; costume designer, Ann Roth ; production designer, Stuart Craig.</subfield>
@@ -271,7 +271,7 @@
       <subfield code="d">1958-</subfield>
     </datafield>
     <datafield ind1="1" ind2=" " tag="700">
-      <subfield code="a">Prochnow, Ju¨rgen.</subfield>
+      <subfield code="a">Prochnow, JuÂ¨rgen.</subfield>
     </datafield>
     <datafield ind1="1" ind2=" " tag="700">
       <subfield code="a">Whately, Kevin.</subfield>
