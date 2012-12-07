@@ -7,9 +7,7 @@ abstract class MySimpleXML
 		try {
 			$this->_parser = new SimpleXMLElement($xml,$class_name,$options,$ns,$is_prefix);
 		} catch (Exception $e) {
-			//HACK: always return a valid simplexmlelement 
-			#return 'Caught exception: ' . $e->getMessage();
-			return $this->_parser = new SimpleXMLElement('<root><msg>Caught exception: ' . $e->getMessage() . '</msg></root>');
+			return 'Caught exception: ' . $e->getMessage();
 		}
 	}
 	
@@ -47,11 +45,11 @@ abstract class MySimpleXML
 		return $content;
 	}
 
-	private function _isSimpleXMLElement($object=NULL){
+	protected function _isSimpleXMLElement($object=NULL){
 		if ( is_object($object) && get_class($object) === 'SimpleXMLElement' ) {
-		return TRUE;
+			return TRUE;
 		} else {
-		return FALSE;
+			return FALSE;
 		}
 	}
 

@@ -15,12 +15,12 @@ $records = $r->getXpathObjects('//present/record/metadata');
 <?php foreach ( $records as $cur ) {$x = new MarcXML($cur->asXML(),null,null,null,false); ?>
 <?php 
 // get data using xpath-based methods
-$leader = $x->getFirstMarcTag($x,'//oai_marc/fixfield[@id="LDR"]');
-$identifier = $x->getFirstMarcTag($x,'//oai_marc/fixfield[@id="001"]');
-$title = $x->getFirstMarcTag($x,'//oai_marc/varfield[@id="245"]');
-$pubyear = $x->getFirstMarcTag($x,'//oai_marc/varfield[@id="260"]/subfield[@label="c"]');
-$people = $x->getAllMarcTags($x,'//oai_marc/varfield[@id="700"]');
-$topics = $x->getAllMarcTagsWithSubfields($x,'//oai_marc/varfield[@id="650"]',array('a','z'),'label');
+$leader = $x->getFirstMarcTag('//oai_marc/fixfield[@id="LDR"]');
+$identifier = $x->getFirstMarcTag('//oai_marc/fixfield[@id="001"]');
+$title = $x->getFirstMarcTag('//oai_marc/varfield[@id="245"]');
+$pubyear = $x->getFirstMarcTag('//oai_marc/varfield[@id="260"]/subfield[@label="c"]');
+$people = $x->getAllMarcTags('//oai_marc/varfield[@id="700"]');
+$topics = $x->getAllMarcTagsWithSubfields('//oai_marc/varfield[@id="650"]',array('a','z'),'label');
 ?>
 <?php 
 // display

@@ -14,12 +14,12 @@ $x->regNameSpaces($ns);
 ?>
 <?php 
 // get data using xpath-based methods
-$leader = $x->getFirstMarcTag($x,'//slim:record/slim:leader');
-$identifier = $x->getFirstMarcTag($x,'//slim:record/slim:controlfield[@tag="001"]');
-$title = $x->getFirstMarcTag($x,'//slim:record/slim:datafield[@tag="245"]');
-$pubyear = $x->getFirstMarcTag($x,'//slim:record/slim:datafield[@tag="260"]/slim:subfield[@code="c"]');
-$people = $x->getAllMarcTags($x,'//slim:record/slim:datafield[@tag="700"]');
-$topics = $x->getAllMarcTagsWithSubfields($x,'//slim:record/slim:datafield[@tag="650"]',array('a','z'));
+$leader = $x->getFirstMarcTag('//slim:record/slim:leader');
+$identifier = $x->getFirstMarcTag('//slim:record/slim:controlfield[@tag="001"]');
+$title = $x->getFirstMarcTag('//slim:record/slim:datafield[@tag="245"]');
+$pubyear = $x->getFirstMarcTag('//slim:record/slim:datafield[@tag="260"]/slim:subfield[@code="c"]');
+$people = $x->getAllMarcTags('//slim:record/slim:datafield[@tag="700"]');
+$topics = $x->getAllMarcTagsWithSubfields('//slim:record/slim:datafield[@tag="650"]',array('a','z'));
 ?>
 <?php 
 // display
