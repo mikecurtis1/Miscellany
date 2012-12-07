@@ -6,7 +6,7 @@ class MarcXML extends MySimpleXML
 	public function getFirstMarcTag($object=NULL,$xpath=''){
 		$arr = parent::getXpathObjects($xpath);
 		if ( isset($arr[0]) ) {
-			return parent::getPlainText($arr[0])."\n";
+			return parent::getPlainText($arr[0]);
 		} else {
 			return '';
 		}
