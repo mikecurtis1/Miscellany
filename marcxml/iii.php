@@ -21,6 +21,7 @@ $pubyear = $x->getFirstMarcTag('//slim:record/slim:datafield[@tag="260"]/slim:su
 $people = $x->getAllMarcTags('//slim:record/slim:datafield[@tag="700"]');
 $topics = $x->getAllMarcTagsWithSubfields('//slim:record/slim:datafield[@tag="650"]',array('a','z'));
 ?>
+<?php include_once('opac_data.php'); ?>
 <?php 
 // display
 header('Content-Type: text/html; charset=utf-8'); 
