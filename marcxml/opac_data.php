@@ -1,4 +1,9 @@
 <?php 
+
+/**
+  * http://www.loc.gov/z3950/agency/asn1.html, see section 'RecordSyntax-opac'
+  */
+
 $opac_data = array();
 $holdings = $x->getXpathObjects('//holdings');
 foreach ( $holdings as $cur ) {
