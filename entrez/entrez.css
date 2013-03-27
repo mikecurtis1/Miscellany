@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+	background-color:#bba;
+	padding: 0 4em 0 4em;
+}
+form {
+	margin: 1em;
+}
+form * {
+	display: inline;
+	font-size:125%;
+	padding: 0.25em;
+}
+input[type=text]{
+	width: 33%;
+}
+div.search_data {
+	margin: 2em 4em 2em 4em;
+}
+div.result{
+	margin: 2em 4em 2em 4em;
+	padding: 4em 4em 4em 6em;
+	border: 2px #888 solid;
+	border-right: 2px #666 solid;
+	border-bottom: 4px #444 solid;
+	background-color:#ffe;
+}
+h1.result{
+	font-weight: normal;
+	font-size:125%;
+	color: #444;
+	margin-left: -2em;
+}
+div.value {
+	/*width: 400px;*/
+	padding: 0.25em 0 0.5em 0.5em;
+	/*background-color:#ff8;*/
+	border-bottom: 1px solid #ccc;
+}
+div.field {
+	font-size:70%;
+	font-weight:bold;
+	color:#555;
+}
