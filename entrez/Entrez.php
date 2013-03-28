@@ -2,26 +2,31 @@
 
 // http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=love
 // http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=23516437,23514720,23514212&retmode=xml
+// http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_1898369_165.112.9.34_5555_1364478312_1258629992&retstart=1&retmax=3&retmode=xml&rettype=Abstract
 
 class Entrez 
 {
-  private $_apiDb = '';
+	private $_apiDb = '';
 	private $_apiBaseUrl = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/';
 	private $_apiSearchFunc = 'esearch.fcgi';
 	private $_apiFetchFunc = 'efetch.fcgi';
+	private $_hits = 0;
+	private $_queryKey = '';
+	private $_webEnv = '';
+	private $_translation_stack = array();
 	private $_ids = array();
 	private $_results = array();
-	private $_hits = 0;
-	private $_translation_stack = array();
 	
 	public function __construct($db=''){
 		$this->_apiDb = $db;
 	}
 	
 	public function search($term=''){
-		$url = $this->_apiBaseUrl.$this->_apiSearchFunc.'?db='.urlencode($this->_apiDb).'&term='.urlencode($term);
+		$url = $this->_apiBaseUrl.$this->_apiSearchFunc.'?usehistory=y&db='.urlencode($this->_apiDb).'&term='.urlencode($term);
 		$xml = file_get_contents($url);
 		$this->_setHits($xml);
+		$this->_setQueryKey($xml);
+		$this->_setWebEnv($xml);
 		$this->_setTranslationStack($xml);
 		$this->_setIds($xml);
 		return $this->_hits;
@@ -29,6 +34,14 @@ class Entrez
 	
 	private function _setHits($str=''){
 		$this->_hits = intval($this->_getValue('Count',$str));
+	}
+	
+	private function _setQueryKey($str=''){
+		$this->_queryKey = $this->_getValue('QueryKey',$str);
+	}
+	
+	private function _setWebEnv($str=''){
+		$this->_webEnv = $this->_getValue('WebEnv',$str);
 	}
 	
 	private function _setTranslationStack($str=''){
@@ -49,13 +62,18 @@ class Entrez
 	private function _setIds($str=''){
 		$idlist = $this->_getTag('IdList',$str,FALSE);
 		$this->_ids = $this->_getTag('Id',$str);
-		$this->_fetch();
 	}
 	
-	private function _fetch($retmode='xml'){
-		$url = $this->_apiBaseUrl.$this->_apiFetchFunc.'?db='.urlencode($this->_apiDb).'&id='.implode(',',$this->_ids).'&retmode='.$retmode;
+	public function fetch($retstart=NULL,$retmax=NULL,$retmode='xml',$rettype='Abstract'){
+		if ( $retstart !== NULL && $retmax !== NULL ) {
+			$url = $this->_apiBaseUrl.$this->_apiFetchFunc.'?'.'&db='.urlencode($this->_apiDb).'&query_key='.urlencode($this->_queryKey).'&WebEnv='.urlencode($this->_webEnv).'&retstart='.$retstart.'&retmax='.$retmax.'&retmode='.$retmode.'&rettype='.$rettype;
+		} else {
+			$url = $this->_apiBaseUrl.$this->_apiFetchFunc.'?db='.urlencode($this->_apiDb).'&id='.implode(',',$this->_ids).'&retmode='.$retmode;
+		}
 		$xml = file_get_contents($url);
 		$this->_setResults($xml);
+		
+		return $url;
 	}
 	
 	private function _setResults($str=''){
