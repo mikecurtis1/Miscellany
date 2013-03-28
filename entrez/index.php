@@ -21,6 +21,7 @@ if ( isset($_GET['end']) ) {
 // run Entrez
 $hits = $e->search($term);
 $terms = $e->getTranslationStack();
+#$fetch_url = $e->fetch();
 $fetch_url = $e->fetch($start,$end);
 #print_r($e->getResults());
 // display HTML template
