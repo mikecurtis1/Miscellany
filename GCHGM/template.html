@@ -1,0 +1,105 @@
+<?php header('Content-Type: text/html; charset=utf-8'); ?>
+<html>
+<head>
+<title><?php echo $base; ?> - Aleph xServer Client. <?php echo date("c"); ?></title>
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" >
+</head>
+<body>
+<!--<h1>Family Resources Center Movie Collection</h1>-->
+<img src="FRCheader_normal.gif" class="frclogo" alt="Upstate Family Resource Center" />
+<form action="index.php" method="get">
+<div class="searchlabel">Search</div>
+<input type="text" name="query" class="query" value="<?php echoHTML(get('query')); ?>" />
+<input type="submit" value="Go" /> <span class="startover"><a href="index.php?query=&amp;start=1">clear search</a></span>
+<input type="hidden" name="start" value="1" />
+<input type="hidden" name="set_number" value="" />
+<input type="hidden" name="no_entries" value="" />
+<input type="hidden" name="view" value="aleph" />
+</form>
+<br class="clear" />
+<?php if(isset($xml) && $xml != ''){ ?>
+<div class="counter searchlabel">
+Showing <?php echoHTML($p->getValue('start')); ?> to <?php echoHTML($p->getValue('end')); ?> of <?php echoHTML(number_format($p->getValue('hits'))); ?> results. 
+Sort by: <a href="<?php echoHTML(setURL('sort','author',$_GET)); ?>">author</a>, <a href="<?php echoHTML(setURL('sort','date',$_GET)); ?>">date</a>, <a href="<?php echo echoHTML(setURL('sort','title',$_GET)); ?>">title</a>
+</div>
+<br class="clear" />
+<?php } ?>
+<!-- begin records -->
+<?php
+if(isset($xml) && $xml !== ''){
+require_once(dirname(__FILE__).'/OpacRecordXML.php');
+#echo "<h1>RECORDS</h1>\n";
+echo '<div class="records">'."\n";
+$recs = getXMLRecords($xml,'oai_marc');
+$rec_html = '';
+foreach ( $recs as $rec ) {
+  $opac = new OpacRecordXML($rec);
+	$leader = $opac->getMarcLeader();
+	$marc001 = $opac->getMarcControlField('001');
+	$sys_no = cleanSysNo($marc001);
+	$detail_url = '?query=SYS%3d'.$sys_no.'&amp;view=detail';
+	$detail_anchor = "<a href=\"index.php?query=sys%3D".cleanSysNo($marc001)."&view=detail\">".$marc001."</a>";
+	#echo $opac->getMarcControlField('005')."\n";
+	$title = truncateStr($opac->getMarcSubfieldData('245','a|b'),24);
+	$pubdate = $opac->getMarcSubfieldData('260','c');
+	$description = truncateStr($opac->getMarcSubfieldData('520','a'));
+	#echo $opac->getMarcSubfieldData('260')."\n";
+	#echo $opac->getMarcSubfieldData('260','c|b|a')."\n";
+	#echo $opac->getMarcSubfieldData('856','u|3')."\n---\n";
+	$imdb = $opac->getMarcSubfieldDataAll('856','u|3','3','IMDB');
+	$imdb_anchor = getIMDBanchor($imdb);
+	#$marc856 = $opac->getMarcSubfieldDataAll('856','u|3');
+	#$marc945 = $opac->getMarcSubfieldDataAll('945','b|c|h|o|d|l');
+	#print_r($marc856);
+	#print_r($marc945);
+	#echo $marc856[0]['u']."\n";
+	$marc856 = $opac->getMarcSubfieldDataAll('856','u|3','3','cover image');
+	$cover = getCoverImg($marc856);
+	/*$marc945 = $opac->getMarcSubfieldDataAll('945','l');
+	foreach ( $marc945 as $cur ) {
+		echo "Bib: {$marc001}, barcode: {$cur['l']}\n";
+	}*/
+	$circ_items = getCircItems($host,$port,$base,$marc001);
+	$circ_items_html = '';
+	#print_r($circ_items);
+	foreach ( $circ_items as $circ ) {
+		$circ_items_html .= '<div class="circ_item">'.$circ['location'].', '.$circ['z30_description'].': '.$circ['barcode'].', '.$circ['available'].'</div>'."\n";
+	}
+	if ( getCircStatus($circ_items) === TRUE ) {
+		#$circ_status = '<div class="available">AVAILABLE</div>';
+		$circ_status = '<a title="available to checkout"><img class="available" src="available.png" /></a>';
+	} else {
+		#$circ_status = '<div class="checkedout">UN-AVAILABLE</div>';
+		$circ_status = '<a title="someone else already has this checked out"><img class="checkedout" src="unavailable.png" /></a>';
+	}
+	
+	$rec_html .= "<!-- SYS:".$sys_no." -->\n";
+	$rec_html .= "<div class=\"rec\">\n";
+	$rec_html .= "<div class=\"cover\"><a href=\"".$detail_url."\">".$cover."</a></div>\n";
+	$rec_html .= "<div class=\"title\">".$circ_status.$title."</div>\n";
+	$rec_html .= "<div class=\"description\">".$description."</div>\n";
+	$rec_html .= $circ_items_html;
+	#$rec_html .= $circ_status."\n";
+	#$rec_html .= "<!-- \n";
+	#$rec_html .= $rec;
+	#$rec_html .= "-->\n";
+	$rec_html .= "</div>\n";
+}
+echo $rec_html;
+echo '</div>'."\n";
+} else {
+echo '<div class="results">NO RESULTS!</div>'."\n";
+}
+?>
+<!-- end records -->
+<?php if(isset($xml) && $xml != ''){ ?>
+<br class="clear" />
+<div class="pagination">
+<span> &#171; <a href="<?php echoHTML($p->getValue('start_url')); ?>">start</a></span>
+<span> &#8249; <a href="<?php echoHTML($p->getValue('previous_url')); ?>">previous</a></span> |
+<span><a href="<?php echoHTML($p->getValue('next_url')); ?>">next</a></span> &#8250;
+<span><a href="<?php echoHTML($p->getValue('last_url')); ?>">last</a></span> &#187;
+</div>
+<?php } ?>
+</body>
+</html>
