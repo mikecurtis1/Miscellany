@@ -22,7 +22,7 @@ class MetadataRecord
 	private $_series = '';
 	private $_description = '';
 	private $_language = '';
-	private $_date = '';
+	private $_creation_date = '';
 	private $_identifiers = array();
 	private $_topics = array(); //TODO: subjects, persons, chronological terms (date ranges, named time periods, etc.), geographical terms (named places, postal addresses, geo-coordinates, etc.)
 	private $_items = array();
@@ -40,7 +40,7 @@ class MetadataRecord
 	private $_media_type = '';
 	private $_uri = '';
 	private $_mime_type = '';
-	private $_pubdate = '';
+	private $_publication_date = '';
 	private $_journal = '';
 	private $_volume = '';
 	private $_issue = '';
