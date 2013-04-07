@@ -34,6 +34,8 @@ class MetadataRecord
 	
 	//TODO: break out FRBR item elements
 	private $_location = '';
+	private $_access = '';
+	private $_copyright = '';
 	private $_physical_description = '';
 	private $_media_type = '';
 	private $_uri = '';
