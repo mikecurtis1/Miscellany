@@ -1,6 +1,6 @@
 <?php 
 
-class marcXmlRegex
+class MarcXmlRegex
 {
   public $xml = '';
 	private $_controlfield_element_name = '';
