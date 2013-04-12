@@ -2,6 +2,8 @@
 
 /**
  * http://www.loc.gov/z3950/agency/defns/bib1.html
+ * http://www.gils.net/z-url.txt
+ * http://www.php.net/manual/en/function.yaz-search.php
  */
  
 class Z3950Client{
