@@ -28,7 +28,7 @@ $total_lending = 0;
 $total_borrowing = 0;
 
 foreach ( file('2013_borrow_from') as $row ) {
-  $temp = explode("\t",$row);
+	$temp = explode("\t",$row);
 	$symbol = strtoupper(trim($temp[0]));
 	$name = trim($temp[1]);
 	$count = (int) trim($temp[3]);
@@ -69,20 +69,20 @@ echo 'BORROWING = '.$total_borrowing."\n";
 echo 'TOTAL = '.$total_transactions."\n";
 
 foreach ( $symbols as $symbol => $name ) {
-		$b = $borrow_from[$symbol];
-		$l = $lend_to[$symbol];
-		$diff = $l - $b;
-		$diffs[$symbol] = $diff;
-		if ( $diff < 0 ) { // other library is net lender
-			$diff2 = $diff*-1; // multiply by negative one to 'reverse' +/- value
-			#$factors[$symbol] = round($diff2/$total_transactions,10)*-1;
-			#$factors[$symbol] = round($diff2/$total_lending,10)*-1;
-			$factors[$symbol] = round($diff2/$total_borrowing,$borrowing_precision)*-1;
-		} else {  // other library is net borrower
-			#$factors[$symbol] = round($diff/$total_transactions,10);
-			#$factors[$symbol] = round($diff/$total_borrowing,10);
-			$factors[$symbol] = round($diff/$total_lending,$lending_precision);
-		}
+	$b = $borrow_from[$symbol];
+	$l = $lend_to[$symbol];
+	$diff = $l - $b;
+	$diffs[$symbol] = $diff;
+	if ( $diff < 0 ) { // other library is net lender
+		$diff2 = $diff*-1; // multiply by negative one to 'reverse' +/- value
+		#$factors[$symbol] = round($diff2/$total_transactions,10)*-1;
+		#$factors[$symbol] = round($diff2/$total_lending,10)*-1;
+		$factors[$symbol] = round($diff2/$total_borrowing,$borrowing_precision)*-1;
+	} else {  // other library is net borrower
+		#$factors[$symbol] = round($diff/$total_transactions,10);
+		#$factors[$symbol] = round($diff/$total_borrowing,10);
+		$factors[$symbol] = round($diff/$total_lending,$lending_precision);
+	}
 }
 
 arsort($diffs);
