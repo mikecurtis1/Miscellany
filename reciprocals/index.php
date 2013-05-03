@@ -2,6 +2,19 @@
 <pre>
 <?php 
 
+/**
+ * This script ranks the give/take relationships between libraries and their interlibrary loan services
+ * The difference between lending and borrowing is calculated, but
+ * also a 'factor' between 1 and -1 is calculated for each library relationship relative to total 
+ * lending/borrowing transactions. 1 means your library is a 'net lender' and give a lot to another library, 
+ * while a -1 mean your library is 'net borrow' and takes a lot from another library
+ */
+
+//TODO: replace flatfile input with SQL queries of Atlas-Sys ILLiad
+//TODO: I had trouble working with $diff < 0, maybe it could be improved
+//NOTE: should I use any objects?
+//NOTE: I don't know how this script will scale up with larger data sets
+
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
@@ -61,7 +74,7 @@ foreach ( $symbols as $symbol => $name ) {
 		$diff = $l - $b;
 		$diffs[$symbol] = $diff;
 		if ( $diff < 0 ) { // other library is net lender
-			$diff2 = $diff*-1;
+			$diff2 = $diff*-1; // multiply by negative one to 'reverse' +/- value
 			#$factors[$symbol] = round($diff2/$total_transactions,10)*-1;
 			#$factors[$symbol] = round($diff2/$total_lending,10)*-1;
 			$factors[$symbol] = round($diff2/$total_borrowing,$borrowing_precision)*-1;
