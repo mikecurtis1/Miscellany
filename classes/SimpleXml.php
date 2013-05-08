@@ -4,7 +4,7 @@ class SimpleXml
 {
   private $_parser;
 	
-	public function __construct($xml='',$class_name=NULL,$options=NULL,$ns=NULL,$is_prefix=NULL){
+	public function __construct($xml=NULL,$class_name=NULL,$options=NULL,$ns=NULL,$is_prefix=NULL){
 		try {
 			$this->_parser = new SimpleXMLElement($xml,$class_name,$options,$ns,$is_prefix);
 		} catch (Exception $e) {
@@ -13,8 +13,10 @@ class SimpleXml
 	}
 	
 	public function regNameSpaces($namespaces=array()){
-		foreach ( $namespaces as $prefix => $uri ) {
-			$this->_parser->registerXPathNamespace($prefix, $uri); //NOTE: determine namespace prefixes and URIs using Firebug
+		if ( $this->_isSimpleXMLElement() ) {
+			foreach ( $namespaces as $prefix => $uri ) {
+				$this->_parser->registerXPathNamespace($prefix, $uri); //NOTE: determine namespace prefixes and URIs using Firebug
+			}
 		}
 
 		return;
@@ -22,7 +24,7 @@ class SimpleXml
 	
 	public function getXpathXmlDocs($xpath=''){
 		$docs = array();
-		if ( $this->_isSimpleXMLElement($this->_parser) === TRUE ) {
+		if ( $this->_isSimpleXMLElement() ) {
 			if ( is_array($this->_parser->xpath($xpath)) ) {
 				foreach ( $this->_parser->xpath($xpath) as $obj ) { //NOTE: xpath method returns an array or false
 					$docs[] = $obj->asXML();
@@ -43,9 +45,13 @@ class SimpleXml
 	}
 	
 	public function getXpathAttr($xpath='',$attr_name=''){
-		$a = $this->_parser->xpath($xpath);
-		if ( isset($a[0]->attributes()->{$attr_name}) ) {
-			return $a[0]->attributes()->{$attr_name};
+		if ( $this->_isSimpleXMLElement() ) {
+			$a = $this->_parser->xpath($xpath);
+			if ( isset($a[0]->attributes()->{$attr_name}) ) {
+				return $a[0]->attributes()->{$attr_name};
+			} else {
+				return '';
+			}
 		} else {
 			return '';
 		}
@@ -65,8 +71,8 @@ class SimpleXml
 		return preg_replace('/\s{2,}/', ' ', trim($string));
 	}
 	
-	private function _isSimpleXMLElement($object=NULL){
-		if ( is_object($object) && get_class($object) === 'SimpleXMLElement' ) {
+	private function _isSimpleXMLElement(){
+		if ( is_object($this->_parser) && get_class($this->_parser) === 'SimpleXMLElement' ) {
 			return TRUE;
 		} else {
 			return FALSE;
