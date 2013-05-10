@@ -68,6 +68,8 @@ class SimpleXml
 	}
 
 	private function _normalizeWhiteSpace($string=''){
+		$string = str_replace("\n",'',$string);
+		$string = str_replace("\r",'',$string);
 		return preg_replace('/\s{2,}/', ' ', trim($string));
 	}
 	
