@@ -6,12 +6,12 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 header('Content-Type: text/html; charset=utf-8');
-require_once(dirname(__FILE__).'/Request.php');
-require_once(dirname(__FILE__).'/Z3950Client.php');
-require_once(dirname(__FILE__).'/SimpleXml.php');
-require_once(dirname(__FILE__).'/Record.php');
-require_once(dirname(__FILE__).'/Item.php');
-require_once(dirname(__FILE__).'/Isbn.php');
+require_once(dirname(__FILE__).'/../classes/Request.php');
+require_once(dirname(__FILE__).'/../classes/Z3950Client.php');
+require_once(dirname(__FILE__).'/../classes/SimpleXml.php');
+require_once(dirname(__FILE__).'/../classes/Record.php');
+require_once(dirname(__FILE__).'/../classes/Item.php');
+require_once(dirname(__FILE__).'/../classes/Isbn.php');
 // config
 $callback = Request::value('callback');
 $host = Request::value('host');
