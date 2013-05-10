@@ -13,7 +13,7 @@
 
 class Item 
 {
-  private $_location = '';
+	private $_location = '';
 	private $_access = '';
 	private $_copyright = '';
 	private $_physical_description = '';
@@ -86,8 +86,12 @@ class Item
 		$this->_start_page = $str;
 	}
 	
-	public function setIdentifier($str=''){
-		$this->_identifiers[] = $str;
+	public function setIdentifier($label='',$delimiter='',$str=''){
+		if ( $label==='' || $delimiter==='' || $str==='' ) {
+			return;
+		} else {
+			$this->_identifiers[] = $label.$delimiter.$str;
+		}
 	}
 	
 	public function setCost($str=''){
