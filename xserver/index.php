@@ -7,7 +7,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 header('Content-Type: text/html; charset=utf-8'); 
-require_once(dirname(__FILE__).'/../classes/Get.php');
+require_once(dirname(__FILE__).'/../classes/Request.php');
 require_once(dirname(__FILE__).'/../classes/AlephXserverClient.php');
 require_once(dirname(__FILE__).'/../classes/SimpleXml.php');
 require_once(dirname(__FILE__).'/../classes/Isbn.php');
@@ -23,13 +23,13 @@ $query = '';
 $start = 1;
 $max = 10;
 $callback = 'callback';
-#$host = Get::value('host'); // ups.sunyconnect.suny.edu
-#$port = Get::value('port'); // 4360
-#$base = Get::value('base'); // UPS01PUB
-$query = Get::value('query');
-$start = Get::value('start');
-$max = Get::value('max');
-$callback = Get::value('callback');
+#$host = Request::value('host'); // ups.sunyconnect.suny.edu
+#$port = Request::value('port'); // 4360
+#$base = Request::value('base'); // UPS01PUB
+$query = Request::value('query');
+$start = Request::value('start');
+$max = Request::value('max');
+$callback = Request::value('callback');
 if ( !is_numeric($start) ) {
   $start = 1;
 }
@@ -76,17 +76,31 @@ foreach ( $recs as $n => $rec ) {
 	$i->setPhysicalDescription($x->getXpathText('//oai_marc/varfield[@id="300"]'));
 	$i->setIdentifier('SYS'.$delimiter.$marc_001);
 	$i->setIdentifier('ISBN'.$delimiter.$isbn);
-	$r->setItem((array) $i);
-	$records[] = (array) $r;
+	$r->setItem($i);
+	$record_objects[] = $r;
+}
+// display JSON
+function recordObjects2Array($obj) {
+	if ( is_object($obj) ) {
+		$obj = (array) $obj;
+	}
+	if ( is_array($obj) ) {
+		$new = array();
+		foreach($obj as $key => $val) {
+			$new[$key] = recordObjects2Array($val);
+		}
+	}
+	else { 
+		$new = $obj;
+	}
+	return $new;
 }
 $arr = array();
 $arr['query'] = $query;
 $arr['start'] = $start;
 $arr['max'] = $max;
 $arr['hits'] = $hits;
-$arr['records'] = $records;
-// display
-#$json = json_encode($arr);
+$arr['records'] = recordObjects2Array($record_objects);
 $json = str_replace('\\u0000', '', json_encode($arr));
 header('Content-Type: application/json; charset=utf-8'); 
 if ( $callback !== '' ) {
