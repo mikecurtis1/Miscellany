@@ -80,6 +80,7 @@ foreach ( $recs as $n => $rec ) {
 	$record_objects[] = $r;
 }
 // display JSON
+//TODO: create a Records object with a toJson method
 function recordObjects2Array($obj) {
 	if ( is_object($obj) ) {
 		$obj = (array) $obj;
