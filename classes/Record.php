@@ -13,7 +13,7 @@
 
 class Record 
 {
-    private $_metadata_source = '';
+  	private $_metadata_source = '';
 	private $_metadata_source_id = '';
 	private $_metadata_source_uri = '';
 	private $_authors = array();
@@ -44,7 +44,9 @@ class Record
 	}
 	
 	public function setAuthor($str=''){
-		$this->_authors[] = $str;
+		if ( $str !== '' ) {
+			$this->_authors[] = $str;
+		}
 	}
 	
 	public function setTitle($str=''){
@@ -71,16 +73,24 @@ class Record
 		$this->_creation_date = $str;
 	}
 	
-	public function setIdentifier($str=''){
-		$this->_identifiers[] = $str;
+	public function setIdentifier($label='',$delimiter='',$str=''){
+		if ( $label==='' || $delimiter==='' || $str==='' ) {
+			return;
+		} else {
+			$this->_identifiers[] = $label.$delimiter.$str;
+		}
 	}
 	
 	public function setItem($item){
-		$this->_items[] = $item;
+		if ( is_object($item) && get_class($item) === 'Item' ) {
+			$this->_items[] = $item;
+		}
 	}
 	
 	public function setTopic($str=''){
-		$this->_topics[] = $str;
+		if ( $str !== '' ) {
+			$this->_topics[] = $str;
+		}
 	}
 	
 	public function setEdition($str=''){
