@@ -30,72 +30,71 @@ class Item
 	private $_identifiers = array();
 	private $_cost = ''; //NOTE: time sensitive, monetary unit required, vendor required
 	
-	public function __construct(){}
-	
-	public function setLocation($str=''){
-		$this->_location = $str;
+	public function __construct(){
 	}
 	
-	public function setAccess($str=''){
-		$this->_access = $str;
+	public function setLocation($arg=''){
+		$this->_location = $arg;
 	}
 	
-	public function setCopyright($str=''){
-		$this->_copyright = $str;
+	public function setAccess($arg=''){
+		$this->_access = $arg;
 	}
 	
-	public function setPhysicalDescription($str=''){
-		$this->_physical_description = $str;
+	public function setCopyright($arg=''){
+		$this->_copyright = $arg;
 	}
 	
-	public function setMediaType($str=''){
+	public function setPhysicalDescription($arg=''){
+		$this->_physical_description = $arg;
+	}
+	
+	public function setMediaType($arg=''){
 		//TODO: set a list of predefined(normalized) media types
-		$this->_media_type = $str;
+		$this->_media_type = $arg;
 	}
 	
-	public function setUri($str=''){
-		$this->_uri = $str;
+	public function setUri($arg=''){
+		$this->_uri = $arg;
 	}
 	
-	public function setMimeType($str=''){
+	public function setMimeType($arg=''){
 		//TODO: filter for valid MIME type
-		$this->_mime_type = $str;
+		$this->_mime_type = $arg;
 	}
 	
-	public function setPublicationDate($str=''){
-		$this->_publication_date = $str;
+	public function setPublicationDate($arg=''){
+		$this->_publication_date = $arg;
 	}
 	
-	public function setPublisher($str=''){
-		$this->_publisher = $str;
+	public function setPublisher($arg=''){
+		$this->_publisher = $arg;
 	}
 	
-	public function setJournal($str=''){
-		$this->_journal = $str;
+	public function setJournal($arg=''){
+		$this->_journal = $arg;
 	}
-	public function setVolume($str=''){
-		$this->_volume = $str;
+	public function setVolume($arg=''){
+		$this->_volume = $arg;
 	}
-	public function setIssue($str=''){
-		$this->_issue = $str;
+	public function setIssue($arg=''){
+		$this->_issue = $arg;
 	}
-	public function setPagination($str=''){
-		$this->_pagination = $str;
+	public function setPagination($arg=''){
+		$this->_pagination = $arg;
 	}
-	public function setStartPage($str=''){
-		$this->_start_page = $str;
+	public function setStartPage($arg=''){
+		$this->_start_page = $arg;
 	}
 	
-	public function setIdentifier($label='',$delimiter='',$str=''){
-		if ( $label==='' || $delimiter==='' || $str==='' ) {
-			return;
-		} else {
-			$this->_identifiers[] = $label.$delimiter.$str;
+	public function setIdentifier($arg=''){
+		if ( $arg instanceof Identifier ) {
+			$this->_identifiers[] = $arg;
 		}
 	}
 	
-	public function setCost($str=''){
-		$this->_cost = $str;
+	public function setCost($arg=''){
+		$this->_cost = $arg;
 	}
 	
 	public function getValue($name='',$first_value=FALSE){
@@ -119,12 +118,12 @@ class Item
 		}
 	}
 	
-	public function isItem($item){
-		if ( is_object($item) && get_class($item) === get_class($this) ) {
+	/*public function isItem($arg){
+		if ( is_object($arg) && get_class($arg) === get_class($this) ) {
 			return TRUE;
 		} else {
 			return FALSE;
 		}
-	}
+	}*/
 }
 ?>
