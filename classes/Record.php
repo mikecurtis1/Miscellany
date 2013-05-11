@@ -28,73 +28,72 @@ class Record
 	private $_items = array();
 	private $_edition = '';
 	
-	public function __construct(){}
-	
-	public function setMetadataSource($str=''){
-		$this->_metadata_source = $str;
+	public function __construct(){
 	}
 	
-	public function setMetadataSourceId($str=''){
-		$this->_metadata_source_id = $str;
+	public function setMetadataSource($arg=''){
+		$this->_metadata_source = $arg;
 	}
 	
-	public function setMetadataSourceUri($str=''){
+	public function setMetadataSourceId($arg=''){
+		$this->_metadata_source_id = $arg;
+	}
+	
+	public function setMetadataSourceUri($arg=''){
 		//TODO: filter for valid URI
-		$this->_metadata_source_uri = $str;
+		$this->_metadata_source_uri = $arg;
 	}
 	
-	public function setAuthor($str=''){
-		if ( $str !== '' ) {
-			$this->_authors[] = $str;
+	public function setAuthor($arg=''){
+		if ( $arg !== '' ) {
+			$this->_authors[] = $arg;
 		}
 	}
 	
-	public function setTitle($str=''){
-		$this->_title = $str;
+	public function setTitle($arg=''){
+		$this->_title = $arg;
 	}
 	
-	public function setSubtitle($str=''){
-		$this->_subtitle = $str;
+	public function setSubtitle($arg=''){
+		$this->_subtitle = $arg;
 	}
 	
-	public function setSeries($str=''){
-		$this->_series = $str;
+	public function setSeries($arg=''){
+		$this->_series = $arg;
 	}
 	
-	public function setDescription($str=''){
-		$this->_description = $str;
+	public function setDescription($arg=''){
+		$this->_description = $arg;
 	}
 	
-	public function setLanguage($str=''){
-		$this->_language = $str;
+	public function setLanguage($arg=''){
+		$this->_language = $arg;
 	}
 	
-	public function setCreationDate($str=''){
-		$this->_creation_date = $str;
+	public function setCreationDate($arg=''){
+		$this->_creation_date = $arg;
 	}
 	
-	public function setIdentifier($label='',$delimiter='',$str=''){
-		if ( $label==='' || $delimiter==='' || $str==='' ) {
-			return;
-		} else {
-			$this->_identifiers[] = $label.$delimiter.$str;
+	public function setIdentifier($arg=''){
+		if ( $arg instanceof Identifier ) {
+			$this->_identifiers[] = $arg;
 		}
 	}
 	
-	public function setItem($item){
-		if ( is_object($item) && get_class($item) === 'Item' ) {
-			$this->_items[] = $item;
+	public function setItem($arg){
+		if ( $arg instanceof Item ) {
+			$this->_items[] = $arg;
 		}
 	}
 	
-	public function setTopic($str=''){
-		if ( $str !== '' ) {
-			$this->_topics[] = $str;
+	public function setTopic($arg=''){
+		if ( $arg !== '' ) {
+			$this->_topics[] = $arg;
 		}
 	}
 	
-	public function setEdition($str=''){
-		$this->_edition = $str;
+	public function setEdition($arg=''){
+		$this->_edition = $arg;
 	}
 	
 	public function getValue($name='',$first_value=FALSE){
@@ -118,12 +117,12 @@ class Record
 		}
 	}
 	
-	public function isRecord($record){
+	/*public function isRecord($record){
 		if ( is_object($record) && get_class($record) === get_class($this) ) {
 			return TRUE;
 		} else {
 			return FALSE;
 		}
-	}
+	}*/
 }
 ?>
