@@ -28,7 +28,8 @@ class Records
 				//$new[$key] = $this->_casteObjectsToArrays($val); 
 				//TODO: remove the null bytes from key and value which are created when casting to array
 				// maybe only trim() is needed if null byte is a beginning of string
-				$new[$this->_removeNullBytes($key)] = $this->_casteObjectsToArrays($this->_removeNullBytes($val));
+				//$new[$this->_removeNullBytes($key)] = $this->_casteObjectsToArrays($this->_removeNullBytes($val));
+				$new[trim($key)] = $this->_casteObjectsToArrays(trim($val));
 			}
 		}
 		else { 
@@ -37,8 +38,8 @@ class Records
 		return $new;
 	}
 	
-	private function _removeNullBytes($arg=''){
+	/*private function _removeNullBytes($arg=''){
 		return str_replace("\0", '', $arg);
-	}
+	}*/
 }
 ?>
