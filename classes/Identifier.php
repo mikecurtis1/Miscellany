@@ -2,7 +2,7 @@
 
 class Identifier 
 {
-  public $label;
+	public $label;
 	public $delimiter;
 	public $value;
 	
