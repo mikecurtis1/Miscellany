@@ -7,12 +7,14 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 header('Content-Type: text/html; charset=utf-8'); 
-require_once(dirname(__FILE__).'/../classes/Request.php');
-require_once(dirname(__FILE__).'/../classes/AlephXserverClient.php');
-require_once(dirname(__FILE__).'/../classes/SimpleXml.php');
-require_once(dirname(__FILE__).'/../classes/Isbn.php');
-require_once(dirname(__FILE__).'/../classes/Record.php');
-require_once(dirname(__FILE__).'/../classes/Item.php');
+require_once(dirname(__FILE__).'/../../classes/AlephXserverClient.php');
+require_once(dirname(__FILE__).'/../../classes/SimpleXml.php');
+require_once(dirname(__FILE__).'/../../classes/Isbn.php');
+require_once(dirname(__FILE__).'/../../classes2/Record.php');
+require_once(dirname(__FILE__).'/../../classes2/Item.php');
+require_once(dirname(__FILE__).'/../../classes/Request.php');
+require_once(dirname(__FILE__).'/../../classes/Records.php');
+require_once(dirname(__FILE__).'/../../classes/Identifier.php');
 // config
 $content = '';
 $snippet = '';
@@ -46,9 +48,9 @@ $hits = number_format(intval($aleph->getNoEntries()));
 $x = new SimpleXml($xml,NULL,NULL,NULL,FALSE);
 $recs = $x->getXpathXmlDocs('//present/record/metadata');
 // process records
-$records = array();
+$records = new Records();
 foreach ( $recs as $n => $rec ) {
-  $x = new SimpleXml($rec,NULL,NULL,NULL,FALSE);
+	$x = new SimpleXml($rec,NULL,NULL,NULL,FALSE);
 	/*
 	$marc_020 = $x->getXpathXmlDocs('//oai_marc/varfield[@id="020"]/subfield[@label="a"]');
 	$isbn = Isbn::all(implode(',',$marc_020));
@@ -74,35 +76,19 @@ foreach ( $recs as $n => $rec ) {
 	$i->setPublicationDate($x->getXpathText('//oai_marc/varfield[@id="260"]/subfield[@label="c"]'));
 	$i->setPublisher($x->getXpathText('//oai_marc/varfield[@id="260"]/subfield[@label="b"]'));
 	$i->setPhysicalDescription($x->getXpathText('//oai_marc/varfield[@id="300"]'));
-	$i->setIdentifier('SYS'.$delimiter.$marc_001);
-	$i->setIdentifier('ISBN'.$delimiter.$isbn);
+	$i->setIdentifier(Identifier::build('SYS',$delimiter,$marc_001));
+	$i->setIdentifier(Identifier::build('ISBN',$delimiter,$isbn));
 	$r->setItem($i);
-	$record_objects[] = $r;
-}
-// display JSON
-//TODO: create a Records object with a toJson method
-function recordObjects2Array($obj) {
-	if ( is_object($obj) ) {
-		$obj = (array) $obj;
-	}
-	if ( is_array($obj) ) {
-		$new = array();
-		foreach($obj as $key => $val) {
-			$new[$key] = recordObjects2Array($val);
-		}
-	}
-	else { 
-		$new = $obj;
-	}
-	return $new;
+	$records->setRecord($r);
 }
 $arr = array();
 $arr['query'] = $query;
 $arr['start'] = $start;
 $arr['max'] = $max;
 $arr['hits'] = $hits;
-$arr['records'] = recordObjects2Array($record_objects);
-$json = str_replace('\\u0000', '', json_encode($arr));
+$arr['records'] = $records->toArray();
+// display
+$json = json_encode($arr);
 header('Content-Type: application/json; charset=utf-8'); 
 if ( $callback !== '' ) {
 	echo $callback.'('.$json.');';
