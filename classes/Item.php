@@ -117,13 +117,5 @@ class Item
 			return '';
 		}
 	}
-	
-	/*public function isItem($arg){
-		if ( is_object($arg) && get_class($arg) === get_class($this) ) {
-			return TRUE;
-		} else {
-			return FALSE;
-		}
-	}*/
 }
 ?>
