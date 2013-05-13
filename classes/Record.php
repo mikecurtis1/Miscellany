@@ -116,13 +116,5 @@ class Record
 			return '';
 		}
 	}
-	
-	/*public function isRecord($record){
-		if ( is_object($record) && get_class($record) === get_class($this) ) {
-			return TRUE;
-		} else {
-			return FALSE;
-		}
-	}*/
 }
 ?>
