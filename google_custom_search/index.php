@@ -9,7 +9,7 @@ https://code.google.com/apis/console
 */
 
 if ( isset($_GET['q']) ) {
-  $q = $_GET['q'];
+	$q = $_GET['q'];
 } else {
 	$q = '';
 }
