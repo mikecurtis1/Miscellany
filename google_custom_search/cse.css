@@ -1,0 +1,70 @@
+body{
+  font-family:sans-serif;
+	margin:1em;
+	/*padding: 2em 20% 2em 20%;*/
+	background-color:#eef;
+}
+
+div.records{
+	width:35em; /* http://www.maxdesign.com.au/articles/em/ */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.record{
+	border-bottom: solid 1px #aab;
+	margin:0.2em 1em 0 1em;
+	padding:1em;
+	background-color:#fff;
+}
+
+div.record div.title{
+	font-weight:bold;
+}
+
+div.record div.title a, div.record div.title a:visited{
+	color:#55a;
+}
+
+div.record div.title a:hover{
+	color:#b44;
+}
+
+div.record div.description{
+	margin:1em;
+	color:#666;
+	text-align:justify;
+}
+
+form{
+	margin: 1em;
+	
+}
+
+input[type='text']{
+	/*background: url("http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif") no-repeat scroll left center #FFFFFF;*/
+	margin:0.5em 0 0.5em 0;
+	padding:0.1em 0.5em 0.1em 0.5em;
+	font-size:150%;
+	color:#b74;
+	background-color:#ffe;
+	border:2px solid #b99;
+}
+
+input[type='submit']{
+	margin:0.5em 0.5em 0.5em 0;
+	padding:0 0.25em 0 0.25em;
+	font-size:140%;
+	color:#ffe;
+	background-color:#b74;
+	border:2px solid #b74;
+}
+
+input[type='submit']:hover{
+	margin:0.5em 0.5em 0.5em 0;
+	padding:0 0.25em 0 0.25em;
+	font-size:140%;
+	color:#eff;
+	background-color:#55a;
+	border:2px solid #55a;
+}
