@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Custom Search Engine</title>
+
+  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+  <script type="text/javascript">
+
+    // 
+    var ssBaseURL = 'http://fc8xq7xt7e.search.serialssolutions.com/?SS_LibHash=FC8XQ7XT7E'+unescape('%26')+'sid=sersol%3AuniqueIDQuery'+unescape('%26')+'id=';
+
+    // Load the Search API
+  //google.load('search', '1');
+    google.load('search', '1', {language : 'en'}); 
+		
+    // Set a callback to load the Custom Search Element when you page loads
+    google.setOnLoadCallback(
+      function(){
+        var customSearchControl = new google.search.CustomSearchControl('013036536707430787589:_pqjad5hr1a');
+
+        // Use "mysite_" as a unique ID to override the default rendering.
+        google.search.Csedr.addOverride("mysite_");
+
+		// add option for autocomplete
+		var options = new google.search.DrawOptions();
+		options.setAutoComplete(true);
+		
+        // Draw the Custom Search Control in the div named "CSE"
+        customSearchControl.draw('cse', options);
+		
+		// set result items link targets to 'self'
+		sc.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+	
+        // Execute an initial search
+        //customSearchControl.execute("ajax");
+      },
+    true);
+  </script>
+</head>
+<body>
+
+  <div style="display:none">
+
+    <!-- Create 48px x 48px thumbnails.-->
+    <div id="mysite_thumbnail">
+      <div data-if="Vars.thumbnail" class="gs-image-box gs-web-image-box">
+        <a class="gs-image" data-attr="{href:url, target:target}">
+          <img class="gs-image" data-attr="{src:thumbnail.src, width:48, height: 48}"/>
+        </a>
+      </div>
+    </div>
+
+    <!-- Return the unescaped result URL.-->
+    <div id="mysite_webResult">
+      <div class="gs-webResult gs-result"
+        data-vars="{longUrl:function() {
+          var i = unescapedUrl.indexOf(visibleUrl);
+          return i < 1 ? visibleUrl : unescapedUrl.substring(i);}}">
+
+        <!-- Build the result data structure.-->
+        <table>
+          <tr>
+            <td valign="top">
+              <div data-if="Vars.richSnippet" data-attr="0"
+                data-body="render('thumbnail',richSnippet,{url:unescapedUrl,target:target})"></div>
+            </td>
+            <td valign="top">
+
+              <!-- Append results within the table cell.-->
+              <div class="gs-title">
+			  <!--                 <a class="gs-title" data-attr="{href:ssBaseURL+unescapedUrl.substring(35),target:'_self'}" -->
+                <a class="gs-title" data-attr="{href:ssBaseURL+unescapedUrl.substring(35)}"
+                  data-body="html(title)"></a>
+              </div>
+              <div class="gs-snippet" data-body="html(content)"></div>
+              <!--<div class="gs-visibleUrl gs-visibleUrl-short" data-body="longUrl()"></div>-->
+              <div style="color:#676767" data-if="Vars.richSnippet && Vars.richSnippet.document">
+
+                <!-- Insert an icon denoting the result file type.-->
+                <img data-attr="{src:Vars.richSnippet.document.filetypeImage}">
+
+                <!-- Insert the author name for this Scribd post.-->
+                By <span data-body="Vars.richSnippet.document.author"></span>  - 
+
+                <!-- Insert the number of pages in this Scribd result.-->
+                <span data-body="Vars.richSnippet.document.pageCount"></span> pages - 
+                
+                <!-- Insert the number of times this Scribd post has been viewed.-->
+                <span data-body="Vars.richSnippet.document.viewCount"></span> views
+                
+                <!-- Insert the last modified date-->
+                 - last modified  <span data-body="Vars.richSnippet.document.timeAgo"></span>
+              </div>
+
+              <!-- Render results.-->
+              <div data-if="Vars.richSnippet && Vars.richSnippet.action" class="gs-actions"
+                data-body="render('action',richSnippet,{url:unescapedUrl,target:target})"></div>
+
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Div container for the searcher.-->
+  <div id="cse"></div>
+</body>
+</html>
