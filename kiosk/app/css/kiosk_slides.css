@@ -1,0 +1,11 @@
+body{
+  margin:0;
+	padding:0;
+	border:0;
+	background-color:#eed;
+	margin-top:1px;
+}
+
+audio.background{
+	display:none;
+}
