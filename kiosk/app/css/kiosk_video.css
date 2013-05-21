@@ -15,16 +15,7 @@ video.presentation{
 	padding:0;
 	border:0;
 	display: block;
-	/*margin-left:auto;
-	margin-right:auto;
-	margin-top:auto;
-	margin-bottom:auto;*/
-	/*position:absolute;
-	top:0px;
-	left:0px;*/ /* for some reason zero isn't all the way left in Chrome */
-	/*width:512px;
-	height:340px;*/
-	
+	/* see http://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/  */	
 	width:1280px;
 	height:720px;
 	position: absolute;
