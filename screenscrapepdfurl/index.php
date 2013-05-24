@@ -1,10 +1,10 @@
 <?php 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-require_once(dirname(__FILE__).'/../../classes/ScreenScrapePdfUrl.php');
+require_once(dirname(__FILE__).'/../classes/ScreenScrapePdfUrl.php');
 $url = '';
 if ( isset($_GET['url']) ) {
-  $url = $_GET['url'];
+	$url = $_GET['url'];
 }
 ?>
 <pre>
@@ -17,7 +17,7 @@ echo "start\n";
 #$s = ScreenScrapePdfUrl::build('http://ovidsp.tx.ovid.com/sp-3.8.1a/ovidweb.cgi?QS2=434f4e1a73d37e8cbc3152776b9fd747346b6efedd54280438975baf76e85d58cd3275413153de0a7cac6378913dae6c7d760d6d47be2ec71c955fea9c332268ff8f82141a23cbf332023f92d4812d2d590a29b665993245fa1618d49ce13c920ee0c954acee039f0a0cf3cb3fec448740b776ed729efad9ac73f82c2ffc8360f869103bc5f5615a3215c2e1653afd2ae01cf0bdc0a053ba0deea852130bb341897fc6c5deb034f9a86ae4e9e867474baf3be88d74cd7f684f657dc787f967b787162af011bf133ac5198bf3cbb1ceb1912ed3977fc00d666ca19c66797012cad79c99c812971ca2176531d216a09f996e4d5fb2bd495ed143a24f7b70baf6f637d01571eaad6201fe34fc91360128cd8ace0ece8a48a79a38dc1584b7b27d048967dde814a523236152911f66c781a8e8f5d65fffa484e7');
 #$s = ScreenScrapePdfUrl::build('');
 $s = ScreenScrapePdfUrl::build($url);
-if ( $s !== FALSE && $s->getUrl() !== FALSE ) {
+if ( $s instanceof ScreenScrapePdfUrl && $s->getUrl() !== FALSE ) {
 	echo '<a href="'.htmlspecialchars($s->getUrl()).'">PDF'."</a>\n";
 } else {
 	echo 'ScreenScrapePdfUrl is FALSE';
