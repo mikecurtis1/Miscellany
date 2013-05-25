@@ -11,8 +11,22 @@ class ScreenScrapePdfUrl
 	private $_regex_sciencedirect = "\<a id\=\"pdfLink\".*?href\=\"(.*?)\".*?title\=\"Download PDF\".*?\>PDF.*?\<\/a\>";
 	private $_regex_ovid = "\<iframe.*?\>\<a href\=\"(.*?)\"\>.*?\<\/a\>\<\/iframe\>";
 	
+	private function __construct($arg=NULL){
+		if ( $this->_isUrl($arg) ) {
+			$this->_source_url = $arg;
+			$this->_source_html = file_get_contents($arg);
+			$this->_source_host = parse_url($arg, PHP_URL_HOST);
+			$this->_setRegex();
+			$this->_pdf_url = $obj->_screenScrape();
+			return $this;
+		} else {
+			return FALSE;
+		}
+	}
+
 	static public function build($arg=NULL){
-		if ( self::_isUrl($arg) ) {
+		return new ScreenScrapePdfUrl($arg);
+		/*if ( self::_isUrl($arg) ) {
 			$obj = new ScreenScrapePdfUrl;
 			$obj->_source_url = $arg;
 			$obj->_source_html = file_get_contents($arg);
@@ -22,7 +36,7 @@ class ScreenScrapePdfUrl
 			return $obj;
 		} else {
 			return FALSE;
-		}
+		}*/
 	}
 	
 	static private function _isUrl($arg=NULL){
