@@ -17,7 +17,7 @@ class ScreenScrapePdfUrl
 			$this->_source_html = file_get_contents($arg);
 			$this->_source_host = parse_url($arg, PHP_URL_HOST);
 			$this->_setRegex();
-			$this->_pdf_url = $obj->_screenScrape();
+			$this->_pdf_url = $this->_screenScrape();
 			return $this;
 		} else {
 			return FALSE;
