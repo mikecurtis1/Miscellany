@@ -1,7 +1,7 @@
 <?php 
 class DbConnection
 {
-  private $_connection;
+	private $_connection;
 	
 	private function __construct($connection){
 		$this->_connection = $connection;
