@@ -23,6 +23,7 @@ if ( $conn = DbConnection::create('127.0.0.1', 'root', '') ) {
 	if ( $query = DbQuery::query($conn->getConnection(),$db,$sql) ) {
 		$results = $query->getResults();
 	}
+	$conn->closeConnection();
 }
 echo var_dump($results);
 ?>
