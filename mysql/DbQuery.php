@@ -1,7 +1,7 @@
 <?php 
 class DbQuery
 {
-  private $_count = 0;
+	private $_count = 0;
 	private $_results = array();
 	
 	private function __construct($results){
