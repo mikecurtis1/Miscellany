@@ -12,6 +12,7 @@ if ( isset($_GET['input']) ) {
 require_once('DbConnection.php');
 require_once('DbQuery.php');
 // run
+$count = 0;
 $results = array();
 if ( $conn = DbConnection::create('127.0.0.1', 'root', '') ) {
 	/*
@@ -21,10 +22,12 @@ if ( $conn = DbConnection::create('127.0.0.1', 'root', '') ) {
 	$db = 'reserves';
 	$sql = 'SELECT * FROM FILES';
 	if ( $query = DbQuery::query($conn->getConnection(),$db,$sql) ) {
+		$count = $query->getCount();
 		$results = $query->getResults();
 	}
 	$conn->closeConnection();
 }
+echo var_dump($count);
 echo var_dump($results);
 ?>
 </pre>
