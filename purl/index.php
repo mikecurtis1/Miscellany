@@ -1,6 +1,7 @@
 <?php 
 $data = parse_ini_file('purl.ini', TRUE);
 $proxy='http://ezproxy.example.com/login?url=';
+$error_page_path = 'error.php';
 if ( isset($_GET['id']) ) {
 	$id = $_GET['id'];
 	if ( isset($data[$id]['link_text']) && isset($data[$id]['url']) ) {
@@ -16,17 +17,9 @@ if ( isset($_GET['id']) ) {
 		}
 		header('Location: '.$location);
 	} else {
-?>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Permanent URL (PURL) Service</title>
-<body>
-No permanent URL (PURL) resource found for ID = <em><?php echo $id; ?></em><br />
-Contact the <a href="mailto:library@example.com">Library</a> for help<br />
-</body>
-</html>
-<?php 
+		header("HTTP/1.0 404 Not Found");
+		include($error_page_path);
+		exit;
 	}
 }
 ?>
