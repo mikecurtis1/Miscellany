@@ -111,5 +111,9 @@ class Computer
 	public function getTimeBlocks(){
 		return $this->_time_blocks;
 	}
+	
+	public function getAvailableTimeBlocks(){
+		return $this->_available_time_blocks;
+	}
 }
 ?>
