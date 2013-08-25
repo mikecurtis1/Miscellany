@@ -36,7 +36,7 @@ class AvailabilityTable
 		$sql = 'SELECT * FROM computers';
 		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
 			foreach ( $query->getResults() as $computer ) {
-				if ( $this->_computers[$computer['name']] = Computer::create($computer['name'],$computer['ip']) ) {
+				if ( $this->_computers[$computer['name']] = Computer::create($computer['name'],$computer['id'],$computer['ip']) ) {
 					//continue;
 				}
 			}
@@ -45,33 +45,47 @@ class AvailabilityTable
 	}
 	
 	private function _setTimeBlocks(){
-		foreach ( $this->_computers as $name => $computer ) {
-			if ( $block = TimeBlock::create($this->_getTodayBeginTimeDate(),$this->_getTodayEndTimeDate()) ) {
-				$computer->addTimeBlock($block);
+		$sql = 'SELECT * FROM computers LEFT JOIN key_schedule ON key_schedule.computer = computers.id';
+		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
+			foreach ( $query->getResults() as $scheduled_key ) {
+				if ( isset($this->_computers[$scheduled_key['name']]) ) {
+					if ( $time_block = TimeBlock::create($scheduled_key['begin'],$scheduled_key['end']) ) {
+						$this->_computers[$scheduled_key['name']]->addTimeBlock($time_block);
+					} else {
+						return FALSE;
+					}
+				} else {
+					return FALSE;
+				}
 			}
 		}
 	}
-	
-	/* 
-	TODO: given a computer name and a time block, 
-	loop through the computer object's time block 
-	and if noTimeConflict is true 
-	set a new time block for the computer
-	*/
-	/*public function setTimeBlock($computer_name=NULL,$time_block=NULL){
-		if ( $time_block instanceof TimeBlock ) {
-			
+
+	public function setNewTimeBlock($computer_name=NULL,$time_block=NULL){
+		if ( isset($this->_computers[$computer_name]) && $time_block instanceof TimeBlock ) {
+			foreach ( $this->_computers[$computer_name]->getTimeBlocks() as $cmp_time_block ) {
+				if ( $this->noTimeConflict($time_block,$cmp_time_block) === FALSE ) {
+					return FALSE;
+				}
+			}
+			return $this->_insertKeySchedule($this->_computers[$computer_name]->getId(),$time_block);
 		} else {
 			return FALSE;
 		}
-	}*/
-	
-	private function _getTodayBeginTimeDate(){
-		return $this->_today.' '.$this->_day_begin_time;
 	}
 	
-	private function _getTodayEndTimeDate(){
-		return $this->_today.' '.$this->_day_end_time;
+	private function _generateKey(){
+		$chars = 'abcefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+		return substr(str_shuffle($chars),0,4);
+	}
+	
+	private function _insertKeySchedule($computer_name=NULL,$time_block=NULL){
+		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$computer_name.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$this->_generateKey().'\',\''.'pending'.'\')';
+		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
 	}
 	
 	public function getHTMLTable(){
