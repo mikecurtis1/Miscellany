@@ -21,7 +21,7 @@ if ( $m = ComputerKeyManager::create($db_host,$db_username,$db_password) ) {
 $g_computer = HttpRequest::getValue('computer');
 $g_begin = HttpRequest::getValue('begin');
 $g_end = HttpRequest::getValue('end');
-if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end)) ) {
+if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end),'SCHEDULED') ) {
 	if ( $m->addNewTimeBlock($g_computer,$new_time_block) ) {
 		header('Location: http://localhost/computer_keys/index.php');
 	} else {
@@ -46,14 +46,6 @@ foreach ( $computers as $computer ) {
 <a href="index.php">Re-load</a>
 <hr />
 <pre>
-<?php 
-foreach ( $m->getComputers()['COMP-F7R6D4S3']->getTimeBlocks() as $b ) {
-	echo $b."\n";
-}
-foreach ( $m->getComputers()['COMP-F7R6D4S3']->getScheduledEvents() as $e ) {
-	echo $e."\n";
-}
-?>
 <?php print_r($m->getComputers()); ?>
 </pre>
 <br />
