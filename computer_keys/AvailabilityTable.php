@@ -56,7 +56,7 @@ class AvailabilityTable
 		}
 	}
 
-	public function setNewTimeBlock($computer_name=NULL,$time_block=NULL){
+	public function addNewTimeBlock($computer_name=NULL,$time_block=NULL){
 		if ( isset($this->_computers[$computer_name]) && $time_block instanceof TimeBlock ) {
 			foreach ( $this->_computers[$computer_name]->getTimeBlocks() as $cmp_time_block ) {
 				if ( $this->noTimeConflict($time_block,$cmp_time_block) === FALSE ) {
