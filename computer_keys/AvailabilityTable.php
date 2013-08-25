@@ -74,8 +74,8 @@ class AvailabilityTable
 		return substr(str_shuffle($chars),0,4);
 	}
 	
-	private function _insertKeySchedule($computer_name=NULL,$time_block=NULL){
-		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$computer_name.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$this->_generateKey().'\',\''.'pending'.'\')';
+	private function _insertKeySchedule($computer_id=NULL,$time_block=NULL){
+		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$computer_id.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$this->_generateKey().'\',\''.'pending'.'\')';
 		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
 			return TRUE;
 		} else {
