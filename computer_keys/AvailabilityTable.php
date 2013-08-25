@@ -10,22 +10,23 @@ class AvailabilityTable
 	private $_day_begin_time = '00:00:00';
 	private $_day_end_time = '23:59:59';
 	private $_today = NULL;
-	private $_db_host = 'localhost';
-	private $_db_username = 'root'; //TODO: move out of public web root
-	private $_db_password = ''; //TODO: move out of public web root
 	private $_db_name = 'computer_keys';
 	private $_db_connection = FALSE;
 	private $_computers = array();
 	
-	public function __construct(){
+	private function __construct($c=NULL){
+		$this->_db_connection = $c->getConnection();
 		$this->_today = date("Y-m-d");
-		if ( $c = DbConnection::create($this->_db_host,$this->_db_username,$this->_db_password) ) {
-			$this->_db_connection = $c->getConnection();
+		$this->_setComputers();
+		$this->_setTimeBlocks();
+	}
+	
+	public static function create($db_host=NULL,$db_username=NULL,$db_password=NULL){
+		if ( $c = DbConnection::create($db_host,$db_username,$db_password) ) {
+			return new AvailabilityTable($c);
 		} else {
 			return FALSE;
 		}
-		$this->_setComputers();
-		$this->_setTimeBlocks();
 	}
 	
 	private function _setComputers(){
@@ -59,7 +60,7 @@ class AvailabilityTable
 	public function addNewTimeBlock($computer_name=NULL,$time_block=NULL){
 		if ( isset($this->_computers[$computer_name]) && $time_block instanceof TimeBlock ) {
 			foreach ( $this->_computers[$computer_name]->getTimeBlocks() as $cmp_time_block ) {
-				if ( $this->noTimeConflict($time_block,$cmp_time_block) === FALSE ) {
+				if ( $this->_noTimeConflict($time_block,$cmp_time_block) === FALSE ) {
 					return FALSE;
 				}
 			}
@@ -69,25 +70,7 @@ class AvailabilityTable
 		}
 	}
 	
-	private function _generateKey(){
-		$chars = 'abcefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-		return substr(str_shuffle($chars),0,4);
-	}
-	
-	private function _insertKeySchedule($computer_id=NULL,$time_block=NULL){
-		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$computer_id.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$this->_generateKey().'\',\''.'pending'.'\')';
-		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
-			return TRUE;
-		} else {
-			return FALSE;
-		}
-	}
-	
-	public function getComputers(){
-		return $this->_computers;
-	}
-	
-	public function noTimeConflict($arg1=NULL,$arg2=NULL){
+	private function _noTimeConflict($arg1=NULL,$arg2=NULL){
 		if ( $arg1 instanceof TimeBlock && $arg2 instanceof TimeBlock ) {
 			if ( ( $arg1->getBeginUnix() >= $arg2->getBeginUnix() && $arg1->getBeginUnix() <= $arg2->getEndUnix() ) || ( $arg1->getEndUnix() >= $arg2->getBeginUnix() && $arg1->getEndUnix() <= $arg2->getEndUnix() ) ) {
 				return FALSE;
@@ -99,6 +82,24 @@ class AvailabilityTable
 		} else {
 			return FALSE;
 		}
+	}
+	
+	private function _insertKeySchedule($computer_id=NULL,$time_block=NULL){
+		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$computer_id.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$this->_generateKey().'\',\''.'pending'.'\')';
+		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+	
+	private function _generateKey(){
+		$chars = 'abcefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+		return substr(str_shuffle($chars),0,4);
+	}
+	
+	public function getComputers(){
+		return $this->_computers;
 	}
 	
 	//TODO: function, given a set of time blocks in a computer object return a set of time blocks for the remainder of the day
