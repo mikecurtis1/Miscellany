@@ -15,11 +15,9 @@ class ComputerKeyManager
 	
 	private function __construct($c=NULL){
 		$this->_db_connection = $c->getConnection();
-		$this->_day_begin = strtotime(date("Y-m-d").' 00:00:00');
-		$this->_day_end = strtotime(date("Y-m-d").' 23:59:59');
 		$this->_setComputers();
 		$this->_setTimeBlocks();
-		$this->_setScheduledEvents();
+		$this->_setAvailableTimeBlocks();
 	}
 	
 	public static function create($db_host=NULL,$db_username=NULL,$db_password=NULL){
@@ -34,8 +32,8 @@ class ComputerKeyManager
 		$sql = 'SELECT * FROM computers';
 		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
 			foreach ( $query->getResults() as $computer ) {
-				if ( $this->_computers[$computer['name']] = Computer::create($computer['name'],$computer['id'],$computer['ip']) ) {
-					continue;
+				if ( $c = Computer::create($computer['name'],$computer['id'],$computer['ip']) ) {
+					$this->_computers[$computer['name']] = $c;
 				}
 			}
 		}
@@ -47,7 +45,7 @@ class ComputerKeyManager
 		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
 			foreach ( $query->getResults() as $scheduled_key ) {
 				if ( isset($this->_computers[$scheduled_key['name']]) ) {
-					if ( $time_block = TimeBlock::create($scheduled_key['begin'],$scheduled_key['end']) ) {
+					if ( $time_block = TimeBlock::create($scheduled_key['begin'],$scheduled_key['end'],'SCHEDULED') ) {
 						$this->_computers[$scheduled_key['name']]->addTimeBlock($time_block);
 					} else {
 						return FALSE;
@@ -59,9 +57,9 @@ class ComputerKeyManager
 		}
 	}
 	
-	private function _setScheduledEvents(){
+	private function _setAvailableTimeBlocks(){
 		foreach ( $this->_computers as $computer ) {
-			$computer->setScheduledEvents();
+			$computer->setAvailableTimeBlocks();
 		}
 	}
 
@@ -109,14 +107,6 @@ class ComputerKeyManager
 	
 	public function getComputers(){
 		return $this->_computers;
-	}
-	
-	public function getDayBegin(){
-		return $this->_day_begin;
-	}
-	
-	public function getDayEnd(){
-		return $this->_day_end;
 	}
 }
 ?>
