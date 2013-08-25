@@ -27,7 +27,7 @@ class TimeBlock
 	}
 	
 	public function getEnd(){
-		return $this->_begin;
+		return $this->_end;
 	}
 	
 	public function getBeginUnix(){
