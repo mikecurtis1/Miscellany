@@ -6,8 +6,17 @@ ini_set('display_errors', '1');
 require_once(dirname(__FILE__).'/AvailabilityTable.php');
 require_once(dirname(__FILE__).'/TimeBlock.php');
 require_once(dirname(__FILE__).'/../classes/HttpRequest.php');
+// init vars
+//TODO: move out of public web root
+$db_host = 'localhost';
+$db_username = 'root';
+$db_password = '';
 // create instance
-$a = new AvailabilityTable();
+if ( $a = AvailabilityTable::create($db_host,$db_username,$db_password) ) {
+	$computers = $a->getComputers();
+} else {
+	die('Could NOT create AvailabilityTable.');
+}
 // run 
 $g_computer = HttpRequest::getValue('computer');
 $g_begin = HttpRequest::getValue('begin');
@@ -24,7 +33,6 @@ if ( $new_time_block = TimeBlock::create($g_begin,$g_end) ) {
 Computer: 
 <select name="computer">
 <?php 
-$computers = $a->getComputers();
 foreach ( $computers as $computer ) {
 	echo "<option value=\"{$computer->getName()}\">{$computer->getName()}</option>\n";
 }
