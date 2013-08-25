@@ -13,7 +13,7 @@ $g_computer = HttpRequest::getValue('computer');
 $g_begin = HttpRequest::getValue('begin');
 $g_end = HttpRequest::getValue('end');
 if ( $new_time_block = TimeBlock::create($g_begin,$g_end) ) {
-	if ( $a->setNewTimeBlock($g_computer,$new_time_block) ) {
+	if ( $a->addNewTimeBlock($g_computer,$new_time_block) ) {
 		header('Location: http://localhost/computer_keys/index.php');
 	} else {
 		echo "New time block <em>NOT</em> added.\n";
