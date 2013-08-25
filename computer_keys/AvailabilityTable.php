@@ -15,10 +15,6 @@ class AvailabilityTable
 	private $_db_password = ''; //TODO: move out of public web root
 	private $_db_name = 'computer_keys';
 	private $_db_connection = FALSE;
-	private $_db_count = NULL;
-	private $_db_results = NULL;
-	private $_db_fields = NULL;
-	private $_db_html_table = '';
 	private $_computers = array();
 	
 	public function __construct(){
@@ -37,10 +33,9 @@ class AvailabilityTable
 		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
 			foreach ( $query->getResults() as $computer ) {
 				if ( $this->_computers[$computer['name']] = Computer::create($computer['name'],$computer['id'],$computer['ip']) ) {
-					//continue;
+					continue;
 				}
 			}
-			$this->_db_html_table = $query->htmlResultsTable();
 		}
 	}
 	
@@ -88,16 +83,8 @@ class AvailabilityTable
 		}
 	}
 	
-	public function getHTMLTable(){
-		return $this->_db_html_table;
-	}
-	
 	public function getComputers(){
 		return $this->_computers;
-	}
-	
-	public function getComputerNames(){
-		return array_keys($this->_computers);
 	}
 	
 	public function noTimeConflict($arg1=NULL,$arg2=NULL){
