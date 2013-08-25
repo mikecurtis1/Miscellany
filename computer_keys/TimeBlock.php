@@ -4,19 +4,15 @@ class TimeBlock
 {
 	private $_begin = NULL;
 	private $_end = NULL;
-	private $_begin_unix = NULL;
-	private $_end_unix = NULL;
 	
 	private function __construct($begin=NULL,$end=NULL){
-		$this->_begin_unix = $begin;
-		$this->_end_unix = $end;
-		$this->_begin = date("Y-m-d H:i:s",$begin);
-		$this->_end = date("Y-m-d H:i:s",$end);
+		$this->_begin = $begin;
+		$this->_end = $end;
 	}
 	
 	public static function create($begin=NULL,$end=NULL){
-		if ( strtotime($begin) && strtotime($end) && (strtotime($begin) < strtotime($end)) ) {
-			return new TimeBlock(strtotime($begin),strtotime($end));
+		if ( is_numeric($begin) && is_numeric($end) && ($begin < $end) ) {
+			return new TimeBlock($begin,$end);
 		} else {
 			return FALSE;
 		}
@@ -30,12 +26,8 @@ class TimeBlock
 		return $this->_end;
 	}
 	
-	public function getBeginUnix(){
-		return $this->_begin_unix;
-	}
-	
-	public function getEndUnix(){
-		return $this->_end_unix;
-	}
+	public function __toString(){
+		return date("M, j g:i:s a",$this->_begin).' to '.date("M, j g:i:s a",$this->_end);
+    }
 }
 ?>
