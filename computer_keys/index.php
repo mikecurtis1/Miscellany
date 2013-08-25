@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 // includes
-require_once(dirname(__FILE__).'/AvailabilityTable.php');
+require_once(dirname(__FILE__).'/ComputerKeyManager.php');
 require_once(dirname(__FILE__).'/TimeBlock.php');
 require_once(dirname(__FILE__).'/../classes/HttpRequest.php');
 // init vars
@@ -12,17 +12,17 @@ $db_host = 'localhost';
 $db_username = 'root';
 $db_password = '';
 // create instance
-if ( $a = AvailabilityTable::create($db_host,$db_username,$db_password) ) {
-	$computers = $a->getComputers();
+if ( $m = ComputerKeyManager::create($db_host,$db_username,$db_password) ) {
+	$computers = $m->getComputers();
 } else {
-	die('Could NOT create AvailabilityTable.');
+	die('Could NOT create ComputerKeyManager.');
 }
 // run 
 $g_computer = HttpRequest::getValue('computer');
 $g_begin = HttpRequest::getValue('begin');
 $g_end = HttpRequest::getValue('end');
-if ( $new_time_block = TimeBlock::create($g_begin,$g_end) ) {
-	if ( $a->addNewTimeBlock($g_computer,$new_time_block) ) {
+if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end)) ) {
+	if ( $m->addNewTimeBlock($g_computer,$new_time_block) ) {
 		header('Location: http://localhost/computer_keys/index.php');
 	} else {
 		echo "New time block <em>NOT</em> added.\n";
@@ -46,7 +46,15 @@ foreach ( $computers as $computer ) {
 <a href="index.php">Re-load</a>
 <hr />
 <pre>
-<?php print_r($a->getComputers()); ?>
+<?php 
+foreach ( $m->getComputers()['COMP-F7R6D4S3']->getTimeBlocks() as $b ) {
+	echo $b."\n";
+}
+foreach ( $m->getComputers()['COMP-F7R6D4S3']->getScheduledEvents() as $e ) {
+	echo $e."\n";
+}
+?>
+<?php print_r($m->getComputers()); ?>
 </pre>
 <br />
 <br />
