@@ -135,9 +135,10 @@ class Schedule
 	}
 	
 	private function _insertKeySchedule($time_block=NULL){
-		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$this->_computer_id.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$this->_generateKey().'\',\''.'pending'.'\')';
+		$key = $this->_generateKey();
+		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$this->_computer_id.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$key.'\',\''.'pending'.'\')';
 		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
-			return TRUE;
+			return $key;
 		} else {
 			return FALSE;
 		}
