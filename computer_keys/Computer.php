@@ -2,6 +2,7 @@
 
 require_once(dirname(__FILE__).'/Event.php');
 require_once(dirname(__FILE__).'/TimeBlock.php');
+require_once(dirname(__FILE__).'/Schedule.php');
 
 class Computer
 {
