@@ -37,24 +37,9 @@ if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end),'
 <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
 </head>
 <body>
-<form action="" method="get">
-Computer: 
-<select name="computer">
-<?php 
-foreach ( $computers as $computer ) {
-	echo "<option value=\"{$computer->getName()}\">{$computer->getName()}</option>\n";
-}
-?>
-</select>
-<div>Begin: <input type="text" name="begin" value="<?php echo date("Y-m-d H:i:s"); ?>" /></div>
-<div>End: <input type="text" name="end" value="<?php echo date("Y-m-d H:i:s",time()+1200); ?>" /></div>
-<div><input type="submit" value="submit" /></div>
-</form>
-<hr />
-<a href="index.php">Re-load</a>
-<hr />
-<?php echo date("M, j g:i:s a"); ?>
-<hr />
+<h1>Computer Keys</h1>
+Current Time: <?php echo date("M, j g:i:s a"); ?><br />
+<a href="index.php">Re-load</a> page<br />
 <?php 
 $schedule = array();
 $html = '';
@@ -63,7 +48,7 @@ foreach ( $computers as $computer ) {
 	$anchors = '';
 	$temp = array_merge($computer->getSchedule()->getTimeBlocks(),$computer->getSchedule()->getAvailableTimeBlocks());
 	usort($temp,array('Schedule','cmpTimeBlocks'));
-	$html .= '<h1>'.$computer->getName().'</h1>'."\n";
+	$html .= '<h2>'.$computer->getName().'</h2>'."\n";
 	if ( !empty($temp) ) {
 		foreach ( $temp as $t ) {
 			$anchors = '';
@@ -93,6 +78,20 @@ foreach ( $computers as $computer ) {
 }
 echo $html;
 ?>
+<hr />
+<form action="" method="get">
+Computer: 
+<select name="computer">
+<?php 
+foreach ( $computers as $computer ) {
+	echo "<option value=\"{$computer->getName()}\">{$computer->getName()}</option>\n";
+}
+?>
+</select>
+<div>Begin: <input type="text" name="begin" value="<?php echo date("Y-m-d H:i:s"); ?>" /></div>
+<div>End: <input type="text" name="end" value="<?php echo date("Y-m-d H:i:s",time()+1200); ?>" /></div>
+<div><input type="submit" value="submit" /></div>
+</form>
 <hr />
 <pre>
 <?php print_r($schedule); ?>
