@@ -53,6 +53,8 @@ foreach ( $computers as $computer ) {
 <hr />
 <a href="index.php">Re-load</a>
 <hr />
+<?php echo date("M, j g:i:s a"); ?>
+<hr />
 <?php 
 $schedule = array();
 $html = '';
@@ -65,7 +67,7 @@ foreach ( $computers as $computer ) {
 		foreach ( $temp as $t ) {
 			$anchors = '';
 			if ( $t->getType() === 'SCHEDULED' ) {
-				$anchors = '<a href="index.php?func=extend&amp;id='.$t->getId().'" class="extend">Extend</a><a href="index.php?func=delete&amp;id='.$t->getId().'" class="delete">Delete</a>';
+				$anchors = '<a href="index.php?func=extend&amp;id='.$t->getId().'" class="extend">Extend</a><a href="index.php?func=delete&amp;id='.$t->getId().'" class="delete">Delete</a><span class="key">'.$t->getKey().'</span>';
 			}
 			if ( $t->getType() === 'AVAILABLE' ) {
 				$anchors = '<a href="index.php?func=schedule" class="schedule">Schedule</a>';
