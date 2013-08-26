@@ -37,3 +37,7 @@ span.id{
 span.key{
 	margin:1em;
 }
+
+form select, form input, form div {
+	display: inline;
+}
