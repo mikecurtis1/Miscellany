@@ -58,6 +58,7 @@ foreach ( $computers as $computer ) {
 <?php 
 $schedule = array();
 $html = '';
+$default_duration = (60*20);
 foreach ( $computers as $computer ) {
 	$anchors = '';
 	$temp = array_merge($computer->getSchedule()->getTimeBlocks(),$computer->getSchedule()->getAvailableTimeBlocks());
@@ -70,12 +71,21 @@ foreach ( $computers as $computer ) {
 				$anchors = '<a href="index.php?func=modify&amp;id='.$t->getId().'" class="modify">Modify</a><a href="index.php?func=deactivate&amp;id='.$t->getId().'" class="deactivate">De-Activate</a><span class="id">ID:'.$t->getId().'</span><span class="key">KEY:'.$t->getKey().'</span>';
 			}
 			if ( $t->getType() === 'AVAILABLE' ) {
-				$anchors = '<a href="index.php?func=schedule" class="schedule">Schedule</a>';
+				$begin = $t->getBegin();
+				$end = $begin + $default_duration;
+				if ( $end > $t->getEnd() ) {
+					$end = $t->getEnd();
+				}
+				$begin = date("Y-m-d H:i:s",$begin);
+				$end = date("Y-m-d H:i:s",$end);
+				$anchors = '<a href="index.php?func=schedule&amp;computer='.$computer->getName().'&amp;begin='.$begin.'&amp;end='.$end.'" class="schedule">Schedule</a>';
 			}
 			$html .= '<div class="time_block '.strtolower($t->getType()).'">'.$t.$anchors.'</div>'."\n";
 		}
 	} else {
-		$anchors = '<a href="index.php?func=schedule" class="schedule">Schedule</a>';
+		$begin = date("Y-m-d H:i:s");
+		$end = date("Y-m-d H:i:s",time()+$default_duration);
+		$anchors = '<a href="index.php?func=schedule&amp;computer='.$computer->getName().'&amp;begin='.$begin.'&amp;end='.$end.'" class="schedule">Schedule</a>';
 		$html .= '<div class="time_block available">AVAILABLE: '.$anchors.'</div>'."\n";
 	}
 	$html .= '<br class="clear" />'."\n";
