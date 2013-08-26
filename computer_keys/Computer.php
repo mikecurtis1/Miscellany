@@ -36,7 +36,7 @@ class Computer
 		}
 	}
 
-	//TODO: make this function smaller, break it up?
+	//TODO: put this into a schedule object
 	public function setAvailableTimeBlocks(){
 		// init arrays
 		$scheduled_events = array();
