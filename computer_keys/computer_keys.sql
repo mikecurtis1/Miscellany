@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 25, 2013 at 07:55 PM
+-- Generation Time: Aug 26, 2013 at 08:35 AM
 -- Server version: 5.6.11-log
 -- PHP Version: 5.4.14
 
@@ -54,6 +54,7 @@ INSERT INTO `computers` (`id`, `name`, `ip`, `active`, `timestamp`, `note`) VALU
 
 CREATE TABLE IF NOT EXISTS `key_schedule` (
   `id` int(9) NOT NULL AUTO_INCREMENT,
+  `active` enum('y','n') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'y',
   `computer` int(3) NOT NULL,
   `begin` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `end` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
@@ -61,7 +62,11 @@ CREATE TABLE IF NOT EXISTS `key_schedule` (
   `key` varchar(4) COLLATE utf8_unicode_ci NOT NULL,
   `note` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=44 ;
+
+--
+-- Dumping data for table `key_schedule`
+--
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
