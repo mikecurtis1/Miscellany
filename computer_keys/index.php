@@ -21,9 +21,11 @@ if ( $c = Computers::create($db_host,$db_username,$db_password) ) {
 $g_computer = HttpRequest::getValue('computer');
 $g_begin = HttpRequest::getValue('begin');
 $g_end = HttpRequest::getValue('end');
+$g_new_computer = HttpRequest::getValue('new_computer');
+$g_new_key = HttpRequest::getValue('new_key');
 if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end),'SCHEDULED',0,'') ) {
-	if ( $computers[$g_computer]->getSchedule()->addNewTimeBlock($new_time_block) ) {
-		header('Location: http://localhost/computer_keys/index.php');
+	if ( $new_key = $computers[$g_computer]->getSchedule()->addNewTimeBlock($new_time_block) ) {
+		header('Location: http://localhost/computer_keys/index.php?new_key='.$new_key.'&new_computer='.$g_computer);
 	} else {
 		echo "New time block <em>NOT</em> added.\n";
 	}
@@ -40,10 +42,13 @@ if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end),'
 <h1>Computer Keys</h1>
 Current Time: <?php echo date("M, j g:i:s a"); ?><br />
 <a href="index.php">Re-load</a> page<br />
+<?php if ( $g_new_computer !== '' && $g_new_key !== '' ) { ?>
+New time block added on <span class="new_computer"><?php echo $g_new_computer; ?></span>. KEY:<span class="new_key"><?php echo $g_new_key; ?></span><br />
+<?php } ?>
 <?php 
 $schedule = array();
 $html = '';
-$default_duration = (60*20);
+$default_duration = (60*60);
 foreach ( $computers as $computer ) {
 	$anchors = '';
 	$temp = array_merge($computer->getSchedule()->getTimeBlocks(),$computer->getSchedule()->getAvailableTimeBlocks());
