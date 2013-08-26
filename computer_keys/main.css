@@ -1,6 +1,10 @@
-body{}
+body{
+	font-family: sans-serif;
+}
 
-div.time_block {}
+div.time_block {
+	padding:0.5em;
+}
 
 div.scheduled {
 	background-color:#faa;
@@ -12,4 +16,20 @@ div.available{
 
 br.clear {
 	clear:both;
+}
+
+a.schedule{
+	margin:1em;
+}
+
+a.extend{
+	margin:1em;
+}
+
+a.delete{
+	margin:1em;
+}
+
+span.key{
+	margin:1em;
 }
