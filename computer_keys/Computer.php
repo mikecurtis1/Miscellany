@@ -42,7 +42,7 @@ class Computer
 		$inverted_events = array();
 		$previous_event = NULL;
 		// sort first
-		$this->sortTimeBlocks();
+		usort($this->_time_blocks,array('Computer','cmpTimeBlocks'));
 		// list scheduled events
 		foreach ( $this->getTimeBlocks() as $block ) {
 			if ( $e = Event::create('BEGIN',$block->getBegin()) ) {
@@ -82,10 +82,6 @@ class Computer
 			}
 			$previous_event = $e;
 		}
-	}
-	
-	public function sortTimeBlocks(){
-		usort($this->_time_blocks,array('Computer','cmpTimeBlocks'));
 	}
 	
 	public static function cmpTimeBlocks($a,$b){
