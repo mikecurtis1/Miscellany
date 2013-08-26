@@ -49,6 +49,6 @@ class TimeBlock
 	public function __toString(){
 		#return $this->_type.': '.date("M, j g:i:s a",$this->_begin).' to '.date("M, j g:i:s a",$this->_end);
 		return $this->_type.': '.date("g:i a",$this->_begin).' to '.date("g:i a",$this->_end);
-    }
+	}
 }
 ?>
