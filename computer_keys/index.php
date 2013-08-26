@@ -76,7 +76,7 @@ foreach ( $computers as $computer ) {
 		$begin = date("Y-m-d H:i:s");
 		$end = date("Y-m-d H:i:s",time()+$default_duration);
 		$anchors = '<a href="index.php?func=schedule&amp;computer='.$computer->getName().'&amp;begin='.$begin.'&amp;end='.$end.'" class="schedule">Schedule</a>';
-		$html .= '<div class="time_block available">AVAILABLE: '.$anchors.'</div>'."\n";
+		$html .= '<div class="time_block available">AVAILABLE: '.date("g:i a").' to 11:59 pm '.$anchors.'</div>'."\n";
 	}
 	$html .= '<br class="clear" />'."\n";
 	$schedule[$computer->getName()] = $temp;
