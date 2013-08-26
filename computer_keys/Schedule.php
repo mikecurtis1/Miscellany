@@ -36,7 +36,7 @@ class Schedule
 	}
 	
 	private function _setTimeBlocks(){
-		$sql = 'SELECT * FROM computers LEFT JOIN key_schedule ON key_schedule.computer = computers.id WHERE key_schedule.computer = '.$this->_computer_id.' AND begin <= '.$this->_day_end.' AND end >= '.$this->_day_begin;
+		$sql = 'SELECT * FROM computers LEFT JOIN key_schedule ON key_schedule.computer = computers.id WHERE key_schedule.computer = '.$this->_computer_id.' AND begin <= '.$this->_day_end.' AND end >= '.time();
 		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
 			foreach ( $query->getResults() as $scheduled_key ) {
 				if ( $time_block = TimeBlock::create($scheduled_key['begin'],$scheduled_key['end'],'SCHEDULED',$scheduled_key['id'],$scheduled_key['key']) ) {
@@ -98,7 +98,7 @@ class Schedule
 		}
 		// read inverted event sequentially, create available time blocks for BEGIN/END pairs
 		foreach ( $inverted_events as $e ) {
-			if ( $previous_event instanceof Event && $previous_event->getType() === 'BEGIN' && $e->getType() === 'END' ) {
+			if ( $previous_event instanceof Event && $previous_event->getType() === 'BEGIN' && $e->getType() === 'END' && $previous_event->getTime() >= time() ) {
 				if ( $available_time_block = TimeBlock::create($previous_event->getTime(),$e->getTime(),'AVAILABLE',0,'') ) {
 					$this->_available_time_blocks[] = $available_time_block;
 				}
