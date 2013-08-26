@@ -45,6 +45,7 @@ Current Time: <?php echo date("M, j g:i:s a"); ?><br />
 <?php if ( $g_new_computer !== '' && $g_new_key !== '' ) { ?>
 New time block added on <span class="new_computer"><?php echo $g_new_computer; ?></span>. KEY:<span class="new_key"><?php echo $g_new_key; ?></span><br />
 <?php } ?>
+<br />
 <?php 
 $schedule = array();
 $html = '';
@@ -70,7 +71,7 @@ foreach ( $computers as $computer ) {
 				$end = date("Y-m-d H:i:s",$end);
 				$anchors = '<a href="index.php?func=schedule&amp;computer='.$computer->getName().'&amp;begin='.$begin.'&amp;end='.$end.'" class="schedule">Schedule</a>';
 			}
-			$html .= '<div class="time_block '.strtolower($t->getType()).'">'.$t.$anchors.'</div>'."\n";
+			$html .= '<div class="time_block '.strtolower($t->getType()).'"><span class="data">'.$t.'</span>'.$anchors.'</div>'."\n";
 		}
 	} else {
 		$begin = date("Y-m-d H:i:s");
@@ -83,6 +84,7 @@ foreach ( $computers as $computer ) {
 }
 echo $html;
 ?>
+<!--
 <hr />
 <form action="" method="get">
 Computer: 
@@ -99,13 +101,13 @@ foreach ( $computers as $computer ) {
 </form>
 <hr />
 <pre>
-<?php print_r($schedule); ?>
+<?php #print_r($schedule); ?>
 </pre>
 <hr />
 <pre>
-<?php print_r($computers); ?>
+<?php #print_r($computers); ?>
 </pre>
 <br />
-<br />
+-->
 </body>
 </html>
