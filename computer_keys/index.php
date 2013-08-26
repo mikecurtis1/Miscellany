@@ -67,7 +67,7 @@ foreach ( $computers as $computer ) {
 		foreach ( $temp as $t ) {
 			$anchors = '';
 			if ( $t->getType() === 'SCHEDULED' ) {
-				$anchors = '<a href="index.php?func=extend&amp;id='.$t->getId().'" class="extend">Extend</a><a href="index.php?func=delete&amp;id='.$t->getId().'" class="delete">Delete</a><span class="id">ID:'.$t->getId().'</span><span class="key">KEY:'.$t->getKey().'</span>';
+				$anchors = '<a href="index.php?func=modify&amp;id='.$t->getId().'" class="modify">Modify</a><a href="index.php?func=deactivate&amp;id='.$t->getId().'" class="deactivate">De-Activate</a><span class="id">ID:'.$t->getId().'</span><span class="key">KEY:'.$t->getKey().'</span>';
 			}
 			if ( $t->getType() === 'AVAILABLE' ) {
 				$anchors = '<a href="index.php?func=schedule" class="schedule">Schedule</a>';
