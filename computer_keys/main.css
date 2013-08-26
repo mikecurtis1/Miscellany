@@ -1,0 +1,15 @@
+body{}
+
+div.time_block {}
+
+div.scheduled {
+	background-color:#faa;
+}
+
+div.available{
+	background-color:#afa;
+}
+
+br.clear {
+	clear:both;
+}
