@@ -3,32 +3,71 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 // includes
+require_once(dirname(__FILE__).'/../../secure/php/classes/DbQuery.php');
+require_once(dirname(__FILE__).'/../../secure/php/classes/DbConnection.php');
+require_once(dirname(__FILE__).'/../../secure/php/classes/HttpRequest.php');
 require_once(dirname(__FILE__).'/Computers.php');
+require_once(dirname(__FILE__).'/Computer.php');
+require_once(dirname(__FILE__).'/Schedule.php');
 require_once(dirname(__FILE__).'/TimeBlock.php');
-require_once(dirname(__FILE__).'/../classes/HttpRequest.php');
-// init vars
-//TODO: move out of public web root
+require_once(dirname(__FILE__).'/Event.php');
+// init vars, TODO: move db info out of public web root
 $db_host = 'localhost';
 $db_username = 'root';
 $db_password = '';
-// create instance
-if ( $c = Computers::create($db_host,$db_username,$db_password) ) {
-	$computers = $c->getComputers();
+$db_name = 'computer_keys';
+$messages = array();
+// create objects
+if ( $dbc = DbConnection::create($db_host,$db_username,$db_password,$db_name) ) {
+	if ( $c = Computers::create($dbc) ) {
+		$computers = $c->getComputers();
+	} else {
+		die('Could NOT create Computers.');
+	}
 } else {
-	die('Could NOT create Computers.');
+	die('Could NOT create Db connection.');
 }
-// run 
+// gather user input 
+$g_func = HttpRequest::getValue('func');
 $g_computer = HttpRequest::getValue('computer');
 $g_begin = HttpRequest::getValue('begin');
 $g_end = HttpRequest::getValue('end');
+$g_id = HttpRequest::getValue('id');
 $g_new_computer = HttpRequest::getValue('new_computer');
 $g_new_key = HttpRequest::getValue('new_key');
-if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end),'SCHEDULED',0,'') ) {
+$g_deactivated_computer = HttpRequest::getValue('deactivated_computer');
+$g_deactivated_key = HttpRequest::getValue('deactivated_key');
+$g_extended_computer = HttpRequest::getValue('extended_computer');
+$g_extended_key = HttpRequest::getValue('extended_key');
+// process user input 
+if ( $g_func === 'schedule' && $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end),'SCHEDULED',0,'') ) {
 	if ( $new_key = $computers[$g_computer]->getSchedule()->addNewTimeBlock($new_time_block) ) {
 		header('Location: http://localhost/computer_keys/index.php?new_key='.$new_key.'&new_computer='.$g_computer);
 	} else {
-		echo "New time block <em>NOT</em> added.\n";
+		$messages[] = '<div class="message"><span class="error">New time block <em>NOT</em> added. Check for time conflicts on '.$g_computer.' for '.$g_begin.' to '.$g_end.'</span></div>';
 	}
+} elseif ( $g_func === 'deactivate' && $g_id !== '' ) {
+	if ( $computers[$g_computer]->getSchedule()->deactivateKey($g_id) ) {
+		header('Location: http://localhost/computer_keys/index.php?deactivated_computer='.$g_computer.'&deactivated_key='.$g_id);
+	} else {
+		$messages[] = '<div class="message"><span class="error">ID: '.$g_id.' <em>NOT</em> de-activated.</span></div>';
+	}
+} elseif ( $g_func = 'extend' && $g_id !== '' ) {
+	if ( $computers[$g_computer]->getSchedule()->extendEnd($g_id,(60*20)) ) {
+		header('Location: http://localhost/computer_keys/index.php?extended_computer='.$g_computer.'&extended_key='.$g_id);
+	} else {
+		$messages[] = '<div class="message"><span class="error">ID: '.$g_id.' <em>NOT</em> extended.</span></div>';
+	}
+}
+// compose markup for system response
+if ( $g_new_computer !== '' && $g_new_key !== '' ) {
+	$messages[] = '<div class="message"><span class="success">New time block added on <span class="new_computer">'.$g_new_computer.'</span>. KEY:<span class="new_key">'.$g_new_key.'</span></span></div>';
+}
+if ( $g_deactivated_computer !== '' && $g_deactivated_key !== '' ) {
+	$messages[] = '<div class="message"><span class="success">Time block de-activated on <span class="deactivated_computer">'.$g_deactivated_computer.'</span>. KEY:<span class="deactivated_key">'.$g_deactivated_key.'</span></span></div>';
+}
+if ( $g_extended_computer !== '' && $g_extended_key !== '' ) {
+	$messages[] = '<div class="message"><span class="success">Time block extended on <span class="extended_computer">'.$g_extended_computer.'</span>. KEY:<span class="extended_key">'.$g_extended_key.'</span></span></div>';
 }
 ?>
 <!DOCTYPE html>
@@ -40,12 +79,18 @@ if ( $new_time_block = TimeBlock::create(strtotime($g_begin),strtotime($g_end),'
 </head>
 <body>
 <h1>Computer Keys</h1>
-Current Time: <?php echo date("M, j g:i:s a"); ?><br />
-<a href="index.php">Re-load</a> page<br />
-<?php if ( $g_new_computer !== '' && $g_new_key !== '' ) { ?>
-New time block added on <span class="new_computer"><?php echo $g_new_computer; ?></span>. KEY:<span class="new_key"><?php echo $g_new_key; ?></span><br />
-<?php } ?>
-<br />
+<div class="current_time">Current Time: <?php echo date("M, j g:i:s a"); ?></div>
+<div class="reload"><a href="index.php">Re-load</a> page</div>
+<div class="messages">
+<?php 
+if ( !empty($messages) ) {
+	foreach ( $messages as $message ) {
+		echo $message."\n";
+	}
+} 
+?>
+</div>
+<div class="schedule">
 <?php 
 $schedule = array();
 $html = '';
@@ -59,7 +104,7 @@ foreach ( $computers as $computer ) {
 		foreach ( $temp as $t ) {
 			$anchors = '';
 			if ( $t->getType() === 'SCHEDULED' ) {
-				$anchors = '<a href="index.php?func=modify&amp;id='.$t->getId().'" class="modify">Modify</a><a href="index.php?func=deactivate&amp;id='.$t->getId().'" class="deactivate">De-Activate</a><span class="id">ID:'.$t->getId().'</span><span class="key">KEY:'.$t->getKey().'</span>';
+				$anchors = '<a href="index.php?func=extend&amp;computer='.$computer->getName().'&amp;id='.$t->getId().'" class="extend">Extend</a><a href="index.php?func=deactivate&amp;computer='.$computer->getName().'&amp;id='.$t->getId().'" class="deactivate">De-Activate</a><span class="id">ID:'.$t->getId().'</span><span class="key">KEY:<a href="windows_client_manager.php?computer='.$computer->getName().'&amp;key='.$t->getKey().'&amp;debug=debug">'.$t->getKey().'</a></span>';
 			}
 			if ( $t->getType() === 'AVAILABLE' ) {
 				$begin = $t->getBegin();
@@ -84,9 +129,10 @@ foreach ( $computers as $computer ) {
 }
 echo $html;
 ?>
-<!--
-<hr />
+</div>
+<h3>Manual Schedule Form</h3>
 <form action="" method="get">
+<input type="hidden" name="func" value="schedule" />
 Computer: 
 <select name="computer">
 <?php 
@@ -95,19 +141,9 @@ foreach ( $computers as $computer ) {
 }
 ?>
 </select>
-<div>Begin: <input type="text" name="begin" value="<?php echo date("Y-m-d H:i:s"); ?>" /></div>
-<div>End: <input type="text" name="end" value="<?php echo date("Y-m-d H:i:s",time()+1200); ?>" /></div>
+<div>Begin: <input type="text" name="begin" value="<?php echo date("Y-m-d h:i A"); ?>" /></div>
+<div>End: <input type="text" name="end" value="<?php echo date("Y-m-d h:i A",time()+1200); ?>" /></div>
 <div><input type="submit" value="submit" /></div>
 </form>
-<hr />
-<pre>
-<?php #print_r($schedule); ?>
-</pre>
-<hr />
-<pre>
-<?php #print_r($computers); ?>
-</pre>
-<br />
--->
 </body>
 </html>
