@@ -2,10 +2,35 @@ body{
 	font-family: sans-serif;
 }
 
+h1 {}
+
 h2 {
 	font-size: 120%;
 	margin: 0.25em;
 	font-weight: normal;
+}
+
+h3 {
+	font-size: 115%;
+	margin: 0.25em;
+	font-weight: normal;
+}
+
+div.current_time{}
+
+div.reload{}
+
+div.messages{}
+
+span.success {}
+
+span.error {
+	background-color:#faa;
+	font-weight:bold;
+}
+
+div.schedule {
+	margin-top: 1em;
 }
 
 div.time_block {
@@ -21,11 +46,11 @@ span.data {
 }
 
 div.scheduled {
-	background-color:#dca;
+	background-color:#D6D6C9; /* dca */
 }
 
 div.available{
-	background-color:#8f6;
+	background-color:#9f8;
 }
 
 br.clear {
@@ -36,7 +61,7 @@ a.schedule{
 	margin:1em;
 }
 
-a.modify{
+a.extend{
 	margin:1em;
 }
 
@@ -52,18 +77,24 @@ span.key{
 	margin:1em;
 }
 
+form {
+	padding: 1em;
+	margin-bottom: 2em;
+	background-color:#bfa;
+}
+
 form select, form input, form div {
 	display: inline;
 }
 
-span.new_computer{
+span.new_computer, span.deactivated_computer, span.extended_computer{
 	background-color:#ff4;
 	font-weight:bold;
 	font-family:monospace;
 	font-size:150%;
 }
 
-span.new_key{
+span.new_key, span.deactivated_key, span.extended_key{
 	background-color:#ff4;
 	font-weight:bold;
 	font-family:monospace;
