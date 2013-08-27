@@ -1,43 +1,35 @@
 <?php 
 
-require_once(dirname(__FILE__).'/../classes/DbQuery.php');
-require_once(dirname(__FILE__).'/../classes/DbConnection.php');
-require_once(dirname(__FILE__).'/TimeBlock.php');
-require_once(dirname(__FILE__).'/Event.php');
-
 class Schedule
 {
-	private static $_db_host = 'localhost'; //TODO: move out of public web root
-	private static $_db_username = 'root'; //TODO: move out of public web root
-	private static $_db_password = ''; //TODO: move out of public web root
-	private $_db_name = 'computer_keys';
-	private $_db_connection = FALSE;
+	private $_dbc = NULL;
 	private $_computer_id = NULL;
 	private $_day_begin = NULL;
 	private $_day_end = NULL;
 	private $_time_blocks = array();
 	private $_available_time_blocks = array();
 	
-	private function __construct($c=NULL,$computer_id=NULL){
-		$this->_db_connection = $c->getConnection();
+	private function __construct($arg=NULL,$computer_id=NULL){
+		$this->_dbc = $arg;
 		$this->_computer_id = $computer_id;
 		$this->_day_begin = (string) strtotime(date("Y-m-d").' 00:00:00');
 		$this->_day_end = (string) strtotime(date("Y-m-d").' 23:59:59');
 		$this->_setTimeBlocks();
+		usort($this->_time_blocks,array('Schedule','cmpTimeBlocks'));
 		$this->_setAvailableTimeBlocks();
 	}
 	
-	public static function create($computer_id=NULL){
-		if ( $c = DbConnection::create(self::$_db_host,self::$_db_username,self::$_db_password) ) {
-			return new Schedule($c,$computer_id);
+	public static function create($arg=NULL,$computer_id=NULL){
+		if ( $arg instanceof DbConnection && is_numeric($computer_id) ) {
+			return new Schedule($arg,$computer_id);
 		} else {
 			return FALSE;
 		}
 	}
 	
 	private function _setTimeBlocks(){
-		$sql = 'SELECT * FROM computers LEFT JOIN key_schedule ON key_schedule.computer = computers.id WHERE key_schedule.computer = '.$this->_computer_id.' AND key_schedule.active = \'y\' AND begin <= '.$this->_day_end.' AND end >= '.time();
-		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
+		$sql = 'SELECT * FROM computers LEFT JOIN key_schedule ON key_schedule.computer = computers.id WHERE key_schedule.computer = '.$this->_computer_id.' AND key_schedule.active = \'y\' AND begin < '.$this->_day_end.' AND end > '.time();
+		if ( $query = DbQuery::query($this->_dbc->getLink(),$this->_dbc->getDbName(),$sql) ) {
 			foreach ( $query->getResults() as $scheduled_key ) {
 				if ( $time_block = TimeBlock::create($scheduled_key['begin'],$scheduled_key['end'],'SCHEDULED',$scheduled_key['id'],$scheduled_key['key']) ) {
 					$this->_time_blocks[] = $time_block;
@@ -60,8 +52,6 @@ class Schedule
 		$scheduled_events = array();
 		$inverted_events = array();
 		$previous_event = NULL;
-		// sort first
-		usort($this->_time_blocks,array('Schedule','cmpTimeBlocks'));
 		// list scheduled events
 		foreach ( $this->_time_blocks as $block ) {
 			if ( $e = Event::create('BEGIN',$block->getBegin()) ) {
@@ -80,10 +70,10 @@ class Schedule
 				$inverted_events[] = $e;
 			}
 		}
-		// if beginning of day is not scheduled, add it
+		// if current time of day is not scheduled, add it
 		if ( reset($scheduled_events) instanceof Event ) {
-			if ( $this->_day_begin !== reset($scheduled_events)->getTime() && reset($scheduled_events)->getType() === 'BEGIN' ) {
-				if ( $e = Event::create('BEGIN',$this->_day_begin) ) {
+			if ( time() !== reset($scheduled_events)->getTime() && reset($scheduled_events)->getType() === 'BEGIN' ) {
+				if ( $e = Event::create('BEGIN',time()) ) {
 					array_unshift($inverted_events,$e);
 				}
 			}
@@ -108,13 +98,21 @@ class Schedule
 	}
 	
 	public function addNewTimeBlock($time_block=NULL){
-		if ( $time_block instanceof TimeBlock ) {
+		if ( $this->_noConflictingTimeBlocks($time_block) ) {
+			return $this->_insertKeySchedule($time_block);
+		} else {
+			return FALSE;
+		}
+	}
+
+	private function _noConflictingTimeBlocks($arg=NULL){
+		if ( $arg instanceof TimeBlock ) {
 			foreach ( $this->_time_blocks as $cmp_time_block ) {
-				if ( $this->_noTimeConflict($time_block,$cmp_time_block) === FALSE ) {
+				if ( $this->_noTimeConflict($arg,$cmp_time_block) === FALSE ) {
 					return FALSE;
 				}
 			}
-			return $this->_insertKeySchedule($time_block);
+			return TRUE;
 		} else {
 			return FALSE;
 		}
@@ -135,19 +133,102 @@ class Schedule
 	}
 	
 	private function _insertKeySchedule($time_block=NULL){
-		$key = $this->_generateKey();
-		$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$this->_computer_id.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$key.'\',\''.'pending'.'\')';
-		if ( $query = DbQuery::query($this->_db_connection,$this->_db_name,$sql) ) {
-			return $key;
+		if ( $key = $this->_generateKey() ) {
+			$sql = 'INSERT INTO key_schedule (`computer`,`begin`,`end`,`key`,`note`) VALUES (\''.$this->_computer_id.'\',\''.$time_block->getBegin().'\',\''.$time_block->getEnd().'\',\''.$key.'\',\''.'pending'.'\')';
+			if ( $query = DbQuery::query($this->_dbc->getLink(),$this->_dbc->getDbName(),$sql) ) {
+				return $key;
+			} else {
+				return FALSE;
+			}
+		} else {
+			return FALSE;
+		}
+		
+	}
+	
+	public function deactivateKey($key_schedule_id=NULL){
+		if ( is_string($key_schedule_id) ) {
+			$sql = 'UPDATE key_schedule SET active = \'n\' WHERE id='.$key_schedule_id;
+			if ( $query = DbQuery::query($this->_dbc->getLink(),$this->_dbc->getDbName(),$sql) ) {
+				return $key_schedule_id;
+			} else {
+				return FALSE;
+			}
+		}
+	}
+	
+	public function extendEnd($key_schedule_id=NULL,$interval=NULL){
+		if ( !is_int($interval) ) {
+			return FALSE;
+		} 
+		if ( $t = $this->_getTimeBlockById($key_schedule_id) ) {
+			$new_end_time = strval($t->getEnd()+$interval);
+			$max_end_time = $this->_getMaxEndTime($key_schedule_id);
+			if ( $t->getEnd() === $max_end_time )	{
+				return FALSE;
+			}
+			if ( $new_end_time > $max_end_time ) {
+				$new_end_time = $max_end_time;
+			}
+			return $this->_updateEnd($key_schedule_id,$new_end_time);
 		} else {
 			return FALSE;
 		}
 	}
 	
+	private function _getMaxEndTime($key_schedule_id=NULL){
+		foreach ( $this->_time_blocks as $i => $t ) {
+			if ( $t->getId() === $key_schedule_id ) {
+				if ( isset($this->_time_blocks[$i+1]) ) {
+					return strval($this->_time_blocks[$i+1]->getBegin()-1);
+				} else {
+					return strval($this->_day_end);
+				}
+			}
+		}
+	}
+	
+	private function _getTimeBlockById($key_schedule_id=NULL){
+		if ( is_string($key_schedule_id) ) {
+			foreach ( $this->_time_blocks as $t ) {
+				if ( $t->getId() === $key_schedule_id ) {
+					return $t;
+				}
+			}
+		} else {
+			return FALSE;
+		}
+	}
+	
+	private function _updateEnd($key_schedule_id=NULL,$new_end_time=NULL){
+		if ( is_string($key_schedule_id) ) {
+			$sql = 'UPDATE key_schedule SET end = \''.$new_end_time.'\' WHERE id='.$key_schedule_id;
+			if ( $query = DbQuery::query($this->_dbc->getLink(),$this->_dbc->getDbName(),$sql) ) {
+				return $key_schedule_id;
+			} else {
+				return FALSE;
+			}
+		}
+	}
+	
 	private function _generateKey(){
-		//TODO: add db query to check for unique
-		$chars = 'abcefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-		return substr(str_shuffle($chars),0,4);
+		// NOTE: removed letters and numbers that look the same
+		// NOTE: 57^4 = 10,556,001 combinations!
+		$chars = 'abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789'; 
+		$unique = FALSE;
+		while ( $unique !== TRUE ) {
+			$key = substr(str_shuffle($chars),0,4);
+			$sql = 'SELECT * FROM key_schedule WHERE `key` = \''.$key.'\' AND begin >= '.$this->_day_begin.' AND end <= '.$this->_day_end;
+			if ( $query = DbQuery::query($this->_dbc->getLink(),$this->_dbc->getDbName(),$sql) ) {
+				if ( $query->getCount() === 0 ) {
+					$unique = TRUE;
+				}
+			} else {
+				break;
+				return FALSE;
+			}
+		}
+		return $key;
 	}
 	
 	public function getTimeBlocks(){
