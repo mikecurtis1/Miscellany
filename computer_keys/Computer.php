@@ -1,7 +1,5 @@
 <?php 
 
-require_once(dirname(__FILE__).'/Schedule.php');
-
 class Computer
 {
 	private $_name = NULL;
@@ -13,7 +11,6 @@ class Computer
 		$this->_name = $name;
 		$this->_id = $id;
 		$this->_ip = $ip;
-		$this->_schedule = Schedule::create($this->_id);
 	}
 	
 	public static function create($name=NULL,$id=NULL,$ip=NULL){
@@ -22,6 +19,10 @@ class Computer
 		} else {
 			return FALSE;
 		}
+	}
+	
+	public function setSchedule($arg=NULL){
+		$this->_schedule = Schedule::create($arg,$this->_id);
 	}
 	
 	public function getName(){
