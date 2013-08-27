@@ -1,16 +1,26 @@
 <?php 
+
 class DbConnection
 {
-	private $_connection;
+	private $_db_name = NULL;
+	private $_link_identifier = NULL;
+	private $_mysql_link_resource_type = 'mysql link';
 	
-	private function __construct($connection){
-		$this->_connection = $connection;
+	private function __construct($db_name,$link_identifier){
+		$this->_db_name = $db_name;
+		$this->_link_identifier = $link_identifier;
 	}
 	
-	static public function create($host=NULL,$username=NULL,$password=NULL,$type='mysql'){
-		if ( is_string($host) && is_string($username) && is_string($password) ) {
-			if ( $connection = mysql_connect($host,$username,$password) ) {
-				return new DbConnection($connection);
+	public function __destruct() {
+		if ( $this->_has_mysql_link_resource() ) {
+			mysql_close($this->_link_identifier);
+		}
+	}
+	
+	static public function create($host=NULL,$username=NULL,$password=NULL,$db_name=NULL){
+		if ( is_string($host) && is_string($username) && is_string($password) && is_string($db_name) ) {
+			if ( $link_identifier = mysql_connect($host,$username,$password,$db_name) ) {
+				return new DbConnection($db_name,$link_identifier);
 			} else {
 				return FALSE;
 			}
@@ -19,12 +29,24 @@ class DbConnection
 		}
 	}
 	
-	public function getConnection(){
-		return $this->_connection;
+	public function getDbName(){
+		return $this->_db_name;
 	}
 	
-	public function closeConnection(){
-		mysql_close($this->_connection);
+	public function getLink(){
+		return $this->_link_identifier;
+	}
+	
+	public function closeLink(){
+		mysql_close($this->_link_identifier);
+	}
+	
+	private function _has_mysql_link_resource(){
+		if ( is_resource($this->_link_identifier) && get_resource_type($this->_link_identifier) === $this->_mysql_link_resource_type ) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
 	}
 }
 ?>
