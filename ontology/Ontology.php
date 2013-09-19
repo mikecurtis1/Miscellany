@@ -51,6 +51,26 @@ class Ontology
 		return $sys;
 	}
 	
+	public function getMemberByKey($key,$a=NULL,&$member=NULL) {
+		if ( $a === NULL ) {
+			$a = $this->_system->getColl();
+		}
+		if(is_array($a)) {
+			foreach($a as $k => $c){
+				$set = $c->getSet();
+				if ( ! empty($set) ) {
+					foreach ( $c->getSet() as $m ) {
+						if ( $m->getKey() === $key ) {
+							$member = $m;
+						}
+					}
+				}
+				$this->getMemberByKey($key,$c->getColl(),$member);
+			}
+		}
+		return $member;
+	}
+	
 	public function getBranchMembers($path,$a=NULL,&$members=array()) {
 		if ( $a === NULL ) {
 			$a = $this->_system->getColl();
@@ -101,7 +121,7 @@ class Ontology
 				$set = $c->getSet();
 				if ( ! empty($set) ) {
 					foreach ( $c->getSet() as $m ) {
-						if ( $m->getKey() === $key && $m->getUri() !== '' ) {
+						if ( $m->getKey() === $key ) {
 							$uri = $m->getUri();
 						}
 					}
@@ -123,7 +143,7 @@ class Ontology
 				$html .= str_repeat($indent,$counter).'<ul class="collection coll_level_'.$counter.'">'."\n";
 				if ( ! empty($set) ) {
 					$counter++;
-					$html .= str_repeat($indent,$counter).'<li class="COLL:'.$k.'">'.$k.'</li>'."\n";
+					$html .= str_repeat($indent,$counter).'<li class="COLL:'.$k.'">'.str_replace('_',' ',$k).'</li>'."\n";
 					foreach ( $c->getSet() as $m ) {
 						$html .= str_repeat($indent,$counter).'<ul>'."\n";
 						if ( $m->getAlias() !== NULL ) {
@@ -151,7 +171,7 @@ class Ontology
 					$this->buildHTMLList($c->getColl(),$html,$c->getName(),$counter);
 				} else {
 					$counter++;
-					$html .= str_repeat($indent,$counter).'<li class="COLL:'.$k.'">'.$k.'</li>'."\n";
+					$html .= str_repeat($indent,$counter).'<li class="COLL:'.$k.'">'.str_replace('_',' ',$k).'</li>'."\n";
 					$this->buildHTMLList($c->getColl(),$html,$c->getName(),$counter);
 				}
 				$counter--;
