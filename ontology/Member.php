@@ -89,7 +89,7 @@ class Member
 	}
 	
 	public function __toString(){
-		return '<a href="'.htmlspecialchars($this->_uri).'">'.htmlspecialchars($this->_name).'</a> KEY:'.htmlspecialchars($this->_key);
+		return '<a class="member MEM:'.$this->_key.'" href="'.htmlspecialchars($this->_uri).'">'.htmlspecialchars($this->_name).'</a><span class="member_key">MEM:'.$this->_key.'</span>';
 	}
 }
 ?>
