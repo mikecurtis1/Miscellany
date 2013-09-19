@@ -1,5 +1,7 @@
 <?php 
 
+require_once('Collection.php');
+
 class Ontology
 {
 	
