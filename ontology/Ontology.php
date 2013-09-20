@@ -132,51 +132,55 @@ class Ontology
 		return $uri;
 	}
 	
-	public function buildHTMLList($a=NULL,&$html=NULL,$name=NULL,$counter=1) {
-		$indent = "\t";
+	public function buildHTMLList($a=NULL,&$html=NULL,$name=NULL,$counter=0) {
 		if ( $a === NULL ) {
 			$a = $this->_system->getColl();
 		}
-		if(is_array($a)) {
-			foreach($a as $k => $c){
-				$set = $c->getSet();
-				$html .= str_repeat($indent,$counter).'<ul class="collection coll_level_'.$counter.'">'."\n";
-				if ( ! empty($set) ) {
-					$counter++;
-					$html .= str_repeat($indent,$counter).'<li class="COLL:'.$k.'">'.str_replace('_',' ',$k).'</li>'."\n";
-					foreach ( $c->getSet() as $m ) {
+		$indent = "\t";
+		$counter++;
+		foreach($a as $k => $c){
+			$set = $c->getSet();
+			$html .= str_repeat($indent,$counter).'<li>'."\n";
+			if ( ! empty($set) ) {
+				$html .= str_repeat($indent,($counter)).'<a class="COLL:'.$k.'">'.str_replace('_',' ',$k).'</a>'."\n";
+				$html .= str_repeat($indent,($counter)).'<ul>'."\n";
+				foreach ( $c->getSet() as $m ) {
+					if ( $m->getAlias() !== NULL ) {
+						$uri = $this->getMemberUriByKey($m->getAlias(),NULL);
+						$alias = ', ALIAS:'.$m->getAlias().'';
+					} else {
+						$uri = $m->getUri();
+						$alias = '';
+					}
+					$html .= str_repeat($indent,($counter+1)).'<li class="member MEM:'.$m->getKey().'">'."\n";
+					$html .= str_repeat($indent,($counter+2)).'<a href="'.$uri.'">'.$m->getName().'KEY:'.$m->getKey().$alias.'</a>'."\n";
+					$html .= str_repeat($indent,($counter+1)).'</li>'."\n";
+					$rel = $m->getRelations();
+					if ( ! empty($rel) ) {
 						$html .= str_repeat($indent,$counter).'<ul>'."\n";
-						if ( $m->getAlias() !== NULL ) {
-							$uri = $this->getMemberUriByKey($m->getAlias(),NULL);
-							$alias = ', ALIAS:'.$m->getAlias().'';
-						} else {
-							$uri = $m->getUri();
-							$alias = '';
-						}
-						$html .= str_repeat($indent,($counter+1)).'<li class="member MEM:'.$m->getKey().'"><a href="'.$uri.'">'.$m->getName().'</a> KEY:'.$m->getKey().$alias.'</li>'."\n";
-						$rel = $m->getRelations();
-						if ( ! empty($rel) ) {
-							foreach ( $rel as $key ) {
-								$uri = $this->getMemberUriByKey($key,NULL);
-								if ( $uri !== '' ) {
-									$anchors = '';
-									$html .= str_repeat($indent,$counter).'<ul>'."\n";
-									$html .= str_repeat($indent,($counter+1)).'<li class="member_rel REL:'.$key.'">RELATION KEY:<a href="'.$uri.'">'.$key.'</a></li>'."\n";
-									$html .= str_repeat($indent,$counter).'</ul>'."\n";
-								}
+						foreach ( $rel as $key ) {
+							$uri = $this->getMemberUriByKey($key,NULL);
+							if ( $uri !== '' ) {
+								$anchors = '';
+								$html .= str_repeat($indent,($counter+1)).'<li class="member_rel REL:'.$key.'">RELATION KEY:'."\n";
+								$html .= str_repeat($indent,($counter+2)).'<a href="'.$uri.'">'.$key.'</a>'."\n";
+								$html .= str_repeat($indent,($counter+1)).'</li>'."\n";
 							}
 						}
 						$html .= str_repeat($indent,$counter).'</ul>'."\n";
 					}
-					$this->buildHTMLList($c->getColl(),$html,$c->getName(),$counter);
-				} else {
-					$counter++;
-					$html .= str_repeat($indent,$counter).'<li class="COLL:'.$k.'">'.str_replace('_',' ',$k).'</li>'."\n";
-					$this->buildHTMLList($c->getColl(),$html,$c->getName(),$counter);
 				}
-				$counter--;
-				$html .= str_repeat($indent,$counter).'</ul>'."\n";
+				$this->buildHTMLList($c->getColl(),$html,$c->getName(),$counter);
+			} else {
+				$html .= str_repeat($indent,($counter)).'<a class="COLL:'.$k.'">'.str_replace('_',' ',$k).'</a>'."\n";
+				$html .= str_repeat($indent,($counter)).'<ul>'."\n";
+				$this->buildHTMLList($c->getColl(),$html,$c->getName(),$counter);
 			}
+		}
+		$counter--;
+		if ( $counter > 0 ) {
+			$html .= str_repeat($indent,($counter)).'</ul>'."\n";
+			$html .= str_repeat($indent,$counter).'</li>'."\n";
 		}
 		return $html;
 	}
