@@ -153,22 +153,23 @@ class Ontology
 						$alias = '';
 					}
 					$html .= str_repeat($indent,($counter+1)).'<li class="member MEM:'.$m->getKey().'">'."\n";
-					$html .= str_repeat($indent,($counter+2)).'<a href="'.$uri.'">'.$m->getName().'KEY:'.$m->getKey().$alias.'</a>'."\n";
-					$html .= str_repeat($indent,($counter+1)).'</li>'."\n";
+					$html .= str_repeat($indent,($counter+2)).'<a href="'.$uri.'">'.$m->getName().'MEM:'.$m->getKey().$alias.'</a>'."\n";
 					$rel = $m->getRelations();
 					if ( ! empty($rel) ) {
-						$html .= str_repeat($indent,$counter).'<ul>'."\n";
+						$html .= str_repeat($indent,($counter+2)).'<ul>'."\n";
 						foreach ( $rel as $key ) {
-							$uri = $this->getMemberUriByKey($key,NULL);
-							if ( $uri !== '' ) {
-								$anchors = '';
-								$html .= str_repeat($indent,($counter+1)).'<li class="member_rel REL:'.$key.'">RELATION KEY:'."\n";
-								$html .= str_repeat($indent,($counter+2)).'<a href="'.$uri.'">'.$key.'</a>'."\n";
-								$html .= str_repeat($indent,($counter+1)).'</li>'."\n";
+							$m_rel = $this->getMemberByKey($key);
+							$m_rel_name = $m_rel->getName();
+							$m_rel_uri = $m_rel->getUri();
+							if ( $m_rel_uri !== '' ) {
+								$html .= str_repeat($indent,($counter+2)).'<li class="member_rel MEM:'.$key.'">'."\n";
+								$html .= str_repeat($indent,($counter+3)).'<a href="'.$m_rel_uri.'">REL:'.$m_rel_name.'</a>'."\n";
+								$html .= str_repeat($indent,($counter+2)).'</li>'."\n";
 							}
 						}
-						$html .= str_repeat($indent,$counter).'</ul>'."\n";
+						$html .= str_repeat($indent,($counter+2)).'</ul>'."\n";
 					}
+					$html .= str_repeat($indent,($counter+1)).'</li>'."\n";
 				}
 				$this->buildHTMLList($c->getColl(),$html,$c->getName(),$counter);
 			} else {
