@@ -12,7 +12,7 @@ class TagReader
 	private $_tag_paths = array();
 	private $_rank_limit = NULL;
 	private $_uncategorized_label = NULL;
-	private $_tag_synonyms = array('grub'=>'food','cow'=>'beef');
+	private $_tag_synonyms = array();
 	
 	public function __construct($path_delimiter='::',$tag_sets=array(),$tag_synonyms=array(),$rank_limit=0,$uncategorized_label='Miscellaneous'){
 		if ( is_string($path_delimiter) ) {
