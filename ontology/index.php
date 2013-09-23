@@ -13,6 +13,7 @@ require_once('Collection.php');
 require_once('Member.php');
 $ini_file = 'individuals.ini';
 // create instance of Ontology
+$start = microtime(TRUE);
 try {
 	$om = Ontology::create($name,$root,$delimiter);
 } catch (Exception $e) {
@@ -63,6 +64,7 @@ if ( $arr = parse_ini_file('relations.ini', TRUE) ) {
 		}
 	}
 }
+$end = microtime(TRUE);
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -72,6 +74,7 @@ if ( $arr = parse_ini_file('relations.ini', TRUE) ) {
 <link rel="stylesheet" type="text/css" href="dropdown.css" media="screen" />
 </head>
 <body>
+<?php echo "<div>START: {$start} - END:{$end} = ".($end-$start)."</div>\n"; ?>
 <h1><a href="http://en.wikipedia.org/wiki/Om#Hinduism">&#x0950;</a></h1>
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/Ontology_%28information_science%29">Ontology</a> (information_science)</li>
@@ -88,16 +91,24 @@ if ( $arr = parse_ini_file('relations.ini', TRUE) ) {
 <?php 
 // use HTML display methods of Ontology instance
 echo "<hr />\n";
-$start = microtime();
+$start = microtime(TRUE);
 $html = $om->buildHTMLList();
 #$z = $om->getColl()['Animals']->getColl();
 #$html = $om->buildHTMLList($z);
-$end = microtime();
+$end = microtime(TRUE);
 echo "<div>START: {$start} - END:{$end} = ".($end-$start)."</div>\n";
 echo "<ul>\n";
 echo $html;
 echo "</ul>\n";
 echo "<br style=\"clear:both;\" />\n";
+echo "<hr />\n";
+echo "<div style=\"width:100%;background-color:#1360B0\">\n";
+echo "<ul class=\"dropdown dropdown-horizontal\">\n";
+echo $html;
+echo "</ul>\n";
+echo "<br style=\"clear:both;\" />\n";
+echo "</div>\n";
+echo "<div>Hello, world!</div>\n";
 echo "<hr />\n";
 ?>
 <pre>
