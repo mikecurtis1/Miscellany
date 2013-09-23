@@ -6,20 +6,22 @@ class Ontology
 {
 	
 	private $_name = NULL;
+	private $_root = NULL;
 	private $_system = NULL;
 	private $_delimiter = NULL;
 	
-	private function __construct($name,$delimiter){
+	private function __construct($name,$root,$delimiter){
 		$this->_name = $name;
-		$this->_system = Collection::create('ROOT');
+		$this->_root = $root;
+		$this->_system = Collection::create($this->_root);
 		$this->_delimiter = $delimiter;
 	}
 	
-	public static function create($name=NULL,$delimiter=NULL){
-		if ( (is_string($name) && $name !== '') && (is_string($delimiter) && $delimiter !== '') ) {
-			return new Ontology($name,$delimiter);
+	public static function create($name=NULL,$root=NULL,$delimiter=NULL){
+		if ( (is_string($name) && $name !== '') && (is_string($root) && $root !== '') && (is_string($delimiter) && $delimiter !== '') ) {
+			return new Ontology($name,$root,$delimiter);
 		} else {
-			throw new Exception('Error: name and delimiter must be non-empty strings.');
+			throw new Exception('Error: name, root, and delimiter must be non-empty strings.');
 		}
 	}
 	
