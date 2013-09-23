@@ -101,14 +101,8 @@ echo "<ul>\n";
 echo $html;
 echo "</ul>\n";
 echo "<br style=\"clear:both;\" />\n";
-echo "<hr />\n";
-echo "<div style=\"width:100%;background-color:#1360B0\">\n";
-echo "<ul class=\"dropdown dropdown-horizontal\">\n";
-echo $html;
-echo "</ul>\n";
-echo "<br style=\"clear:both;\" />\n";
-echo "</div>\n";
 echo "<div>Hello, world!</div>\n";
+echo "</div>\n";
 echo "<hr />\n";
 ?>
 <pre>
