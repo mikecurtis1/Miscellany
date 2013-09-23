@@ -12,7 +12,6 @@ class TagReader
 	private $_tag_paths = array();
 	private $_rank_limit = NULL;
 	private $_uncategorized_label = NULL;
-	private $_tag_synonyms = array();
 	
 	public function __construct($path_delimiter='::',$tag_sets=array(),$tag_synonyms=array(),$rank_limit=0,$uncategorized_label='Miscellaneous'){
 		if ( is_string($path_delimiter) ) {
@@ -26,15 +25,6 @@ class TagReader
 			}
 		} else {
 			throw new Exception('Error: tag_sets must be an array.');
-		}
-		if ( is_array($tag_synonyms) ) { 
-			foreach ( $tag_sets as $k => $v ) {
-				if ( is_string($k) && is_string($v) ) {
-					$this->_tag_synonyms[$k] = $v;
-				}
-			}
-		} else {
-			throw new Exception('Error: tag_synonyms must be an array.');
 		}
 		if ( is_int($rank_limit) ) {
 			$this->_rank_limit = $rank_limit;
@@ -100,12 +90,8 @@ class TagReader
 		foreach ( $this->_tag_sets as $k =>$set ) {
 			$temp = array();
 			foreach ( explode($this->_tag_delimiter,$set) as $tag ) {
-				if ( isset($this->_tag_synonyms[$tag]) ) {
-					$temp[$this->_tag_synonyms[$tag].'('.$tag.')'] = $this->_tag_ranks[$this->_tag_synonyms[$tag]];
-				} else {
-					if ( $this->_tag_ranks[$tag] <= $this->_rank_limit ) {
-						$temp[$tag] = $this->_tag_ranks[$tag];
-					}
+				if ( $this->_tag_ranks[$tag] <= $this->_rank_limit ) {
+					$temp[$tag] = $this->_tag_ranks[$tag];
 				}
 			}
 			if ( !empty($temp) ) {
@@ -120,10 +106,6 @@ class TagReader
 	
 	public function getTagSets(){
 		return $this->_tag_sets;
-	}
-	
-	public function getTagSynonyms(){
-		return $this->_tag_synonyms;
 	}
 	
 	public function getTagList(){
