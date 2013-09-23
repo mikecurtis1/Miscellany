@@ -6,13 +6,15 @@ $exceptions = array();
 $om = NULL;
 $m = NULL;
 $delimiter = '::';
-$name = 'Animals and other stuff';
+$name = 'Menus';
+$root = 'root';
 require_once('Ontology.php');
 require_once('Collection.php');
 require_once('Member.php');
+$ini_file = 'individuals.ini';
 // create instance of Ontology
 try {
-	$om = Ontology::create($name,$delimiter);
+	$om = Ontology::create($name,$root,$delimiter);
 } catch (Exception $e) {
 	$exceptions[] = $e->getMessage();
 }
@@ -22,7 +24,7 @@ if ( ! $om instanceof Ontology ) {
 	die('There is no Ontology instance, cannot continue.');
 }
 // create and add Members to Ontology
-if ( $arr = parse_ini_file('individuals.ini', TRUE) ) {
+if ( $arr = parse_ini_file($ini_file, TRUE) ) {
 	foreach ( $arr as $key => $i ) {
 		if ( isset($i['path']) && isset($i['name'])&& isset($i['uri']) ) {
 			try {
@@ -67,6 +69,7 @@ if ( $arr = parse_ini_file('relations.ini', TRUE) ) {
 <head>
 <title>Ontology</title>
 <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="dropdown.css" media="screen" />
 </head>
 <body>
 <h1><a href="http://en.wikipedia.org/wiki/Om#Hinduism">&#x0950;</a></h1>
@@ -78,18 +81,23 @@ if ( $arr = parse_ini_file('relations.ini', TRUE) ) {
 <li><a href="http://en.wikipedia.org/wiki/Domain_%28biology%29">Domain</a> (biology)</li>
 <li><a href="http://en.wikipedia.org/wiki/Class_%28set_theory%29">Class</a> (set theory)</li>
 <li><a href="http://en.wikipedia.org/wiki/Set_%28mathematics%29">Set </a>(mathematics)</li>
+<li><a href="http://en.wikipedia.org/wiki/Six_degrees_of_separation">Six degrees of separation</a></li>
 </ul>
 <h2><?php echo $name; ?></h2>
+<br style="clear:both;" />
 <?php 
 // use HTML display methods of Ontology instance
 echo "<hr />\n";
 $start = microtime();
-$html = $om->buildHTMLList(NULL);
+$html = $om->buildHTMLList();
+#$z = $om->getColl()['Animals']->getColl();
+#$html = $om->buildHTMLList($z);
 $end = microtime();
 echo "<div>START: {$start} - END:{$end} = ".($end-$start)."</div>\n";
-echo "<div class=\"menu\">\n";
+echo "<ul>\n";
 echo $html;
-echo "</div>\n";
+echo "</ul>\n";
+echo "<br style=\"clear:both;\" />\n";
 echo "<hr />\n";
 ?>
 <pre>
@@ -108,6 +116,8 @@ echo "MEMBERS of path: ".$path."\n";
 $members = $om->getBranchMembers($path);
 echo var_dump($members);
 echo "---\n";
+$z = $om->getColl()['Z Collection'];
+print_r($z);
 print_r($om);
 echo "---\n";
 ?>
