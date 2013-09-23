@@ -16,6 +16,7 @@ $header_row = array_shift($rows);
 $films = array();
 $film_actors = array();
 // get film data and make tag sets from actor names
+$start = microtime(TRUE);
 foreach ( $rows as $row ) {
 	$fields = explode("\t",trim($row));
 	$actors = explode('|',$fields[6]);
@@ -65,7 +66,7 @@ if ( ! $om instanceof Ontology ) {
 // create and add Members to Ontology
 foreach ( $t->getTagPaths() as $k => $path ) {
 	try {
-		$key = 'MOVIE:'.$k;
+		$key = 'id'.$k;
 		$name = $films[$k]['title'];
 		$uri = 'http://www.imdb.com/find?q='.urlencode($films[$k]['title']).'&s=tt';
 		$m = Member::create($path,$key,$name,$uri);
@@ -78,6 +79,7 @@ foreach ( $t->getTagPaths() as $k => $path ) {
 		$exceptions[] = $e->getMessage();
 	}
 }
+$end = microtime(TRUE);
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -87,14 +89,15 @@ foreach ( $t->getTagPaths() as $k => $path ) {
 <link rel="stylesheet" type="text/css" href="dropdown.css" media="screen" />
 </head>
 <body>
+<?php echo "<div>START: {$start} - END:{$end} = ".($end-$start)."</div>\n"; ?>
 <h1><?php echo $sys_name; ?></h1>
 <br style="clear:both;" />
 <?php 
 // use HTML display methods of Ontology instance
 echo "<hr />\n";
-$start = microtime();
+$start = microtime(TRUE);
 $html = $om->buildHTMLList();
-$end = microtime();
+$end = microtime(TRUE);
 echo "<div>START: {$start} - END:{$end} = ".($end-$start)."</div>\n";
 echo "<ul>\n";
 echo $html;
