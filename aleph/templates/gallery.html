@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title><?php echo $html_title; ?></title>
+<link rel="stylesheet" type="text/css" href="<?php echo $css_main_href; ?>" media="screen" />
+</head>
+<body>
+<h1><?php echo $app_heading; ?></h1>
+<form class="filter" action="" method="get">
+<input type="text" class="text" name="query" value="<?php echo htmlspecialchars($query); ?>" />
+<input type="hidden" name="start" value="1" />
+<input type="hidden" name="app" value="<?php echo htmlspecialchars($app); ?>" />
+<input type="submit" class="submit" value="filter" />
+</form>
+<?php 
+foreach ( $errors as $error ) {
+	echo '<div class="error">'.$error.'</div>'."\n";
+}
+?>
+<?php 
+echo "<div class=\"no_entries\">".number_format($no_entries)." results. Showing ".number_format($start)." to ".number_format($end)."</div>\n";
+echo "<a href=\"".$previous_url."\">Previous</a> : <a href=\"".$next_url."\">Next</a><br />\n";
+foreach ( $arr['records'] as $record ) {
+?>
+<div class="record">
+<div class="cover"><img src="<?php echo $record['cover_src']; ?>" alt="<?php echo $record['title']; ?>" /></div>
+<div class="id"><?php echo $record['id']; ?></div>
+<div class="isbn"><?php echo $record['isbn']; ?></div>
+<div class="cover_src"><?php echo $record['cover_src']; ?></div>
+<div class="author"><?php echo $record['author']; ?></div>
+<div class="title"><?php echo $record['title']; ?></div>
+<div class="description"><?php echo $record['description']; ?></div>
+<div class="physical_description"><?php echo $record['physical_description']; ?></div>
+<div class="pubdate"><?php echo $record['pubdate']; ?></div>
+</div>
+<?php 
+}
+?>
+<br class="clear" />
+<p><?php echo $set_number; ?>, <?php echo $aleph->getSessionId(); ?></p>
+</body>
+</html>
