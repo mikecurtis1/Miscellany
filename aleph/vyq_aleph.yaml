@@ -1,6 +1,0 @@
----
-limit: 10
-host: "ups.sunyconnect.suny.edu"
-port: "4360"
-base: "UPS01PUB"
-...
