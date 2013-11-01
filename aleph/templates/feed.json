@@ -1,0 +1,5 @@
+<?php 
+$json = json_encode($arr);
+header('Content-Type: application/json; charset=utf-8'); 
+echo $json;
+?>
