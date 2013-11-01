@@ -23,7 +23,7 @@ if ( $content = file_get_contents($url) ) {
 }
 
 // if we don't get a cover from Google, show generic blank cover
-$default_url = 'http://www.example.com/aleph/img/cover.png';
+$default_url = 'img/cover.png';
 header('Content-type: image/png');
 echo file_get_contents($default_url);
 
