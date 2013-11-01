@@ -1,0 +1,54 @@
+<?php 
+$app = HttpRequest::getValue('app');
+$start = HttpRequest::getValue('start');
+$query = HttpRequest::getValue('query');
+$atom_link = 'http://www.example.com/aleph/index.php?app='.htmlspecialchars($app).'&amp;start='.htmlspecialchars($start).'&amp;query='.htmlspecialchars($query);
+?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="<?php echo $atom_link; ?>" rel="self" type="application/rss+xml" />
+<title>My Library - <?php echo htmlspecialchars($arr['query']); ?></title>
+<link>http://www.example.com/</link>
+<description>My Library - <?php echo htmlspecialchars($arr['query']); ?></description>
+<managingEditor>library@www.example.com (My Library)</managingEditor>
+<webMaster>library@example.com (My Library)</webMaster>
+<image>
+	<url>http://www.example.com/logo.gif</url>
+	<title>My Library</title>
+	<link>http://www.example.com/</link>
+</image>
+<?php foreach ( $errors as $error ) { ?>
+<item>
+	<title><?php echo htmlspecialchars($error); ?></title>
+</item>
+<?php } ?>
+<?php foreach ( $arr['records'] as $record ) { ?>
+<item>
+	<title><?php echo $record['title']; ?></title>
+	<pubDate><?php echo date("D, j M Y G:i:s T"); ?></pubDate>
+	<link>http://www.example.com/aleph/index.php?SYS=<?php echo $record['id']; ?>&amp;app=CIRC&amp;permalink=item</link>
+	<guid>http://www.example.com/aleph/index.php?SYS=<?php echo $record['id']; ?>&amp;app=CIRC&amp;permalink=item</guid>
+<description>
+	<![CDATA[
+		<table border="0">
+		<tr>
+		<td align="left" valign="top" style="vertical-align:top;text-align:left;width:150px;">
+		<img src="<?php echo $record['cover_src']; ?>" alt="<?php echo $record['title']; ?>" style="border:0;" /></a>
+		</td>
+		<td align="left" valign="top" style="vertical-align:top;text-align:left;">
+		<ul>
+		<li>TITLE: <?php echo $record['title']; ?></li>
+		<li>AUTHOR: <?php echo $record['author']; ?></li>
+		<li>DATE: <?php echo $record['pubdate']; ?></li>
+		<li>DESCRIPTION: <?php echo $record['description']; ?></li>
+		</ul>
+		</td>
+		</tr>
+		</table>
+		<hr style="clear:both;"/>
+	]]>
+</description>
+</item>
+<?php } ?>
+</channel>
+</rss>
