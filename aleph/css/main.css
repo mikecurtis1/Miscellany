@@ -1,0 +1,58 @@
+body{
+	margin: 4em;
+	font-family: sans-serif;
+}
+
+div.record {
+	width:25%;
+	/*width:120px;*/
+	float:left;
+	height: 400px;
+	overflow:hidden;
+	padding: 1em;
+	margin:1em;
+}
+
+div.id, div.isbn, div.cover_src {
+	display:none;
+}
+
+div.cover{
+	height: 200px;
+	overflow:hidden;
+}
+
+div.cover img {
+	border: solid #ccc 1px;
+}
+
+div.author {
+	color: #666;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+div.title {
+	color: #666;
+	font-size: 90%;
+	font-weight: normal;
+	margin: 0.5em;
+}
+
+div.description {
+	font-size:80%;
+	color: #888;
+}
+
+div.physical_description, div.pubdate {
+	font-size:80%;
+	color: #888;
+}
+
+form.filter {
+	float:right;
+}
+
+br.clear {
+	clear:both;
+}
