@@ -13,7 +13,7 @@
 
 class Record 
 {
-  	private $_metadata_source = '';
+	private $_metadata_source = '';
 	private $_metadata_source_id = '';
 	private $_metadata_source_uri = '';
 	private $_authors = array();
