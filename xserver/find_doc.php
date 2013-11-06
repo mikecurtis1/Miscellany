@@ -14,7 +14,6 @@ if ( isset($resource->record->metadata->oai_marc->fixfield) ) {
 if ( isset($resource->record->metadata->oai_marc->varfield) ) {
 	foreach ( $resource->record->metadata->oai_marc->varfield as $n => $obj ) {
 		$arr = (array) $obj;
-		$varfield_id = '';
 		$id = '';
 		$i1 = '';
 		$i2 = '';
@@ -29,8 +28,6 @@ if ( isset($resource->record->metadata->oai_marc->varfield) ) {
 				$i2 = $attr;
 			}
 		}
-		$varfield_id = $id.$i1.$i2;
-		$varfield_id = str_replace(' ','_',$varfield_id);
 		$count = count($obj->subfield);
 		if ( $count == 1 ) {
 			$data = (array) $obj->subfield;
