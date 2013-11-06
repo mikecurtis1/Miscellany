@@ -6,9 +6,9 @@ $marc_arr = array();
 if ( isset($resource->record->metadata->oai_marc->fixfield) ) {
 	foreach ( $resource->record->metadata->oai_marc->fixfield as $n => $obj ) {
 		$arr = (array) $obj;
-		$fixfield_id = $arr['@attributes']['id'];
+		$id = $arr['@attributes']['id'];
 		$fixfield_text = (string) $obj;
-		$marc_arr[$fixfield_id][] = array('fixfield'=>$fixfield_text);
+		$marc_arr[$id][] = array('fixfield'=>$fixfield_text);
 	}
 }
 if ( isset($resource->record->metadata->oai_marc->varfield) ) {
