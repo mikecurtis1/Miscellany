@@ -2,7 +2,7 @@
 
 class LDAP
 {
-  private $_server1 = NULL;
+	private $_server1 = NULL;
 	private $_server2 = NULL;
 	private $_port = NULL;
 	private $_base_dn = NULL;
