@@ -151,7 +151,6 @@ class Marc
 					foreach ( $c as $code ) {
 						$sub_arr = $field->getSubfields();
 						if ( isset($sub_arr[$code]) ) {
-							
 							foreach ( $sub_arr[$code] as $data ) {
 								$subfield_data[] = trim($data);
 							}
