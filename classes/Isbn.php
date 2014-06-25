@@ -3,6 +3,7 @@
 class Isbn 
 {
 	private $_string = '';
+	private $_clean = '';
 	private $_matches = array();
 	private $_numbers = array();
 	private $_isbn10 = array();
@@ -20,9 +21,15 @@ class Isbn
 	}
 	
 	private function _cleanString(){
+		//NOTE: http://isbn-information.com/isbn-information/the-13-digit-isbn.html
+		//NOTE: http://isbn-information.com/isbn-information/the-10-digit-isbn.html
 		$this->_string = trim($this->_string);
-		$this->_string = preg_replace("/([0-9xX])\-([0-9xX])/","$1$2", $this->_string);
-		$this->_string = preg_replace("/([0-9xX]) ([0-9xX])/","$1$2", $this->_string);
+		#$this->_string = preg_replace("/\-/",'', $this->_string);
+		#$this->_string = preg_replace("/ /",'', $this->_string);
+		#$this->_string = preg_replace("/([0-9xX])\-([0-9xX])/","$1$2", $this->_string);
+		#$this->_string = preg_replace("/([0-9xX]) ([0-9xX])/","$1$2", $this->_string);
+		$this->_string = preg_replace('/(?<=\d) (?=\d)/','', $this->_string);
+		$this->_string = preg_replace('/(?<=\d)\-(?=\d)/','', $this->_string);
 	}
 	
 	private function _setMatches(){
@@ -81,6 +88,7 @@ class Isbn
 		return (0 === ($check % 11)) ? 1 : false;
 	}
 
+	//NOTE: http://stackoverflow.com/questions/14095778/regex-differentiating-between-isbn-10-and-isbn-13
 	private function _getIsbn13CheckDigit($isbn=''){
 		$check = 0;
 		for ($i = 0; $i < 13; $i += 2) {
