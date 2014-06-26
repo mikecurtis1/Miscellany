@@ -24,12 +24,8 @@ class Isbn
 		//NOTE: http://isbn-information.com/isbn-information/the-13-digit-isbn.html
 		//NOTE: http://isbn-information.com/isbn-information/the-10-digit-isbn.html
 		$this->_string = trim($this->_string);
-		#$this->_string = preg_replace("/\-/",'', $this->_string);
-		#$this->_string = preg_replace("/ /",'', $this->_string);
-		#$this->_string = preg_replace("/([0-9xX])\-([0-9xX])/","$1$2", $this->_string);
-		#$this->_string = preg_replace("/([0-9xX]) ([0-9xX])/","$1$2", $this->_string);
-		$this->_string = preg_replace('/(?<=\d) (?=\d)/','', $this->_string);
-		$this->_string = preg_replace('/(?<=\d)\-(?=\d)/','', $this->_string);
+		$this->_string = preg_replace('/(?<=[0-9xX]) (?=[0-9xX])/','', $this->_string);
+		$this->_string = preg_replace('/(?<=[0-9xX])\-(?=[0-9xX])/','', $this->_string);
 	}
 	
 	private function _setMatches(){
@@ -41,35 +37,13 @@ class Isbn
 	
 	private function _filterMatches(){
 		foreach ( $this->_matches as $match ) {
-			if ( $this->_is_isbn($match) === TRUE ) {
-				if ( strlen($match) === 10 ) {
-					$this->_isbn10[] = $match;
-					$this->_numbers[] = $match;
-				} elseif ( strlen($match) === 13 ) {
-					$this->_isbn13[] = $match;
-					$this->_numbers[] = $match;
-				}
+			if ( strlen($match) === 10 && $this->_getIsbn10CheckDigit($match) !== FALSE ) {
+				$this->_isbn10[] = $match;
+				$this->_numbers[] = $match;
+			} elseif ( strlen($match) === 13 && $this->_getIsbn13CheckDigit($match) !== FALSE ) {
+				$this->_isbn13[] = $match;
+				$this->_numbers[] = $match;
 			}
-		}
-	}
-	
-	public function getNumbers(){
-		return $this->_numbers;
-	}
-	
-	public function getFirstISBN10(){
-		if ( isset($this->_isbn10[0]) ) {
-			return $this->_isbn10[0];
-		} else {
-			return '';
-		}
-	}
-	
-	public function getFirstISBN13(){
-		if ( isset($this->_isbn13[0]) ) {
-			return $this->_isbn13[0];
-		} else {
-			return '';
 		}
 	}
 	
@@ -99,29 +73,24 @@ class Isbn
 		}
 		return (0 === ($check % 10)) ? 2 : false;
 	}
-		
-	private function _is_isbn($arg=''){
-		if ( is_string($arg) ) {
-			$arg = trim($arg);
-			$length = strlen($arg);
-			if ( $length === 13 ) {
-				if ( $this->_getIsbn13CheckDigit($arg) === FALSE ) {
-					return FALSE;
-				} else {
-					return TRUE;
-				}
-			} elseif ( $length === 10 ) {
-				if ( $this->_getIsbn10CheckDigit($arg) === FALSE ) {
-					return FALSE;
-				} else {
-					return TRUE;
-				}
-			}
-			else {
-				return FALSE;
-			}
+	
+	public function getNumbers(){
+		return $this->_numbers;
+	}
+	
+	public function getFirstISBN10(){
+		if ( isset($this->_isbn10[0]) ) {
+			return $this->_isbn10[0];
 		} else {
-			return FALSE;
+			return '';
+		}
+	}
+	
+	public function getFirstISBN13(){
+		if ( isset($this->_isbn13[0]) ) {
+			return $this->_isbn13[0];
+		} else {
+			return '';
 		}
 	}
 	
