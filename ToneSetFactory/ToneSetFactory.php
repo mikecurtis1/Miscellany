@@ -9,7 +9,6 @@ class ToneSetFactory
 	private $_intervals = array();
 	private $_letter_sequence_asc = array();
 	private $_letter_sequence_desc = array();
-	private $_piano_keys = array();
 	private $_chord_intervals = array();
 	
 	public function __construct(){
@@ -20,7 +19,6 @@ class ToneSetFactory
 		$this->_intervals = json_decode(file_get_contents('intervals.json'), TRUE);
 		$this->_letter_sequence_asc = json_decode(file_get_contents('letter_sequence_asc.json'), TRUE);
 		$this->_letter_sequence_desc = json_decode(file_get_contents('letter_sequence_desc.json'), TRUE);
-		$this->_piano_keys = json_decode(file_get_contents('piano_keys.json'), TRUE);
 		$this->_chord_intervals = json_decode(file_get_contents('chord_intervals.json'), TRUE);
 	}
 	
@@ -104,15 +102,7 @@ class ToneSetFactory
 			return FALSE;
 		}
 	}
-	
-	private function _isPianoKey($piano_key=NULL){
-		if ( isset($this->_piano_keys[$piano_key]) ) {
-			return TRUE;
-		} else {
-			return FALSE;
-		}
-	}
-	
+
 	private function _isScaleType($scale_type=NULL){
 		if ( isset($this->_diatonic_series[1]['interval_' . $scale_type]) ) {
 			return TRUE;
@@ -136,14 +126,11 @@ class ToneSetFactory
 		if ( ! $this->_isInterval($interval) ) {
 			throw new Exception($interval . ' is NOT an interval abbreviation.');
 		}
-		$piano_key = $this->_getPianoKeyFromASPN($aspn);
-		$steps = $this->_intervals[$interval]['chromatic_steps'];
-		$ordinal = $piano_key + $steps;
+		$ordinal = $this->_American_standard_pitch_notation[$aspn]['key'] + $this->_intervals[$interval]['chromatic_steps'];
 		$letter = $this->_getNextLetter($aspn,$interval);
 		$spelling = $this->_getPianoKeySpelling($ordinal,$letter);
-		$octave = $this->_piano_keys[$ordinal]['octave'];
 		try {
-			$tone = new Tone($spelling . $octave);
+			$tone = new Tone($spelling);
 		} catch (Exception $e) {
 			throw new Exception($e->getMessage());
 		}
@@ -151,23 +138,11 @@ class ToneSetFactory
 		return $tone;
 	}
 	
-	private function _getPianoKeyFromASPN($aspn='C4'){
-		if ( isset($this->_American_standard_pitch_notation[$aspn]['key']) ) {
-			return $this->_American_standard_pitch_notation[$aspn]['key'];
-		} else {
-			return FALSE;
-		}
-	}
-	
 	private function _getPianoKeySpelling($piano_key=0,$letter='C'){
-		if ( $letter === substr($this->_piano_keys[$piano_key]['natural'],0,1) ) {
-			return $this->_piano_keys[$piano_key]['natural'];
-		}
-		if ( $letter === substr($this->_piano_keys[$piano_key]['raised'],0,1) ) {
-			return $this->_piano_keys[$piano_key]['raised'];
-		}
-		if ( $letter === substr($this->_piano_keys[$piano_key]['lowered'],0,1) ) {
-			return $this->_piano_keys[$piano_key]['lowered'];
+		foreach ( $this->_American_standard_pitch_notation as $aspn => $data ) {
+			if ( $data['key'] === $piano_key && $data['letter'] === $letter ) {
+				return $aspn;
+			}
 		}
 	}
 	
