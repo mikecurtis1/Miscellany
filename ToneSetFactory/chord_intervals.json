@@ -31,7 +31,7 @@
         "fifth": "P5",
         "seventh": "m7"
     },
-	"minor_major_seventh": {
+    "minor_major_seventh": {
         "root": "P1",
         "third": "m3",
         "fifth": "P5",
@@ -55,37 +55,37 @@
         "fifth": "d5",
         "seventh": "m7"
     },
-	"augmented_seventh": {
+    "augmented_seventh": {
         "root": "P1",
         "third": "M3",
         "fifth": "A5",
         "seventh": "m7"
     },
-	"augmented_major_seventh": {
+    "augmented_major_seventh": {
         "root": "P1",
         "third": "M3",
         "fifth": "A5",
         "seventh": "M7"
     },
-	"augmented_sixth_Italian": {
-		"root": "P1",
+    "augmented_sixth_Italian": {
+	"root": "P1",
         "third": "M3",
         "sixth": "A6"
 	},
-	"augmented_sixth_French": {
-		"root": "P1",
+    "augmented_sixth_French": {
+	"root": "P1",
         "third": "M3",
         "fourth": "A4",
         "sixth": "A6"
 	},
-	"augmented_sixth_German": {
-		"root": "P1",
+    "augmented_sixth_German": {
+	"root": "P1",
         "third": "M3",
         "fifth": "P5",
         "sixth": "A6"
 	},
-	"Neapolitan_sixth": {
-		"root": "P1",
+    "Neapolitan_sixth": {
+	"root": "P1",
         "third": "M3",
         "fifth": "P5"
 	},
