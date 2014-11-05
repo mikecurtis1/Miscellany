@@ -1,1826 +1,2282 @@
 {
-    "B#8": {
-        "notation": "B#8",
+    "B#7": {
         "letter": "B",
         "accidental": "#",
-        "octave": 8,
+        "octave": 7,
         "key": 88,
-        "Hz": 4186.01
+        "Hz": 4186.01,
+        "natural": "C8",
+        "sharp": "B#7",
+        "flat": "Dbb8"
     },
     "C8": {
-        "notation": "C8",
         "letter": "C",
         "accidental": "",
         "octave": 8,
         "key": 88,
-        "Hz": 4186.01
+        "Hz": 4186.01,
+        "natural": "C8",
+        "sharp": "B#8",
+        "flat": "Dbb8"
     },
     "Dbb8": {
-        "notation": "Dbb8",
         "letter": "D",
         "accidental": "bb",
         "octave": 8,
         "key": 88,
-        "Hz": 4186.01
+        "Hz": 4186.01,
+        "natural": "C8",
+        "sharp": "B#8",
+        "flat": "Dbb8"
     },
     "A##7": {
-        "notation": "A##7",
         "letter": "A",
         "accidental": "##",
         "octave": 7,
         "key": 87,
-        "Hz": 3951.07
+        "Hz": 3951.07,
+        "natural": "B7",
+        "sharp": "A##7",
+        "flat": "Cb7"
     },
     "B7": {
-        "notation": "B7",
         "letter": "B",
         "accidental": "",
         "octave": 7,
         "key": 87,
-        "Hz": 3951.07
+        "Hz": 3951.07,
+        "natural": "B7",
+        "sharp": "A##7",
+        "flat": "Cb7"
     },
-    "Cb7": {
-        "notation": "Cb7",
+    "Cb8": {
         "letter": "C",
         "accidental": "b",
-        "octave": 7,
+        "octave": 8,
         "key": 87,
-        "Hz": 3951.07
+        "Hz": 3951.07,
+        "natural": "B7",
+        "sharp": "A##7",
+        "flat": "Cb8"
     },
     "A#7": {
-        "notation": "A#7",
         "letter": "A",
         "accidental": "#",
         "octave": 7,
         "key": 86,
-        "Hz": 3729.31
+        "Hz": 3729.31,
+        "natural": "",
+        "sharp": "A#7",
+        "flat": "Bb7"
     },
     "Bb7": {
-        "notation": "Bb7",
         "letter": "B",
         "accidental": "b",
         "octave": 7,
         "key": 86,
-        "Hz": 3729.31
+        "Hz": 3729.31,
+        "natural": "",
+        "sharp": "A#7",
+        "flat": "Bb7"
     },
     "G##7": {
-        "notation": "G##7",
         "letter": "G",
         "accidental": "##",
         "octave": 7,
         "key": 85,
-        "Hz": 3520
+        "Hz": 3520,
+        "natural": "A7",
+        "sharp": "G##7",
+        "flat": "Bbb7"
     },
     "A7": {
-        "notation": "A7",
         "letter": "A",
         "accidental": "",
         "octave": 7,
         "key": 85,
-        "Hz": 3520
+        "Hz": 3520,
+        "natural": "A7",
+        "sharp": "G##7",
+        "flat": "Bbb7"
     },
     "Bbb7": {
-        "notation": "Bbb7",
         "letter": "B",
         "accidental": "bb",
         "octave": 7,
         "key": 85,
-        "Hz": 3520
+        "Hz": 3520,
+        "natural": "A7",
+        "sharp": "G##7",
+        "flat": "Bbb7"
     },
     "G#7": {
-        "notation": "G#7",
         "letter": "G",
         "accidental": "#",
         "octave": 7,
         "key": 84,
-        "Hz": 3322.44
+        "Hz": 3322.44,
+        "natural": "",
+        "sharp": "G#7",
+        "flat": "Ab7"
     },
     "Ab7": {
-        "notation": "Ab7",
         "letter": "A",
         "accidental": "b",
         "octave": 7,
         "key": 84,
-        "Hz": 3322.44
+        "Hz": 3322.44,
+        "natural": "",
+        "sharp": "G#7",
+        "flat": "Ab7"
     },
     "F##7": {
-        "notation": "F##7",
         "letter": "F",
         "accidental": "##",
         "octave": 7,
         "key": 83,
-        "Hz": 3135.96
+        "Hz": 3135.96,
+        "natural": "G7",
+        "sharp": "F##7",
+        "flat": "Abb7"
     },
     "G7": {
-        "notation": "G7",
         "letter": "G",
         "accidental": "",
         "octave": 7,
         "key": 83,
-        "Hz": 3135.96
+        "Hz": 3135.96,
+        "natural": "G7",
+        "sharp": "F##7",
+        "flat": "Abb7"
     },
     "Abb7": {
-        "notation": "Abb7",
         "letter": "A",
         "accidental": "bb",
         "octave": 7,
         "key": 83,
-        "Hz": 3135.96
+        "Hz": 3135.96,
+        "natural": "G7",
+        "sharp": "F##7",
+        "flat": "Abb7"
     },
     "F#7": {
-        "notation": "F#7",
         "letter": "F",
         "accidental": "#",
         "octave": 7,
         "key": 82,
-        "Hz": 2959.96
+        "Hz": 2959.96,
+        "natural": "",
+        "sharp": "F#7",
+        "flat": "Gb7"
     },
     "Gb7": {
-        "notation": "Gb7",
         "letter": "G",
         "accidental": "b",
         "octave": 7,
         "key": 82,
-        "Hz": 2959.96
+        "Hz": 2959.96,
+        "natural": "",
+        "sharp": "F#7",
+        "flat": "Gb7"
     },
     "E#7": {
-        "notation": "E#7",
         "letter": "E",
         "accidental": "#",
         "octave": 7,
         "key": 81,
-        "Hz": 2793.83
+        "Hz": 2793.83,
+        "natural": "F7",
+        "sharp": "E#7",
+        "flat": "Gbb7"
     },
     "F7": {
-        "notation": "F7",
         "letter": "F",
         "accidental": "",
         "octave": 7,
         "key": 81,
-        "Hz": 2793.83
+        "Hz": 2793.83,
+        "natural": "F7",
+        "sharp": "E#7",
+        "flat": "Gbb7"
     },
     "Gbb7": {
-        "notation": "Gbb7",
         "letter": "G",
         "accidental": "bb",
         "octave": 7,
         "key": 81,
-        "Hz": 2793.83
+        "Hz": 2793.83,
+        "natural": "F7",
+        "sharp": "E#7",
+        "flat": "Gbb7"
     },
     "D##7": {
-        "notation": "D##7",
         "letter": "D",
         "accidental": "##",
         "octave": 7,
         "key": 80,
-        "Hz": 2637.02
+        "Hz": 2637.02,
+        "natural": "E7",
+        "sharp": "D##7",
+        "flat": "Fb7"
     },
     "E7": {
-        "notation": "E7",
         "letter": "E",
         "accidental": "",
         "octave": 7,
         "key": 80,
-        "Hz": 2637.02
+        "Hz": 2637.02,
+        "natural": "E7",
+        "sharp": "D##7",
+        "flat": "Fb7"
     },
     "Fb7": {
-        "notation": "Fb7",
         "letter": "F",
         "accidental": "b",
         "octave": 7,
         "key": 80,
-        "Hz": 2637.02
+        "Hz": 2637.02,
+        "natural": "E7",
+        "sharp": "D##7",
+        "flat": "Fb7"
     },
     "D#7": {
-        "notation": "D#7",
         "letter": "D",
         "accidental": "#",
         "octave": 7,
         "key": 79,
-        "Hz": 2489.02
+        "Hz": 2489.02,
+        "natural": "",
+        "sharp": "D#7",
+        "flat": "Eb7"
     },
     "Eb7": {
-        "notation": "Eb7",
         "letter": "E",
         "accidental": "b",
         "octave": 7,
         "key": 79,
-        "Hz": 2489.02
+        "Hz": 2489.02,
+        "natural": "",
+        "sharp": "D#7",
+        "flat": "Eb7"
     },
     "C##7": {
-        "notation": "C##7",
         "letter": "C",
         "accidental": "##",
         "octave": 7,
         "key": 78,
-        "Hz": 2349.32
+        "Hz": 2349.32,
+        "natural": "D7",
+        "sharp": "C##7",
+        "flat": "Ebb7"
     },
     "D7": {
-        "notation": "D7",
         "letter": "D",
         "accidental": "",
         "octave": 7,
         "key": 78,
-        "Hz": 2349.32
+        "Hz": 2349.32,
+        "natural": "D7",
+        "sharp": "C##7",
+        "flat": "Ebb7"
     },
     "Ebb7": {
-        "notation": "Ebb7",
         "letter": "E",
         "accidental": "bb",
         "octave": 7,
         "key": 78,
-        "Hz": 2349.32
+        "Hz": 2349.32,
+        "natural": "D7",
+        "sharp": "C##7",
+        "flat": "Ebb7"
     },
     "C#7": {
-        "notation": "C#7",
         "letter": "C",
         "accidental": "#",
         "octave": 7,
         "key": 77,
-        "Hz": 2217.46
+        "Hz": 2217.46,
+        "natural": "",
+        "sharp": "C#7",
+        "flat": "Db7"
     },
     "Db7": {
-        "notation": "Db7",
         "letter": "D",
         "accidental": "b",
         "octave": 7,
         "key": 77,
-        "Hz": 2217.46
-    },
-    "B#7": {
-        "notation": "B#7",
-        "letter": "B",
-        "accidental": "#",
-        "octave": 7,
-        "key": 76,
-        "Hz": 2093
-    },
-    "C7": {
-        "notation": "C7",
-        "letter": "C",
-        "accidental": "",
-        "octave": 7,
-        "key": 76,
-        "Hz": 2093
-    },
-    "Dbb7": {
-        "notation": "Dbb7",
-        "letter": "D",
-        "accidental": "bb",
-        "octave": 7,
-        "key": 76,
-        "Hz": 2093
-    },
-    "A##6": {
-        "notation": "A##6",
-        "letter": "A",
-        "accidental": "##",
-        "octave": 6,
-        "key": 75,
-        "Hz": 1975.53
-    },
-    "B6": {
-        "notation": "B6",
-        "letter": "B",
-        "accidental": "",
-        "octave": 6,
-        "key": 75,
-        "Hz": 1975.53
-    },
-    "Cb6": {
-        "notation": "Cb6",
-        "letter": "C",
-        "accidental": "b",
-        "octave": 6,
-        "key": 75,
-        "Hz": 1975.53
-    },
-    "A#6": {
-        "notation": "A#6",
-        "letter": "A",
-        "accidental": "#",
-        "octave": 6,
-        "key": 74,
-        "Hz": 1864.66
-    },
-    "Bb6": {
-        "notation": "Bb6",
-        "letter": "B",
-        "accidental": "b",
-        "octave": 6,
-        "key": 74,
-        "Hz": 1864.66
-    },
-    "G##6": {
-        "notation": "G##6",
-        "letter": "G",
-        "accidental": "##",
-        "octave": 6,
-        "key": 73,
-        "Hz": 1760
-    },
-    "A6": {
-        "notation": "A6",
-        "letter": "A",
-        "accidental": "",
-        "octave": 6,
-        "key": 73,
-        "Hz": 1760
-    },
-    "Bbb6": {
-        "notation": "Bbb6",
-        "letter": "B",
-        "accidental": "bb",
-        "octave": 6,
-        "key": 73,
-        "Hz": 1760
-    },
-    "G#6": {
-        "notation": "G#6",
-        "letter": "G",
-        "accidental": "#",
-        "octave": 6,
-        "key": 72,
-        "Hz": 1661.22
-    },
-    "Ab6": {
-        "notation": "Ab6",
-        "letter": "A",
-        "accidental": "b",
-        "octave": 6,
-        "key": 72,
-        "Hz": 1661.22
-    },
-    "F##6": {
-        "notation": "F##6",
-        "letter": "F",
-        "accidental": "##",
-        "octave": 6,
-        "key": 71,
-        "Hz": 1567.98
-    },
-    "G6": {
-        "notation": "G6",
-        "letter": "G",
-        "accidental": "",
-        "octave": 6,
-        "key": 71,
-        "Hz": 1567.98
-    },
-    "Abb6": {
-        "notation": "Abb6",
-        "letter": "A",
-        "accidental": "bb",
-        "octave": 6,
-        "key": 71,
-        "Hz": 1567.98
-    },
-    "F#6": {
-        "notation": "F#6",
-        "letter": "F",
-        "accidental": "#",
-        "octave": 6,
-        "key": 70,
-        "Hz": 1479.98
-    },
-    "Gb6": {
-        "notation": "Gb6",
-        "letter": "G",
-        "accidental": "b",
-        "octave": 6,
-        "key": 70,
-        "Hz": 1479.98
-    },
-    "E#6": {
-        "notation": "E#6",
-        "letter": "E",
-        "accidental": "#",
-        "octave": 6,
-        "key": 69,
-        "Hz": 1396.91
-    },
-    "F6": {
-        "notation": "F6",
-        "letter": "F",
-        "accidental": "",
-        "octave": 6,
-        "key": 69,
-        "Hz": 1396.91
-    },
-    "Gbb6": {
-        "notation": "Gbb6",
-        "letter": "G",
-        "accidental": "bb",
-        "octave": 6,
-        "key": 69,
-        "Hz": 1396.91
-    },
-    "D##6": {
-        "notation": "D##6",
-        "letter": "D",
-        "accidental": "##",
-        "octave": 6,
-        "key": 68,
-        "Hz": 1318.51
-    },
-    "E6": {
-        "notation": "E6",
-        "letter": "E",
-        "accidental": "",
-        "octave": 6,
-        "key": 68,
-        "Hz": 1318.51
-    },
-    "Fb6": {
-        "notation": "Fb6",
-        "letter": "F",
-        "accidental": "b",
-        "octave": 6,
-        "key": 68,
-        "Hz": 1318.51
-    },
-    "D#6": {
-        "notation": "D#6",
-        "letter": "D",
-        "accidental": "#",
-        "octave": 6,
-        "key": 67,
-        "Hz": 1244.51
-    },
-    "Eb6": {
-        "notation": "Eb6",
-        "letter": "E",
-        "accidental": "b",
-        "octave": 6,
-        "key": 67,
-        "Hz": 1244.51
-    },
-    "C##6": {
-        "notation": "C##6",
-        "letter": "C",
-        "accidental": "##",
-        "octave": 6,
-        "key": 66,
-        "Hz": 1174.66
-    },
-    "D6": {
-        "notation": "D6",
-        "letter": "D",
-        "accidental": "",
-        "octave": 6,
-        "key": 66,
-        "Hz": 1174.66
-    },
-    "Ebb6": {
-        "notation": "Ebb6",
-        "letter": "E",
-        "accidental": "bb",
-        "octave": 6,
-        "key": 66,
-        "Hz": 1174.66
-    },
-    "C#6": {
-        "notation": "C#6",
-        "letter": "C",
-        "accidental": "#",
-        "octave": 6,
-        "key": 65,
-        "Hz": 1108.73
-    },
-    "Db6": {
-        "notation": "Db6",
-        "letter": "D",
-        "accidental": "b",
-        "octave": 6,
-        "key": 65,
-        "Hz": 1108.73
+        "Hz": 2217.46,
+        "natural": "",
+        "sharp": "C#7",
+        "flat": "Db7"
     },
     "B#6": {
-        "notation": "B#6",
         "letter": "B",
         "accidental": "#",
         "octave": 6,
-        "key": 64,
-        "Hz": 1046.5
+        "key": 76,
+        "Hz": 2093,
+        "natural": "C7",
+        "sharp": "B#6",
+        "flat": "Dbb7"
     },
-    "C6": {
-        "notation": "C6",
+    "C7": {
         "letter": "C",
+        "accidental": "",
+        "octave": 7,
+        "key": 76,
+        "Hz": 2093,
+        "natural": "C7",
+        "sharp": "B#7",
+        "flat": "Dbb7"
+    },
+    "Dbb7": {
+        "letter": "D",
+        "accidental": "bb",
+        "octave": 7,
+        "key": 76,
+        "Hz": 2093,
+        "natural": "C7",
+        "sharp": "B#7",
+        "flat": "Dbb7"
+    },
+    "A##6": {
+        "letter": "A",
+        "accidental": "##",
+        "octave": 6,
+        "key": 75,
+        "Hz": 1975.53,
+        "natural": "B6",
+        "sharp": "A##6",
+        "flat": "Cb6"
+    },
+    "B6": {
+        "letter": "B",
         "accidental": "",
         "octave": 6,
-        "key": 64,
-        "Hz": 1046.5
+        "key": 75,
+        "Hz": 1975.53,
+        "natural": "B6",
+        "sharp": "A##6",
+        "flat": "Cb6"
     },
-    "Dbb6": {
-        "notation": "Dbb6",
-        "letter": "D",
+    "Cb7": {
+        "letter": "C",
+        "accidental": "b",
+        "octave": 7,
+        "key": 75,
+        "Hz": 1975.53,
+        "natural": "B6",
+        "sharp": "A##6",
+        "flat": "Cb7"
+    },
+    "A#6": {
+        "letter": "A",
+        "accidental": "#",
+        "octave": 6,
+        "key": 74,
+        "Hz": 1864.66,
+        "natural": "",
+        "sharp": "A#6",
+        "flat": "Bb6"
+    },
+    "Bb6": {
+        "letter": "B",
+        "accidental": "b",
+        "octave": 6,
+        "key": 74,
+        "Hz": 1864.66,
+        "natural": "",
+        "sharp": "A#6",
+        "flat": "Bb6"
+    },
+    "G##6": {
+        "letter": "G",
+        "accidental": "##",
+        "octave": 6,
+        "key": 73,
+        "Hz": 1760,
+        "natural": "A6",
+        "sharp": "G##6",
+        "flat": "Bbb6"
+    },
+    "A6": {
+        "letter": "A",
+        "accidental": "",
+        "octave": 6,
+        "key": 73,
+        "Hz": 1760,
+        "natural": "A6",
+        "sharp": "G##6",
+        "flat": "Bbb6"
+    },
+    "Bbb6": {
+        "letter": "B",
         "accidental": "bb",
         "octave": 6,
-        "key": 64,
-        "Hz": 1046.5
+        "key": 73,
+        "Hz": 1760,
+        "natural": "A6",
+        "sharp": "G##6",
+        "flat": "Bbb6"
     },
-    "A##5": {
-        "notation": "A##5",
-        "letter": "A",
-        "accidental": "##",
-        "octave": 5,
-        "key": 63,
-        "Hz": 987.767
-    },
-    "B5": {
-        "notation": "B5",
-        "letter": "B",
-        "accidental": "",
-        "octave": 5,
-        "key": 63,
-        "Hz": 987.767
-    },
-    "Cb5": {
-        "notation": "Cb5",
-        "letter": "C",
-        "accidental": "b",
-        "octave": 5,
-        "key": 63,
-        "Hz": 987.767
-    },
-    "A#5": {
-        "notation": "A#5",
-        "letter": "A",
-        "accidental": "#",
-        "octave": 5,
-        "key": 62,
-        "Hz": 932.328
-    },
-    "Bb5": {
-        "notation": "Bb5",
-        "letter": "B",
-        "accidental": "b",
-        "octave": 5,
-        "key": 62,
-        "Hz": 932.328
-    },
-    "G##5": {
-        "notation": "G##5",
-        "letter": "G",
-        "accidental": "##",
-        "octave": 5,
-        "key": 61,
-        "Hz": 880
-    },
-    "A5": {
-        "notation": "A5",
-        "letter": "A",
-        "accidental": "",
-        "octave": 5,
-        "key": 61,
-        "Hz": 880
-    },
-    "Bbb5": {
-        "notation": "Bbb5",
-        "letter": "B",
-        "accidental": "bb",
-        "octave": 5,
-        "key": 61,
-        "Hz": 880
-    },
-    "G#5": {
-        "notation": "G#5",
+    "G#6": {
         "letter": "G",
         "accidental": "#",
-        "octave": 5,
-        "key": 60,
-        "Hz": 830.609
+        "octave": 6,
+        "key": 72,
+        "Hz": 1661.22,
+        "natural": "",
+        "sharp": "G#6",
+        "flat": "Ab6"
     },
-    "Ab5": {
-        "notation": "Ab5",
+    "Ab6": {
         "letter": "A",
         "accidental": "b",
-        "octave": 5,
-        "key": 60,
-        "Hz": 830.609
+        "octave": 6,
+        "key": 72,
+        "Hz": 1661.22,
+        "natural": "",
+        "sharp": "G#6",
+        "flat": "Ab6"
     },
-    "F##5": {
-        "notation": "F##5",
+    "F##6": {
         "letter": "F",
         "accidental": "##",
-        "octave": 5,
-        "key": 59,
-        "Hz": 783.991
+        "octave": 6,
+        "key": 71,
+        "Hz": 1567.98,
+        "natural": "G6",
+        "sharp": "F##6",
+        "flat": "Abb6"
     },
-    "G5": {
-        "notation": "G5",
+    "G6": {
         "letter": "G",
         "accidental": "",
-        "octave": 5,
-        "key": 59,
-        "Hz": 783.991
+        "octave": 6,
+        "key": 71,
+        "Hz": 1567.98,
+        "natural": "G6",
+        "sharp": "F##6",
+        "flat": "Abb6"
     },
-    "Abb5": {
-        "notation": "Abb5",
+    "Abb6": {
         "letter": "A",
         "accidental": "bb",
-        "octave": 5,
-        "key": 59,
-        "Hz": 783.991
+        "octave": 6,
+        "key": 71,
+        "Hz": 1567.98,
+        "natural": "G6",
+        "sharp": "F##6",
+        "flat": "Abb6"
     },
-    "F#5": {
-        "notation": "F#5",
+    "F#6": {
         "letter": "F",
         "accidental": "#",
-        "octave": 5,
-        "key": 58,
-        "Hz": 739.989
+        "octave": 6,
+        "key": 70,
+        "Hz": 1479.98,
+        "natural": "",
+        "sharp": "F#6",
+        "flat": "Gb6"
     },
-    "Gb5": {
-        "notation": "Gb5",
+    "Gb6": {
         "letter": "G",
         "accidental": "b",
-        "octave": 5,
-        "key": 58,
-        "Hz": 739.989
+        "octave": 6,
+        "key": 70,
+        "Hz": 1479.98,
+        "natural": "",
+        "sharp": "F#6",
+        "flat": "Gb6"
     },
-    "E#5": {
-        "notation": "E#5",
+    "E#6": {
         "letter": "E",
         "accidental": "#",
-        "octave": 5,
-        "key": 57,
-        "Hz": 698.456
+        "octave": 6,
+        "key": 69,
+        "Hz": 1396.91,
+        "natural": "F6",
+        "sharp": "E#6",
+        "flat": "Gbb6"
     },
-    "F5": {
-        "notation": "F5",
+    "F6": {
         "letter": "F",
         "accidental": "",
-        "octave": 5,
-        "key": 57,
-        "Hz": 698.456
+        "octave": 6,
+        "key": 69,
+        "Hz": 1396.91,
+        "natural": "F6",
+        "sharp": "E#6",
+        "flat": "Gbb6"
     },
-    "Gbb5": {
-        "notation": "Gbb5",
+    "Gbb6": {
         "letter": "G",
         "accidental": "bb",
-        "octave": 5,
-        "key": 57,
-        "Hz": 698.456
+        "octave": 6,
+        "key": 69,
+        "Hz": 1396.91,
+        "natural": "F6",
+        "sharp": "E#6",
+        "flat": "Gbb6"
     },
-    "D##5": {
-        "notation": "D##5",
+    "D##6": {
         "letter": "D",
         "accidental": "##",
-        "octave": 5,
-        "key": 56,
-        "Hz": 659.255
+        "octave": 6,
+        "key": 68,
+        "Hz": 1318.51,
+        "natural": "E6",
+        "sharp": "D##6",
+        "flat": "Fb6"
     },
-    "E5": {
-        "notation": "E5",
+    "E6": {
         "letter": "E",
         "accidental": "",
-        "octave": 5,
-        "key": 56,
-        "Hz": 659.255
+        "octave": 6,
+        "key": 68,
+        "Hz": 1318.51,
+        "natural": "E6",
+        "sharp": "D##6",
+        "flat": "Fb6"
     },
-    "Fb5": {
-        "notation": "Fb5",
+    "Fb6": {
         "letter": "F",
         "accidental": "b",
-        "octave": 5,
-        "key": 56,
-        "Hz": 659.255
+        "octave": 6,
+        "key": 68,
+        "Hz": 1318.51,
+        "natural": "E6",
+        "sharp": "D##6",
+        "flat": "Fb6"
     },
-    "D#5": {
-        "notation": "D#5",
+    "D#6": {
         "letter": "D",
         "accidental": "#",
-        "octave": 5,
-        "key": 55,
-        "Hz": 622.254
+        "octave": 6,
+        "key": 67,
+        "Hz": 1244.51,
+        "natural": "",
+        "sharp": "D#6",
+        "flat": "Eb6"
     },
-    "Eb5": {
-        "notation": "Eb5",
+    "Eb6": {
         "letter": "E",
         "accidental": "b",
-        "octave": 5,
-        "key": 55,
-        "Hz": 622.254
+        "octave": 6,
+        "key": 67,
+        "Hz": 1244.51,
+        "natural": "",
+        "sharp": "D#6",
+        "flat": "Eb6"
     },
-    "C##5": {
-        "notation": "C##5",
+    "C##6": {
         "letter": "C",
         "accidental": "##",
-        "octave": 5,
-        "key": 54,
-        "Hz": 587.33
+        "octave": 6,
+        "key": 66,
+        "Hz": 1174.66,
+        "natural": "D6",
+        "sharp": "C##6",
+        "flat": "Ebb6"
     },
-    "D5": {
-        "notation": "D5",
+    "D6": {
         "letter": "D",
         "accidental": "",
-        "octave": 5,
-        "key": 54,
-        "Hz": 587.33
+        "octave": 6,
+        "key": 66,
+        "Hz": 1174.66,
+        "natural": "D6",
+        "sharp": "C##6",
+        "flat": "Ebb6"
     },
-    "Ebb5": {
-        "notation": "Ebb5",
+    "Ebb6": {
         "letter": "E",
         "accidental": "bb",
-        "octave": 5,
-        "key": 54,
-        "Hz": 587.33
+        "octave": 6,
+        "key": 66,
+        "Hz": 1174.66,
+        "natural": "D6",
+        "sharp": "C##6",
+        "flat": "Ebb6"
     },
-    "C#5": {
-        "notation": "C#5",
+    "C#6": {
         "letter": "C",
         "accidental": "#",
-        "octave": 5,
-        "key": 53,
-        "Hz": 554.365
+        "octave": 6,
+        "key": 65,
+        "Hz": 1108.73,
+        "natural": "",
+        "sharp": "C#6",
+        "flat": "Db6"
     },
-    "Db5": {
-        "notation": "Db5",
+    "Db6": {
         "letter": "D",
         "accidental": "b",
-        "octave": 5,
-        "key": 53,
-        "Hz": 554.365
+        "octave": 6,
+        "key": 65,
+        "Hz": 1108.73,
+        "natural": "",
+        "sharp": "C#6",
+        "flat": "Db6"
     },
     "B#5": {
-        "notation": "B#5",
         "letter": "B",
         "accidental": "#",
         "octave": 5,
-        "key": 52,
-        "Hz": 523.251
+        "key": 64,
+        "Hz": 1046.5,
+        "natural": "C6",
+        "sharp": "B#5",
+        "flat": "Dbb6"
     },
-    "C5": {
-        "notation": "C5",
+    "C6": {
         "letter": "C",
+        "accidental": "",
+        "octave": 6,
+        "key": 64,
+        "Hz": 1046.5,
+        "natural": "C6",
+        "sharp": "B#6",
+        "flat": "Dbb6"
+    },
+    "Dbb6": {
+        "letter": "D",
+        "accidental": "bb",
+        "octave": 6,
+        "key": 64,
+        "Hz": 1046.5,
+        "natural": "C6",
+        "sharp": "B#6",
+        "flat": "Dbb6"
+    },
+    "A##5": {
+        "letter": "A",
+        "accidental": "##",
+        "octave": 5,
+        "key": 63,
+        "Hz": 987.767,
+        "natural": "B5",
+        "sharp": "A##5",
+        "flat": "Cb5"
+    },
+    "B5": {
+        "letter": "B",
         "accidental": "",
         "octave": 5,
-        "key": 52,
-        "Hz": 523.251
+        "key": 63,
+        "Hz": 987.767,
+        "natural": "B5",
+        "sharp": "A##5",
+        "flat": "Cb5"
     },
-    "Dbb5": {
-        "notation": "Dbb5",
-        "letter": "D",
+    "Cb6": {
+        "letter": "C",
+        "accidental": "b",
+        "octave": 6,
+        "key": 63,
+        "Hz": 987.767,
+        "natural": "B5",
+        "sharp": "A##5",
+        "flat": "Cb6"
+    },
+    "A#5": {
+        "letter": "A",
+        "accidental": "#",
+        "octave": 5,
+        "key": 62,
+        "Hz": 932.328,
+        "natural": "",
+        "sharp": "A#5",
+        "flat": "Bb5"
+    },
+    "Bb5": {
+        "letter": "B",
+        "accidental": "b",
+        "octave": 5,
+        "key": 62,
+        "Hz": 932.328,
+        "natural": "",
+        "sharp": "A#5",
+        "flat": "Bb5"
+    },
+    "G##5": {
+        "letter": "G",
+        "accidental": "##",
+        "octave": 5,
+        "key": 61,
+        "Hz": 880,
+        "natural": "A5",
+        "sharp": "G##5",
+        "flat": "Bbb5"
+    },
+    "A5": {
+        "letter": "A",
+        "accidental": "",
+        "octave": 5,
+        "key": 61,
+        "Hz": 880,
+        "natural": "A5",
+        "sharp": "G##5",
+        "flat": "Bbb5"
+    },
+    "Bbb5": {
+        "letter": "B",
         "accidental": "bb",
         "octave": 5,
-        "key": 52,
-        "Hz": 523.251
+        "key": 61,
+        "Hz": 880,
+        "natural": "A5",
+        "sharp": "G##5",
+        "flat": "Bbb5"
     },
-    "A##4": {
-        "notation": "A##4",
-        "letter": "A",
-        "accidental": "##",
-        "octave": 4,
-        "key": 51,
-        "Hz": 493.883
-    },
-    "B4": {
-        "notation": "B4",
-        "letter": "B",
-        "accidental": "",
-        "octave": 4,
-        "key": 51,
-        "Hz": 493.883
-    },
-    "Cb4": {
-        "notation": "Cb4",
-        "letter": "C",
-        "accidental": "b",
-        "octave": 4,
-        "key": 51,
-        "Hz": 493.883
-    },
-    "A#4": {
-        "notation": "A#4",
-        "letter": "A",
-        "accidental": "#",
-        "octave": 4,
-        "key": 50,
-        "Hz": 466.164
-    },
-    "Bb4": {
-        "notation": "Bb4",
-        "letter": "B",
-        "accidental": "b",
-        "octave": 4,
-        "key": 50,
-        "Hz": 466.164
-    },
-    "G##4": {
-        "notation": "G##4",
-        "letter": "G",
-        "accidental": "##",
-        "octave": 4,
-        "key": 49,
-        "Hz": 440
-    },
-    "A4": {
-        "notation": "A4",
-        "letter": "A",
-        "accidental": "",
-        "octave": 4,
-        "key": 49,
-        "Hz": 440
-    },
-    "Bbb4": {
-        "notation": "Bbb4",
-        "letter": "B",
-        "accidental": "bb",
-        "octave": 4,
-        "key": 49,
-        "Hz": 440
-    },
-    "G#4": {
-        "notation": "G#4",
+    "G#5": {
         "letter": "G",
         "accidental": "#",
-        "octave": 4,
-        "key": 48,
-        "Hz": 415.305
+        "octave": 5,
+        "key": 60,
+        "Hz": 830.609,
+        "natural": "",
+        "sharp": "G#5",
+        "flat": "Ab5"
     },
-    "Ab4": {
-        "notation": "Ab4",
+    "Ab5": {
         "letter": "A",
         "accidental": "b",
-        "octave": 4,
-        "key": 48,
-        "Hz": 415.305
+        "octave": 5,
+        "key": 60,
+        "Hz": 830.609,
+        "natural": "",
+        "sharp": "G#5",
+        "flat": "Ab5"
     },
-    "F##4": {
-        "notation": "F##4",
+    "F##5": {
         "letter": "F",
         "accidental": "##",
-        "octave": 4,
-        "key": 47,
-        "Hz": 391.995
+        "octave": 5,
+        "key": 59,
+        "Hz": 783.991,
+        "natural": "G5",
+        "sharp": "F##5",
+        "flat": "Abb5"
     },
-    "G4": {
-        "notation": "G4",
+    "G5": {
         "letter": "G",
         "accidental": "",
-        "octave": 4,
-        "key": 47,
-        "Hz": 391.995
+        "octave": 5,
+        "key": 59,
+        "Hz": 783.991,
+        "natural": "G5",
+        "sharp": "F##5",
+        "flat": "Abb5"
     },
-    "Abb4": {
-        "notation": "Abb4",
+    "Abb5": {
         "letter": "A",
         "accidental": "bb",
-        "octave": 4,
-        "key": 47,
-        "Hz": 391.995
+        "octave": 5,
+        "key": 59,
+        "Hz": 783.991,
+        "natural": "G5",
+        "sharp": "F##5",
+        "flat": "Abb5"
     },
-    "F#4": {
-        "notation": "F#4",
+    "F#5": {
         "letter": "F",
         "accidental": "#",
-        "octave": 4,
-        "key": 46,
-        "Hz": 369.994
+        "octave": 5,
+        "key": 58,
+        "Hz": 739.989,
+        "natural": "",
+        "sharp": "F#5",
+        "flat": "Gb5"
     },
-    "Gb4": {
-        "notation": "Gb4",
+    "Gb5": {
         "letter": "G",
         "accidental": "b",
-        "octave": 4,
-        "key": 46,
-        "Hz": 369.994
+        "octave": 5,
+        "key": 58,
+        "Hz": 739.989,
+        "natural": "",
+        "sharp": "F#5",
+        "flat": "Gb5"
     },
-    "E#4": {
-        "notation": "E#4",
+    "E#5": {
         "letter": "E",
         "accidental": "#",
-        "octave": 4,
-        "key": 45,
-        "Hz": 349.228
+        "octave": 5,
+        "key": 57,
+        "Hz": 698.456,
+        "natural": "F5",
+        "sharp": "E#5",
+        "flat": "Gbb5"
     },
-    "F4": {
-        "notation": "F4",
+    "F5": {
         "letter": "F",
         "accidental": "",
-        "octave": 4,
-        "key": 45,
-        "Hz": 349.228
+        "octave": 5,
+        "key": 57,
+        "Hz": 698.456,
+        "natural": "F5",
+        "sharp": "E#5",
+        "flat": "Gbb5"
     },
-    "Gbb4": {
-        "notation": "Gbb4",
+    "Gbb5": {
         "letter": "G",
         "accidental": "bb",
-        "octave": 4,
-        "key": 45,
-        "Hz": 349.228
+        "octave": 5,
+        "key": 57,
+        "Hz": 698.456,
+        "natural": "F5",
+        "sharp": "E#5",
+        "flat": "Gbb5"
     },
-    "D##4": {
-        "notation": "D##4",
+    "D##5": {
         "letter": "D",
         "accidental": "##",
-        "octave": 4,
-        "key": 44,
-        "Hz": 329.628
+        "octave": 5,
+        "key": 56,
+        "Hz": 659.255,
+        "natural": "E5",
+        "sharp": "D##5",
+        "flat": "Fb5"
     },
-    "E4": {
-        "notation": "E4",
+    "E5": {
         "letter": "E",
         "accidental": "",
-        "octave": 4,
-        "key": 44,
-        "Hz": 329.628
+        "octave": 5,
+        "key": 56,
+        "Hz": 659.255,
+        "natural": "E5",
+        "sharp": "D##5",
+        "flat": "Fb5"
     },
-    "Fb4": {
-        "notation": "Fb4",
+    "Fb5": {
         "letter": "F",
         "accidental": "b",
-        "octave": 4,
-        "key": 44,
-        "Hz": 329.628
+        "octave": 5,
+        "key": 56,
+        "Hz": 659.255,
+        "natural": "E5",
+        "sharp": "D##5",
+        "flat": "Fb5"
     },
-    "D#4": {
-        "notation": "D#4",
+    "D#5": {
         "letter": "D",
         "accidental": "#",
-        "octave": 4,
-        "key": 43,
-        "Hz": 311.127
+        "octave": 5,
+        "key": 55,
+        "Hz": 622.254,
+        "natural": "",
+        "sharp": "D#5",
+        "flat": "Eb5"
     },
-    "Eb4": {
-        "notation": "Eb4",
+    "Eb5": {
         "letter": "E",
         "accidental": "b",
-        "octave": 4,
-        "key": 43,
-        "Hz": 311.127
+        "octave": 5,
+        "key": 55,
+        "Hz": 622.254,
+        "natural": "",
+        "sharp": "D#5",
+        "flat": "Eb5"
     },
-    "C##4": {
-        "notation": "C##4",
+    "C##5": {
         "letter": "C",
         "accidental": "##",
-        "octave": 4,
-        "key": 42,
-        "Hz": 293.665
+        "octave": 5,
+        "key": 54,
+        "Hz": 587.33,
+        "natural": "D5",
+        "sharp": "C##5",
+        "flat": "Ebb5"
     },
-    "D4": {
-        "notation": "D4",
+    "D5": {
         "letter": "D",
         "accidental": "",
-        "octave": 4,
-        "key": 42,
-        "Hz": 293.665
+        "octave": 5,
+        "key": 54,
+        "Hz": 587.33,
+        "natural": "D5",
+        "sharp": "C##5",
+        "flat": "Ebb5"
     },
-    "Ebb4": {
-        "notation": "Ebb4",
+    "Ebb5": {
         "letter": "E",
         "accidental": "bb",
-        "octave": 4,
-        "key": 42,
-        "Hz": 293.665
+        "octave": 5,
+        "key": 54,
+        "Hz": 587.33,
+        "natural": "D5",
+        "sharp": "C##5",
+        "flat": "Ebb5"
     },
-    "C#4": {
-        "notation": "C#4",
+    "C#5": {
         "letter": "C",
         "accidental": "#",
-        "octave": 4,
-        "key": 41,
-        "Hz": 277.183
+        "octave": 5,
+        "key": 53,
+        "Hz": 554.365,
+        "natural": "",
+        "sharp": "C#5",
+        "flat": "Db5"
     },
-    "Db4": {
-        "notation": "Db4",
+    "Db5": {
         "letter": "D",
         "accidental": "b",
-        "octave": 4,
-        "key": 41,
-        "Hz": 277.183
+        "octave": 5,
+        "key": 53,
+        "Hz": 554.365,
+        "natural": "",
+        "sharp": "C#5",
+        "flat": "Db5"
     },
     "B#4": {
-        "notation": "B#4",
         "letter": "B",
         "accidental": "#",
         "octave": 4,
-        "key": 40,
-        "Hz": 261.626
+        "key": 52,
+        "Hz": 523.251,
+        "natural": "C5",
+        "sharp": "B#4",
+        "flat": "Dbb5"
     },
-    "C4": {
-        "notation": "C4",
+    "C5": {
         "letter": "C",
+        "accidental": "",
+        "octave": 5,
+        "key": 52,
+        "Hz": 523.251,
+        "natural": "C5",
+        "sharp": "B#5",
+        "flat": "Dbb5"
+    },
+    "Dbb5": {
+        "letter": "D",
+        "accidental": "bb",
+        "octave": 5,
+        "key": 52,
+        "Hz": 523.251,
+        "natural": "C5",
+        "sharp": "B#5",
+        "flat": "Dbb5"
+    },
+    "A##4": {
+        "letter": "A",
+        "accidental": "##",
+        "octave": 4,
+        "key": 51,
+        "Hz": 493.883,
+        "natural": "B4",
+        "sharp": "A##4",
+        "flat": "Cb4"
+    },
+    "B4": {
+        "letter": "B",
         "accidental": "",
         "octave": 4,
-        "key": 40,
-        "Hz": 261.626
+        "key": 51,
+        "Hz": 493.883,
+        "natural": "B4",
+        "sharp": "A##4",
+        "flat": "Cb4"
     },
-    "Dbb4": {
-        "notation": "Dbb4",
-        "letter": "D",
+    "Cb5": {
+        "letter": "C",
+        "accidental": "b",
+        "octave": 5,
+        "key": 51,
+        "Hz": 493.883,
+        "natural": "B4",
+        "sharp": "A##4",
+        "flat": "Cb5"
+    },
+    "A#4": {
+        "letter": "A",
+        "accidental": "#",
+        "octave": 4,
+        "key": 50,
+        "Hz": 466.164,
+        "natural": "",
+        "sharp": "A#4",
+        "flat": "Bb4"
+    },
+    "Bb4": {
+        "letter": "B",
+        "accidental": "b",
+        "octave": 4,
+        "key": 50,
+        "Hz": 466.164,
+        "natural": "",
+        "sharp": "A#4",
+        "flat": "Bb4"
+    },
+    "G##4": {
+        "letter": "G",
+        "accidental": "##",
+        "octave": 4,
+        "key": 49,
+        "Hz": 440,
+        "natural": "A4",
+        "sharp": "G##4",
+        "flat": "Bbb4"
+    },
+    "A4": {
+        "letter": "A",
+        "accidental": "",
+        "octave": 4,
+        "key": 49,
+        "Hz": 440,
+        "natural": "A4",
+        "sharp": "G##4",
+        "flat": "Bbb4"
+    },
+    "Bbb4": {
+        "letter": "B",
         "accidental": "bb",
         "octave": 4,
-        "key": 40,
-        "Hz": 261.626
+        "key": 49,
+        "Hz": 440,
+        "natural": "A4",
+        "sharp": "G##4",
+        "flat": "Bbb4"
     },
-    "A##3": {
-        "notation": "A##3",
-        "letter": "A",
-        "accidental": "##",
-        "octave": 3,
-        "key": 39,
-        "Hz": 246.942
-    },
-    "B3": {
-        "notation": "B3",
-        "letter": "B",
-        "accidental": "",
-        "octave": 3,
-        "key": 39,
-        "Hz": 246.942
-    },
-    "Cb3": {
-        "notation": "Cb3",
-        "letter": "C",
-        "accidental": "b",
-        "octave": 3,
-        "key": 39,
-        "Hz": 246.942
-    },
-    "A#3": {
-        "notation": "A#3",
-        "letter": "A",
-        "accidental": "#",
-        "octave": 3,
-        "key": 38,
-        "Hz": 233.082
-    },
-    "Bb3": {
-        "notation": "Bb3",
-        "letter": "B",
-        "accidental": "b",
-        "octave": 3,
-        "key": 38,
-        "Hz": 233.082
-    },
-    "G##3": {
-        "notation": "G##3",
-        "letter": "G",
-        "accidental": "##",
-        "octave": 3,
-        "key": 37,
-        "Hz": 220
-    },
-    "A3": {
-        "notation": "A3",
-        "letter": "A",
-        "accidental": "",
-        "octave": 3,
-        "key": 37,
-        "Hz": 220
-    },
-    "Bbb3": {
-        "notation": "Bbb3",
-        "letter": "B",
-        "accidental": "bb",
-        "octave": 3,
-        "key": 37,
-        "Hz": 220
-    },
-    "G#3": {
-        "notation": "G#3",
+    "G#4": {
         "letter": "G",
         "accidental": "#",
-        "octave": 3,
-        "key": 36,
-        "Hz": 207.652
+        "octave": 4,
+        "key": 48,
+        "Hz": 415.305,
+        "natural": "",
+        "sharp": "G#4",
+        "flat": "Ab4"
     },
-    "Ab3": {
-        "notation": "Ab3",
+    "Ab4": {
         "letter": "A",
         "accidental": "b",
-        "octave": 3,
-        "key": 36,
-        "Hz": 207.652
+        "octave": 4,
+        "key": 48,
+        "Hz": 415.305,
+        "natural": "",
+        "sharp": "G#4",
+        "flat": "Ab4"
     },
-    "F##3": {
-        "notation": "F##3",
+    "F##4": {
         "letter": "F",
         "accidental": "##",
-        "octave": 3,
-        "key": 35,
-        "Hz": 195.998
+        "octave": 4,
+        "key": 47,
+        "Hz": 391.995,
+        "natural": "G4",
+        "sharp": "F##4",
+        "flat": "Abb4"
     },
-    "G3": {
-        "notation": "G3",
+    "G4": {
         "letter": "G",
         "accidental": "",
-        "octave": 3,
-        "key": 35,
-        "Hz": 195.998
+        "octave": 4,
+        "key": 47,
+        "Hz": 391.995,
+        "natural": "G4",
+        "sharp": "F##4",
+        "flat": "Abb4"
     },
-    "Abb3": {
-        "notation": "Abb3",
+    "Abb4": {
         "letter": "A",
         "accidental": "bb",
-        "octave": 3,
-        "key": 35,
-        "Hz": 195.998
+        "octave": 4,
+        "key": 47,
+        "Hz": 391.995,
+        "natural": "G4",
+        "sharp": "F##4",
+        "flat": "Abb4"
     },
-    "F#3": {
-        "notation": "F#3",
+    "F#4": {
         "letter": "F",
         "accidental": "#",
-        "octave": 3,
-        "key": 34,
-        "Hz": 184.997
+        "octave": 4,
+        "key": 46,
+        "Hz": 369.994,
+        "natural": "",
+        "sharp": "F#4",
+        "flat": "Gb4"
     },
-    "Gb3": {
-        "notation": "Gb3",
+    "Gb4": {
         "letter": "G",
         "accidental": "b",
-        "octave": 3,
-        "key": 34,
-        "Hz": 184.997
+        "octave": 4,
+        "key": 46,
+        "Hz": 369.994,
+        "natural": "",
+        "sharp": "F#4",
+        "flat": "Gb4"
     },
-    "E#3": {
-        "notation": "E#3",
+    "E#4": {
         "letter": "E",
         "accidental": "#",
-        "octave": 3,
-        "key": 33,
-        "Hz": 174.614
+        "octave": 4,
+        "key": 45,
+        "Hz": 349.228,
+        "natural": "F4",
+        "sharp": "E#4",
+        "flat": "Gbb4"
     },
-    "F3": {
-        "notation": "F3",
+    "F4": {
         "letter": "F",
         "accidental": "",
-        "octave": 3,
-        "key": 33,
-        "Hz": 174.614
+        "octave": 4,
+        "key": 45,
+        "Hz": 349.228,
+        "natural": "F4",
+        "sharp": "E#4",
+        "flat": "Gbb4"
     },
-    "Gbb3": {
-        "notation": "Gbb3",
+    "Gbb4": {
         "letter": "G",
         "accidental": "bb",
-        "octave": 3,
-        "key": 33,
-        "Hz": 174.614
+        "octave": 4,
+        "key": 45,
+        "Hz": 349.228,
+        "natural": "F4",
+        "sharp": "E#4",
+        "flat": "Gbb4"
     },
-    "D##3": {
-        "notation": "D##3",
+    "D##4": {
         "letter": "D",
         "accidental": "##",
-        "octave": 3,
-        "key": 32,
-        "Hz": 164.814
+        "octave": 4,
+        "key": 44,
+        "Hz": 329.628,
+        "natural": "E4",
+        "sharp": "D##4",
+        "flat": "Fb4"
     },
-    "E3": {
-        "notation": "E3",
+    "E4": {
         "letter": "E",
         "accidental": "",
-        "octave": 3,
-        "key": 32,
-        "Hz": 164.814
+        "octave": 4,
+        "key": 44,
+        "Hz": 329.628,
+        "natural": "E4",
+        "sharp": "D##4",
+        "flat": "Fb4"
     },
-    "Fb3": {
-        "notation": "Fb3",
+    "Fb4": {
         "letter": "F",
         "accidental": "b",
-        "octave": 3,
-        "key": 32,
-        "Hz": 164.814
+        "octave": 4,
+        "key": 44,
+        "Hz": 329.628,
+        "natural": "E4",
+        "sharp": "D##4",
+        "flat": "Fb4"
     },
-    "D#3": {
-        "notation": "D#3",
+    "D#4": {
         "letter": "D",
         "accidental": "#",
-        "octave": 3,
-        "key": 31,
-        "Hz": 155.563
+        "octave": 4,
+        "key": 43,
+        "Hz": 311.127,
+        "natural": "",
+        "sharp": "D#4",
+        "flat": "Eb4"
     },
-    "Eb3": {
-        "notation": "Eb3",
+    "Eb4": {
         "letter": "E",
         "accidental": "b",
-        "octave": 3,
-        "key": 31,
-        "Hz": 155.563
+        "octave": 4,
+        "key": 43,
+        "Hz": 311.127,
+        "natural": "",
+        "sharp": "D#4",
+        "flat": "Eb4"
     },
-    "C##3": {
-        "notation": "C##3",
+    "C##4": {
         "letter": "C",
         "accidental": "##",
-        "octave": 3,
-        "key": 30,
-        "Hz": 146.832
+        "octave": 4,
+        "key": 42,
+        "Hz": 293.665,
+        "natural": "D4",
+        "sharp": "C##4",
+        "flat": "Ebb4"
     },
-    "D3": {
-        "notation": "D3",
+    "D4": {
         "letter": "D",
         "accidental": "",
-        "octave": 3,
-        "key": 30,
-        "Hz": 146.832
+        "octave": 4,
+        "key": 42,
+        "Hz": 293.665,
+        "natural": "D4",
+        "sharp": "C##4",
+        "flat": "Ebb4"
     },
-    "Ebb3": {
-        "notation": "Ebb3",
+    "Ebb4": {
         "letter": "E",
         "accidental": "bb",
-        "octave": 3,
-        "key": 30,
-        "Hz": 146.832
+        "octave": 4,
+        "key": 42,
+        "Hz": 293.665,
+        "natural": "D4",
+        "sharp": "C##4",
+        "flat": "Ebb4"
     },
-    "C#3": {
-        "notation": "C#3",
+    "C#4": {
         "letter": "C",
         "accidental": "#",
-        "octave": 3,
-        "key": 29,
-        "Hz": 138.591
+        "octave": 4,
+        "key": 41,
+        "Hz": 277.183,
+        "natural": "",
+        "sharp": "C#4",
+        "flat": "Db4"
     },
-    "Db3": {
-        "notation": "Db3",
+    "Db4": {
         "letter": "D",
         "accidental": "b",
-        "octave": 3,
-        "key": 29,
-        "Hz": 138.591
+        "octave": 4,
+        "key": 41,
+        "Hz": 277.183,
+        "natural": "",
+        "sharp": "C#4",
+        "flat": "Db4"
     },
     "B#3": {
-        "notation": "B#3",
         "letter": "B",
         "accidental": "#",
         "octave": 3,
-        "key": 28,
-        "Hz": 130.813
+        "key": 40,
+        "Hz": 261.626,
+        "natural": "C4",
+        "sharp": "B#3",
+        "flat": "Dbb4"
     },
-    "C3": {
-        "notation": "C3",
+    "C4": {
         "letter": "C",
+        "accidental": "",
+        "octave": 4,
+        "key": 40,
+        "Hz": 261.626,
+        "natural": "C4",
+        "sharp": "B#4",
+        "flat": "Dbb4"
+    },
+    "Dbb4": {
+        "letter": "D",
+        "accidental": "bb",
+        "octave": 4,
+        "key": 40,
+        "Hz": 261.626,
+        "natural": "C4",
+        "sharp": "B#4",
+        "flat": "Dbb4"
+    },
+    "A##3": {
+        "letter": "A",
+        "accidental": "##",
+        "octave": 3,
+        "key": 39,
+        "Hz": 246.942,
+        "natural": "B3",
+        "sharp": "A##3",
+        "flat": "Cb3"
+    },
+    "B3": {
+        "letter": "B",
         "accidental": "",
         "octave": 3,
-        "key": 28,
-        "Hz": 130.813
+        "key": 39,
+        "Hz": 246.942,
+        "natural": "B3",
+        "sharp": "A##3",
+        "flat": "Cb3"
     },
-    "Dbb3": {
-        "notation": "Dbb3",
-        "letter": "D",
+    "Cb4": {
+        "letter": "C",
+        "accidental": "b",
+        "octave": 4,
+        "key": 39,
+        "Hz": 246.942,
+        "natural": "B3",
+        "sharp": "A##3",
+        "flat": "Cb4"
+    },
+    "A#3": {
+        "letter": "A",
+        "accidental": "#",
+        "octave": 3,
+        "key": 38,
+        "Hz": 233.082,
+        "natural": "",
+        "sharp": "A#3",
+        "flat": "Bb3"
+    },
+    "Bb3": {
+        "letter": "B",
+        "accidental": "b",
+        "octave": 3,
+        "key": 38,
+        "Hz": 233.082,
+        "natural": "",
+        "sharp": "A#3",
+        "flat": "Bb3"
+    },
+    "G##3": {
+        "letter": "G",
+        "accidental": "##",
+        "octave": 3,
+        "key": 37,
+        "Hz": 220,
+        "natural": "A3",
+        "sharp": "G##3",
+        "flat": "Bbb3"
+    },
+    "A3": {
+        "letter": "A",
+        "accidental": "",
+        "octave": 3,
+        "key": 37,
+        "Hz": 220,
+        "natural": "A3",
+        "sharp": "G##3",
+        "flat": "Bbb3"
+    },
+    "Bbb3": {
+        "letter": "B",
         "accidental": "bb",
         "octave": 3,
-        "key": 28,
-        "Hz": 130.813
+        "key": 37,
+        "Hz": 220,
+        "natural": "A3",
+        "sharp": "G##3",
+        "flat": "Bbb3"
     },
-    "A##2": {
-        "notation": "A##2",
-        "letter": "A",
-        "accidental": "##",
-        "octave": 2,
-        "key": 27,
-        "Hz": 123.471
-    },
-    "B2": {
-        "notation": "B2",
-        "letter": "B",
-        "accidental": "",
-        "octave": 2,
-        "key": 27,
-        "Hz": 123.471
-    },
-    "Cb2": {
-        "notation": "Cb2",
-        "letter": "C",
-        "accidental": "b",
-        "octave": 2,
-        "key": 27,
-        "Hz": 123.471
-    },
-    "A#2": {
-        "notation": "A#2",
-        "letter": "A",
-        "accidental": "#",
-        "octave": 2,
-        "key": 26,
-        "Hz": 116.541
-    },
-    "Bb2": {
-        "notation": "Bb2",
-        "letter": "B",
-        "accidental": "b",
-        "octave": 2,
-        "key": 26,
-        "Hz": 116.541
-    },
-    "G##2": {
-        "notation": "G##2",
-        "letter": "G",
-        "accidental": "##",
-        "octave": 2,
-        "key": 25,
-        "Hz": 110
-    },
-    "A2": {
-        "notation": "A2",
-        "letter": "A",
-        "accidental": "",
-        "octave": 2,
-        "key": 25,
-        "Hz": 110
-    },
-    "Bbb2": {
-        "notation": "Bbb2",
-        "letter": "B",
-        "accidental": "bb",
-        "octave": 2,
-        "key": 25,
-        "Hz": 110
-    },
-    "G#2": {
-        "notation": "G#2",
+    "G#3": {
         "letter": "G",
         "accidental": "#",
-        "octave": 2,
-        "key": 24,
-        "Hz": 103.826
+        "octave": 3,
+        "key": 36,
+        "Hz": 207.652,
+        "natural": "",
+        "sharp": "G#3",
+        "flat": "Ab3"
     },
-    "Ab2": {
-        "notation": "Ab2",
+    "Ab3": {
         "letter": "A",
         "accidental": "b",
-        "octave": 2,
-        "key": 24,
-        "Hz": 103.826
+        "octave": 3,
+        "key": 36,
+        "Hz": 207.652,
+        "natural": "",
+        "sharp": "G#3",
+        "flat": "Ab3"
     },
-    "F##2": {
-        "notation": "F##2",
+    "F##3": {
         "letter": "F",
         "accidental": "##",
-        "octave": 2,
-        "key": 23,
-        "Hz": 97.9989
+        "octave": 3,
+        "key": 35,
+        "Hz": 195.998,
+        "natural": "G3",
+        "sharp": "F##3",
+        "flat": "Abb3"
     },
-    "G2": {
-        "notation": "G2",
+    "G3": {
         "letter": "G",
         "accidental": "",
-        "octave": 2,
-        "key": 23,
-        "Hz": 97.9989
+        "octave": 3,
+        "key": 35,
+        "Hz": 195.998,
+        "natural": "G3",
+        "sharp": "F##3",
+        "flat": "Abb3"
     },
-    "Abb2": {
-        "notation": "Abb2",
+    "Abb3": {
         "letter": "A",
         "accidental": "bb",
-        "octave": 2,
-        "key": 23,
-        "Hz": 97.9989
+        "octave": 3,
+        "key": 35,
+        "Hz": 195.998,
+        "natural": "G3",
+        "sharp": "F##3",
+        "flat": "Abb3"
     },
-    "F#2": {
-        "notation": "F#2",
+    "F#3": {
         "letter": "F",
         "accidental": "#",
-        "octave": 2,
-        "key": 22,
-        "Hz": 92.4986
+        "octave": 3,
+        "key": 34,
+        "Hz": 184.997,
+        "natural": "",
+        "sharp": "F#3",
+        "flat": "Gb3"
     },
-    "Gb2": {
-        "notation": "Gb2",
+    "Gb3": {
         "letter": "G",
         "accidental": "b",
-        "octave": 2,
-        "key": 22,
-        "Hz": 92.4986
+        "octave": 3,
+        "key": 34,
+        "Hz": 184.997,
+        "natural": "",
+        "sharp": "F#3",
+        "flat": "Gb3"
     },
-    "E#2": {
-        "notation": "E#2",
+    "E#3": {
         "letter": "E",
         "accidental": "#",
-        "octave": 2,
-        "key": 21,
-        "Hz": 87.3071
+        "octave": 3,
+        "key": 33,
+        "Hz": 174.614,
+        "natural": "F3",
+        "sharp": "E#3",
+        "flat": "Gbb3"
     },
-    "F2": {
-        "notation": "F2",
+    "F3": {
         "letter": "F",
         "accidental": "",
-        "octave": 2,
-        "key": 21,
-        "Hz": 87.3071
+        "octave": 3,
+        "key": 33,
+        "Hz": 174.614,
+        "natural": "F3",
+        "sharp": "E#3",
+        "flat": "Gbb3"
     },
-    "Gbb2": {
-        "notation": "Gbb2",
+    "Gbb3": {
         "letter": "G",
         "accidental": "bb",
-        "octave": 2,
-        "key": 21,
-        "Hz": 87.3071
+        "octave": 3,
+        "key": 33,
+        "Hz": 174.614,
+        "natural": "F3",
+        "sharp": "E#3",
+        "flat": "Gbb3"
     },
-    "D##2": {
-        "notation": "D##2",
+    "D##3": {
         "letter": "D",
         "accidental": "##",
-        "octave": 2,
-        "key": 20,
-        "Hz": 82.4069
+        "octave": 3,
+        "key": 32,
+        "Hz": 164.814,
+        "natural": "E3",
+        "sharp": "D##3",
+        "flat": "Fb3"
     },
-    "E2": {
-        "notation": "E2",
+    "E3": {
         "letter": "E",
         "accidental": "",
-        "octave": 2,
-        "key": 20,
-        "Hz": 82.4069
+        "octave": 3,
+        "key": 32,
+        "Hz": 164.814,
+        "natural": "E3",
+        "sharp": "D##3",
+        "flat": "Fb3"
     },
-    "Fb2": {
-        "notation": "Fb2",
+    "Fb3": {
         "letter": "F",
         "accidental": "b",
-        "octave": 2,
-        "key": 20,
-        "Hz": 82.4069
+        "octave": 3,
+        "key": 32,
+        "Hz": 164.814,
+        "natural": "E3",
+        "sharp": "D##3",
+        "flat": "Fb3"
     },
-    "D#2": {
-        "notation": "D#2",
+    "D#3": {
         "letter": "D",
         "accidental": "#",
-        "octave": 2,
-        "key": 19,
-        "Hz": 77.7817
+        "octave": 3,
+        "key": 31,
+        "Hz": 155.563,
+        "natural": "",
+        "sharp": "D#3",
+        "flat": "Eb3"
     },
-    "Eb2": {
-        "notation": "Eb2",
+    "Eb3": {
         "letter": "E",
         "accidental": "b",
-        "octave": 2,
-        "key": 19,
-        "Hz": 77.7817
+        "octave": 3,
+        "key": 31,
+        "Hz": 155.563,
+        "natural": "",
+        "sharp": "D#3",
+        "flat": "Eb3"
     },
-    "C##2": {
-        "notation": "C##2",
+    "C##3": {
         "letter": "C",
         "accidental": "##",
-        "octave": 2,
-        "key": 18,
-        "Hz": 73.4162
+        "octave": 3,
+        "key": 30,
+        "Hz": 146.832,
+        "natural": "D3",
+        "sharp": "C##3",
+        "flat": "Ebb3"
     },
-    "D2": {
-        "notation": "D2",
+    "D3": {
         "letter": "D",
         "accidental": "",
-        "octave": 2,
-        "key": 18,
-        "Hz": 73.4162
+        "octave": 3,
+        "key": 30,
+        "Hz": 146.832,
+        "natural": "D3",
+        "sharp": "C##3",
+        "flat": "Ebb3"
     },
-    "Ebb2": {
-        "notation": "Ebb2",
+    "Ebb3": {
         "letter": "E",
         "accidental": "bb",
-        "octave": 2,
-        "key": 18,
-        "Hz": 73.4162
+        "octave": 3,
+        "key": 30,
+        "Hz": 146.832,
+        "natural": "D3",
+        "sharp": "C##3",
+        "flat": "Ebb3"
     },
-    "C#2": {
-        "notation": "C#2",
+    "C#3": {
         "letter": "C",
         "accidental": "#",
-        "octave": 2,
-        "key": 17,
-        "Hz": 69.2957
+        "octave": 3,
+        "key": 29,
+        "Hz": 138.591,
+        "natural": "",
+        "sharp": "C#3",
+        "flat": "Db3"
     },
-    "Db2": {
-        "notation": "Db2",
+    "Db3": {
         "letter": "D",
         "accidental": "b",
-        "octave": 2,
-        "key": 17,
-        "Hz": 69.2957
+        "octave": 3,
+        "key": 29,
+        "Hz": 138.591,
+        "natural": "",
+        "sharp": "C#3",
+        "flat": "Db3"
     },
     "B#2": {
-        "notation": "B#2",
         "letter": "B",
         "accidental": "#",
         "octave": 2,
-        "key": 16,
-        "Hz": 65.4064
+        "key": 28,
+        "Hz": 130.813,
+        "natural": "C3",
+        "sharp": "B#2",
+        "flat": "Dbb3"
     },
-    "C2": {
-        "notation": "C2",
+    "C3": {
         "letter": "C",
+        "accidental": "",
+        "octave": 3,
+        "key": 28,
+        "Hz": 130.813,
+        "natural": "C3",
+        "sharp": "B#3",
+        "flat": "Dbb3"
+    },
+    "Dbb3": {
+        "letter": "D",
+        "accidental": "bb",
+        "octave": 3,
+        "key": 28,
+        "Hz": 130.813,
+        "natural": "C3",
+        "sharp": "B#3",
+        "flat": "Dbb3"
+    },
+    "A##2": {
+        "letter": "A",
+        "accidental": "##",
+        "octave": 2,
+        "key": 27,
+        "Hz": 123.471,
+        "natural": "B2",
+        "sharp": "A##2",
+        "flat": "Cb2"
+    },
+    "B2": {
+        "letter": "B",
         "accidental": "",
         "octave": 2,
-        "key": 16,
-        "Hz": 65.4064
+        "key": 27,
+        "Hz": 123.471,
+        "natural": "B2",
+        "sharp": "A##2",
+        "flat": "Cb2"
     },
-    "Dbb2": {
-        "notation": "Dbb2",
-        "letter": "D",
+    "Cb3": {
+        "letter": "C",
+        "accidental": "b",
+        "octave": 3,
+        "key": 27,
+        "Hz": 123.471,
+        "natural": "B2",
+        "sharp": "A##2",
+        "flat": "Cb3"
+    },
+    "A#2": {
+        "letter": "A",
+        "accidental": "#",
+        "octave": 2,
+        "key": 26,
+        "Hz": 116.541,
+        "natural": "",
+        "sharp": "A#2",
+        "flat": "Bb2"
+    },
+    "Bb2": {
+        "letter": "B",
+        "accidental": "b",
+        "octave": 2,
+        "key": 26,
+        "Hz": 116.541,
+        "natural": "",
+        "sharp": "A#2",
+        "flat": "Bb2"
+    },
+    "G##2": {
+        "letter": "G",
+        "accidental": "##",
+        "octave": 2,
+        "key": 25,
+        "Hz": 110,
+        "natural": "A2",
+        "sharp": "G##2",
+        "flat": "Bbb2"
+    },
+    "A2": {
+        "letter": "A",
+        "accidental": "",
+        "octave": 2,
+        "key": 25,
+        "Hz": 110,
+        "natural": "A2",
+        "sharp": "G##2",
+        "flat": "Bbb2"
+    },
+    "Bbb2": {
+        "letter": "B",
         "accidental": "bb",
         "octave": 2,
-        "key": 16,
-        "Hz": 65.4064
+        "key": 25,
+        "Hz": 110,
+        "natural": "A2",
+        "sharp": "G##2",
+        "flat": "Bbb2"
     },
-    "A##1": {
-        "notation": "A##1",
-        "letter": "A",
-        "accidental": "##",
-        "octave": 1,
-        "key": 15,
-        "Hz": 61.7354
-    },
-    "B1": {
-        "notation": "B1",
-        "letter": "B",
-        "accidental": "",
-        "octave": 1,
-        "key": 15,
-        "Hz": 61.7354
-    },
-    "Cb1": {
-        "notation": "Cb1",
-        "letter": "C",
-        "accidental": "b",
-        "octave": 1,
-        "key": 15,
-        "Hz": 61.7354
-    },
-    "A#1": {
-        "notation": "A#1",
-        "letter": "A",
-        "accidental": "#",
-        "octave": 1,
-        "key": 14,
-        "Hz": 58.2705
-    },
-    "Bb1": {
-        "notation": "Bb1",
-        "letter": "B",
-        "accidental": "b",
-        "octave": 1,
-        "key": 14,
-        "Hz": 58.2705
-    },
-    "G##1": {
-        "notation": "G##1",
-        "letter": "G",
-        "accidental": "##",
-        "octave": 1,
-        "key": 13,
-        "Hz": 55
-    },
-    "A1": {
-        "notation": "A1",
-        "letter": "A",
-        "accidental": "",
-        "octave": 1,
-        "key": 13,
-        "Hz": 55
-    },
-    "Bbb1": {
-        "notation": "Bbb1",
-        "letter": "B",
-        "accidental": "bb",
-        "octave": 1,
-        "key": 13,
-        "Hz": 55
-    },
-    "G#1": {
-        "notation": "G#1",
+    "G#2": {
         "letter": "G",
         "accidental": "#",
-        "octave": 1,
-        "key": 12,
-        "Hz": 51.913
+        "octave": 2,
+        "key": 24,
+        "Hz": 103.826,
+        "natural": "",
+        "sharp": "G#2",
+        "flat": "Ab2"
     },
-    "Ab1": {
-        "notation": "Ab1",
+    "Ab2": {
         "letter": "A",
         "accidental": "b",
-        "octave": 1,
-        "key": 12,
-        "Hz": 51.913
+        "octave": 2,
+        "key": 24,
+        "Hz": 103.826,
+        "natural": "",
+        "sharp": "G#2",
+        "flat": "Ab2"
     },
-    "F##1": {
-        "notation": "F##1",
+    "F##2": {
         "letter": "F",
         "accidental": "##",
-        "octave": 1,
-        "key": 11,
-        "Hz": 48.9995
+        "octave": 2,
+        "key": 23,
+        "Hz": 97.9989,
+        "natural": "G2",
+        "sharp": "F##2",
+        "flat": "Abb2"
     },
-    "G1": {
-        "notation": "G1",
+    "G2": {
         "letter": "G",
         "accidental": "",
-        "octave": 1,
-        "key": 11,
-        "Hz": 48.9995
+        "octave": 2,
+        "key": 23,
+        "Hz": 97.9989,
+        "natural": "G2",
+        "sharp": "F##2",
+        "flat": "Abb2"
     },
-    "Abb1": {
-        "notation": "Abb1",
+    "Abb2": {
         "letter": "A",
         "accidental": "bb",
-        "octave": 1,
-        "key": 11,
-        "Hz": 48.9995
+        "octave": 2,
+        "key": 23,
+        "Hz": 97.9989,
+        "natural": "G2",
+        "sharp": "F##2",
+        "flat": "Abb2"
     },
-    "F#1": {
-        "notation": "F#1",
+    "F#2": {
         "letter": "F",
         "accidental": "#",
-        "octave": 1,
-        "key": 10,
-        "Hz": 46.2493
+        "octave": 2,
+        "key": 22,
+        "Hz": 92.4986,
+        "natural": "",
+        "sharp": "F#2",
+        "flat": "Gb2"
     },
-    "Gb1": {
-        "notation": "Gb1",
+    "Gb2": {
         "letter": "G",
         "accidental": "b",
-        "octave": 1,
-        "key": 10,
-        "Hz": 46.2493
+        "octave": 2,
+        "key": 22,
+        "Hz": 92.4986,
+        "natural": "",
+        "sharp": "F#2",
+        "flat": "Gb2"
     },
-    "E#1": {
-        "notation": "E#1",
+    "E#2": {
         "letter": "E",
         "accidental": "#",
-        "octave": 1,
-        "key": 9,
-        "Hz": 43.6536
+        "octave": 2,
+        "key": 21,
+        "Hz": 87.3071,
+        "natural": "F2",
+        "sharp": "E#2",
+        "flat": "Gbb2"
     },
-    "F1": {
-        "notation": "F1",
+    "F2": {
         "letter": "F",
         "accidental": "",
-        "octave": 1,
-        "key": 9,
-        "Hz": 43.6536
+        "octave": 2,
+        "key": 21,
+        "Hz": 87.3071,
+        "natural": "F2",
+        "sharp": "E#2",
+        "flat": "Gbb2"
     },
-    "Gbb1": {
-        "notation": "Gbb1",
+    "Gbb2": {
         "letter": "G",
         "accidental": "bb",
-        "octave": 1,
-        "key": 9,
-        "Hz": 43.6536
+        "octave": 2,
+        "key": 21,
+        "Hz": 87.3071,
+        "natural": "F2",
+        "sharp": "E#2",
+        "flat": "Gbb2"
     },
-    "D##1": {
-        "notation": "D##1",
+    "D##2": {
         "letter": "D",
         "accidental": "##",
-        "octave": 1,
-        "key": 8,
-        "Hz": 41.2035
+        "octave": 2,
+        "key": 20,
+        "Hz": 82.4069,
+        "natural": "E2",
+        "sharp": "D##2",
+        "flat": "Fb2"
     },
-    "E1": {
-        "notation": "E1",
+    "E2": {
         "letter": "E",
         "accidental": "",
-        "octave": 1,
-        "key": 8,
-        "Hz": 41.2035
+        "octave": 2,
+        "key": 20,
+        "Hz": 82.4069,
+        "natural": "E2",
+        "sharp": "D##2",
+        "flat": "Fb2"
     },
-    "Fb1": {
-        "notation": "Fb1",
+    "Fb2": {
         "letter": "F",
         "accidental": "b",
-        "octave": 1,
-        "key": 8,
-        "Hz": 41.2035
+        "octave": 2,
+        "key": 20,
+        "Hz": 82.4069,
+        "natural": "E2",
+        "sharp": "D##2",
+        "flat": "Fb2"
     },
-    "D#1": {
-        "notation": "D#1",
+    "D#2": {
         "letter": "D",
         "accidental": "#",
-        "octave": 1,
-        "key": 7,
-        "Hz": 38.8909
+        "octave": 2,
+        "key": 19,
+        "Hz": 77.7817,
+        "natural": "",
+        "sharp": "D#2",
+        "flat": "Eb2"
     },
-    "Eb1": {
-        "notation": "Eb1",
+    "Eb2": {
         "letter": "E",
         "accidental": "b",
-        "octave": 1,
-        "key": 7,
-        "Hz": 38.8909
+        "octave": 2,
+        "key": 19,
+        "Hz": 77.7817,
+        "natural": "",
+        "sharp": "D#2",
+        "flat": "Eb2"
     },
-    "C##1": {
-        "notation": "C##1",
+    "C##2": {
         "letter": "C",
         "accidental": "##",
-        "octave": 1,
-        "key": 6,
-        "Hz": 36.7081
+        "octave": 2,
+        "key": 18,
+        "Hz": 73.4162,
+        "natural": "D2",
+        "sharp": "C##2",
+        "flat": "Ebb2"
     },
-    "D1": {
-        "notation": "D1",
+    "D2": {
         "letter": "D",
         "accidental": "",
-        "octave": 1,
-        "key": 6,
-        "Hz": 36.7081
+        "octave": 2,
+        "key": 18,
+        "Hz": 73.4162,
+        "natural": "D2",
+        "sharp": "C##2",
+        "flat": "Ebb2"
     },
-    "Ebb1": {
-        "notation": "Ebb1",
+    "Ebb2": {
         "letter": "E",
         "accidental": "bb",
-        "octave": 1,
-        "key": 6,
-        "Hz": 36.7081
+        "octave": 2,
+        "key": 18,
+        "Hz": 73.4162,
+        "natural": "D2",
+        "sharp": "C##2",
+        "flat": "Ebb2"
     },
-    "C#1": {
-        "notation": "C#1",
+    "C#2": {
         "letter": "C",
         "accidental": "#",
-        "octave": 1,
-        "key": 5,
-        "Hz": 34.6479
+        "octave": 2,
+        "key": 17,
+        "Hz": 69.2957,
+        "natural": "",
+        "sharp": "C#2",
+        "flat": "Db2"
     },
-    "Db1": {
-        "notation": "Db1",
+    "Db2": {
         "letter": "D",
         "accidental": "b",
-        "octave": 1,
-        "key": 5,
-        "Hz": 34.6479
+        "octave": 2,
+        "key": 17,
+        "Hz": 69.2957,
+        "natural": "",
+        "sharp": "C#2",
+        "flat": "Db2"
     },
     "B#1": {
-        "notation": "B#1",
         "letter": "B",
         "accidental": "#",
         "octave": 1,
+        "key": 16,
+        "Hz": 65.4064,
+        "natural": "C2",
+        "sharp": "B#1",
+        "flat": "Dbb2"
+    },
+    "C2": {
+        "letter": "C",
+        "accidental": "",
+        "octave": 2,
+        "key": 16,
+        "Hz": 65.4064,
+        "natural": "C2",
+        "sharp": "B#2",
+        "flat": "Dbb2"
+    },
+    "Dbb2": {
+        "letter": "D",
+        "accidental": "bb",
+        "octave": 2,
+        "key": 16,
+        "Hz": 65.4064,
+        "natural": "C2",
+        "sharp": "B#2",
+        "flat": "Dbb2"
+    },
+    "A##1": {
+        "letter": "A",
+        "accidental": "##",
+        "octave": 1,
+        "key": 15,
+        "Hz": 61.7354,
+        "natural": "B1",
+        "sharp": "A##1",
+        "flat": "Cb1"
+    },
+    "B1": {
+        "letter": "B",
+        "accidental": "",
+        "octave": 1,
+        "key": 15,
+        "Hz": 61.7354,
+        "natural": "B1",
+        "sharp": "A##1",
+        "flat": "Cb1"
+    },
+    "Cb2": {
+        "letter": "C",
+        "accidental": "b",
+        "octave": 2,
+        "key": 15,
+        "Hz": 61.7354,
+        "natural": "B1",
+        "sharp": "A##1",
+        "flat": "Cb2"
+    },
+    "A#1": {
+        "letter": "A",
+        "accidental": "#",
+        "octave": 1,
+        "key": 14,
+        "Hz": 58.2705,
+        "natural": "",
+        "sharp": "A#1",
+        "flat": "Bb1"
+    },
+    "Bb1": {
+        "letter": "B",
+        "accidental": "b",
+        "octave": 1,
+        "key": 14,
+        "Hz": 58.2705,
+        "natural": "",
+        "sharp": "A#1",
+        "flat": "Bb1"
+    },
+    "G##1": {
+        "letter": "G",
+        "accidental": "##",
+        "octave": 1,
+        "key": 13,
+        "Hz": 55,
+        "natural": "A1",
+        "sharp": "G##1",
+        "flat": "Bbb1"
+    },
+    "A1": {
+        "letter": "A",
+        "accidental": "",
+        "octave": 1,
+        "key": 13,
+        "Hz": 55,
+        "natural": "A1",
+        "sharp": "G##1",
+        "flat": "Bbb1"
+    },
+    "Bbb1": {
+        "letter": "B",
+        "accidental": "bb",
+        "octave": 1,
+        "key": 13,
+        "Hz": 55,
+        "natural": "A1",
+        "sharp": "G##1",
+        "flat": "Bbb1"
+    },
+    "G#1": {
+        "letter": "G",
+        "accidental": "#",
+        "octave": 1,
+        "key": 12,
+        "Hz": 51.913,
+        "natural": "",
+        "sharp": "G#1",
+        "flat": "Ab1"
+    },
+    "Ab1": {
+        "letter": "A",
+        "accidental": "b",
+        "octave": 1,
+        "key": 12,
+        "Hz": 51.913,
+        "natural": "",
+        "sharp": "G#1",
+        "flat": "Ab1"
+    },
+    "F##1": {
+        "letter": "F",
+        "accidental": "##",
+        "octave": 1,
+        "key": 11,
+        "Hz": 48.9995,
+        "natural": "G1",
+        "sharp": "F##1",
+        "flat": "Abb1"
+    },
+    "G1": {
+        "letter": "G",
+        "accidental": "",
+        "octave": 1,
+        "key": 11,
+        "Hz": 48.9995,
+        "natural": "G1",
+        "sharp": "F##1",
+        "flat": "Abb1"
+    },
+    "Abb1": {
+        "letter": "A",
+        "accidental": "bb",
+        "octave": 1,
+        "key": 11,
+        "Hz": 48.9995,
+        "natural": "G1",
+        "sharp": "F##1",
+        "flat": "Abb1"
+    },
+    "F#1": {
+        "letter": "F",
+        "accidental": "#",
+        "octave": 1,
+        "key": 10,
+        "Hz": 46.2493,
+        "natural": "",
+        "sharp": "F#1",
+        "flat": "Gb1"
+    },
+    "Gb1": {
+        "letter": "G",
+        "accidental": "b",
+        "octave": 1,
+        "key": 10,
+        "Hz": 46.2493,
+        "natural": "",
+        "sharp": "F#1",
+        "flat": "Gb1"
+    },
+    "E#1": {
+        "letter": "E",
+        "accidental": "#",
+        "octave": 1,
+        "key": 9,
+        "Hz": 43.6536,
+        "natural": "F1",
+        "sharp": "E#1",
+        "flat": "Gbb1"
+    },
+    "F1": {
+        "letter": "F",
+        "accidental": "",
+        "octave": 1,
+        "key": 9,
+        "Hz": 43.6536,
+        "natural": "F1",
+        "sharp": "E#1",
+        "flat": "Gbb1"
+    },
+    "Gbb1": {
+        "letter": "G",
+        "accidental": "bb",
+        "octave": 1,
+        "key": 9,
+        "Hz": 43.6536,
+        "natural": "F1",
+        "sharp": "E#1",
+        "flat": "Gbb1"
+    },
+    "D##1": {
+        "letter": "D",
+        "accidental": "##",
+        "octave": 1,
+        "key": 8,
+        "Hz": 41.2035,
+        "natural": "E1",
+        "sharp": "D##1",
+        "flat": "Fb1"
+    },
+    "E1": {
+        "letter": "E",
+        "accidental": "",
+        "octave": 1,
+        "key": 8,
+        "Hz": 41.2035,
+        "natural": "E1",
+        "sharp": "D##1",
+        "flat": "Fb1"
+    },
+    "Fb1": {
+        "letter": "F",
+        "accidental": "b",
+        "octave": 1,
+        "key": 8,
+        "Hz": 41.2035,
+        "natural": "E1",
+        "sharp": "D##1",
+        "flat": "Fb1"
+    },
+    "D#1": {
+        "letter": "D",
+        "accidental": "#",
+        "octave": 1,
+        "key": 7,
+        "Hz": 38.8909,
+        "natural": "",
+        "sharp": "D#1",
+        "flat": "Eb1"
+    },
+    "Eb1": {
+        "letter": "E",
+        "accidental": "b",
+        "octave": 1,
+        "key": 7,
+        "Hz": 38.8909,
+        "natural": "",
+        "sharp": "D#1",
+        "flat": "Eb1"
+    },
+    "C##1": {
+        "letter": "C",
+        "accidental": "##",
+        "octave": 1,
+        "key": 6,
+        "Hz": 36.7081,
+        "natural": "D1",
+        "sharp": "C##1",
+        "flat": "Ebb1"
+    },
+    "D1": {
+        "letter": "D",
+        "accidental": "",
+        "octave": 1,
+        "key": 6,
+        "Hz": 36.7081,
+        "natural": "D1",
+        "sharp": "C##1",
+        "flat": "Ebb1"
+    },
+    "Ebb1": {
+        "letter": "E",
+        "accidental": "bb",
+        "octave": 1,
+        "key": 6,
+        "Hz": 36.7081,
+        "natural": "D1",
+        "sharp": "C##1",
+        "flat": "Ebb1"
+    },
+    "C#1": {
+        "letter": "C",
+        "accidental": "#",
+        "octave": 1,
+        "key": 5,
+        "Hz": 34.6479,
+        "natural": "",
+        "sharp": "C#1",
+        "flat": "Db1"
+    },
+    "Db1": {
+        "letter": "D",
+        "accidental": "b",
+        "octave": 1,
+        "key": 5,
+        "Hz": 34.6479,
+        "natural": "",
+        "sharp": "C#1",
+        "flat": "Db1"
+    },
+    "B#0": {
+        "letter": "B",
+        "accidental": "#",
+        "octave": 0,
         "key": 4,
-        "Hz": 32.7032
+        "Hz": 32.7032,
+        "natural": "C1",
+        "sharp": "B#0",
+        "flat": "Dbb1"
     },
     "C1": {
-        "notation": "C1",
         "letter": "C",
         "accidental": "",
         "octave": 1,
         "key": 4,
-        "Hz": 32.7032
+        "Hz": 32.7032,
+        "natural": "C1",
+        "sharp": "B#1",
+        "flat": "Dbb1"
     },
     "Dbb1": {
-        "notation": "Dbb1",
         "letter": "D",
         "accidental": "bb",
         "octave": 1,
         "key": 4,
-        "Hz": 32.7032
+        "Hz": 32.7032,
+        "natural": "C1",
+        "sharp": "B#1",
+        "flat": "Dbb1"
     },
     "A##0": {
-        "notation": "A##0",
         "letter": "A",
         "accidental": "##",
         "octave": 0,
         "key": 3,
-        "Hz": 30.8677
+        "Hz": 30.8677,
+        "natural": "B0",
+        "sharp": "A##0",
+        "flat": "Cb0"
     },
     "B0": {
-        "notation": "B0",
         "letter": "B",
         "accidental": "",
         "octave": 0,
         "key": 3,
-        "Hz": 30.8677
+        "Hz": 30.8677,
+        "natural": "B0",
+        "sharp": "A##0",
+        "flat": "Cb0"
     },
-    "Cb0": {
-        "notation": "Cb0",
+    "Cb1": {
         "letter": "C",
         "accidental": "b",
-        "octave": 0,
+        "octave": 1,
         "key": 3,
-        "Hz": 30.8677
+        "Hz": 30.8677,
+        "natural": "B0",
+        "sharp": "A##0",
+        "flat": "Cb1"
     },
     "A#0": {
-        "notation": "A#0",
         "letter": "A",
         "accidental": "#",
         "octave": 0,
         "key": 2,
-        "Hz": 29.1353
+        "Hz": 29.1353,
+        "natural": "",
+        "sharp": "A#0",
+        "flat": "Bb0"
     },
     "Bb0": {
-        "notation": "Bb0",
         "letter": "B",
         "accidental": "b",
         "octave": 0,
         "key": 2,
-        "Hz": 29.1353
+        "Hz": 29.1353,
+        "natural": "",
+        "sharp": "A#0",
+        "flat": "Bb0"
     },
     "G##0": {
-        "notation": "G##0",
         "letter": "G",
         "accidental": "##",
         "octave": 0,
         "key": 1,
-        "Hz": 27.5
+        "Hz": 27.5,
+        "natural": "A0",
+        "sharp": "G##0",
+        "flat": "Bbb0"
     },
     "A0": {
-        "notation": "A0",
         "letter": "A",
         "accidental": "",
         "octave": 0,
         "key": 1,
-        "Hz": 27.5
+        "Hz": 27.5,
+        "natural": "A0",
+        "sharp": "G##0",
+        "flat": "Bbb0"
     },
     "Bbb0": {
-        "notation": "Bbb0",
         "letter": "B",
         "accidental": "bb",
         "octave": 0,
         "key": 1,
-        "Hz": 27.5
+        "Hz": 27.5,
+        "natural": "A0",
+        "sharp": "G##0",
+        "flat": "Bbb0"
     }
 }
