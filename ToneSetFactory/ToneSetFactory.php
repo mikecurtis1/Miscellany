@@ -119,13 +119,7 @@ class ToneSetFactory
 		}
 	}
 	
-	private function _getToneByIntervalAsc($aspn='C4',$interval='P1'){
-		if ( ! $this->_isASPN($aspn) ) {
-			throw new Exception($aspn . ' is NOT an ASPN value.');
-		}
-		if ( ! $this->_isInterval($interval) ) {
-			throw new Exception($interval . ' is NOT an interval abbreviation.');
-		}
+	private function _getToneByIntervalAsc($aspn,$interval){
 		$ordinal = $this->_American_standard_pitch_notation[$aspn]['key'] + $this->_intervals[$interval]['chromatic_steps'];
 		$letter = $this->_getNextLetter($aspn,$interval);
 		$spelling = $this->_getPianoKeySpelling($ordinal,$letter);
