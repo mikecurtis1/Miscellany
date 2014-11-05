@@ -1,0 +1,106 @@
+{
+    "1": {
+        "ordinal": 1,
+        "semitones": 0,
+        "solfege_asc": "do",
+        "solfege_desc": "do",
+        "asc_interval": "P1",
+        "desc_interval": "P1"
+    },
+    "2": {
+        "ordinal": 2,
+        "semitones": 1,
+        "solfege_asc": "di",
+        "solfege_desc": "ra",
+        "asc_interval": "m2",
+        "desc_interval": "A1"
+    },
+    "3": {
+        "ordinal": 3,
+        "semitones": 2,
+        "solfege_asc": "re",
+        "solfege_desc": "re",
+        "asc_interval": "M2",
+        "desc_interval": "M2"
+    },
+    "4": {
+        "ordinal": 4,
+        "semitones": 3,
+        "solfege_asc": "ri",
+        "solfege_desc": "me",
+        "asc_interval": "M3",
+        "desc_interval": "M3"
+    },
+    "5": {
+        "ordinal": 5,
+        "semitones": 4,
+        "solfege_asc": "mi",
+        "solfege_desc": "mi",
+        "asc_interval": "A3",
+        "desc_interval": "d4"
+    },
+    "6": {
+        "ordinal": 6,
+        "semitones": 5,
+        "solfege_asc": "fa",
+        "solfege_desc": "fa",
+        "asc_interval": "P4",
+        "desc_interval": "P4"
+    },
+    "7": {
+        "ordinal": 7,
+        "semitones": 6,
+        "solfege_asc": "fi",
+        "solfege_desc": "se",
+        "asc_interval": "A4",
+        "desc_interval": "d5"
+    },
+    "8": {
+        "ordinal": 8,
+        "semitones": 7,
+        "solfege_asc": "sol",
+        "solfege_desc": "sol",
+        "asc_interval": "P5",
+        "desc_interval": "P5"
+    },
+    "9": {
+        "ordinal": 9,
+        "semitones": 8,
+        "solfege_asc": "si",
+        "solfege_desc": "le",
+        "asc_interval": "m6",
+        "desc_interval": "m6"
+    },
+    "10": {
+        "ordinal": 10,
+        "semitones": 9,
+        "solfege_asc": "la",
+        "solfege_desc": "la",
+        "asc_interval": "M6",
+        "desc_interval": "d7"
+    },
+    "11": {
+        "ordinal": 11,
+        "semitones": 10,
+        "solfege_asc": "li",
+        "solfege_desc": "te",
+        "asc_interval": "m7",
+        "desc_interval": "m7"
+    },
+    "12": {
+        "ordinal": 12,
+        "semitones": 11,
+        "solfege_asc": "ti",
+        "solfege_desc": "ti",
+        "asc_interval": "M7",
+        "desc_interval": "d8"
+    },
+    "13": {
+        "ordinal": 13,
+        "semitones": 12,
+        "solfege_asc": "do",
+        "solfege_desc": "do",
+        "asc_interval": "P8",
+        "desc_interval": "P8"
+    }
+}
