@@ -2,7 +2,7 @@
 
 interface ToneSet
 {
-	public function addTones($aspn, $interval, MusicTables $tables);
+	public function addTones(Tone $tone);
 	public function getToneSet();
 	public function permute();
 	public function retrograde();
