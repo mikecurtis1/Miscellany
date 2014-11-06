@@ -5,20 +5,20 @@ class Chord extends Interval implements ToneSet
 	private $_root = 'C';
 	private $_type = 'major';
 	
-	public function build(){
-		$this->addTones('C4','P1');
-		$this->addTones('E4','P1');
-		$this->addTones('G4','P1');
-		$this->addTones('C5','P1');
+	public function __construct(MusicTables $tables){
+		$this->addTones('C4', 'P1', $tables);
+		$this->addTones('E4', 'P1', $tables);
+		$this->addTones('G4', 'P1', $tables);
+		$this->addTones('C5', 'P1', $tables);
 	}
-	public function addTones($aspn='C4',$interval='P1'){
-		if ( ! MusicTables::isASPN($aspn) ) {
+	public function addTones($aspn='C4', $interval='P1', MusicTables $tables){
+		if ( ! $tables::isASPN($aspn) ) {
 			throw new Exception($aspn . ' is NOT an ASPN value.');
 		}
-		if ( ! MusicTables::isInterval($interval) ) {
+		if ( ! $tables::isInterval($interval) ) {
 			throw new Exception($interval . ' is NOT an interval abbreviation.');
 		}
-		$this->_tone_set[] = $this->_getToneByIntervalAsc($aspn,$interval);
+		$this->_tone_set[] = $this->_getToneByIntervalAsc($aspn, $interval, $tables);
 	}
 	
 	public function getToneSet(){
