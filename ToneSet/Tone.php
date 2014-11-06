@@ -6,29 +6,29 @@ class Tone
 	private $_letter = '';
 	private $_accidental = '';
 	private $_octave = '';
-	private $_ordinal = '';
+	private $_piano_key = '';
 	private $_Hz = '';
 	private $_natural = '';
 	private $_sharp = '';
 	private $_flat = '';
 	
-	private function __construct($aspn){
+	private function __construct($aspn, $tables){
 		$this->_aspn = $aspn;
-		$this->_letter = MusicTables::getASPNValue($aspn,'letter');
-		$this->_accidental = MusicTables::getASPNValue($aspn,'accidental');
-		$this->_octave = MusicTables::getASPNValue($aspn,'octave');
-		$this->_ordinal = MusicTables::getASPNValue($aspn,'key');
-		$this->_Hz = MusicTables::getASPNValue($aspn,'Hz');
-		$this->_natural = MusicTables::getASPNValue($aspn,'natural');
-		$this->_sharp = MusicTables::getASPNValue($aspn,'sharp');
-		$this->_flat = MusicTables::getASPNValue($aspn,'flat');
+		$this->_letter = $tables::getASPNValue($aspn, 'letter');
+		$this->_accidental = $tables::getASPNValue($aspn, 'accidental');
+		$this->_octave = $tables::getASPNValue($aspn, 'octave');
+		$this->_piano_key = $tables::getASPNValue($aspn, 'piano_key');
+		$this->_Hz = $tables::getASPNValue($aspn, 'Hz');
+		$this->_natural = $tables::getASPNValue($aspn, 'natural');
+		$this->_sharp = $tables::getASPNValue($aspn, 'sharp');
+		$this->_flat = $tables::getASPNValue($aspn, 'flat');
 	}
 	
-	public static function create($aspn=''){
-		if ( ! MusicTables::isASPN($aspn) ) {
-			throw new Exception($aspn . ' is NOT an ASPN value.');
+	public static function create($aspn='', MusicTables $tables){
+		if ( $tables::isASPN($aspn) ) {
+			return new Tone($aspn, $tables);
 		} else {
-			return new Tone($aspn);
+			throw new Exception($aspn . ' is NOT an ASPN value.');
 		}
 	}
 	
@@ -44,8 +44,8 @@ class Tone
 	public function getOctave(){
 		return $this->_octave;
 	}
-	public function getOrdinal(){
-		return $this->_ordinal;
+	public function getPianoKey(){
+		return $this->_piano_key;
 	}
 	public function getHz(){
 		return $this->_Hz;
