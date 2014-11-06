@@ -6,6 +6,7 @@ class MusicTables
 	private static $_intervals = array();
 	private static $_letter_sequence_asc = array();
 	private static $_chord_intervals = array();
+	private static $_diatonic_series = array();
 	
 	protected function __construct(){}
 	private function __clone(){}
@@ -16,6 +17,7 @@ class MusicTables
 		self::$_intervals = json_decode(file_get_contents('intervals.json'),TRUE);
 		self::$_letter_sequence_asc = json_decode(file_get_contents('letter_sequence_asc.json'),TRUE);
 		self::$_chord_intervals = json_decode(file_get_contents('chord_intervals.json'),TRUE);
+		self::$_diatonic_series = json_decode(file_get_contents('diatonic_series.json'),TRUE);
 		static $instance = null;
 		if ( NULL === $instance ) {
 			$instance = new static();
@@ -66,6 +68,15 @@ class MusicTables
 		}
 	}
 	
+	public static function getScaleIntervals($scale_type){
+		$temp = array();
+		foreach ( self::$_diatonic_series as $data ) {
+			$temp[] = array($data['solfege_' . $scale_type], $data['interval_' . $scale_type]);
+		}
+		
+		return $temp;
+	}
+	
 	public static function isASPN($aspn){
 		if ( isset(self::$_aspn[$aspn]) ) {
 			return TRUE;
@@ -84,6 +95,14 @@ class MusicTables
 	
 	public static function isChordType($chord_type){
 		if ( isset(self::$_chord_intervals[$chord_type]) ) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+	
+	public static function isScaleType($scale_type){
+		if ( isset(self::$_diatonic_series[1]['interval_' . $scale_type]) ) {
 			return TRUE;
 		} else {
 			return FALSE;
