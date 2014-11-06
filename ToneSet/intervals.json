@@ -1,0 +1,452 @@
+{
+    "P1": {
+        "code": "P1",
+        "quality": "perfect",
+        "name": "unison",
+        "diatonic_steps": 0,
+        "chromatic_steps": 0,
+        "interval_class": 0,
+        "generic_interval": 0
+    },
+    "m2": {
+        "code": "m2",
+        "quality": "minor",
+        "name": "second",
+        "diatonic_steps": 1,
+        "chromatic_steps": 1,
+        "interval_class": 1,
+        "generic_interval": 1
+    },
+    "M2": {
+        "code": "M2",
+        "quality": "major",
+        "name": "second",
+        "diatonic_steps": 1,
+        "chromatic_steps": 2,
+        "interval_class": 2,
+        "generic_interval": 1
+    },
+    "m3": {
+        "code": "m3",
+        "quality": "minor",
+        "name": "third",
+        "diatonic_steps": 2,
+        "chromatic_steps": 3,
+        "interval_class": 3,
+        "generic_interval": 2
+    },
+    "M3": {
+        "code": "M3",
+        "quality": "major",
+        "name": "third",
+        "diatonic_steps": 2,
+        "chromatic_steps": 4,
+        "interval_class": 4,
+        "generic_interval": 2
+    },
+    "P4": {
+        "code": "P4",
+        "quality": "perfect",
+        "name": "fourth",
+        "diatonic_steps": 3,
+        "chromatic_steps": 5,
+        "interval_class": 5,
+        "generic_interval": 3
+    },
+    "P5": {
+        "code": "P5",
+        "quality": "perfect",
+        "name": "fifth",
+        "diatonic_steps": 4,
+        "chromatic_steps": 7,
+        "interval_class": 5,
+        "generic_interval": 4
+    },
+    "m6": {
+        "code": "m6",
+        "quality": "minor",
+        "name": "sixth",
+        "diatonic_steps": 5,
+        "chromatic_steps": 8,
+        "interval_class": 4,
+        "generic_interval": 5
+    },
+    "M6": {
+        "code": "M6",
+        "quality": "major",
+        "name": "sixth",
+        "diatonic_steps": 5,
+        "chromatic_steps": 9,
+        "interval_class": 3,
+        "generic_interval": 5
+    },
+    "m7": {
+        "code": "m7",
+        "quality": "minor",
+        "name": "seventh",
+        "diatonic_steps": 6,
+        "chromatic_steps": 10,
+        "interval_class": 2,
+        "generic_interval": 6
+    },
+    "M7": {
+        "code": "M7",
+        "quality": "major",
+        "name": "seventh",
+        "diatonic_steps": 6,
+        "chromatic_steps": 11,
+        "interval_class": 1,
+        "generic_interval": 6
+    },
+    "P8": {
+        "code": "P8",
+        "quality": "perfect",
+        "name": "octave",
+        "diatonic_steps": 7,
+        "chromatic_steps": 12,
+        "interval_class": 0,
+        "generic_interval": 7
+    },
+    "m9": {
+        "code": "m9",
+        "quality": "minor",
+        "name": "ninth",
+        "diatonic_steps": 8,
+        "chromatic_steps": 13,
+        "interval_class": 1,
+        "generic_interval": 1
+    },
+    "M9": {
+        "code": "M9",
+        "quality": "major",
+        "name": "ninth",
+        "diatonic_steps": 8,
+        "chromatic_steps": 14,
+        "interval_class": 2,
+        "generic_interval": 1
+    },
+    "m10": {
+        "code": "m10",
+        "quality": "minor",
+        "name": "tenth",
+        "diatonic_steps": 9,
+        "chromatic_steps": 15,
+        "interval_class": 3,
+        "generic_interval": 2
+    },
+    "M10": {
+        "code": "M10",
+        "quality": "major",
+        "name": "tenth",
+        "diatonic_steps": 9,
+        "chromatic_steps": 16,
+        "interval_class": 4,
+        "generic_interval": 2
+    },
+    "P11": {
+        "code": "P11",
+        "quality": "perfect",
+        "name": "eleventh",
+        "diatonic_steps": 10,
+        "chromatic_steps": 17,
+        "interval_class": 5,
+        "generic_interval": 3
+    },
+    "P12": {
+        "code": "P12",
+        "quality": "perfect",
+        "name": "twelfth",
+        "diatonic_steps": 11,
+        "chromatic_steps": 19,
+        "interval_class": 5,
+        "generic_interval": 4
+    },
+    "m13": {
+        "code": "m13",
+        "quality": "minor",
+        "name": "thirteenth",
+        "diatonic_steps": 12,
+        "chromatic_steps": 20,
+        "interval_class": 4,
+        "generic_interval": 5
+    },
+    "M13": {
+        "code": "M13",
+        "quality": "major",
+        "name": "thirteenth",
+        "diatonic_steps": 12,
+        "chromatic_steps": 21,
+        "interval_class": 3,
+        "generic_interval": 5
+    },
+    "m14": {
+        "code": "m14",
+        "quality": "minor",
+        "name": "fourteenth",
+        "diatonic_steps": 13,
+        "chromatic_steps": 22,
+        "interval_class": 2,
+        "generic_interval": 6
+    },
+    "M14": {
+        "code": "M14",
+        "quality": "major",
+        "name": "fourteenth",
+        "diatonic_steps": 13,
+        "chromatic_steps": 23,
+        "interval_class": 1,
+        "generic_interval": 6
+    },
+    "P15": {
+        "code": "P15",
+        "quality": "perfect",
+        "name": "fifteenth",
+        "diatonic_steps": 14,
+        "chromatic_steps": 24,
+        "interval_class": 0,
+        "generic_interval": 7
+    },
+    "d2": {
+        "code": "d2",
+        "quality": "diminished",
+        "name": "second",
+        "diatonic_steps": 1,
+        "chromatic_steps": 0,
+        "interval_class": 0,
+        "generic_interval": 1
+    },
+    "A1": {
+        "code": "A1",
+        "quality": "augmented",
+        "name": "unison",
+        "diatonic_steps": 0,
+        "chromatic_steps": 1,
+        "interval_class": 1,
+        "generic_interval": 0
+    },
+    "d3": {
+        "code": "d3",
+        "quality": "diminished",
+        "name": "third",
+        "diatonic_steps": 2,
+        "chromatic_steps": 2,
+        "interval_class": 2,
+        "generic_interval": 2
+    },
+    "A2": {
+        "code": "A2",
+        "quality": "augmented",
+        "name": "second",
+        "diatonic_steps": 1,
+        "chromatic_steps": 3,
+        "interval_class": 3,
+        "generic_interval": 1
+    },
+    "d4": {
+        "code": "d4",
+        "quality": "diminished",
+        "name": "fourth",
+        "diatonic_steps": 3,
+        "chromatic_steps": 4,
+        "interval_class": 4,
+        "generic_interval": 3
+    },
+    "A3": {
+        "code": "A3",
+        "quality": "augmented",
+        "name": "third",
+        "diatonic_steps": 2,
+        "chromatic_steps": 5,
+        "interval_class": 5,
+        "generic_interval": 2
+    },
+    "A4": {
+        "code": "A4",
+        "quality": "augmented",
+        "name": "fourth",
+        "diatonic_steps": 3,
+        "chromatic_steps": 6,
+        "interval_class": 6,
+        "generic_interval": 3
+    },
+    "d5": {
+        "code": "d5",
+        "quality": "diminished",
+        "name": "fifth",
+        "diatonic_steps": 4,
+        "chromatic_steps": 6,
+        "interval_class": 6,
+        "generic_interval": 4
+    },
+    "d6": {
+        "code": "d6",
+        "quality": "diminished",
+        "name": "sixth",
+        "diatonic_steps": 5,
+        "chromatic_steps": 7,
+        "interval_class": 5,
+        "generic_interval": 5
+    },
+    "A5": {
+        "code": "A5",
+        "quality": "augmented",
+        "name": "fifth",
+        "diatonic_steps": 4,
+        "chromatic_steps": 8,
+        "interval_class": 4,
+        "generic_interval": 4
+    },
+    "d7": {
+        "code": "d7",
+        "quality": "diminished",
+        "name": "seventh",
+        "diatonic_steps": 6,
+        "chromatic_steps": 9,
+        "interval_class": 3,
+        "generic_interval": 6
+    },
+    "A6": {
+        "code": "A6",
+        "quality": "augmented",
+        "name": "sixth",
+        "diatonic_steps": 5,
+        "chromatic_steps": 10,
+        "interval_class": 2,
+        "generic_interval": 5
+    },
+    "d8": {
+        "code": "d8",
+        "quality": "diminished",
+        "name": "octave",
+        "diatonic_steps": 7,
+        "chromatic_steps": 11,
+        "interval_class": 1,
+        "generic_interval": 7
+    },
+    "A7": {
+        "code": "A7",
+        "quality": "augmented",
+        "name": "seventh",
+        "diatonic_steps": 6,
+        "chromatic_steps": 12,
+        "interval_class": 0,
+        "generic_interval": 6
+    },
+    "A8": {
+        "code": "A8",
+        "quality": "augmented",
+        "name": "octave",
+        "diatonic_steps": 7,
+        "chromatic_steps": 13,
+        "interval_class": 1,
+        "generic_interval": 0
+    },
+    "d10": {
+        "code": "d10",
+        "quality": "diminished",
+        "name": "tenth",
+        "diatonic_steps": 9,
+        "chromatic_steps": 14,
+        "interval_class": 2,
+        "generic_interval": 2
+    },
+    "A9": {
+        "code": "A9",
+        "quality": "augmented",
+        "name": "ninth",
+        "diatonic_steps": 8,
+        "chromatic_steps": 15,
+        "interval_class": 3,
+        "generic_interval": 1
+    },
+    "d11": {
+        "code": "d11",
+        "quality": "diminished",
+        "name": "eleventh",
+        "diatonic_steps": 10,
+        "chromatic_steps": 16,
+        "interval_class": 4,
+        "generic_interval": 3
+    },
+    "A10": {
+        "code": "A10",
+        "quality": "augmented",
+        "name": "tenth",
+        "diatonic_steps": 9,
+        "chromatic_steps": 17,
+        "interval_class": 5,
+        "generic_interval": 2
+    },
+    "A11": {
+        "code": "A11",
+        "quality": "augmented",
+        "name": "eleventh",
+        "diatonic_steps": 10,
+        "chromatic_steps": 18,
+        "interval_class": 6,
+        "generic_interval": 3
+    },
+    "d12": {
+        "code": "d12",
+        "quality": "diminished",
+        "name": "twelfth",
+        "diatonic_steps": 11,
+        "chromatic_steps": 18,
+        "interval_class": 6,
+        "generic_interval": 4
+    },
+    "d13": {
+        "code": "d13",
+        "quality": "diminished",
+        "name": "thirteenth",
+        "diatonic_steps": 12,
+        "chromatic_steps": 19,
+        "interval_class": 5,
+        "generic_interval": 5
+    },
+    "A12": {
+        "code": "A12",
+        "quality": "augmented",
+        "name": "twelfth",
+        "diatonic_steps": 11,
+        "chromatic_steps": 20,
+        "interval_class": 4,
+        "generic_interval": 4
+    },
+    "d14": {
+        "code": "d14",
+        "quality": "diminished",
+        "name": "fourteenth",
+        "diatonic_steps": 13,
+        "chromatic_steps": 21,
+        "interval_class": 3,
+        "generic_interval": 6
+    },
+    "A13": {
+        "code": "A13",
+        "quality": "augmented",
+        "name": "thirteenth",
+        "diatonic_steps": 12,
+        "chromatic_steps": 22,
+        "interval_class": 2,
+        "generic_interval": 5
+    },
+    "d15": {
+        "code": "d15",
+        "quality": "diminished",
+        "name": "fifteenth",
+        "diatonic_steps": 14,
+        "chromatic_steps": 23,
+        "interval_class": 1,
+        "generic_interval": 7
+    },
+    "A14": {
+        "code": "A14",
+        "quality": "augmented",
+        "name": "fourteenth",
+        "diatonic_steps": 13,
+        "chromatic_steps": 24,
+        "interval_class": 0,
+        "generic_interval": 6
+    }
+}
