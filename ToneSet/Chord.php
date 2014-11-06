@@ -2,49 +2,43 @@
 
 class Chord extends Interval implements ToneSet
 {
-	private $_root = 'C';
-	private $_type = 'major';
+	private $_root = '';
+	private $_type = '';
+	private $_chord_tone_index = array();
 	
-	public function __construct(MusicTables $tables){
-		$this->addTones('C4', 'P1', $tables);
-		$this->addTones('E4', 'P1', $tables);
-		$this->addTones('G4', 'P1', $tables);
-		$this->addTones('C5', 'P1', $tables);
-	}
-	public function addTones($aspn='C4', $interval='P1', MusicTables $tables){
+	public function __construct($aspn='', $chord_type='', MusicTables $tables){
 		if ( ! $tables::isASPN($aspn) ) {
 			throw new Exception($aspn . ' is NOT an ASPN value.');
 		}
-		if ( ! $tables::isInterval($interval) ) {
-			throw new Exception($interval . ' is NOT an interval abbreviation.');
+		if ( ! $tables::isChordType($chord_type) ) {
+			throw new Exception($chord_type . ' is NOT a chord type.');
 		}
-		$this->_tone_set[] = $this->_getToneByIntervalAsc($aspn, $interval, $tables);
+		$this->_root = substr($aspn,0,-1);
+		$this->_type = $chord_type;
+		foreach ( $tables::getChordIntervals($chord_type) as $chord_tone => $interval ) {
+			try {
+				$this->addTones($this->_getToneByIntervalAsc($aspn, $interval, $tables));
+				$this->_chord_tone_index[] = $chord_tone;
+			} catch (Exception $e) {
+				throw new Exception($e->getMessage());
+			}
+		}
+	}
+	
+	public function addTones(Tone $tone){
+		$this->_tone_set[] = $tone;
 	}
 	
 	public function getToneSet(){
 		return $this->_tone_set;
 	}
 	
-	public function permuteSet(){
-		return array();
-	}
-	public function retrogradeSet(){
-		return array();
-	}
-	public function truncateSet(){
-		return array();
-	}
-	public function invertSet(){ // ASPN array required
-		return array();
-	}
-	public function transposeSet(){ // ASPN array required
-		return array();
-	}
-	public function filterByRangeSet(){ // ASPN array required
-		return array();
-	}
-	public function extendRangeSet(){ // ASPN array required
-		return array();
-	}
+	public function permuteSet(){}
+	public function retrogradeSet(){}
+	public function truncateSet(){}
+	public function invertSet(){}
+	public function transposeSet(){}
+	public function filterByRangeSet(){}
+	public function extendRangeSet(){}
 }
 ?>
