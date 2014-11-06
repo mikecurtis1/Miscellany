@@ -6,10 +6,19 @@ class MusicTables
 	private static $_intervals = array();
 	private static $_letter_sequence_asc = array();
 	
-	public static function config(){
+	protected function __construct(){}
+	private function __clone(){}
+	private function __wakeup(){}
+	
+	public static function config($json_path='',$type=''){
 		self::$_aspn = json_decode(file_get_contents('American_standard_pitch_notation.json'),TRUE);
 		self::$_intervals = json_decode(file_get_contents('intervals.json'),TRUE);
 		self::$_letter_sequence_asc = json_decode(file_get_contents('letter_sequence_asc.json'),TRUE);
+		static $instance = null;
+		if ( NULL === $instance ) {
+			$instance = new static();
+		}
+		return $instance;
 	}
 	
 	public static function getASPNValue($key1='',$key2=''){
@@ -43,22 +52,22 @@ class MusicTables
 	
 	public static function getPianoKeySpelling($piano_key,$letter){
 		foreach ( self::$_aspn as $aspn => $data ) {
-			if ( $data['key'] === $piano_key && $data['letter'] === $letter ) {
+			if ( $data['piano_key'] === $piano_key && $data['letter'] === $letter ) {
 				return $aspn;
 			}
 		}
 	}
 	
-	public static function isASPN($key){
-		if ( isset(self::$_aspn[$key]) ) {
+	public static function isASPN($aspn){
+		if ( isset(self::$_aspn[$aspn]) ) {
 			return TRUE;
 		} else {
 			return FALSE;
 		}
 	}
 	
-	public static function isInterval($key){
-		if ( isset(self::$_intervals[$key]) ) {
+	public static function isInterval($interval){
+		if ( isset(self::$_intervals[$interval]) ) {
 			return TRUE;
 		} else {
 			return FALSE;
