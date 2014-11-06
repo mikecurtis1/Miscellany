@@ -41,6 +41,7 @@ class MusicTables
 		}
 	}
 	
+	//TODO: add validation and failure return value
 	public static function getNextLetter($aspn,$interval){
 		$ordinal = self::$_letter_sequence_asc[substr($aspn,0,1)];
 		$steps = self::$_intervals[$interval]['diatonic_steps'];
@@ -60,14 +61,19 @@ class MusicTables
 				return $aspn;
 			}
 		}
+		
+		return FALSE;
 	}
 	
 	public static function getChordIntervals($chord_type){
 		if ( isset(self::$_chord_intervals[$chord_type]) ) {
 			return self::$_chord_intervals[$chord_type];
+		} else {
+			return FALSE;
 		}
 	}
 	
+	//TODO: add validation and failure return value
 	public static function getScaleIntervals($scale_type){
 		$temp = array();
 		foreach ( self::$_diatonic_series as $data ) {
