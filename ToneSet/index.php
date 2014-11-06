@@ -1,14 +1,13 @@
 <pre>
 <?php 
 
-MusicTables::config();
+$tables = MusicTables::config();
 
-echo var_dump(MusicTables::getASPNValue('C4','key'));
+echo var_dump($tables::getASPNValue('C4', 'piano_key'));
 echo "\n";
 echo "<hr />\n";
 
-$chord = new Chord();
-$chord->build();
+$chord = new Chord($tables);
 foreach ( $chord->getToneSet() as $tone ) {
 	echo $tone->getASPN() . ' ';
 }
