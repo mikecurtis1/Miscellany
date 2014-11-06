@@ -17,7 +17,9 @@ abstract class Interval
 		return $tone;
 	}
 	
-	public function addTones($aspn, $interval, MusicTables $tables){}
+	//TODO: protected method to alter temp_piano_key +/- 8va when out of piano key range
+	
+	public function addTones(Tone $tone){}
 	public function getToneSet(){}
 	public function permute(){}
 	public function retrograde(){}
