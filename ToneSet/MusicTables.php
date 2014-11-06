@@ -41,8 +41,13 @@ class MusicTables
 		}
 	}
 	
-	//TODO: add validation and failure return value
 	public static function getNextLetter($aspn,$interval){
+		if ( ! self::isASPN($aspn) ) {
+			return FALSE;
+		}
+		if ( ! self::isInterval($interval) ) {
+			return FALSE;
+		}
 		$ordinal = self::$_letter_sequence_asc[substr($aspn,0,1)];
 		$steps = self::$_intervals[$interval]['diatonic_steps'];
 		$sum = $ordinal + $steps;
@@ -73,8 +78,10 @@ class MusicTables
 		}
 	}
 	
-	//TODO: add validation and failure return value
 	public static function getScaleIntervals($scale_type){
+		if ( ! self::isScaleType($scale_type) ) {
+			return FALSE;
+		}
 		$temp = array();
 		foreach ( self::$_diatonic_series as $data ) {
 			$temp[] = array($data['solfege_' . $scale_type], $data['interval_' . $scale_type]);
