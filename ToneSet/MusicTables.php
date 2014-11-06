@@ -5,6 +5,7 @@ class MusicTables
 	private static $_aspn = array();
 	private static $_intervals = array();
 	private static $_letter_sequence_asc = array();
+	private static $_chord_intervals = array();
 	
 	protected function __construct(){}
 	private function __clone(){}
@@ -14,6 +15,7 @@ class MusicTables
 		self::$_aspn = json_decode(file_get_contents('American_standard_pitch_notation.json'),TRUE);
 		self::$_intervals = json_decode(file_get_contents('intervals.json'),TRUE);
 		self::$_letter_sequence_asc = json_decode(file_get_contents('letter_sequence_asc.json'),TRUE);
+		self::$_chord_intervals = json_decode(file_get_contents('chord_intervals.json'),TRUE);
 		static $instance = null;
 		if ( NULL === $instance ) {
 			$instance = new static();
@@ -58,6 +60,12 @@ class MusicTables
 		}
 	}
 	
+	public static function getChordIntervals($chord_type){
+		if ( isset(self::$_chord_intervals[$chord_type]) ) {
+			return self::$_chord_intervals[$chord_type];
+		}
+	}
+	
 	public static function isASPN($aspn){
 		if ( isset(self::$_aspn[$aspn]) ) {
 			return TRUE;
@@ -68,6 +76,14 @@ class MusicTables
 	
 	public static function isInterval($interval){
 		if ( isset(self::$_intervals[$interval]) ) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+	
+	public static function isChordType($chord_type){
+		if ( isset(self::$_chord_intervals[$chord_type]) ) {
 			return TRUE;
 		} else {
 			return FALSE;
