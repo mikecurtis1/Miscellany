@@ -21,12 +21,12 @@ class Record
 	private $_subtitle = '';
 	private $_series = '';
 	private $_description = '';
-	private $_language = '';
-	private $_creation_date = '';
-	private $_identifiers = array();
+	private $_language = ''; //TODO: ISO 639-2, http://www.loc.gov/standards/iso639-2/php/code_list.php
+	private $_creation_date = ''; //TODO: RFC 3339 Internet Date & Time
+	private $_identifiers = array(); //TODO: RFC 3986 URI, rfc3187 & ISBN, rfc4452 for ID URN's etc.
 	private $_topics = array(); //TODO: subjects, persons, chronological terms (date ranges, named time periods, etc.), geographical terms (named places, postal addresses, geo-coordinates, etc.)
 	private $_items = array();
-	private $_edition = '';
+	private $_edition = ''; //NOTE: because edition may mean a revised - therefore different work - this a record element not an item element
 	
 	public function __construct(){
 	}
