@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>autocomplete demo</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+<form action="http://library.example.com/resources/ebooks.php" method="get">
+<input type="hidden" name="app" value="resources" />
+<label for="autocomplete">Library resources: </label>
+<input type="text" id="autocomplete" />
+<input type="hidden" name="resource_id" id="resource_id" />
+<input type="submit" value="search" />
+</form>
+<script type="text/javascript">
+$( "#autocomplete" ).autocomplete({
+	delay: 500,
+	minLength: 3,
+	//source: [ "ebook1", "ebook2", "ebook3", "ebook4", "ebook5", "ebook6", "ebook7" ]
+	source: function (request, response) {
+		$.ajax({
+			type: 'GET',
+			//url: "http://library.example.com/index.php?app=auto1&callback=?&term=" + request.term,
+			url: "http://library.example.com/index.php",
+			dataType: "jsonp",
+			data: { // when dataType=jsonp, callback=? is automatically appended to query string
+				app: "auto1",
+				term: request.term
+			},
+			success: function (data) {
+				response($.map(data, function (item) { // map results data to array of JSON objects for response arg
+					return {
+						label: item.name,
+						value: item.id
+					}
+				}));
+			}
+		})
+	},
+	focus: function(event, ui) {
+        event.preventDefault(); // if separate labels and values are mapped, override autocomplete default of using value
+        $("#autocomplete").val(ui.item.label);
+    },
+	select: function(event, ui) {
+		event.preventDefault();
+		//assign value back to the form element
+		if(ui.item){
+			//$(event.target).val(ui.item.value);
+			$("#resource_id").val(ui.item.value); // submit a specific resource ID rather than label presented to user
+		}
+		//submit the form
+		$(event.target.form).submit();
+	}
+});
+</script>
+</body>
+</html>
+<!--
+
+sample JSON: 
+
+callback(
+	[
+		{
+			"id": "9",
+			"name": "Alt HealthWatch"
+		},
+		{
+			"id": "18",
+			"name": "CINAHL, Cumulative Index to Nursing and Allied Health Literature"
+		},
+		{
+			"id": "7942",
+			"name": "Integrated Care: Working at the Interface of Primary Care and Behavioral Health"
+		}
+	]
+)
+
+-->
