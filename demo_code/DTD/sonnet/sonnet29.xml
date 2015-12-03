@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="sonnet29.css"?>
+<!DOCTYPE document SYSTEM "sonnet29.dtd">
+<document>
+  <sonnet>
+	<title>Sonnet XXIX</title>
+	<quatrain number="1">
+		<line number="1"><first_word><first_letter>W</first_letter>hen</first_word> in disgrace with fortune and men's e<rhymeA type="perfect" cadence="antecedent">yes</rhymeA>,</line>
+		<line number="2">I all alone beweep my outcast st<rhymeB type="perfect" cadence="antecedent">ate</rhymeB>,</line>
+		<line number="3">And trouble deaf heaven with my bootless cr<rhymeA type="perfect" cadence="consequent">ies</rhymeA>,</line>
+		<line number="4">And look upon myself, and curse my f<rhymeB type="perfect" cadence="consequent">ate</rhymeB>;</line>
+	</quatrain>
+	<quatrain number="2">
+		<line number="1">Wishing me like to one more rich in h<rhymeC type="perfect" cadence="antecedent">ope</rhymeC>,</line>
+		<line number="2">Featur'd like him, like him with friends poss<rhymeD type="near" cadence="antecedent">ess'd</rhymeD>,</line>
+		<line number="3">Desiring this man's art, and that man's sc<rhymeC type="perfect" cadence="consequent">ope</rhymeC>,</line>
+		<line number="4">With what I most enjoy contented l<rhymeD type="near" cadence="consequent">east</rhymeD>;</line>
+	</quatrain>
+	<quatrain number="3">
+		<line number="1">Yet in these thoughts my self almost desp<rhymeE type="perfect" cadence="antecedent">ising</rhymeE>,</line>
+		<line number="2">Haply I think on thee,-- and then my st<rhymeF type="perfect" cadence="antecedent">ate</rhymeF>,</line>
+		<line number="3">Like to the lark at break of day ar<rhymeE type="perfect" cadence="consequent">ising</rhymeE>,</line>
+		<line number="4">From sullen earth, sings hymns at heaven's g<rhymeF type="perfect" cadence="consequent">ate</rhymeF>;</line>
+	</quatrain>
+	<couplet>
+		<line number="1">For thy sweet love remember'd such wealth br<rhymeG type="perfect" cadence="antecedent">ings</rhymeG>,</line>
+		<line number="2">That then I scorn to change my state with k<rhymeG type="perfect" cadence="consequent">ings</rhymeG>.</line>
+	</couplet>
+	<author>William Shakespeare (1564-1616)</author>
+	<hr/>
+  </sonnet>
+</document>

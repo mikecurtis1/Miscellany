@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="films.xsl"?>
+<!DOCTYPE film_collection SYSTEM "films.dtd">
+<film_collection amgbase="http://www.allmovie.com/">
+  <film date_entered="5/20/2004" amg="v45555">
+	<title>
+		<original_title language="English">Some Like It Hot</original_title>
+		<other_title language="Japanese">O Atsui no ga O Suki</other_title>
+	</title>
+	<awards>
+		<award>U.S. National Film Registry Winner 1988 Library of Congress</award>
+		<award>100 Greatest American Movies Winner 1998 American Film Institute</award>
+	</awards>
+	<locations>
+		<filmed_in></filmed_in>
+		<set_in>Chicago, Florida</set_in>
+	</locations>
+	<date>
+		<release_date>1959</release_date>
+		<setting_date>1929</setting_date>
+	</date>
+	<personnel>
+		<director amg="p116768" award="Best Director Nominee 1959 Academy">Billy Wilder</director>
+		<cinematographer award="Best Black and White Cinematography Nominee 1959 Academy">Charles B. Lang</cinematographer>
+		<composer>Adolph Deutsch</composer>
+		<screenplay award="Best Adapted Screenplay Nominee 1959 Academy">I.A.L. Diamond, Billy Wilder</screenplay>
+	</personnel>
+	<cast>
+		<lead amg="p99306" character="Jerry/Daphne" award="Best Actor Nominee 1959 Academy">Jack Lemmon</lead>
+		<lead amg="p50065" character="Sugar Kane" award="Best Actress - Musical or Comedy Winner 1959 Golden Globe">Marilyn Monroe</lead>
+		<lead amg="p86429" character="Joe/Josephine">Tony Curtis</lead>
+		<supporting amg="p8961" character="Osgood E. Fielding III">Joe E.Brown</supporting>
+		<supporting character="Sweet Sue">Joan Shawlee</supporting>
+	</cast>
+	<languages>
+		<original_language>English</original_language>
+		<translation format="Subtitled">Japanese</translation>
+	</languages>
+  </film>
+  <film date_entered="5/25/2004" amg="v29363">
+	<title>
+		<original_title language="Spanish">Como Agua para Chocolate</original_title>
+		<other_title language="English">Like Water For Chocolate</other_title>
+		<other_title language="Japanese">Akai Bara Sousu Densetsu</other_title>
+	</title>
+	<awards>
+		<award>Best Foreign-Language Film Nominee 1992 Golden Globe</award>
+	</awards>
+	<locations>
+		<filmed_in>Mexico</filmed_in>
+		<set_in>Mexico, Texas</set_in>
+	</locations>
+	<date>
+		<release_date>1993</release_date>
+		<setting_date>1890-1937</setting_date>
+	</date>
+	<personnel>
+		<director amg="p79847">Alfonso Arau</director>
+		<cinematographer>Steven Bernstein, Emmanuel Lubezki</cinematographer>
+		<composer>Leo Brouwer</composer>
+		<screenplay>Laura Esquivel</screenplay>
+	</personnel>
+	<cast>
+		<lead amg="p11887" character="Tita de la Garza">Lumi Cavazos</lead>
+		<lead character="Pedro Muzquiz">Marco Leonardi</lead>
+		<supporting amg="p44687" character="Gertrudis">Claudette Maille</supporting>
+		<supporting character="Rosaura">Yareli Arizmendi</supporting>
+		<supporting character="Chencha">Pilar Aranda</supporting>
+	</cast>
+	<languages>
+		<original_language>Spanish</original_language>
+		<translation format="Dubbed">English</translation>
+	</languages>
+  </film>
+  <film date_entered="5/27/2004" amg="v43855">
+	<title>
+		<original_title language="Japanese">Shichinin no Samurai</original_title>
+		<other_title language="English">Seven Samurai</other_title>
+	</title>
+	<locations>
+		<filmed_in>Japan</filmed_in>
+		<set_in>Japan</set_in>
+	</locations>
+	<date>
+		<release_date>1954</release_date>
+		<setting_date>16th century</setting_date>
+	</date>
+	<personnel>
+		<director amg="p98309" award="Silver Lion Winner 1954 Venice International Film Festival">Akira Kurosawa</director>
+		<cinematographer amg="p104002">Asakazu Nakai</cinematographer>
+		<composer amg="p161166">Fumio Hayasaka</composer>
+		<screenplay>Shinobu Hashimoto &amp; Hideo Oguni</screenplay>
+	</personnel>
+	<cast>
+		<lead amg="p65330" character="Kambei, Leader of samurai">Takashi Shimura</lead>
+		<lead amg="p49015" character="Kikuchiyo, would-be samurai">Toshiro Mifune</lead>
+		<lead amg="p34401" character="Gorobei, wise warrior">Yoshio Inaba</lead>
+		<lead amg="p49769" character="Kyuzo, swordsman">Seiji Miyaguchi</lead>
+		<lead amg="p12769" character="Heihachi, amiable samurai">Minoru Chiaki</lead>
+		<lead amg="p37043" character="Shichiroji, Kambei's friend">Daisuke Kato</lead>
+		<lead amg="p38210" character="Katsushiro, young samurai">Ko (Isao) Kimura</lead>
+	</cast>
+	<languages>
+		<original_language>Japanese</original_language>
+	</languages>
+  </film>
+</film_collection>

@@ -1,0 +1,29 @@
+body {
+    background-color:#ddc;
+    font-family:Verdana,sans-serif;
+}
+
+div.main {
+    margin:1em;
+}
+
+h1 {
+    font-weight:normal;
+}
+
+.left{
+    float:left;
+    max-width: 50%;
+    overflow:hidden;
+    padding-right:1em;
+    margin-bottom:1em;
+}
+
+.right{
+    overflow:hidden;
+    margin-bottom:1em;
+}
+
+.bib_line {
+    line-height:150%;
+}

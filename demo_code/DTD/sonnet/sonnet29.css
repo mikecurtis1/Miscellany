@@ -1,0 +1,122 @@
+document {
+    display: block;
+}
+
+sonnet {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+    line-height: 150%;
+}
+
+title {
+    display: block;
+    font-family: Arial,sans-serif;
+    color: #696969; 
+    font-size: 22pt;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+quatrain {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 2px;
+    padding-left: 15px;
+}
+
+line {
+    display: block;
+    font-family: Verdana,sans-serif;
+    font-size: 12pt;
+}
+
+first_letter {
+    display: inline;
+    font-family: Garamond,serif;
+    font-size: 28pt;
+}
+
+first_word {
+    display: inline;
+    font-family: Garamond,serif;
+    font-size: 18pt;
+    font-variant: small-caps;
+    letter-spacing: .3em;
+}
+
+couplet {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 2px;
+    padding-left: 15px;
+    text-indent: 2em;
+}
+
+rhymeA {
+    display: inline;
+    font-family: Verdana,sans-serif;
+    color: #00008B;
+    font-weight: bold;
+}
+
+rhymeB {
+    display: inline;
+    font-family: Verdana,sans-serif;
+    color: #008000; 
+    font-weight: bold;
+}
+
+rhymeC {
+    display: inline;
+    font-family: Verdana,sans-serif;
+    color: #800000; 
+    font-weight: bold;
+}
+
+rhymeD {
+    display: inline;
+    font-family: Verdana,sans-serif;
+    color: #008080; 
+    font-weight: bold;
+}
+
+rhymeE {
+    display: inline;
+    font-family: Verdana,sans-serif;
+    color: #800080; 
+    font-weight: bold;
+}
+
+rhymeF {
+    display: inline;
+    font-family: Verdana,sans-serif;
+    color: #FF7F50; 
+    font-weight: bold;
+}
+
+rhymeG {
+    display: inline;
+    font-family: Verdana,sans-serif;
+    color: #DC143C; 
+    font-weight: bold;
+}
+
+author {
+    display: block;
+    padding: 15px;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+}
+
+hr {
+    color: #303030;
+    background-color: #303030;
+    height: 1px;
+}

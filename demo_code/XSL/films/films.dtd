@@ -1,0 +1,36 @@
+<!ELEMENT film_collection (film+)>
+  <!ELEMENT film (title,awards*,locations,date,personnel,cast,languages)>
+	<!ELEMENT title (original_title,other_title*)>
+		<!ELEMENT original_title (#PCDATA)>
+		<!ELEMENT other_title (#PCDATA)>
+	<!ELEMENT awards (award*)>
+		<!ELEMENT award (#PCDATA)>
+	<!ELEMENT locations (filmed_in,set_in)>
+		<!ELEMENT filmed_in (#PCDATA)>
+		<!ELEMENT set_in (#PCDATA)>
+	<!ELEMENT date (release_date,setting_date)>
+		<!ELEMENT release_date (#PCDATA)>
+		<!ELEMENT setting_date (#PCDATA)>
+	<!ELEMENT personnel (director,cinematographer,(composer|screenplay)*)>
+		<!ELEMENT director (#PCDATA)>
+		<!ELEMENT cinematographer (#PCDATA)>
+		<!ELEMENT composer (#PCDATA)>
+		<!ELEMENT screenplay (#PCDATA)>
+	<!ELEMENT cast (lead|supporting)*>
+		<!ELEMENT lead (#PCDATA)>
+		<!ELEMENT supporting (#PCDATA)>
+	<!ELEMENT languages (original_language|translation)*>
+		<!ELEMENT original_language (#PCDATA)>
+		<!ELEMENT translation (#PCDATA)>
+		<!-- attribue list -->
+		<!ATTLIST film_collection amgbase CDATA #REQUIRED>
+		<!ATTLIST film date_entered CDATA #REQUIRED amg CDATA #IMPLIED>
+		<!ATTLIST original_title language CDATA #REQUIRED>
+		<!ATTLIST other_title language CDATA #REQUIRED>
+		<!ATTLIST director amg CDATA #IMPLIED award CDATA #IMPLIED>
+		<!ATTLIST cinematographer amg CDATA #IMPLIED award CDATA #IMPLIED>
+		<!ATTLIST composer amg CDATA #IMPLIED award CDATA #IMPLIED>
+		<!ATTLIST screenplay amg CDATA #IMPLIED award CDATA #IMPLIED>
+		<!ATTLIST lead amg CDATA #IMPLIED character CDATA #REQUIRED award CDATA #IMPLIED>
+		<!ATTLIST supporting amg CDATA #IMPLIED character CDATA #REQUIRED award CDATA #IMPLIED>
+		<!ATTLIST translation format CDATA #REQUIRED>

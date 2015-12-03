@@ -1,0 +1,5 @@
+<!ELEMENT document (artist+)>
+	<!ELEMENT artist (resource*)>
+		<!-- attribue list -->
+		<!ATTLIST artist name CDATA #REQUIRED id CDATA #REQUIRED>
+		<!ATTLIST resource title CDATA #REQUIRED location CDATA #REQUIRED aleph_id CDATA #REQUIRED>

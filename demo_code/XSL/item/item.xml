@@ -1,0 +1,146 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+<find-doc>
+    <record>
+        <metadata>
+            <oai_marc>
+                <fixfield id="FMT">BK</fixfield>
+                <fixfield id="LDR">^^^^^cam^^22003854a^4500</fixfield>
+                <fixfield id="001">000086629</fixfield>
+                <fixfield id="005">20070209142239.0</fixfield>
+                <fixfield id="008">060315s2006^^^^nyua^^^^^b^^^^001^0^eng^^</fixfield>
+                <varfield id="010" i1=" " i2=" ">
+                    <subfield label="a">2006009055</subfield>
+                </varfield>
+                <varfield id="020" i1=" " i2=" ">
+                    <subfield label="a">0525949690 (hardcover)</subfield>
+                </varfield>
+                <varfield id="020" i1=" " i2=" ">
+                    <subfield label="a">9780525949695 (hardcover)</subfield>
+                </varfield>
+                <varfield id="024" i1="3" i2=" ">
+                    <subfield label="a">9780525949695</subfield>
+                </varfield>
+                <varfield id="035" i1=" " i2=" ">
+                    <subfield label="a">(OCoLC)65197831</subfield>
+                </varfield>
+                <varfield id="040" i1=" " i2=" ">
+                    <subfield label="a">DLC</subfield>
+                    <subfield label="c">DLC</subfield>
+                    <subfield label="d">BAKER</subfield>
+                    <subfield label="d">GK8</subfield>
+                    <subfield label="d">C#P</subfield>
+                    <subfield label="d">UPZ</subfield>
+                    <subfield label="d">VP@</subfield>
+                    <subfield label="d">YDXCP</subfield>
+                    <subfield label="d">OCLCQ</subfield>
+                    <subfield label="d">IG#</subfield>
+                    <subfield label="d">BTCTA</subfield>
+                    <subfield label="d">CLU</subfield>
+                    <subfield label="d">VYQ</subfield>
+                </varfield>
+                <varfield id="042" i1=" " i2=" ">
+                    <subfield label="a">pcc</subfield>
+                </varfield>
+                <varfield id="049" i1=" " i2=" ">
+                    <subfield label="a">VYQV</subfield>
+                </varfield>
+                <varfield id="050" i1="0" i2="0">
+                    <subfield label="a">ML3830</subfield>
+                    <subfield label="b">.L38 2006</subfield>
+                </varfield>
+                <varfield id="096" i1=" " i2=" ">
+                    <subfield label="a">WL 102</subfield>
+                    <subfield label="b">L666t 2006</subfield>
+                </varfield>
+                <varfield id="100" i1="1" i2=" ">
+                    <subfield label="a">Levitin, Daniel J.</subfield>
+                </varfield>
+                <varfield id="245" i1="1" i2="0">
+                    <subfield label="a">This is your brain on music :</subfield>
+                    <subfield label="b">the science of a human obsession /</subfield>
+                    <subfield label="c">Daniel J. Levitin.</subfield>
+                </varfield>
+                <varfield id="260" i1=" " i2=" ">
+                    <subfield label="a">New York, N.Y. :</subfield>
+                    <subfield label="b">Dutton,</subfield>
+                    <subfield label="c">c2006.</subfield>
+                </varfield>
+                <varfield id="300" i1=" " i2=" ">
+                    <subfield label="a">vi, 314 p. :</subfield>
+                    <subfield label="b">ill. ;</subfield>
+                    <subfield label="c">24 cm.</subfield>
+                </varfield>
+                <varfield id="504" i1=" " i2=" ">
+                    <subfield label="a">Includes bibliographical references (p. [271]-300) and index.</subfield>
+                </varfield>
+                <varfield id="505" i1="0" i2=" ">
+                    <subfield label="a">Introduction: I love music and I love science-- why would I want to mix the two? -- What is music? : from pitch to timbre -- Foot tapping : discerning rhythm, loudness, and harmony -- Behind the curtain : music and the mind machine -- Anticipation : what we expect from Liszt (and Ludacris) -- You know my name, look up the number : how we categorize music -- After dessert, Crick was still four seats away from me : music, emotion, and the reptilian brain -- What makes a musician? : expertise dissected -- My favorite things : why do we like the music we like? -- The music instinct : evolution&apos;s #1 hit.</subfield>
+                </varfield>
+                <varfield id="650" i1="1" i2="2">
+                    <subfield label="a">Music</subfield>
+                    <subfield label="x">psychology.</subfield>
+                </varfield>
+                <varfield id="650" i1="2" i2="2">
+                    <subfield label="a">Brain</subfield>
+                    <subfield label="x">physiology.</subfield>
+                </varfield>
+                <varfield id="856" i1="4" i2="1">
+                    <subfield label="3">Table of contents</subfield>
+                    <subfield label="u">http://www.loc.gov/catdir/toc/ecip0610/2006009055.html</subfield>
+                </varfield>
+                <varfield id="962" i1=" " i2=" ">
+                    <subfield label="a">Book</subfield>
+                </varfield>
+                <varfield id="962" i1=" " i2=" ">
+                    <subfield label="a">Consumer Health</subfield>
+                </varfield>
+                <varfield id="994" i1=" " i2=" ">
+                    <subfield label="a">C0</subfield>
+                    <subfield label="b">VYQ</subfield>
+                </varfield>
+                <varfield id="CAT" i1=" " i2=" ">
+                    <subfield label="a">OCLCxfer</subfield>
+                    <subfield label="b">00</subfield>
+                    <subfield label="c">20070209</subfield>
+                    <subfield label="l">UPS01</subfield>
+                    <subfield label="h">1422</subfield>
+                </varfield>
+                <varfield id="029" i1="1" i2=" ">
+                    <subfield label="a">YDXCP</subfield>
+                    <subfield label="b">2377266</subfield>
+                </varfield>
+                <varfield id="029" i1="1" i2=" ">
+                    <subfield label="a">IG#</subfield>
+                    <subfield label="b">0525949690</subfield>
+                </varfield>
+                <varfield id="938" i1=" " i2=" ">
+                    <subfield label="a">Baker &amp; Taylor</subfield>
+                    <subfield label="b">BKTY</subfield>
+                    <subfield label="c">24.95</subfield>
+                    <subfield label="d">18.71</subfield>
+                    <subfield label="i">0525949690</subfield>
+                    <subfield label="n">0006650606</subfield>
+                    <subfield label="s">active</subfield>
+                </varfield>
+                <varfield id="938" i1=" " i2=" ">
+                    <subfield label="a">YBP Library Services</subfield>
+                    <subfield label="b">YANK</subfield>
+                    <subfield label="n">2377266</subfield>
+                </varfield>
+                <varfield id="938" i1=" " i2=" ">
+                    <subfield label="a">Ingram</subfield>
+                    <subfield label="b">INGR</subfield>
+                    <subfield label="n">0525949690</subfield>
+                </varfield>
+                <varfield id="938" i1=" " i2=" ">
+                    <subfield label="a">Baker and Taylor</subfield>
+                    <subfield label="b">BTCP</subfield>
+                    <subfield label="n">2006009055</subfield>
+                </varfield>
+            </oai_marc>
+        </metadata>
+    </record>
+<session-id>HCKRBY6YQ8947RR9MJLKGYUSXVNKFTNG2QQ38R2QLCE5DQAYFR</session-id>
+</find-doc>
+<!-- http://ups.sunyconnect.suny.edu:4360/X?op=find-doc&doc_num=000086629&base=ups01 -->

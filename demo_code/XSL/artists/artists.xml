@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="artists.xsl"?>
+<!DOCTYPE document SYSTEM "artists.dtd">
+<document>
+  <artist name="Adelaide Alsop Robineau" id="80">
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Alexander Girard" id="45">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />  
+    <resource title="Postwar Interior Design" location="Ref NK1986 .O73F4" aleph_id="000002875" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Alvar Aalto" id="1">
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Art Deco Interiors" location="N6494 .A7B37" aleph_id="000064847" />  
+    <resource title="Inter'l Dictionary of Architects and Architecture" location="Ref NA40 .I48" aleph_id="000057877" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Anni Albers" id="4">
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Arne Jacobsen" id="54">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Aubrey Beardsley" id="10">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Ben Shahn" id="86">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Billy Baldwin" id="7">
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Buckminster Fuller" id="40">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="C. R. Ashbee" id="6">
+    <resource title="Nineteenth Century Design" location="NK1443 .A1G47" aleph_id="000051635" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Candace Wheeler" id="97">
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />  
+    <resource title="In Pursuit of Beauty" location="Ovsz N6510.5 .E25i5" aleph_id="000003732" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Carlo Bugatti" id="18">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Charles Dana Gibson" id="44">
+    <resource title="Illustrator in America" location="Ref NC975 .R4" aleph_id="000062574" />
+  </artist>
+  <artist name="Charles Eastlake" id="36">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />  
+    <resource title="Nineteenth Century Furniture" location="NK2385 .N56" aleph_id="000010136" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="In Pursuit of Beauty" location="Ovsz N6510.5 .E25i5" aleph_id="000003732" />
+  </artist>
+  <artist name="Charles Rennie MacKintosh" id="67">
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />  
+    <resource title="History of Art" location="Ref N5300 .J3" aleph_id="000062277" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Charles Sheeler" id="87">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Charlotte Perriand" id="78">
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Art Deco Furniture" location="Ref NK2549 .D86" aleph_id="000064928" />  
+    <resource title="Art Deco Interiors" location="N6494 .A7B37" aleph_id="000064847" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Christopher Dresser" id="31">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Claes Oldenberg" id="76">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Cranbrook Academy" id="26">
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Denise Scott Brown" id="17">
+    <resource title="Inter'l Dictionary of Architects and Architecture" location="Ref NA40 .I48" aleph_id="000057877" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />
+  </artist>
+  <artist name="Donald Deskey" id="29">
+    <resource title="New York Times obituary April 1989" location="" aleph_id="" />  
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />  
+    <resource title="Art Deco Interiors" location="N6494 .A7B37" aleph_id="000064847" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />
+  </artist>
+  <artist name="Dorothy Draper" id="30">
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Dorothy Liebes" id="63">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="E. W. Godwin" id="47">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Thomas Jeckyll" location="NA997 .J43S65" aleph_id="000069045" />
+  </artist>
+  <artist name="Edward Burne-Jones" id="19">
+    <resource title="History of Art" location="Ref N5300 .J3" aleph_id="000062277" />  
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Art Nouveau, 1890-1914" location="Ref NK775.5 .A7A785" aleph_id="000060912" />
+  </artist>
+  <artist name="Edward Hopper" id="52">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Eero Saarinen" id="85">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="History of Art" location="Ref N5300 .J3" aleph_id="000062277" />
+  </artist>
+  <artist name="Eileen Gray" id="49">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Art Deco Furniture" location="Ref NK2549 .D86" aleph_id="000064928" />  
+    <resource title="Art Deco Interiors" location="N6494 .A7B37" aleph_id="000064847" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />
+  </artist>
+  <artist name="El Lissitzky" id="64">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Elsie de Wolfe" id="28">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />
+  </artist>
+  <artist name="Emile Galle" id="42">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Emile-Jacques Ruhlmann" id="83">
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Florence Knoll" id="57">
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />
+  </artist>
+  <artist name="Frank Furness" id="41">
+    <resource title="In Pursuit of Beauty" location="Ovsz N6510.5 .E25i5" aleph_id="000003732" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Frank Gehry" id="43">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Frederic Remington" id="79">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Illustrator in America" location="Ref NC975 .R4" aleph_id="000062574" />
+  </artist>
+  <artist name="Georg Jensen" id="56">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="George Nakashima" id="72">
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />  
+    <resource title="Maker's Hand, the" location="NK2408 .C66" aleph_id="000065683" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="George Nelson" id="73">
+    <resource title="Postwar Interior Design" location="Ref NK1986 .O73F4" aleph_id="000002875" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="George Segal" id="84">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Gilbert Rohde" id="81">
+    <resource title="Postwar Interior Design" location="Ref NK1986 .O73F4" aleph_id="000002875" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />
+  </artist>
+  <artist name="Hans Wegner" id="96">
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />
+  </artist>
+  <artist name="Harley Earl" id="35">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Harry Bertoia" id="14">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />
+  </artist>
+  <artist name="Henry Dreyfuss" id="33">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Henry van de Velde" id="93">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Herbert Bayer" id="9">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Isamu Noguchi" id="74">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="History of Art" location="Ref N5300 .J3" aleph_id="000062277" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />
+  </artist>
+  <artist name="Jack Lenor Larsen" id="61">
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Postwar Interior Design" location="Ref NK1986 .O73F4" aleph_id="000002875" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Jean Dunand" id="32">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Joe Colombo" id="23">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="John LaFarge" id="58">
+    <resource title="In Pursuit of Beauty" location="Ovsz N6510.5 .E25i5" aleph_id="000003732" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />
+  </artist>
+  <artist name="Josef Albers" id="5">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Josef Hoffmann" id="50">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Joseph Urban" id="92">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />
+  </artist>
+  <artist name="Julia Morgan" id="71">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Inter'l Dictionary of Architects and Architecture" location="Ref NA40 .I48" aleph_id="000057877" />  
+    <resource title="Arts and Crafts Companion" location="Ref NK1142 .T63" aleph_id="000066787" />  
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />
+  </artist>
+  <artist name="Laszlo Moholy-Nagy" id="70">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Louis Sullivan" id="88">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Marcel Breuer" id="16">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Margaret Macdonald" id="66">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Marimekko" id="69">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Mary Colter" id="22">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="McClelland Barclay" id="8">
+    <resource title="Illustrator in America" location="Ref NC975 .R4" aleph_id="000062574" />
+  </artist>
+  <artist name="Michael Graves" id="48">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Inter'l Dictionary of Architects and Architecture" location="Ref NA40 .I48" aleph_id="000057877" />
+  </artist>
+  <artist name="Michael Thonet &amp; Bros." id="89">
+    <resource title="History of Furniture, the" location="Ref NK2270 .M64" aleph_id="000060034" />  
+    <resource title="Postwar Interior Design" location="Ref NK1986 .O73F4" aleph_id="000002875" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Art Deco Furniture" location="Ref NK2549 .D86" aleph_id="000064928" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Milton Glaser" id="46">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Illustrator in America" location="Ref NC975 .R4" aleph_id="000062574" />
+  </artist>
+  <artist name="Norman Bel Geddes" id="12">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Ogden Codman, Jr." id="21">
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Otto Wagner" id="95">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Paul Frankl" id="38">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Peter Behrens" id="11">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Ray and Charles Eames" id="34">
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />  
+    <resource title="Inter'l Dictionary of Architects and Architecture" location="Ref NA40 .I48" aleph_id="000057877" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Sourcebook of Modern Furniture" location="Ref NK2395 .H34" aleph_id="000064895" />  
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Postwar Interior Design" location="Ref NK1986 .O73F4" aleph_id="000002875" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />
+  </artist>
+  <artist name="Raymond Loewy" id="65">
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Rene Lalique" id="59">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Art Deco Furniture" location="Ref NK2549 .D86" aleph_id="000064928" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Art Deco Interiors" location="N6494 .A7B37" aleph_id="000064847" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />
+  </artist>
+  <artist name="Robert Venturi &amp; Denise Scott Brown" id="94">
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="House Book, the" location="Ref NA7110 .H68" aleph_id="000062235" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Inter'l Dictionary of Architects and Architecture" location="Ref NA40 .I48" aleph_id="000057877" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Rookwood Pottery" id="82">
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="In Pursuit of Beauty" location="Ovsz N6510.5 .E25i5" aleph_id="000003732" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />
+  </artist>
+  <artist name="Rose Cumming" id="27">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />
+  </artist>
+  <artist name="Russel Wright" id="98">
+    <resource title="Postwar Interior Design" location="Ref NK1986 .O73F4" aleph_id="000002875" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Modern Design: The Fabulous 50s" location="Ref NK1390 .M56" aleph_id="000064792" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+  <artist name="Sir Terrance Conran" id="24">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />
+  </artist>
+  <artist name="Thomas Hart Benton" id="13">
+    <resource title="Encyclopedia of World Biography &amp; Suppl't" location="Ref CT103 .E56" aleph_id="000058286" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Thomas Jeckyll" id="55">
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />
+  </artist>
+  <artist name="Verner Panton" id="77">
+    <resource title="World Design" location="Ref NK1390 .W67" aleph_id="000059715" />  
+    <resource title="Landmarks of Twentieth Century Design" location="Ref NK1390 .H44" aleph_id="000051666" />  
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Victor Horta" id="53">
+    <resource title="Vienna 1900: Architecture and Design" location="NA1010. V5B6713" aleph_id="000001851" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />  
+    <resource title="History of Art" location="Ref N5300 .J3" aleph_id="000062277" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Art Nouveau, 1890-1914" location="Ref NK775.5 .A7A785" aleph_id="000060912" />
+  </artist>
+  <artist name="Wallace Nutting" id="75">
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Walter Crane" id="25">
+    <resource title="Continuum Ency. of Children's Literature, the" location="Ref PN1008.5 .C66" aleph_id="000063679" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Encyclopedia of Interior Design" location="Ref NK1165 .E48" aleph_id="000057693" />
+  </artist>
+  <artist name="Wendell Castle" id="20">
+    <resource title="www.r20thcentury.com/bios/frame.cfm" location="" aleph_id="" />  
+    <resource title="Elements of Design" location="Ref NK750 .E48" aleph_id="000065668" />  
+    <resource title="Designers On Designers" location="Ref NK1980 .G73" aleph_id="000066409" />  
+    <resource title="Art Today" location="Ref N6490 .L768" aleph_id="000054689" />  
+    <resource title="Online catalog - search for your artist" location="" aleph_id="" />  
+    <resource title="Maker's Hand, the" location="NK2408 .C66" aleph_id="000065683" />
+  </artist>
+  <artist name="Will Bradley" id="15">
+    <resource title="Landmarks of Twentieth Century Design " location="Ref NK1390 .H44" aleph_id="000051666" />
+  </artist>
+</document>

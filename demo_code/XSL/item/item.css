@@ -1,0 +1,53 @@
+body {
+    /*background-color: #685642;*/
+    background-image: linear-gradient(#685642, #000000);
+    font-family:Verdana, sans-serif;
+    padding:1em 0 2em 0;
+}
+
+div.main {
+    background-color: #F7F6F4;
+    margin-left:auto;
+    margin-right:auto;
+    width:42em;
+    padding:1em 2em;
+    border-radius: 1em;
+}
+
+h1 {
+    font-size:150%;
+    font-weight:normal;
+}
+
+table {
+    table-layout:fixed;
+}
+
+td {
+    background-color: #F4F0CB;
+    border:solid #B7C68B 0.15em;
+    padding:0.25em 0.5em 0.25em 0.5em;
+}
+
+td.fieldtype {
+    width:auto;
+    overflow: hidden;
+}
+
+td.marc_tag {
+    width:auto;
+    overflow: hidden;
+}
+
+td.data {
+    width:32em;
+    overflow: hidden;
+}
+
+div.opac_view {
+    margin:1em 0 1em 0;
+}
+
+a, a:visited {
+    color:#6B78B4;
+}
