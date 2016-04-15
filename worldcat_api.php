@@ -4,6 +4,7 @@
 require_once 'wskey.php';
 
 $kw_phrase = '';
+// WNYLRC consortia
 $li_phrase = 'srw.li = "YJE" OR srw.li = "BEQ" OR srw.li = "BBB" OR srw.li = "BSJ" OR srw.li = "VHB" OR srw.li = "YJQ" OR srw.li = "VTP" OR srw.li = "VJF" OR srw.li = "R6A" OR srw.li = "NYB" OR srw.li = "VOQ" OR srw.li = "BPNYA" OR srw.li = "NoI" OR srw.li = "VKC" OR srw.li = "NYC" OR srw.li = "VOV" OR srw.li = "ZCQ" OR srw.li = "VXU" OR srw.li = "VYK" OR srw.li = "YJJ" OR srw.li = "VVH" OR srw.li = "VUF" OR srw.li = "VOL" OR srw.li = "VOO" OR srw.li = "YJN" OR srw.li = "YJL" OR srw.li = "YJO" OR srw.li = "YJP" OR srw.li = "MWAFL" OR srw.li = "YJA" OR srw.li = "GF#" OR srw.li = "YKH" OR srw.li = "YJD" OR srw.li = "NYT" OR srw.li = "YKJ" OR srw.li = "CC3" OR srw.li = "JDC" OR srw.li = "YKL" OR srw.li = "NYW" OR srw.li = "NYL" OR srw.li = "YJT" OR srw.li = "YJV" OR srw.li = "YJU" OR srw.li = "GM@" OR srw.li = "YKQ" OR srw.li = "NYM" OR srw.li = "NYP" OR srw.li = "YKU" OR srw.li = "NYN" OR srw.li = "YKX" OR srw.li = "VVN" OR srw.li = "ZNM" OR srw.li = "VOX" OR srw.li = "YLD" OR srw.li = "YJZ" OR srw.li = "RTP" OR srw.li = "VZR" OR srw.li = "YKA" OR srw.li = "VUV" OR srw.li = "VYS" OR srw.li = "YKD" OR srw.li = "YBM" OR srw.li = "XFM" OR srw.li = "YKE" OR srw.li = "URP" OR srw.li = "VUG" OR srw.li = "AEF" OR srw.li = "SBH" OR srw.li = "SBL" OR srw.li = "BUF" OR srw.li = "YKF" OR srw.li = "YKN" OR srw.li = "YKK" OR srw.li = "VZX" OR srw.li = "YJI"';
 if ( isset($_GET['kw']) ) {
     $kw_phrase = 'srw.kw all "' . $_GET['kw'] . '"';
