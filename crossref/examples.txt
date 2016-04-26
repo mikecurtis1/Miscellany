@@ -2,6 +2,11 @@ http://api.crossref.org/works?query=love&filter=from-pub-date:2014
 
 http://api.crossref.org/works?query=love&filter=from-pub-date:2014,until-pub-date:2015
 
+http://api.crossref.org/works?query=love&facet=t
+http://api.crossref.org/works?query=love&filter=category-name:Cultural%20Studies
+http://api.crossref.org/works?query=love&filter=type-name:Journal%20Article
+http://api.crossref.org/works?query=love&filter=from-pub-date:2016,until-pub-date:2016
+
 http://api.crossref.org/works?query=einstein&filter=type:monograph
 
 http://api.crossref.org/works?query=love&filter=type:journal-article
