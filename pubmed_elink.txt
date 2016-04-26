@@ -1,1 +1,0 @@
-http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=pubmed&id=26059958&cmd=neighbor_score
